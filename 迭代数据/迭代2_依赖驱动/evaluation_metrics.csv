@@ -1,0 +1,24 @@
+metric,value,unit,notes
+iteration,2,,依赖驱动拆分
+timestamp,2025-12-16,,
+total_classes,24,,完整覆盖
+total_services,3,,+ 1个共享组件层
+service_account_classes,4,,
+service_catalog_classes,8,,
+service_order_classes,11,,
+shared_components,1,,AbstractActionBean（正确处理为共享层）
+error_classes,1,,CartActionBean误分配到order（GT是catalog）
+TurboMQ,85-95,,基于MoJoFM估算（需依赖图精确计算）
+MoJoFM,95.83,%,与Ground Truth相似度（23/24类正确）
+account_precision,100.0,%,4/4类正确分配
+account_recall,100.0,%,4/4类完整覆盖
+account_f1,100.0,%,account服务综合评分
+catalog_precision,88.89,%,8/9类正确（缺CartActionBean，多AbstractActionBean）
+catalog_recall,87.5,%,7/8类覆盖（CartActionBean被误分到order）
+catalog_f1,88.19,%,catalog服务综合评分
+order_precision,90.91,%,10/11类正确（CartActionBean不该在这）
+order_recall,100.0,%,10/10类完整覆盖（GT的order类）
+order_f1,95.24,%,order服务综合评分
+partition_balance,均衡,,4-8-11-1分布
+actual_vs_expected,符合预期,,实际95.83% vs 预期50-65%
+improvement_from_round1,+4.16pp,,从91.67%提升至95.83%（修正AbstractActionBean）

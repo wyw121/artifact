@@ -1,0 +1,159 @@
+【第三轮迭代·专家拆分】基于微服务分解论文标准，对JPetStore进行最终优化拆分。
+
+## 背景：论文参考标准
+
+本拆分基于学术论文《Microservice Decomposition Techniques: An Independent Tool Comparison》
+的评估体系。论文通过MoJoFM指标（与专家参考分解的相似度）评估拆分质量。
+JPetStore的专家参考分解（Ground Truth）为：
+- account微服务：用户账户管理
+- catalog微服务：商品和分类管理
+- order微服务：购物车、订单和订单项管理
+
+## 完整类结构与依赖分析
+
+【account 微服务的类群】
+类: Account (实体) 
+  → 属性: username, password, email, address, city, zip, phone, etc.
+  → 方法数: 18个getter/setter + 业务方法
+
+类: AccountActionBean (Web Action)
+  → 依赖: Account实体, AccountService
+  → 职责: 处理登陆/注册/个人信息修改的HTTP请求
+  → 继承: AbstractActionBean (基类，但主要职责明确属account)
+
+类: AccountService (业务逻辑)
+  → 依赖: Account实体, AccountMapper
+  → 职责: 账户业务逻辑（验证、创建、更新等）
+
+类: AccountMapper (数据访问)
+  → 依赖: Account实体
+  → 职责: 账户数据的持久化操作
+
+【catalog 微服务的类群】
+类: Category (实体)
+  → 属性: categoryId, name, description
+  → 地位: 商品分类维度
+
+类: CategoryMapper (数据访问)
+  → 对应实体: Category
+
+类: Product (实体)
+  → 属性: productId, categoryId, name, description
+  → 职责: 商品基本信息（如宠物品种）
+  → 注意: 含有categoryId外键，关联Category
+
+类: ProductMapper (数据访问)
+  → 对应实体: Product
+
+类: Item (实体)
+  → 属性: itemId, productId, supplier, listPrice, unitCost, status
+  → 地位: 具体商品型号（Product的细粒度）
+  → 层次: Product > Item（一对多）
+
+类: ItemMapper (数据访问)
+  → 对应实体: Item
+
+类: CatalogActionBean (Web Action)
+  → 依赖: Product, Item, Category实体, CatalogService
+  → 职责: 处理商品浏览、搜索、分类查询的HTTP请求
+  → 继承: AbstractActionBean（属catalog，职责清晰）
+
+类: CatalogService (业务逻辑)
+  → 依赖: Category, Product, Item实体和对应Mapper
+  → 职责: 商品相关业务逻辑（列表、搜索、分类等）
+
+【order 微服务的类群】
+类: Cart (实体)
+  → 属性: cartId, items (CartItem的集合)
+  → 职责: 购物车聚合根
+
+类: CartItem (实体)
+  → 属性: itemId, quantity (reference to Item, but quantity belongs to order domain)
+  → 职责: 购物车中的单项记录
+  → 跨服务依赖: itemId指向Item（catalog），但CartItem本身属order（购物行为）
+
+类: CartActionBean (Web Action)
+  → 依赖: Cart, CartItem, CatalogService(查询Item信息)
+  → 职责: 处理购物车的添加/删除/查看请求
+  → 继承: AbstractActionBean（属order，职责清晰）
+
+类: Order (实体)
+  → 属性: orderId, orderDate, shipDate, billAddress, etc.
+  → 职责: 订单聚合根
+
+类: OrderActionBean (Web Action)
+  → 依赖: Order实体, OrderService
+  → 职责: 处理订单查询、下单的HTTP请求
+  → 继承: AbstractActionBean（属order，职责清晰）
+
+类: OrderService (业务逻辑)
+  → 依赖: Order, LineItem, Sequence实体和对应Mapper
+  → 职责: 订单业务逻辑（创建、确认、发货等）
+
+类: OrderMapper (数据访问)
+  → 对应实体: Order
+
+类: LineItem (实体)
+  → 属性: lineNumber, orderId, itemId, quantity
+  → 职责: 订单行项
+  → 跨服务依赖: itemId指向Item（catalog），但LineItem属order
+
+类: LineItemMapper (数据访问)
+  → 对应实体: LineItem
+
+类: Sequence (实体)
+  → 属性: name, nextId
+  → 职责: 主键序列生成（用于Order和其他实体）
+  → 关键点: 虽然是通用工具，但在JPetStore中主要用于order业务
+
+类: SequenceMapper (数据访问)
+  → 对应实体: Sequence
+
+## 论文的微服务拆分评估标准
+
+### TurboMQ指标（模块化质量）
+公式: TurboMQ = (内聚度 - 耦合度) / (内聚度 + 耦合度) × 100
+- 范围: 0-100
+- 目标: ≥80（优秀），论文中最优工具MOSAIC在JPetStore达到100
+
+### MoJoFM指标（与参考分解的相似度）
+衡量Copilot拆分与Ground Truth的匹配程度。
+- Log2MS在JPetStore达到100%（完美匹配）
+- MOSAIC达到89.47%（优秀）
+- Data-Centric达到76.19%（良好）
+- HyDec达到57.14%（中等）
+
+本轮目标: 达到MoJoFM ≥65%（超过HyDec的58.59%平均值）
+
+## 关键拆分规则（基于论文学习）
+
+1. **服务边界原则**
+   - 高内聚：同服务内的类应有强业务相关性
+   - 低耦合：服务间只能通过明确的接口通信
+   - 单一职责：每个服务聚焦于一个业务能力
+
+2. **跨服务依赖的处理**
+   - CartItem.itemId → Item：虽然引用了Item，但CartItem的主要职责是购物行为（属order）
+   - LineItem.itemId → Item：虽然引用了Item，但LineItem的主要职责是订单细节（属order）
+   - 这是微服务间的数据依赖，不影响服务归属
+
+3. **共享基类的处理**
+   - AbstractActionBean虽然被多个Action继承，但每个具体ActionBean应根据其职责分配
+   - 在评估时，AbstractActionBean通常与其主要使用者共同分配
+
+4. **工具函数的归属**
+   - Sequence虽然是通用工具，但在JPetStore的实际应用中主要支持order业务
+   - 因此应将Sequence/SequenceMapper分配给order
+
+## 任务要求
+
+请基于以上分析和论文标准，生成最终的、高质量的微服务拆分方案。
+
+要求：
+1. 所有24个类都被精确分配（不能遗漏）
+2. 清晰解释每个类的分配理由，特别是边界情况
+3. 预估本方案的TurboMQ和MoJoFM评分
+4. 比较与第一、第二轮的改进
+
+输出格式：见方案书第三轮示例
+

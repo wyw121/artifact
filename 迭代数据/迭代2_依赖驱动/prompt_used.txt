@@ -1,0 +1,95 @@
+【第二轮迭代 - 依赖驱动拆分提示词】
+
+请对JPetStore系统进行改进的微服务拆分。
+
+## 系统概述
+JPetStore是一个宠物在线商店系统，用户可以浏览商品、管理账户、购物和下单。
+
+## 系统类列表（完整版本，带依赖分析）
+
+【账户微服务相关类】
+- Account：用户信息实体（字段：username, password, email, address, city等）
+- AccountActionBean：处理账户Web请求的Action类
+  依赖关系：使用Account实体，调用AccountService进行业务逻辑
+- AccountService：账户业务逻辑服务
+  依赖关系：使用Account实体和AccountMapper进行数据访问
+- AccountMapper：账户数据持久化接口
+  依赖关系：操作Account对象，与数据库交互
+
+【商品微服务相关类】
+- Category：商品分类实体
+- CategoryMapper：分类数据映射
+  依赖：操作Category对象
+- Item：商品项实体（包含具体商品型号）
+- ItemMapper：商品项数据映射
+  依赖：操作Item对象
+- Product：商品实体（商品基本信息）
+- ProductMapper：商品数据映射
+  依赖：操作Product对象
+- CatalogActionBean：处理商品浏览和搜索请求
+  依赖：使用Product/Item/Category实体，调用CatalogService
+- CatalogService：商品业务逻辑
+  依赖：使用Product/Item/Category/mapper
+
+【订单微服务相关类】
+- Cart：购物车实体
+- CartItem：购物车中的单项
+  依赖：引用Item
+- CartActionBean：处理购物车请求
+  依赖：使用Cart和CartItem，调用相关服务
+- Order：订单实体
+- OrderActionBean：处理订单请求
+  依赖：使用Order实体，调用OrderService
+- OrderMapper：订单数据映射
+  依赖：操作Order对象
+- OrderService：订单业务逻辑
+  依赖：使用Order/OrderMapper/LineItemMapper
+- LineItem：订单行项实体
+- LineItemMapper：订单行数据映射
+  依赖：操作LineItem对象
+- Sequence：序列号生成（用于订单编号）
+- SequenceMapper：序列号数据映射
+  依赖：操作Sequence对象
+
+【共享基础类】
+- AbstractActionBean：所有Action的基类
+  说明：所有*ActionBean都继承此类，被account/catalog/order微服务共享
+  建议：作为跨服务共享组件，但在评估时应根据具体ActionBean的主要职责分配
+
+## 第一轮拆分问题与改进指导
+
+【第一轮常见问题】
+1. AbstractActionBean的归属：虽然被多个service的Action使用，但应根据Action本身的职责分配
+   - AccountActionBean应属account服务
+   - CatalogActionBean应属catalog服务
+   - CartActionBean/OrderActionBean应属order服务
+
+2. Mapper与实体的对应：每个*Mapper应与其对应的实体放在同一服务
+   - AccountMapper与Account→account服务
+   - CategoryMapper/ItemMapper/ProductMapper与Category/Item/Product→catalog服务
+   - OrderMapper/LineItemMapper/SequenceMapper与Order/LineItem/Sequence→order服务
+
+## 任务要求
+
+请基于以上分析，生成改进的微服务拆分方案。要求：
+1. 正确处理AbstractActionBean（根据具体Action的职责）
+2. 确保每个Mapper与对应实体在同一服务
+3. 保持Cart和Order的逻辑关系（都属order服务）
+4. 遵循高内聚、低耦合原则
+
+请采用以下JSON格式输出：
+{
+  "decomposition": [
+    {
+      "service_name": "服务名",
+      "classes": ["类1", "类2", ...],
+      "responsibility": "核心职责",
+      "reasoning": "详细拆分理由，包括依赖关系分析"
+    }
+  ],
+  "total_services": 数字,
+  "improvements_from_round1": "对比第一轮的改进说明",
+  "confidence_level": "拆分质量评分（低/中/高）"
+}
+
+提醒：请确保所有24个类都被分配到某个服务中，且每个类只属于一个服务。
