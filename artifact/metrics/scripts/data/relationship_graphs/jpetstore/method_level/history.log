@@ -1,0 +1,565 @@
+method: org.mybatis.jpetstore.domain.Account.getAddress1 | lines: 100:102 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getAddress2 | lines: 108:110 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getBannerName | lines: 188:190 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getCity | lines: 116:118 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getCountry | lines: 140:142 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getEmail | lines: 66:68 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getFavouriteCategoryId | lines: 156:158 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getFirstName | lines: 74:76 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getLanguagePreference | lines: 164:166 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getLastName | lines: 83:85 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getPassword | lines: 58:60 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getPhone | lines: 148:150 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getState | lines: 124:126 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getStatus | lines: 92:94 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getUsername | lines: 50:52 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.getZip | lines: 132:134 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.isBannerOption | lines: 180:182 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.isListOption | lines: 172:174 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setAddress1 | lines: 104:106 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setAddress2 | lines: 112:114 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setBannerName | lines: 192:194 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setBannerOption | lines: 184:186 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setCity | lines: 120:122 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setCountry | lines: 144:146 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setEmail | lines: 70:72 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setFavouriteCategoryId | lines: 160:162 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setFirstName | lines: 79:81 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setLanguagePreference | lines: 168:170 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setLastName | lines: 88:90 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setListOption | lines: 176:178 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setPassword | lines: 62:64 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setPhone | lines: 152:154 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setState | lines: 128:130 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setStatus | lines: 96:98 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setUsername | lines: 54:56 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Account.setZip | lines: 136:138 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Account.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.Cart | lines: 39:41 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.addItem | lines: 67:78 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: 45ffac8682b60365211620488fc19aec3c2a7730 | author: Jeremy Landis
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.containsItemId | lines: 55:57 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.getAllCartItems | lines: 51:53 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.getCartItemList | lines: 43:45 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.getCartItems | lines: 39:41 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.getNumberOfItems | lines: 47:49 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.getSubTotal | lines: 119:123 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: bb5f350044dc48be4e0f5e109b414eb8e718278a | author: Kazuki Shimizu
+commit: ce2480f2636e0e75f11a680fb56a5c296f6dee74 | author: Kazuki Shimizu
+commit: 45ffac8682b60365211620488fc19aec3c2a7730 | author: Jeremy Landis
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.incrementQuantityByItemId | lines: 104:107 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: 45ffac8682b60365211620488fc19aec3c2a7730 | author: Jeremy Landis
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.removeItemById | lines: 88:96 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: 45ffac8682b60365211620488fc19aec3c2a7730 | author: Jeremy Landis
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Cart.setQuantityByItemId | lines: 109:112 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Cart.java
+commit: 45ffac8682b60365211620488fc19aec3c2a7730 | author: Jeremy Landis
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.CartItem.calculateTotal | lines: 71:74 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/CartItem.java
+commit: ce2480f2636e0e75f11a680fb56a5c296f6dee74 | author: Kazuki Shimizu
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.CartItem.getItem | lines: 48:50 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/CartItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.CartItem.getQuantity | lines: 57:59 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/CartItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.CartItem.getTotal | lines: 44:46 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/CartItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.CartItem.incrementQuantity | lines: 66:69 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/CartItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.CartItem.isInStock | lines: 36:38 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/CartItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.CartItem.setInStock | lines: 40:42 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/CartItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.CartItem.setItem | lines: 52:55 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/CartItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.CartItem.setQuantity | lines: 61:64 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/CartItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Category.Category | lines: 33:35 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Category.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Category.getCategoryId | lines: 33:35 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Category.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Category.getDescription | lines: 49:51 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Category.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Category.getName | lines: 41:43 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Category.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Category.setCategoryId | lines: 37:39 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Category.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Category.setDescription | lines: 53:55 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Category.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Category.setName | lines: 45:47 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Category.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Category.toString | lines: 58:60 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Category.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.Item | lines: 44:46 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getAttribute1 | lines: 100:102 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getAttribute2 | lines: 108:110 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getAttribute3 | lines: 116:118 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getAttribute4 | lines: 124:126 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getAttribute5 | lines: 132:134 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getItemId | lines: 44:46 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getListPrice | lines: 76:78 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getProduct | lines: 60:62 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getQuantity | lines: 52:54 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getStatus | lines: 92:94 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getSupplierId | lines: 68:70 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.getUnitCost | lines: 84:86 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setAttribute1 | lines: 104:106 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setAttribute2 | lines: 112:114 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setAttribute3 | lines: 120:122 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setAttribute4 | lines: 128:130 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setAttribute5 | lines: 136:138 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setItemId | lines: 48:50 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setListPrice | lines: 80:82 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setProduct | lines: 64:66 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setQuantity | lines: 56:58 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setStatus | lines: 96:98 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setSupplierId | lines: 72:74 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.setUnitCost | lines: 88:90 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Item.toString | lines: 141:143 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Item.java
+commit: 97e7f8ba6abe0333737ad651a720a8b44c5d007e | author: Kazuki Shimizu
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.LineItem | lines: 39:40 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.LineItem | lines: 39:40 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.calculateTotal | lines: 113:116 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: ce2480f2636e0e75f11a680fb56a5c296f6dee74 | author: Kazuki Shimizu
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.getItem | lines: 75:77 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.getItemId | lines: 75:77 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.getLineNumber | lines: 67:69 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.getOrderId | lines: 59:61 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.getQuantity | lines: 104:106 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.getTotal | lines: 91:93 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.getUnitPrice | lines: 83:85 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.setItem | lines: 79:81 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.setItemId | lines: 79:81 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.setLineNumber | lines: 71:73 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.setOrderId | lines: 63:65 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.setQuantity | lines: 108:111 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.LineItem.setUnitPrice | lines: 87:89 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.Order | lines: 62:64 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.addLineItem | lines: 326:329 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.addLineItem | lines: 326:329 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getBillAddress1 | lines: 134:136 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getBillAddress2 | lines: 142:144 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getBillCity | lines: 150:152 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getBillCountry | lines: 174:176 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getBillState | lines: 158:160 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getBillToFirstName | lines: 198:200 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getBillToLastName | lines: 206:208 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getBillZip | lines: 166:168 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getCardType | lines: 246:248 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getCourier | lines: 182:184 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getCreditCard | lines: 230:232 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getExpiryDate | lines: 238:240 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getLineItems | lines: 274:276 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getLocale | lines: 254:256 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getOrderDate | lines: 78:80 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getOrderId | lines: 62:64 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getShipAddress1 | lines: 86:88 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getShipAddress2 | lines: 94:96 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getShipCity | lines: 102:104 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getShipCountry | lines: 126:128 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getShipState | lines: 110:112 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getShipToFirstName | lines: 214:216 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getShipToLastName | lines: 222:224 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getShipZip | lines: 118:120 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getStatus | lines: 262:264 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getTotalPrice | lines: 190:192 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.getUsername | lines: 70:72 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.initOrder | lines: 286:324 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: 45ffac8682b60365211620488fc19aec3c2a7730 | author: Jeremy Landis
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setBillAddress1 | lines: 138:140 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setBillAddress2 | lines: 146:148 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setBillCity | lines: 154:156 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setBillCountry | lines: 178:180 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setBillState | lines: 162:164 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setBillToFirstName | lines: 202:204 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setBillToLastName | lines: 210:212 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setBillZip | lines: 170:172 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setCardType | lines: 250:252 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setCourier | lines: 186:188 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setCreditCard | lines: 234:236 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setExpiryDate | lines: 242:244 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setLineItems | lines: 270:272 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setLocale | lines: 258:260 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setOrderDate | lines: 82:84 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setOrderId | lines: 66:68 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setShipAddress1 | lines: 90:92 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setShipAddress2 | lines: 98:100 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setShipCity | lines: 106:108 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setShipCountry | lines: 130:132 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setShipState | lines: 114:116 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setShipToFirstName | lines: 218:220 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setShipToLastName | lines: 226:228 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setShipZip | lines: 122:124 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setStatus | lines: 266:268 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setTotalPrice | lines: 194:196 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Order.setUsername | lines: 74:76 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Order.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Product.Product | lines: 34:36 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Product.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Product.getCategoryId | lines: 42:44 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Product.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Product.getDescription | lines: 58:60 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Product.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Product.getName | lines: 50:52 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Product.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Product.getProductId | lines: 34:36 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Product.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Product.setCategoryId | lines: 46:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Product.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Product.setDescription | lines: 62:64 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Product.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Product.setName | lines: 54:56 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Product.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Product.setProductId | lines: 38:40 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Product.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Product.toString | lines: 67:69 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Product.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Sequence.Sequence | lines: 32:33 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Sequence.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Sequence.Sequence | lines: 32:33 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Sequence.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Sequence.getName | lines: 40:42 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Sequence.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Sequence.getNextId | lines: 48:50 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Sequence.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Sequence.setName | lines: 44:46 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Sequence.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.domain.Sequence.setNextId | lines: 52:54 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/domain/Sequence.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.AccountService.AccountService | lines: 35:37 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/AccountService.java
+commit: 9abed3ac23b1a693c7789c9bfd5843f1cfdb0fc9 | author: Kazuki Shimizu
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.AccountService.getAccount | lines: 39:41 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/AccountService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.AccountService.getAccount | lines: 39:41 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/AccountService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.AccountService.insertAccount | lines: 54:58 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/AccountService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.AccountService.updateAccount | lines: 67:73 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/AccountService.java
+commit: ce2480f2636e0e75f11a680fb56a5c296f6dee74 | author: Kazuki Shimizu
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.CatalogService.CatalogService | lines: 41:45 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/CatalogService.java
+commit: 9abed3ac23b1a693c7789c9bfd5843f1cfdb0fc9 | author: Kazuki Shimizu
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.CatalogService.getCategory | lines: 47:49 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/CatalogService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.CatalogService.getCategoryList | lines: 47:49 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/CatalogService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.CatalogService.getItem | lines: 79:81 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/CatalogService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.CatalogService.getItemListByProduct | lines: 79:81 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/CatalogService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.CatalogService.getProduct | lines: 55:57 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/CatalogService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.CatalogService.getProductListByCategory | lines: 59:61 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/CatalogService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.CatalogService.isItemInStock | lines: 87:89 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/CatalogService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.CatalogService.searchProductList | lines: 71:77 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/CatalogService.java
+commit: 9abed3ac23b1a693c7789c9bfd5843f1cfdb0fc9 | author: Kazuki Shimizu
+commit: 98290e0d3713fedb85eb2194d5b94e3c16cf37c5 | author: Jeremy Landis
+commit: 78274618ae327e199ec80b912ae26195507b5907 | author: wangdx
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.OrderService.getNextId | lines: 121:130 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/OrderService.java
+commit: ce2480f2636e0e75f11a680fb56a5c296f6dee74 | author: Kazuki Shimizu
+commit: 45ffac8682b60365211620488fc19aec3c2a7730 | author: Jeremy Landis
+commit: 98290e0d3713fedb85eb2194d5b94e3c16cf37c5 | author: Jeremy Landis
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.OrderService.getOrder | lines: 88:99 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/OrderService.java
+commit: ce2480f2636e0e75f11a680fb56a5c296f6dee74 | author: Kazuki Shimizu
+commit: 45ffac8682b60365211620488fc19aec3c2a7730 | author: Jeremy Landis
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.OrderService.getOrdersByUsername | lines: 109:111 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/OrderService.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.service.OrderService.insertOrder | lines: 60:77 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/service/OrderService.java
+commit: ce2480f2636e0e75f11a680fb56a5c296f6dee74 | author: Kazuki Shimizu
+commit: 9abed3ac23b1a693c7789c9bfd5843f1cfdb0fc9 | author: Kazuki Shimizu
+commit: 45ffac8682b60365211620488fc19aec3c2a7730 | author: Jeremy Landis
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext | lines: 42:44 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AbstractActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext | lines: 47:49 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AbstractActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AbstractActionBean.setMessage | lines: 37:39 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AbstractActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.clear | lines: 202:206 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.editAccount | lines: 128:130 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.editAccountForm | lines: 128:130 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.getAccount | lines: 68:70 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.getCategories | lines: 102:104 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.getLanguages | lines: 98:100 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.getMyList | lines: 90:92 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.getPassword | lines: 81:83 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.getUsername | lines: 72:74 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.isAuthenticated | lines: 195:197 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.newAccount | lines: 106:108 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.newAccountForm | lines: 106:108 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.setMyList | lines: 94:96 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.setPassword | lines: 86:88 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.setUsername | lines: 77:79 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.signoff | lines: 184:188 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.signon | lines: 150:152 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm | lines: 150:152 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CartActionBean.addItemToCart | lines: 68:81 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CartActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CartActionBean.checkOut | lines: 130:132 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CartActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CartActionBean.clear | lines: 134:137 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CartActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CartActionBean.getCart | lines: 51:53 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CartActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CartActionBean.removeItemFromCart | lines: 88:98 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CartActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CartActionBean.setCart | lines: 55:57 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CartActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CartActionBean.setWorkingItemId | lines: 59:61 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CartActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CartActionBean.updateCartQuantities | lines: 105:124 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CartActionBean.java
+commit: 39611d22eb6c2a2b829f0a49be697f99aabab3e3 | author: Jeremy Landis
+commit: 45ffac8682b60365211620488fc19aec3c2a7730 | author: Jeremy Landis
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CartActionBean.viewCart | lines: 126:128 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CartActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.clear | lines: 203:217 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory | lines: 71:73 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategoryId | lines: 71:73 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategoryList | lines: 119:121 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.getItem | lines: 87:89 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemId | lines: 87:89 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemList | lines: 135:137 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword | lines: 63:65 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.getProduct | lines: 79:81 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductId | lines: 79:81 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList | lines: 127:129 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.searchProducts | lines: 190:198 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategory | lines: 75:77 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId | lines: 75:77 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryList | lines: 123:125 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.setItem | lines: 91:93 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemId | lines: 91:93 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemList | lines: 139:141 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.setKeyword | lines: 67:69 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.setProduct | lines: 83:85 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.setProductId | lines: 83:85 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.setProductList | lines: 131:133 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory | lines: 153:159 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.viewItem | lines: 179:183 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain | lines: 144:146 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.CatalogActionBean.viewProduct | lines: 166:172 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/CatalogActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.clear | lines: 190:195 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.getCreditCardTypes | lines: 94:96 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.getOrder | lines: 62:64 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.getOrderId | lines: 62:64 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.getOrderList | lines: 98:100 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.isConfirmed | lines: 86:88 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.isShippingAddressRequired | lines: 78:80 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.listOrders | lines: 107:112 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.newOrder | lines: 119:135 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.newOrderForm | lines: 119:135 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.setConfirmed | lines: 90:92 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.setOrder | lines: 66:68 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: ab36f0d7693a7b179deb8ad81e5efabd0f660e58 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.setOrderId | lines: 66:68 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: ab36f0d7693a7b179deb8ad81e5efabd0f660e58 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.setShippingAddressRequired | lines: 82:84 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron
+method: org.mybatis.jpetstore.web.actions.OrderActionBean.viewOrder | lines: 171:185 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/jpetstore-6/src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+commit: c65f94ace65b7473780aaee16642e06234e1a528 | author: Eduardo Macarron

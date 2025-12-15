@@ -1,0 +1,954 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "0": [
+                {
+                    "id": "AbstractActionBean.setMessage"
+                },
+                {
+                    "id": "Account.getFavouriteCategoryId"
+                },
+                {
+                    "id": "Account.getPassword"
+                },
+                {
+                    "id": "Account.getUsername"
+                },
+                {
+                    "id": "Account.setPassword"
+                },
+                {
+                    "id": "Account.setUsername"
+                },
+                {
+                    "id": "AccountActionBean.AccountActionBean"
+                },
+                {
+                    "id": "AccountActionBean.clear"
+                },
+                {
+                    "id": "AccountActionBean.editAccount"
+                },
+                {
+                    "id": "AccountActionBean.editAccountForm"
+                },
+                {
+                    "id": "AccountActionBean.getPassword"
+                },
+                {
+                    "id": "AccountActionBean.getUsername"
+                },
+                {
+                    "id": "AccountActionBean.isAuthenticated"
+                },
+                {
+                    "id": "AccountActionBean.newAccount"
+                },
+                {
+                    "id": "AccountActionBean.newAccountForm"
+                },
+                {
+                    "id": "AccountActionBean.setMyList"
+                },
+                {
+                    "id": "AccountActionBean.setPassword"
+                },
+                {
+                    "id": "AccountActionBean.setUsername"
+                },
+                {
+                    "id": "AccountActionBean.signoff"
+                },
+                {
+                    "id": "AccountActionBean.signon"
+                },
+                {
+                    "id": "AccountActionBean.signonForm"
+                },
+                {
+                    "id": "CartActionBean.checkOut"
+                },
+                {
+                    "id": "CartActionBean.viewCart"
+                },
+                {
+                    "id": "CatalogActionBean.CatalogActionBean"
+                },
+                {
+                    "id": "CatalogActionBean.searchProducts"
+                },
+                {
+                    "id": "CatalogActionBean.viewItem"
+                },
+                {
+                    "id": "CatalogActionBean.viewMain"
+                },
+                {
+                    "id": "LineItem.LineItem"
+                },
+                {
+                    "id": "Order.Order"
+                },
+                {
+                    "id": "Order.addLineItem"
+                },
+                {
+                    "id": "Order.getOrderId"
+                },
+                {
+                    "id": "Order.getUsername"
+                },
+                {
+                    "id": "Order.initOrder"
+                },
+                {
+                    "id": "Order.setOrderId"
+                },
+                {
+                    "id": "OrderActionBean.OrderActionBean"
+                },
+                {
+                    "id": "OrderActionBean.clear"
+                },
+                {
+                    "id": "OrderActionBean.getOrder"
+                },
+                {
+                    "id": "OrderActionBean.getOrderId"
+                },
+                {
+                    "id": "OrderActionBean.isConfirmed"
+                },
+                {
+                    "id": "OrderActionBean.listOrders"
+                },
+                {
+                    "id": "OrderActionBean.newOrder"
+                },
+                {
+                    "id": "OrderActionBean.newOrderForm"
+                },
+                {
+                    "id": "OrderActionBean.setConfirmed"
+                },
+                {
+                    "id": "OrderActionBean.setOrder"
+                },
+                {
+                    "id": "OrderActionBean.setOrderId"
+                },
+                {
+                    "id": "OrderActionBean.setShippingAddressRequired"
+                },
+                {
+                    "id": "OrderActionBean.viewOrder"
+                }
+            ],
+            "1": [
+                {
+                    "id": "Cart.containsItemId"
+                },
+                {
+                    "id": "Cart.getAllCartItems"
+                },
+                {
+                    "id": "Cart.removeItemById"
+                },
+                {
+                    "id": "CartActionBean.clear"
+                },
+                {
+                    "id": "CartActionBean.getCart"
+                },
+                {
+                    "id": "CartActionBean.setCart"
+                },
+                {
+                    "id": "CartActionBean.setWorkingItemId"
+                }
+            ],
+            "2": [
+                {
+                    "id": "Cart.Cart"
+                },
+                {
+                    "id": "Cart.addItem"
+                },
+                {
+                    "id": "CartActionBean.CartActionBean"
+                },
+                {
+                    "id": "CartActionBean.addItemToCart"
+                },
+                {
+                    "id": "CartActionBean.removeItemFromCart"
+                },
+                {
+                    "id": "CartActionBean.updateCartQuantities"
+                },
+                {
+                    "id": "CartItem.incrementQuantity"
+                },
+                {
+                    "id": "CartItem.setItem"
+                },
+                {
+                    "id": "CartItem.setQuantity"
+                },
+                {
+                    "id": "CatalogActionBean.clear"
+                },
+                {
+                    "id": "CatalogActionBean.setCategory"
+                },
+                {
+                    "id": "CatalogActionBean.setCategoryId"
+                },
+                {
+                    "id": "CatalogActionBean.setCategoryList"
+                },
+                {
+                    "id": "CatalogActionBean.setItem"
+                },
+                {
+                    "id": "CatalogActionBean.setItemId"
+                },
+                {
+                    "id": "CatalogActionBean.setItemList"
+                },
+                {
+                    "id": "CatalogActionBean.setKeyword"
+                },
+                {
+                    "id": "CatalogActionBean.setProduct"
+                },
+                {
+                    "id": "CatalogActionBean.setProductId"
+                },
+                {
+                    "id": "CatalogActionBean.setProductList"
+                },
+                {
+                    "id": "CatalogActionBean.viewCategory"
+                },
+                {
+                    "id": "CatalogActionBean.viewProduct"
+                },
+                {
+                    "id": "Item.getProduct"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "Cart.addItem",
+                "target": "CartItem.incrementQuantity",
+                "weight": "1"
+            },
+            {
+                "source": "Cart.addItem",
+                "target": "CartItem.setItem",
+                "weight": "1"
+            },
+            {
+                "source": "Cart.addItem",
+                "target": "CartItem.setQuantity",
+                "weight": "1"
+            },
+            {
+                "source": "Order.addLineItem",
+                "target": "LineItem.LineItem",
+                "weight": "1"
+            },
+            {
+                "source": "Order.initOrder",
+                "target": "Account.getUsername",
+                "weight": "1"
+            },
+            {
+                "source": "Order.initOrder",
+                "target": "Cart.getAllCartItems",
+                "weight": "1"
+            },
+            {
+                "source": "Order.initOrder",
+                "target": "Order.addLineItem",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.editAccount",
+                "target": "Account.getFavouriteCategoryId",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.editAccount",
+                "target": "Account.getUsername",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.getPassword",
+                "target": "Account.getPassword",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.getUsername",
+                "target": "Account.getUsername",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.isAuthenticated",
+                "target": "Account.getUsername",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.newAccount",
+                "target": "Account.getFavouriteCategoryId",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.newAccount",
+                "target": "Account.getUsername",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.setPassword",
+                "target": "Account.setPassword",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.setUsername",
+                "target": "Account.setUsername",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.signoff",
+                "target": "AccountActionBean.clear",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.signon",
+                "target": "Account.getFavouriteCategoryId",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.signon",
+                "target": "Account.setPassword",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.signon",
+                "target": "AccountActionBean.clear",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.signon",
+                "target": "AccountActionBean.getPassword",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean.signon",
+                "target": "AccountActionBean.getUsername",
+                "weight": "1"
+            },
+            {
+                "source": "CartActionBean.CartActionBean",
+                "target": "Cart.Cart",
+                "weight": "1"
+            },
+            {
+                "source": "CartActionBean.addItemToCart",
+                "target": "Cart.addItem",
+                "weight": "1"
+            },
+            {
+                "source": "CartActionBean.addItemToCart",
+                "target": "Cart.containsItemId",
+                "weight": "1"
+            },
+            {
+                "source": "CartActionBean.clear",
+                "target": "Cart.Cart",
+                "weight": "1"
+            },
+            {
+                "source": "CartActionBean.removeItemFromCart",
+                "target": "Cart.removeItemById",
+                "weight": "1"
+            },
+            {
+                "source": "CartActionBean.updateCartQuantities",
+                "target": "Cart.getAllCartItems",
+                "weight": "1"
+            },
+            {
+                "source": "CartActionBean.updateCartQuantities",
+                "target": "CartActionBean.getCart",
+                "weight": "1"
+            },
+            {
+                "source": "CatalogActionBean.viewItem",
+                "target": "Item.getProduct",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.OrderActionBean",
+                "target": "Order.Order",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.clear",
+                "target": "Order.Order",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.getOrderId",
+                "target": "Order.getOrderId",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.listOrders",
+                "target": "Account.getUsername",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.newOrder",
+                "target": "CartActionBean.clear",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.newOrder",
+                "target": "OrderActionBean.getOrder",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.newOrder",
+                "target": "OrderActionBean.isConfirmed",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.newOrderForm",
+                "target": "Order.initOrder",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.newOrderForm",
+                "target": "AccountActionBean.isAuthenticated",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.newOrderForm",
+                "target": "CartActionBean.getCart",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.newOrderForm",
+                "target": "OrderActionBean.clear",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.setOrderId",
+                "target": "Order.setOrderId",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.viewOrder",
+                "target": "Account.getUsername",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.viewOrder",
+                "target": "Order.getOrderId",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean.viewOrder",
+                "target": "Order.getUsername",
+                "weight": "1"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "0": [
+                {
+                    "id": "AbstractActionBean.setMessage"
+                },
+                {
+                    "id": "Account.getFavouriteCategoryId"
+                },
+                {
+                    "id": "Account.getPassword"
+                },
+                {
+                    "id": "Account.getUsername"
+                },
+                {
+                    "id": "Account.setPassword"
+                },
+                {
+                    "id": "Account.setUsername"
+                },
+                {
+                    "id": "AccountActionBean.AccountActionBean"
+                },
+                {
+                    "id": "AccountActionBean.clear"
+                },
+                {
+                    "id": "AccountActionBean.editAccount"
+                },
+                {
+                    "id": "AccountActionBean.editAccountForm"
+                },
+                {
+                    "id": "AccountActionBean.getPassword"
+                },
+                {
+                    "id": "AccountActionBean.getUsername"
+                },
+                {
+                    "id": "AccountActionBean.isAuthenticated"
+                },
+                {
+                    "id": "AccountActionBean.newAccount"
+                },
+                {
+                    "id": "AccountActionBean.newAccountForm"
+                },
+                {
+                    "id": "AccountActionBean.setMyList"
+                },
+                {
+                    "id": "AccountActionBean.setPassword"
+                },
+                {
+                    "id": "AccountActionBean.setUsername"
+                },
+                {
+                    "id": "AccountActionBean.signoff"
+                },
+                {
+                    "id": "AccountActionBean.signon"
+                },
+                {
+                    "id": "AccountActionBean.signonForm"
+                },
+                {
+                    "id": "CartActionBean.checkOut"
+                },
+                {
+                    "id": "CartActionBean.viewCart"
+                },
+                {
+                    "id": "CatalogActionBean.CatalogActionBean"
+                },
+                {
+                    "id": "CatalogActionBean.searchProducts"
+                },
+                {
+                    "id": "CatalogActionBean.viewItem"
+                },
+                {
+                    "id": "CatalogActionBean.viewMain"
+                },
+                {
+                    "id": "LineItem.LineItem"
+                },
+                {
+                    "id": "Order.Order"
+                },
+                {
+                    "id": "Order.addLineItem"
+                },
+                {
+                    "id": "Order.getOrderId"
+                },
+                {
+                    "id": "Order.getUsername"
+                },
+                {
+                    "id": "Order.initOrder"
+                },
+                {
+                    "id": "Order.setOrderId"
+                },
+                {
+                    "id": "OrderActionBean.OrderActionBean"
+                },
+                {
+                    "id": "OrderActionBean.clear"
+                },
+                {
+                    "id": "OrderActionBean.getOrder"
+                },
+                {
+                    "id": "OrderActionBean.getOrderId"
+                },
+                {
+                    "id": "OrderActionBean.isConfirmed"
+                },
+                {
+                    "id": "OrderActionBean.listOrders"
+                },
+                {
+                    "id": "OrderActionBean.newOrder"
+                },
+                {
+                    "id": "OrderActionBean.newOrderForm"
+                },
+                {
+                    "id": "OrderActionBean.setConfirmed"
+                },
+                {
+                    "id": "OrderActionBean.setOrder"
+                },
+                {
+                    "id": "OrderActionBean.setOrderId"
+                },
+                {
+                    "id": "OrderActionBean.setShippingAddressRequired"
+                },
+                {
+                    "id": "OrderActionBean.viewOrder"
+                }
+            ],
+            "1": [
+                {
+                    "id": "Cart.containsItemId"
+                },
+                {
+                    "id": "Cart.getAllCartItems"
+                },
+                {
+                    "id": "Cart.removeItemById"
+                },
+                {
+                    "id": "CartActionBean.clear"
+                },
+                {
+                    "id": "CartActionBean.getCart"
+                },
+                {
+                    "id": "CartActionBean.setCart"
+                },
+                {
+                    "id": "CartActionBean.setWorkingItemId"
+                }
+            ],
+            "2": [
+                {
+                    "id": "Cart.Cart"
+                },
+                {
+                    "id": "Cart.addItem"
+                },
+                {
+                    "id": "CartActionBean.CartActionBean"
+                },
+                {
+                    "id": "CartActionBean.addItemToCart"
+                },
+                {
+                    "id": "CartActionBean.removeItemFromCart"
+                },
+                {
+                    "id": "CartActionBean.updateCartQuantities"
+                },
+                {
+                    "id": "CartItem.incrementQuantity"
+                },
+                {
+                    "id": "CartItem.setItem"
+                },
+                {
+                    "id": "CartItem.setQuantity"
+                },
+                {
+                    "id": "CatalogActionBean.clear"
+                },
+                {
+                    "id": "CatalogActionBean.setCategory"
+                },
+                {
+                    "id": "CatalogActionBean.setCategoryId"
+                },
+                {
+                    "id": "CatalogActionBean.setCategoryList"
+                },
+                {
+                    "id": "CatalogActionBean.setItem"
+                },
+                {
+                    "id": "CatalogActionBean.setItemId"
+                },
+                {
+                    "id": "CatalogActionBean.setItemList"
+                },
+                {
+                    "id": "CatalogActionBean.setKeyword"
+                },
+                {
+                    "id": "CatalogActionBean.setProduct"
+                },
+                {
+                    "id": "CatalogActionBean.setProductId"
+                },
+                {
+                    "id": "CatalogActionBean.setProductList"
+                },
+                {
+                    "id": "CatalogActionBean.viewCategory"
+                },
+                {
+                    "id": "CatalogActionBean.viewProduct"
+                },
+                {
+                    "id": "Item.getProduct"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "0": [
+                {
+                    "id": "AbstractActionBean.setMessage"
+                },
+                {
+                    "id": "Account.getFavouriteCategoryId"
+                },
+                {
+                    "id": "Account.getPassword"
+                },
+                {
+                    "id": "Account.getUsername"
+                },
+                {
+                    "id": "Account.setPassword"
+                },
+                {
+                    "id": "Account.setUsername"
+                },
+                {
+                    "id": "AccountActionBean.AccountActionBean"
+                },
+                {
+                    "id": "AccountActionBean.clear"
+                },
+                {
+                    "id": "AccountActionBean.editAccount"
+                },
+                {
+                    "id": "AccountActionBean.editAccountForm"
+                },
+                {
+                    "id": "AccountActionBean.getPassword"
+                },
+                {
+                    "id": "AccountActionBean.getUsername"
+                },
+                {
+                    "id": "AccountActionBean.isAuthenticated"
+                },
+                {
+                    "id": "AccountActionBean.newAccount"
+                },
+                {
+                    "id": "AccountActionBean.newAccountForm"
+                },
+                {
+                    "id": "AccountActionBean.setMyList"
+                },
+                {
+                    "id": "AccountActionBean.setPassword"
+                },
+                {
+                    "id": "AccountActionBean.setUsername"
+                },
+                {
+                    "id": "AccountActionBean.signoff"
+                },
+                {
+                    "id": "AccountActionBean.signon"
+                },
+                {
+                    "id": "AccountActionBean.signonForm"
+                },
+                {
+                    "id": "CartActionBean.checkOut"
+                },
+                {
+                    "id": "CartActionBean.viewCart"
+                },
+                {
+                    "id": "CatalogActionBean.CatalogActionBean"
+                },
+                {
+                    "id": "CatalogActionBean.searchProducts"
+                },
+                {
+                    "id": "CatalogActionBean.viewItem"
+                },
+                {
+                    "id": "CatalogActionBean.viewMain"
+                },
+                {
+                    "id": "LineItem.LineItem"
+                },
+                {
+                    "id": "Order.Order"
+                },
+                {
+                    "id": "Order.addLineItem"
+                },
+                {
+                    "id": "Order.getOrderId"
+                },
+                {
+                    "id": "Order.getUsername"
+                },
+                {
+                    "id": "Order.initOrder"
+                },
+                {
+                    "id": "Order.setOrderId"
+                },
+                {
+                    "id": "OrderActionBean.OrderActionBean"
+                },
+                {
+                    "id": "OrderActionBean.clear"
+                },
+                {
+                    "id": "OrderActionBean.getOrder"
+                },
+                {
+                    "id": "OrderActionBean.getOrderId"
+                },
+                {
+                    "id": "OrderActionBean.isConfirmed"
+                },
+                {
+                    "id": "OrderActionBean.listOrders"
+                },
+                {
+                    "id": "OrderActionBean.newOrder"
+                },
+                {
+                    "id": "OrderActionBean.newOrderForm"
+                },
+                {
+                    "id": "OrderActionBean.setConfirmed"
+                },
+                {
+                    "id": "OrderActionBean.setOrder"
+                },
+                {
+                    "id": "OrderActionBean.setOrderId"
+                },
+                {
+                    "id": "OrderActionBean.setShippingAddressRequired"
+                },
+                {
+                    "id": "OrderActionBean.viewOrder"
+                }
+            ],
+            "1": [
+                {
+                    "id": "Cart.containsItemId"
+                },
+                {
+                    "id": "Cart.getAllCartItems"
+                },
+                {
+                    "id": "Cart.removeItemById"
+                },
+                {
+                    "id": "CartActionBean.clear"
+                },
+                {
+                    "id": "CartActionBean.getCart"
+                },
+                {
+                    "id": "CartActionBean.setCart"
+                },
+                {
+                    "id": "CartActionBean.setWorkingItemId"
+                }
+            ],
+            "2": [
+                {
+                    "id": "Cart.Cart"
+                },
+                {
+                    "id": "Cart.addItem"
+                },
+                {
+                    "id": "CartActionBean.CartActionBean"
+                },
+                {
+                    "id": "CartActionBean.addItemToCart"
+                },
+                {
+                    "id": "CartActionBean.removeItemFromCart"
+                },
+                {
+                    "id": "CartActionBean.updateCartQuantities"
+                },
+                {
+                    "id": "CartItem.incrementQuantity"
+                },
+                {
+                    "id": "CartItem.setItem"
+                },
+                {
+                    "id": "CartItem.setQuantity"
+                },
+                {
+                    "id": "CatalogActionBean.clear"
+                },
+                {
+                    "id": "CatalogActionBean.setCategory"
+                },
+                {
+                    "id": "CatalogActionBean.setCategoryId"
+                },
+                {
+                    "id": "CatalogActionBean.setCategoryList"
+                },
+                {
+                    "id": "CatalogActionBean.setItem"
+                },
+                {
+                    "id": "CatalogActionBean.setItemId"
+                },
+                {
+                    "id": "CatalogActionBean.setItemList"
+                },
+                {
+                    "id": "CatalogActionBean.setKeyword"
+                },
+                {
+                    "id": "CatalogActionBean.setProduct"
+                },
+                {
+                    "id": "CatalogActionBean.setProductId"
+                },
+                {
+                    "id": "CatalogActionBean.setProductList"
+                },
+                {
+                    "id": "CatalogActionBean.viewCategory"
+                },
+                {
+                    "id": "CatalogActionBean.viewProduct"
+                },
+                {
+                    "id": "Item.getProduct"
+                }
+            ]
+        },
+        "links": []
+    }
+}

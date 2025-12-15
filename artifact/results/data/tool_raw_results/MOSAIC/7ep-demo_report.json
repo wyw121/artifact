@@ -1,0 +1,287 @@
+{
+  "mosaic": {
+    "decomposition": {
+      "partition0": [
+        {
+          "id": "com.coveros.training.library.domainobjects.Borrower"
+        },
+        {
+          "id": "com.coveros.training.library.domainobjects.Loan"
+        },
+        {
+          "id": "com.coveros.training.library.domainobjects.Book"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.saveNewBorrower"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.createLoan"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.saveNewBook"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.deleteBook"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.deleteBorrower"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.searchBorrowerDataByName"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.searchBooksByTitle"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.searchBooksById"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.searchBorrowersById"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.listAllBooks"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.listAvailableBooks"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.listAllBorrowers"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.searchForLoanByBorrower"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.searchForLoanByBook"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryRegisterBorrowerServlet"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryBookListSearchServlet"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryLendServlet"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryBorrowerListSearchServlet"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryRegisterBookServlet"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.lendBook"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.createLoan"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.registerBorrower"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.saveNewBorrower"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.registerBook"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.saveNewBook"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.searchForLoanByBook"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.searchForLoanByBorrower"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.searchForBorrowerByName"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.searchForBookByTitle"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.searchForBookById"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.searchForBorrowerById"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.deleteBook"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.deleteBorrower"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.listAllBooks"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.listAllBorrowers"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.listAvailableBooks"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryBookListAvailableServlet"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.saveNewBorrower"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.createLoan"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.saveNewBook"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.updateBorrower"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.deleteBook"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.deleteBorrower"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.getBorrowerName"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.searchBorrowerDataByName"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.searchBooksByTitle"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.searchBooksById"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.searchBorrowersById"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.listAllBooks"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.listAvailableBooks"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.listBooks"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.listAllBorrowers"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.searchForLoanByBorrower"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.searchForLoanByBook"
+        }
+      ],
+      "partition1": [
+        {
+          "id": "com.coveros.training.authentication.domainobjects.User"
+        },
+        {
+          "id": "com.coveros.training.authentication.domainobjects.PasswordResult"
+        },
+        {
+          "id": "com.coveros.training.authentication.domainobjects.RegistrationResult"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.saveNewUser"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.updateUserWithPassword"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.searchForUserByName"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.areCredentialsValid"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.saveNewUser"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.searchForUserByName"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.areCredentialsValid"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.updateUserWithPassword"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.createHashedValueFromPassword"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.bytesToHex"
+        },
+        {
+          "id": "com.coveros.training.library.LibraryUtils.isEmpty"
+        },
+        {
+          "id": "com.coveros.training.authentication.LoginUtils"
+        },
+        {
+          "id": "com.coveros.training.authentication.RegistrationUtils"
+        },
+        {
+          "id": "com.coveros.training.authentication.RegisterServlet"
+        },
+        {
+          "id": "com.coveros.training.authentication.LoginServlet"
+        }
+      ],
+      "partition2": [
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.cleanAndMigrateDatabase"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.cleanDatabase"
+        },
+        {
+          "id": "com.coveros.training.persistence.IPersistenceLayer.migrateDatabase"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.cleanAndMigrateDatabase"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.cleanDatabase"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.configureFlyway"
+        },
+        {
+          "id": "com.coveros.training.persistence.PersistenceLayer.migrateDatabase"
+        },
+        {
+          "id": "com.coveros.training.persistence.DbServlet"
+        }
+      ],
+      "partition3": [
+        {
+          "id": "com.coveros.training.expenses.DinnerPrices"
+        },
+        {
+          "id": "com.coveros.training.expenses.AlcoholResult"
+        },
+        {
+          "id": "com.coveros.training.mathematics.MathServlet"
+        },
+        {
+          "id": "com.coveros.training.mathematics.AckServlet"
+        },
+        {
+          "id": "com.coveros.training.mathematics.FibServlet"
+        },
+        {
+          "id": "com.coveros.training.expenses.AlcoholCalculator"
+        },
+        {
+          "id": "com.coveros.training.mathematics.Ackermann"
+        },
+        {
+          "id": "com.coveros.training.mathematics.Fibonacci"
+        }
+      ]
+    }
+  }
+}

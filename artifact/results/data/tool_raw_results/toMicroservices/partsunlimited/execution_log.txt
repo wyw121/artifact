@@ -1,0 +1,435 @@
+cd /home/wesley/NetBeansProjects/tomicroservices-feature-TSE; JAVA_HOME=/usr/lib/jvm/jdk-13.0.1 /usr/local/netbeans-11.1/netbeans/java/maven/bin/mvn "-Dexec.args=-classpath %classpath MainNew" -Dexec.executable=/usr/lib/jvm/jdk-13.0.1/bin/java -Dexec.classpathScope=runtime process-classes org.codehaus.mojo:exec-maven-plugin:1.5.0:exec
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building toMicroServices 0.0.1-SNAPSHOT
+------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+         
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml (2 KB at 2.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+            
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml (817 B at 23.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+              
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml (1012 B at 29.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+         
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml (2 KB at 22.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+              
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml (1020 B at 23.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+         
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml (2 KB at 31.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+            
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml (920 B at 23.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+            
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml (908 B at 26.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.service.prefs/maven-metadata.xml
+            
+Downloaded: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.service.prefs/maven-metadata.xml (389 B at 11.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+            
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml (851 B at 24.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+            
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml (779 B at 18.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+            
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml (816 B at 17.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+            
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.text/maven-metadata.xml (908 B at 24.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+            
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml (852 B at 22.5 KB/sec)
+
+--- maven-resources-plugin:2.6:resources (default-resources) @ toMicroServices ---
+Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+skip non existing resourceDirectory /home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/main/resources
+
+--- maven-compiler-plugin:3.8.0:compile (default-compile) @ toMicroServices ---
+Changes detected - recompiling the module!
+File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+Compiling 51 source files to /home/wesley/NetBeansProjects/tomicroservices-feature-TSE/target/classes
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/Edge.java: Some input files use or override a deprecated API.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/Edge.java: Recompile with -Xlint:deprecation for details.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/GenerateDOT.java: Some input files use unchecked or unsafe operations.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/GenerateDOT.java: Recompile with -Xlint:unchecked for details.
+
+--- exec-maven-plugin:1.5.0:exec (default-cli) @ toMicroServices ---
+
+---acceptListFile---
+.smpl.ordering
+
+
+---rejectListFile---
+
+
+---featuresGeneralFile---
+SF:Catalog<smpl.ordering.repositories.RepositoryFactory.reset,smpl.ordering.repositories.RepositoryFactory.getCatalogItemsRepository,smpl.ordering.repositories.mock.MockCatalogItemsRepository.reset,smpl.ordering.controllers.CatalogController.addCatalogItem,smpl.ordering.controllers.CatalogController.upsertCatalogItem,smpl.ordering.controllers.CatalogController.getCatalogItem,smpl.ordering.models.CatalogItem.getSkuNumber,smpl.ordering.models.CatalogItem.getPrice,smpl.ordering.controllers.CatalogController.getCatalogItems,smpl.ordering.controllers.CatalogController.removeCatalogItem>
+Dealer<smpl.ordering.repositories.RepositoryFactory.reset,smpl.ordering.repositories.RepositoryFactory.getDealersRepository,smpl.ordering.repositories.mock.MockDealersRepository.reset,smpl.ordering.repositories.DealersRepositoryTest.createDealer,smpl.ordering.controllers.DealerController.addDealer,smpl.ordering.models.DealerInfo.setContact,smpl.ordering.controllers.DealerController.updateDealer,smpl.ordering.controllers.DealerController.getDealer,smpl.ordering.models.DealerInfo.getContact,smpl.ordering.models.DealerInfo.setName,smpl.ordering.controllers.DealerController.getDealers,smpl.ordering.models.DealerInfo.getName,smpl.ordering.controllers.DealerController.removeDealer>
+Order<smpl.ordering.repositories.RepositoryFactory.reset,smpl.ordering.repositories.RepositoryFactory.getDealersRepository,smpl.ordering.repositories.mock.MockDealersRepository.reset,smpl.ordering.repositories.RepositoryFactory.getCatalogItemsRepository,smpl.ordering.repositories.mock.MockCatalogItemsRepository.reset,smpl.ordering.repositories.RepositoryFactory.getQuoteRepository,smpl.ordering.repositories.mock.MockQuoteRepository.reset,smpl.ordering.repositories.RepositoryFactory.getOrderRepository,smpl.ordering.repositories.mock.MockOrderRepository.reset,smpl.ordering.repositories.QuoteRepositoryTest.createQuote,smpl.ordering.controllers.QuoteController.createQuote,smpl.ordering.controllers.OrderController.createOrder,smpl.ordering.models.Order.getQuoteId,smpl.ordering.models.Order.getOrderId,smpl.ordering.controllers.OrderController.getOrderById,smpl.ordering.models.Order.equals,smpl.ordering.controllers.OrderController.getOrdersByDealerName,smpl.ordering.models.OrderEventInfo.setDate,smpl.ordering.models.OrderEventInfo.setComments,smpl.ordering.controllers.OrderController.addEvent,smpl.ordering.models.Order.getEvents,smpl.ordering.models.OrderEventInfo.getDate,smpl.ordering.models.OrderEventInfo.getComments,smpl.ordering.controllers.OrderController.updateStatus>
+Quote<smpl.ordering.repositories.RepositoryFactory.reset,smpl.ordering.repositories.RepositoryFactory.getDealersRepository,smpl.ordering.repositories.mock.MockDealersRepository.reset,smpl.ordering.repositories.RepositoryFactory.getCatalogItemsRepository,smpl.ordering.repositories.mock.MockCatalogItemsRepository.reset,smpl.ordering.repositories.RepositoryFactory.getQuoteRepository,smpl.ordering.repositories.mock.MockQuoteRepository.reset,smpl.ordering.repositories.QuoteRepositoryTest.createQuote,smpl.ordering.controllers.QuoteController.createQuote,smpl.ordering.models.Quote.getQuoteId,smpl.ordering.controllers.QuoteController.updateQuote,smpl.ordering.controllers.QuoteController.getQuoteById,smpl.ordering.controllers.QuoteController.getQuotesByCustomerName,smpl.ordering.controllers.QuoteController.deleteQuote>
+Shipment<smpl.ordering.repositories.RepositoryFactory.reset,smpl.ordering.repositories.RepositoryFactory.getDealersRepository,smpl.ordering.repositories.mock.MockDealersRepository.reset,smpl.ordering.repositories.RepositoryFactory.getCatalogItemsRepository,smpl.ordering.repositories.mock.MockCatalogItemsRepository.reset,smpl.ordering.repositories.RepositoryFactory.getQuoteRepository,smpl.ordering.repositories.mock.MockQuoteRepository.reset,smpl.ordering.repositories.RepositoryFactory.getOrderRepository,smpl.ordering.repositories.mock.MockOrderRepository.reset,smpl.ordering.repositories.RepositoryFactory.getShipmentRepository,smpl.ordering.repositories.mock.MockShipmentRepository.reset,smpl.ordering.repositories.ShipmentRepositoryTest.createShipmentRecord,smpl.ordering.controllers.ShipmentController.createShipmentRecord,smpl.ordering.repositories.QuoteRepositoryTest.createQuote,smpl.ordering.controllers.QuoteController.createQuote,smpl.ordering.controllers.OrderController.createOrder,smpl.ordering.models.Order.getOrderId,smpl.ordering.controllers.ShipmentController.getShipments,smpl.ordering.models.ShipmentRecord.getEvents,smpl.ordering.models.ShipmentRecord.getOrderId,smpl.ordering.models.OrderEventInfo.setDate,smpl.ordering.models.OrderEventInfo.setComments,smpl.ordering.controllers.OrderController.updateStatus,smpl.ordering.controllers.ShipmentController.getShipment,smpl.ordering.models.ShipmentRecord.setContactName,smpl.ordering.controllers.ShipmentController.updateShipment,smpl.ordering.models.ShipmentRecord.getContactName,smpl.ordering.controllers.ShipmentController.addEvent,smpl.ordering.models.ShipmentEventInfo.getComments>
+
+
+---Static!---
+
+---Dynamic!---
+
+---Graph!---
+Graph size = 165
+
+Nodes:
+smpl.ordering.controllers.ShipmentController.updateShipment
+ - - > [Shipment]
+smpl.ordering.models.Order.setStatus
+ - - > [Order, Shipment]
+smpl.ordering.models.Order.equals
+ - - > [Order]
+smpl.ordering.repositories.mongodb.models.ShipmentDetails.ShipmentDetails
+ - - > []
+smpl.ordering.controllers.DealerController.getDealer
+ - - > [Dealer]
+smpl.ordering.models.DealerInfo.setPhone
+ - - > [Dealer]
+smpl.ordering.models.Quote.setDealerName
+ - - > [Order, Quote, Shipment]
+smpl.ordering.controllers.ShipmentController.getShipmentRepository
+ - - > [Shipment]
+smpl.ordering.repositories.mock.MockDealersRepository.getDealer
+ - - > [Order, Quote, Shipment, Dealer]
+smpl.ordering.controllers.QuoteController.getRepository
+ - - > [Order, Quote, Shipment]
+smpl.ordering.models.OrderUpdateInfo.getStatus
+ - - > [Order, Shipment]
+smpl.ordering.controllers.QuoteController.createQuote
+ - - > [Order, Quote, Shipment]
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.updateShipment
+ - - > []
+smpl.ordering.models.ShipmentRecord.validate
+ - - > [Shipment]
+smpl.ordering.controllers.OrderController.getOrdersByDealerName
+ - - > [Order]
+smpl.ordering.models.ShipmentEventInfo.getComments
+ - - > [Shipment]
+smpl.ordering.repositories.DealersRepository.upsertDealer
+ - - > []
+smpl.ordering.models.Quote.setQuoteId
+ - - > [Order, Quote, Shipment]
+smpl.ordering.models.ShipmentRecord.setDeliveryAddress
+ - - > [Shipment]
+smpl.ordering.repositories.ShipmentRepository.updateShipment
+ - - > []
+smpl.ordering.repositories.mock.MockCatalogItemsRepository.upsertCatalogItem
+ - - > [Catalog]
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.createShipment
+ - - > []
+smpl.ordering.models.Quote.getQuoteId
+ - - > [Quote]
+smpl.ordering.repositories.mock.MockDealersRepository.removeDealer
+ - - > [Dealer]
+smpl.ordering.repositories.mongodb.MongoCatalogItemsRepository.upsertCatalogItem
+ - - > []
+smpl.ordering.controllers.DealerController.addDealer
+ - - > [Dealer]
+smpl.ordering.models.ShipmentRecord.getContactName
+ - - > [Shipment]
+smpl.ordering.models.CatalogItem.getSkuNumber
+ - - > [Catalog]
+smpl.ordering.repositories.mock.MockCatalogItemsRepository.getCatalogItems
+ - - > [Catalog]
+smpl.ordering.models.Quote.getDealerName
+ - - > [Order, Quote, Shipment]
+smpl.ordering.models.DealerInfo.setEmail
+ - - > [Dealer]
+smpl.ordering.repositories.mock.MockOrderRepository.getOrdersByDealerName
+ - - > [Order]
+smpl.ordering.models.OrderEventInfo.setDate
+ - - > [Order, Shipment]
+smpl.ordering.models.ShipmentRecord.setContactName
+ - - > [Shipment]
+smpl.ordering.repositories.mongodb.MongoOrderRepository.updateOrder
+ - - > []
+smpl.ordering.controllers.CatalogController.removeCatalogItem
+ - - > [Catalog]
+smpl.ordering.repositories.OrderRepository.getOrdersByStatus
+ - - > []
+smpl.ordering.controllers.ShipmentController.createShipmentRecord
+ - - > [Shipment]
+smpl.ordering.models.DealerInfo.setAddress
+ - - > [Dealer]
+smpl.ordering.models.ShipmentRecord.setDeliveryDate
+ - - > [Shipment]
+smpl.ordering.repositories.OrderRepository.getOrdersByDealerName
+ - - > []
+smpl.ordering.models.CatalogItem.getInventory
+ - - > [Catalog]
+smpl.ordering.controllers.OrderController.updateStatus
+ - - > [Order, Shipment]
+smpl.ordering.repositories.RepositoryFactory.getQuoteRepository
+ - - > [Order, Quote, Shipment]
+smpl.ordering.models.ShipmentEventInfo.getDate
+ - - > [Shipment]
+smpl.ordering.models.ShipmentRecord.addEvent
+ - - > [Shipment]
+smpl.ordering.repositories.mongodb.models.CatalogItem.CatalogItem
+ - - > []
+smpl.ordering.repositories.mock.MockDealersRepository.reset
+ - - > [Order, Quote, Shipment, Dealer]
+smpl.ordering.models.Order.getStatus
+ - - > [Order, Shipment]
+smpl.ordering.models.OrderEventInfo.getComments
+ - - > [Order]
+smpl.ordering.controllers.OrderController.updateOrder
+ - - > []
+smpl.ordering.repositories.mock.MockCatalogItemsRepository.removeCatalogItem
+ - - > [Catalog]
+smpl.ordering.repositories.mongodb.MongoDealersRepository.upsertDealer
+ - - > []
+smpl.ordering.models.DealerInfo.validate
+ - - > [Dealer]
+smpl.ordering.controllers.QuoteController.updateQuote
+ - - > [Quote]
+smpl.ordering.controllers.CatalogController.getCatalogItems
+ - - > [Catalog]
+smpl.ordering.controllers.ShipmentController.getShipments
+ - - > [Shipment]
+smpl.ordering.repositories.mock.MockShipmentRepository.reset
+ - - > [Shipment]
+smpl.ordering.repositories.DealersRepositoryTest.createDealer
+ - - > [Dealer]
+smpl.ordering.models.Order.setOrderDate
+ - - > [Order, Shipment]
+smpl.ordering.repositories.mock.MockOrderRepository.reset
+ - - > [Order, Shipment]
+smpl.ordering.controllers.CatalogController.addCatalogItem
+ - - > [Catalog]
+smpl.ordering.controllers.ShipmentController.getShipment
+ - - > [Shipment]
+smpl.ordering.controllers.CatalogController.getCatalogItem
+ - - > [Catalog]
+smpl.ordering.models.OrderUpdateInfo.getEventInfo
+ - - > [Order, Shipment]
+smpl.ordering.repositories.mock.MockQuoteRepository.removeQuote
+ - - > [Quote]
+smpl.ordering.models.ShipmentRecord.setAlternateContactPhone
+ - - > [Shipment]
+smpl.ordering.repositories.mock.MockShipmentRepository.getShipments
+ - - > [Shipment]
+smpl.ordering.controllers.CatalogController.getRepository
+ - - > [Catalog]
+smpl.ordering.controllers.OrderController.getOrders
+ - - > [Order, Shipment]
+smpl.ordering.models.CatalogItem.validate
+ - - > [Catalog]
+smpl.ordering.OrderingConfiguration.getApplicationContext
+ - - > [Order, Quote, Shipment, Catalog, Dealer]
+smpl.ordering.models.Order.setOrderId
+ - - > [Order, Shipment]
+smpl.ordering.repositories.RepositoryFactory.getShipmentRepository
+ - - > [Shipment]
+smpl.ordering.repositories.QuoteRepository.createQuote
+ - - > []
+smpl.ordering.models.CatalogItem.getPrice
+ - - > [Catalog]
+smpl.ordering.models.ShipmentRecord.setPrimaryContactPhone
+ - - > [Shipment]
+smpl.ordering.models.ShipmentRecord.getEvents
+ - - > [Shipment]
+smpl.ordering.models.ShipmentEventInfo.validate
+ - - > [Shipment]
+smpl.ordering.repositories.mongodb.models.Dealer.Dealer
+ - - > []
+smpl.ordering.models.OrderEventInfo.getDate
+ - - > [Order]
+smpl.ordering.repositories.mock.MockShipmentRepository.updateShipment
+ - - > [Shipment]
+smpl.ordering.repositories.ShipmentRepositoryTest.createShipmentRecord
+ - - > [Shipment]
+smpl.ordering.models.DeliveryAddress.validate
+ - - > [Shipment]
+smpl.ordering.models.Quote.addQuoteItem
+ - - > [Order, Quote, Shipment]
+smpl.ordering.repositories.QuoteRepository.updateQuote
+ - - > []
+smpl.ordering.controllers.OrderController.getQuotes
+ - - > [Order, Shipment]
+smpl.ordering.repositories.mock.MockDealersRepository.upsertDealer
+ - - > [Order, Quote, Shipment, Dealer]
+smpl.ordering.repositories.RepositoryFactory.init
+ - - > [Order, Quote, Shipment, Catalog, Dealer]
+smpl.ordering.Utility.isNullOrEmpty
+ - - > [Order, Quote, Shipment, Catalog, Dealer]
+smpl.ordering.models.Order.getOrderId
+ - - > [Order, Shipment]
+smpl.ordering.models.ShipmentEventInfo.setDate
+ - - > [Shipment]
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.getShipments
+ - - > []
+smpl.ordering.repositories.ShipmentRepository.getShipments
+ - - > []
+smpl.ordering.repositories.mock.MockOrderRepository.updateOrder
+ - - > [Order, Shipment]
+smpl.ordering.models.Order.addEvent
+ - - > [Order, Shipment]
+smpl.ordering.controllers.DealerController.updateDealer
+ - - > [Dealer]
+smpl.ordering.models.ShipmentRecord.ShipmentRecord
+ - - > []
+smpl.ordering.repositories.mock.MockShipmentRepository.createShipment
+ - - > [Shipment]
+smpl.ordering.models.ShipmentRecord.getOrderId
+ - - > [Shipment]
+smpl.ordering.controllers.OrderController.addEvent
+ - - > [Order]
+smpl.ordering.repositories.RepositoryFactory.reset
+ - - > [Order, Quote, Shipment, Catalog, Dealer]
+smpl.ordering.models.CatalogItem.getDescription
+ - - > [Catalog]
+smpl.ordering.repositories.mock.MockDealersRepository.getDealers
+ - - > [Dealer]
+smpl.ordering.controllers.DealerController.getRepository
+ - - > [Dealer]
+smpl.ordering.repositories.mock.MockQuoteRepository.updateQuote
+ - - > [Quote]
+smpl.ordering.repositories.mongodb.MongoQuoteRepository.updateQuote
+ - - > []
+smpl.ordering.repositories.mock.MockShipmentRepository.addEvent
+ - - > [Shipment]
+smpl.ordering.repositories.mock.MockOrderRepository.createOrder
+ - - > [Order, Shipment]
+smpl.ordering.repositories.mock.MockCatalogItemsRepository.reset
+ - - > [Order, Quote, Shipment, Catalog]
+smpl.ordering.repositories.mock.MockOrderRepository.getOrdersByStatus
+ - - > [Order]
+smpl.ordering.OrderingInitializer.getApplicationPath
+ - - > [Order, Quote, Shipment, Catalog, Dealer]
+smpl.ordering.repositories.mongodb.models.QuoteDetails.QuoteDetails
+ - - > []
+smpl.ordering.repositories.mock.MockOrderRepository.getOrder
+ - - > [Order, Shipment]
+smpl.ordering.repositories.mongodb.MongoQuoteRepository.createQuote
+ - - > []
+smpl.ordering.repositories.mock.MockQuoteRepository.getQuote
+ - - > [Quote, Order, Shipment]
+smpl.ordering.models.Order.setQuoteId
+ - - > [Order, Shipment]
+smpl.ordering.models.ShipmentRecord.setOrderId
+ - - > [Shipment]
+smpl.ordering.controllers.DealerController.removeDealer
+ - - > [Dealer]
+smpl.ordering.models.DealerInfo.setName
+ - - > [Dealer]
+smpl.ordering.repositories.mock.MockQuoteRepository.getQuotesByCustomerName
+ - - > [Quote]
+smpl.ordering.models.Quote.Quote
+ - - > []
+smpl.ordering.repositories.OrderRepository.updateOrder
+ - - > []
+smpl.ordering.repositories.ShipmentRepository.addEvent
+ - - > []
+smpl.ordering.repositories.RepositoryFactory$Repositories.RepositoryFactory$Repositories
+ - - > []
+_star_t_._star_t_
+ - - > []
+smpl.ordering.repositories.QuoteRepositoryTest.createQuote
+ - - > [Order, Quote, Shipment]
+smpl.ordering.models.Quote.getCustomerName
+ - - > [Quote]
+smpl.ordering.models.DealerInfo.getContact
+ - - > [Dealer]
+smpl.ordering.models.Quote.equals
+ - - > [Quote]
+smpl.ordering.repositories.mock.MockCatalogItemsRepository.compareSkuNumbers
+ - - > [Catalog]
+smpl.ordering.repositories.RepositoryFactory.getOrderRepository
+ - - > [Order, Shipment]
+smpl.ordering.controllers.DealerController.getDealers
+ - - > [Dealer]
+smpl.ordering.repositories.mock.MockQuoteRepository.createQuote
+ - - > [Order, Quote, Shipment]
+smpl.ordering.repositories.mock.MockQuoteRepository.reset
+ - - > [Order, Quote, Shipment]
+smpl.ordering.models.DealerInfo.getName
+ - - > [Dealer]
+smpl.ordering.repositories.mock.MockOrderRepository.getOrderByQuoteId
+ - - > [Order, Shipment]
+smpl.ordering.Utility.validateStringField
+ - - > [Order, Quote, Shipment, Catalog, Dealer]
+smpl.ordering.models.Order.getQuoteId
+ - - > [Order]
+smpl.ordering.controllers.QuoteController.getQuoteById
+ - - > [Quote]
+smpl.ordering.controllers.QuoteController.deleteQuote
+ - - > [Quote]
+smpl.ordering.repositories.RepositoryFactory.getDealersRepository
+ - - > [Order, Quote, Shipment, Dealer]
+smpl.ordering.models.OrderEventInfo.setComments
+ - - > [Order, Shipment]
+smpl.ordering.controllers.ShipmentController.addEvent
+ - - > [Shipment]
+smpl.ordering.repositories.mock.MockOrderRepository.hasOrder
+ - - > [Order, Shipment]
+smpl.ordering.controllers.OrderController.createOrder
+ - - > [Order, Shipment]
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.saveUpdates
+ - - > []
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.addEvent
+ - - > []
+smpl.ordering.controllers.CatalogController.upsertCatalogItem
+ - - > [Catalog]
+smpl.ordering.repositories.mock.MockCatalogItemsRepository.getCatalogItem
+ - - > [Catalog]
+smpl.ordering.models.Quote.setCustomerName
+ - - > [Order, Quote, Shipment]
+smpl.ordering.repositories.CatalogItemsRepository.upsertCatalogItem
+ - - > []
+smpl.ordering.controllers.OrderController.getOrderById
+ - - > [Order]
+smpl.ordering.repositories.ShipmentRepository.createShipment
+ - - > []
+smpl.ordering.repositories.mongodb.models.OrderDetails.OrderDetails
+ - - > []
+smpl.ordering.models.CatalogItem.getLeadTime
+ - - > [Catalog]
+smpl.ordering.repositories.RepositoryFactory.getCatalogItemsRepository
+ - - > [Order, Quote, Shipment, Catalog]
+smpl.ordering.repositories.mock.MockShipmentRepository.getShipmentById
+ - - > [Shipment]
+smpl.ordering.models.Order.getEvents
+ - - > [Order]
+smpl.ordering.controllers.QuoteController.getQuotesByCustomerName
+ - - > [Quote]
+smpl.ordering.repositories.mock.MockDealersRepository.compareDealerNames
+ - - > [Quote, Shipment, Dealer]
+smpl.ordering.repositories.mongodb.MongoOrderRepository.saveOrder
+ - - > []
+smpl.ordering.models.DealerInfo.setContact
+ - - > [Dealer]
+smpl.ordering.models.Quote.validate
+ - - > [Order, Quote, Shipment]
+smpl.ordering.models.DeliveryAddress.isNotEmpty
+ - - > [Shipment]
+
+
+NUMBER OF MICROSERVICES: 5
+
+NSGA-III
+2023-05-03 19:31:12.495 INFO: Loggers configured with null [org.uma.jmetal.util.JMetalLogger configureLoggers]
+2023-05-03 19:31:12.568 INFO: rpssize: 455 [org.uma.jmetal.algorithm.multiobjective.nsgaiii.NSGAIII <init>]
+Finished
+Ranking
+Save Solution
+/home/wesley/NetBeansProjects/projects/PartsUnlimitedMRP-ordering/results/output_toMicroservices.txt
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 03:46 min
+Finished at: 2023-05-03T19:34:37+02:00
+Final Memory: 23M/87M
+------------------------------------------------------------------------

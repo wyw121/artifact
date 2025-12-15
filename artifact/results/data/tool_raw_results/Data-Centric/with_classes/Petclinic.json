@@ -1,0 +1,125 @@
+{
+    "Data_Centric_Process": {
+      "decomposition": {
+        "PetMangementService": [
+          {
+          "Tables": [
+          {
+            "id": "Pets"           
+          },
+          {
+            "id": "Types"
+          },
+          {
+            "id": "Owners"
+          }
+          ],
+          "Classes": [
+          { 
+            "id": "owner"
+          },
+          {
+            "id": "person"
+          },
+          {
+            "id": "baseentity"
+         },
+          {
+            "id": "pet"
+          },
+          {
+            "id":"pettype"
+          },
+          {
+            "id": "ownerrepository"
+          },
+          {
+            "id": "ownercontroller"
+          },
+          {
+            "id": "petcontroller"
+          },
+          {
+            "id": "pettypeformatter"
+          },
+          {
+            "id": "petvalidator"
+          },
+          {
+            "id": "cacheconfiguration"
+          },
+          {
+            "id": "crashcontroller"
+          },
+          {
+            "id": "petclinicapplication"
+          },
+          {
+            "id": "petclinicruntimehints"
+          }
+        ]
+        }
+        ],
+
+        "VetManagementService": [
+          { 
+          "Tables": [
+          {
+            "id": "Vets"
+          },
+          {
+            "id": "Vet_Specialties"
+          },
+          {
+            "id": "Specialties"
+          }
+        ],        
+        "Classes": [
+          {
+            "id": "vet"
+          },   
+          {
+            "id": "vetcontroller"
+          },
+          {
+            "id": "vetrepository"
+          },
+          {
+            "id": "vets"
+          },
+          {
+            "id": "specialty"
+          },
+          {
+            "id": "namedentity"
+          }
+           ]
+          }
+        ],
+
+        "VisitManagementService": [
+          {
+          "Tables": [
+          {
+            "id": "Visits"
+          }
+          ],
+          "Classes":[
+          {
+            "id": "visit"
+          },
+          {
+            "id": "visitcontroller"
+          },
+          {
+            "id": "welcomecontroller"
+          }
+          ] 
+          }   
+          ]
+
+          
+        }
+      
+    }
+  }

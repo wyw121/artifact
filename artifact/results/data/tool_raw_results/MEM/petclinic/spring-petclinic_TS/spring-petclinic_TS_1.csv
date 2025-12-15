@@ -1,0 +1,16 @@
+partitionID,className,classID
+0,VisitController.java,src/main/java/org/springframework/samples/petclinic/owner/VisitController.java
+0,PetController.java,src/main/java/org/springframework/samples/petclinic/owner/PetController.java
+0,OwnerControllerTests.java,src/test/java/org/springframework/samples/petclinic/owner/OwnerControllerTests.java
+0,OwnerController.java,src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java
+1,BaseEntity.java,src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java
+1,Person.java,src/main/java/org/springframework/samples/petclinic/model/Person.java
+1,NamedEntity.java,src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java
+1,ValidatorTests.java,src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java
+1,VisitControllerTests.java,src/test/java/org/springframework/samples/petclinic/owner/VisitControllerTests.java
+1,VetController.java,src/main/java/org/springframework/samples/petclinic/vet/VetController.java
+1,VetControllerTests.java,src/test/java/org/springframework/samples/petclinic/vet/VetControllerTests.java
+2,PetTypeFormatter.java,src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java
+2,OwnerRepository.java,src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java
+3,PetControllerTests.java,src/test/java/org/springframework/samples/petclinic/owner/PetControllerTests.java
+3,Pet.java,src/main/java/org/springframework/samples/petclinic/owner/Pet.java

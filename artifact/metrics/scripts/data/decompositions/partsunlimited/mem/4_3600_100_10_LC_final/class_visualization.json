@@ -1,0 +1,71 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "Quote"
+                },
+                {
+                    "id": "ShipmentRecord"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "PostgresqlProperties"
+                },
+                {
+                    "id": "QuoteController"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "QuoteController",
+                "target": "Quote",
+                "weight": "3"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "Quote"
+                },
+                {
+                    "id": "ShipmentRecord"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "PostgresqlProperties"
+                },
+                {
+                    "id": "QuoteController"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "Quote"
+                },
+                {
+                    "id": "ShipmentRecord"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "PostgresqlProperties"
+                },
+                {
+                    "id": "QuoteController"
+                }
+            ]
+        },
+        "links": []
+    }
+}

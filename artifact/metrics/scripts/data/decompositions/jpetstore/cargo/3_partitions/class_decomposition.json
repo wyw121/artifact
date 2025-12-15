@@ -1,0 +1,1 @@
+{"tool": {"decomposition": {"0": [{"id": "Account"}, {"id": "Item"}, {"id": "LineItem"}, {"id": "Order"}, {"id": "AbstractActionBean"}, {"id": "AccountActionBean"}, {"id": "OrderActionBean"}], "2": [{"id": "Cart"}, {"id": "CartItem"}, {"id": "CatalogActionBean"}], "1": [{"id": "CartActionBean"}]}}}

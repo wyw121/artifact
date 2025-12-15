@@ -1,0 +1,668 @@
+,MethodA,MethodB,ReferenceCount
+0,com.coveros.training.authentication.LoginServlet.doPost,com.coveros.training.authentication.LoginServlet.logger,1
+0,com.coveros.training.authentication.LoginServlet.doPost,com.coveros.training.authentication.LoginServlet.loginUtils,1
+0,com.coveros.training.authentication.LoginServlet.doPost,com.coveros.training.authentication.LoginUtils.isUserRegistered,1
+0,com.coveros.training.authentication.LoginServlet.doPost,com.coveros.training.helpers.ServletUtils.forwardToResult,1
+0,com.coveros.training.authentication.LoginServlet.doPost,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.authentication.LoginServlet.static {},com.coveros.training.authentication.LoginServlet.logger,1
+0,com.coveros.training.authentication.LoginServlet.static {},com.coveros.training.authentication.LoginServlet.loginUtils,1
+0,com.coveros.training.authentication.LoginServlet.static {},com.coveros.training.authentication.LoginUtils.LoginUtils,1
+0,com.coveros.training.authentication.LoginUtils.LoginUtils,com.coveros.training.persistence.PersistenceLayer.PersistenceLayer,1
+0,com.coveros.training.authentication.LoginUtils.LoginUtils,com.coveros.training.authentication.LoginUtils.persistenceLayer,1
+0,com.coveros.training.authentication.LoginUtils.createEmpty,com.coveros.training.authentication.LoginUtils.LoginUtils,1
+0,com.coveros.training.authentication.LoginUtils.createEmpty,com.coveros.training.persistence.PersistenceLayer.createEmpty,1
+0,com.coveros.training.authentication.LoginUtils.isEmpty,com.coveros.training.authentication.LoginUtils.persistenceLayer,1
+0,com.coveros.training.authentication.LoginUtils.isEmpty,com.coveros.training.persistence.IPersistenceLayer.isEmpty,1
+0,com.coveros.training.authentication.LoginUtils.isUserRegistered,com.coveros.training.authentication.LoginUtils.logger,1
+0,com.coveros.training.authentication.LoginUtils.isUserRegistered,com.coveros.training.authentication.LoginUtils.persistenceLayer,1
+0,com.coveros.training.authentication.LoginUtils.isUserRegistered,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.authentication.LoginUtils.isUserRegistered,com.coveros.training.persistence.IPersistenceLayer.areCredentialsValid,1
+0,com.coveros.training.authentication.LoginUtils.static {},com.coveros.training.authentication.LoginUtils.logger,1
+0,com.coveros.training.authentication.RegisterServlet.doPost,com.coveros.training.authentication.RegisterServlet.forwardToResult,1
+0,com.coveros.training.authentication.RegisterServlet.doPost,com.coveros.training.authentication.RegisterServlet.logger,1
+0,com.coveros.training.authentication.RegisterServlet.doPost,com.coveros.training.authentication.RegisterServlet.registrationUtils,1
+0,com.coveros.training.authentication.RegisterServlet.doPost,com.coveros.training.authentication.RegistrationUtils.processRegistration,1
+0,com.coveros.training.authentication.RegisterServlet.doPost,com.coveros.training.authentication.domainobjects.RegistrationResult.toPrettyString,1
+0,com.coveros.training.authentication.RegisterServlet.doPost,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.authentication.RegisterServlet.forwardToResult,com.coveros.training.helpers.ServletUtils.forwardToResult,1
+0,com.coveros.training.authentication.RegisterServlet.static {},com.coveros.training.authentication.RegisterServlet.logger,1
+0,com.coveros.training.authentication.RegisterServlet.static {},com.coveros.training.authentication.RegisterServlet.registrationUtils,1
+0,com.coveros.training.authentication.RegisterServlet.static {},com.coveros.training.authentication.RegistrationUtils.RegistrationUtils,1
+0,com.coveros.training.authentication.RegistrationUtils.RegistrationUtils,com.coveros.training.persistence.PersistenceLayer.PersistenceLayer,1
+0,com.coveros.training.authentication.RegistrationUtils.RegistrationUtils,com.coveros.training.authentication.RegistrationUtils.persistenceLayer,1
+0,com.coveros.training.authentication.RegistrationUtils.createEmpty,com.coveros.training.authentication.RegistrationUtils.RegistrationUtils,1
+0,com.coveros.training.authentication.RegistrationUtils.createEmpty,com.coveros.training.persistence.PersistenceLayer.createEmpty,1
+0,com.coveros.training.authentication.RegistrationUtils.isEmpty,com.coveros.training.authentication.RegistrationUtils.persistenceLayer,1
+0,com.coveros.training.authentication.RegistrationUtils.isEmpty,com.coveros.training.persistence.IPersistenceLayer.isEmpty,1
+0,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,com.coveros.training.authentication.RegistrationUtils.logger,1
+0,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,com.coveros.training.authentication.domainobjects.PasswordResult.PasswordResult,1
+0,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,com.coveros.training.authentication.domainobjects.PasswordResult.createDefault,1
+0,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,com.coveros.training.authentication.domainobjects.PasswordResultEnums.EMPTY_PASSWORD,1
+0,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,com.coveros.training.authentication.domainobjects.PasswordResultEnums.INSUFFICIENT_ENTROPY,1
+0,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,com.coveros.training.authentication.domainobjects.PasswordResultEnums.SUCCESS,1
+0,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,com.coveros.training.authentication.domainobjects.PasswordResultEnums.TOO_LONG,1
+0,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,com.coveros.training.authentication.domainobjects.PasswordResultEnums.TOO_SHORT,1
+0,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,com.coveros.training.helpers.CheckUtils.mustBeTrueAtThisPoint,1
+0,com.coveros.training.authentication.RegistrationUtils.isUserInDatabase,com.coveros.training.authentication.RegistrationUtils.persistenceLayer,1
+0,com.coveros.training.authentication.RegistrationUtils.isUserInDatabase,com.coveros.training.persistence.IPersistenceLayer.searchForUserByName,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.RegistrationUtils.isPasswordGood,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.RegistrationUtils.isUserInDatabase,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.RegistrationUtils.logger,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.RegistrationUtils.saveToDatabase,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.domainobjects.PasswordResult.status,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.domainobjects.PasswordResult.toPrettyString,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.domainobjects.PasswordResultEnums.SUCCESS,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.domainobjects.RegistrationResult.RegistrationResult,2
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.ALREADY_REGISTERED,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.BAD_PASSWORD,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.SUCCESSFULLY_REGISTERED,1
+0,com.coveros.training.authentication.RegistrationUtils.processRegistration,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.authentication.RegistrationUtils.saveToDatabase,com.coveros.training.authentication.RegistrationUtils.persistenceLayer,1
+0,com.coveros.training.authentication.RegistrationUtils.saveToDatabase,com.coveros.training.persistence.IPersistenceLayer.saveNewUser,1
+0,com.coveros.training.authentication.RegistrationUtils.saveToDatabase,com.coveros.training.persistence.IPersistenceLayer.updateUserWithPassword,1
+0,com.coveros.training.authentication.RegistrationUtils.static {},com.coveros.training.authentication.RegistrationUtils.logger,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.PasswordResult,com.coveros.training.authentication.domainobjects.PasswordResult.entropy,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.PasswordResult,com.coveros.training.authentication.domainobjects.PasswordResult.message,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.PasswordResult,com.coveros.training.authentication.domainobjects.PasswordResult.status,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.PasswordResult,com.coveros.training.authentication.domainobjects.PasswordResult.timeToCrackOffline,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.PasswordResult,com.coveros.training.authentication.domainobjects.PasswordResult.timeToCrackOnline,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.createDefault,com.coveros.training.authentication.domainobjects.PasswordResult.PasswordResult,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.createEmpty,com.coveros.training.authentication.domainobjects.PasswordResult.PasswordResult,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.createEmpty,com.coveros.training.authentication.domainobjects.PasswordResultEnums.NULL,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.equals,com.coveros.training.authentication.domainobjects.PasswordResult.entropy,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.equals,com.coveros.training.authentication.domainobjects.PasswordResult.message,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.equals,com.coveros.training.authentication.domainobjects.PasswordResult.status,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.equals,com.coveros.training.authentication.domainobjects.PasswordResult.timeToCrackOffline,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.equals,com.coveros.training.authentication.domainobjects.PasswordResult.timeToCrackOnline,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.hashCode,com.coveros.training.authentication.domainobjects.PasswordResult.entropy,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.hashCode,com.coveros.training.authentication.domainobjects.PasswordResult.message,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.hashCode,com.coveros.training.authentication.domainobjects.PasswordResult.status,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.hashCode,com.coveros.training.authentication.domainobjects.PasswordResult.timeToCrackOffline,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.hashCode,com.coveros.training.authentication.domainobjects.PasswordResult.timeToCrackOnline,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.isEmpty,com.coveros.training.authentication.domainobjects.PasswordResult.createEmpty,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.isEmpty,com.coveros.training.authentication.domainobjects.PasswordResult.equals,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.toPrettyString,com.coveros.training.authentication.domainobjects.PasswordResult.entropy,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.toPrettyString,com.coveros.training.authentication.domainobjects.PasswordResult.message,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.toPrettyString,com.coveros.training.authentication.domainobjects.PasswordResult.status,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.toPrettyString,com.coveros.training.authentication.domainobjects.PasswordResult.timeToCrackOffline,1
+0,com.coveros.training.authentication.domainobjects.PasswordResult.toPrettyString,com.coveros.training.authentication.domainobjects.PasswordResult.timeToCrackOnline,1
+0,com.coveros.training.authentication.domainobjects.PasswordResultEnums.static {},com.coveros.training.authentication.domainobjects.PasswordResultEnums.$VALUES,1
+0,com.coveros.training.authentication.domainobjects.PasswordResultEnums.static {},com.coveros.training.authentication.domainobjects.PasswordResultEnums.EMPTY_PASSWORD,1
+0,com.coveros.training.authentication.domainobjects.PasswordResultEnums.static {},com.coveros.training.authentication.domainobjects.PasswordResultEnums.INSUFFICIENT_ENTROPY,1
+0,com.coveros.training.authentication.domainobjects.PasswordResultEnums.static {},com.coveros.training.authentication.domainobjects.PasswordResultEnums.NULL,1
+0,com.coveros.training.authentication.domainobjects.PasswordResultEnums.static {},com.coveros.training.authentication.domainobjects.PasswordResultEnums.PasswordResultEnums,1
+0,com.coveros.training.authentication.domainobjects.PasswordResultEnums.static {},com.coveros.training.authentication.domainobjects.PasswordResultEnums.SUCCESS,1
+0,com.coveros.training.authentication.domainobjects.PasswordResultEnums.static {},com.coveros.training.authentication.domainobjects.PasswordResultEnums.TOO_LONG,1
+0,com.coveros.training.authentication.domainobjects.PasswordResultEnums.static {},com.coveros.training.authentication.domainobjects.PasswordResultEnums.TOO_SHORT,1
+0,com.coveros.training.authentication.domainobjects.PasswordResultEnums.values,com.coveros.training.authentication.domainobjects.PasswordResultEnums.$VALUES,1
+0,com.coveros.training.authentication.domainobjects.PasswordResultEnums.values,com.coveros.training.authentication.domainobjects.PasswordResultEnums[].clone,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.RegistrationResult,com.coveros.training.authentication.domainobjects.RegistrationResult.message,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.RegistrationResult,com.coveros.training.authentication.domainobjects.RegistrationResult.status,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.RegistrationResult,com.coveros.training.authentication.domainobjects.RegistrationResult.wasSuccessfullyRegistered,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.createEmpty,com.coveros.training.authentication.domainobjects.RegistrationResult.RegistrationResult,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.createEmpty,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.EMPTY,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.equals,com.coveros.training.authentication.domainobjects.RegistrationResult.message,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.equals,com.coveros.training.authentication.domainobjects.RegistrationResult.status,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.equals,com.coveros.training.authentication.domainobjects.RegistrationResult.wasSuccessfullyRegistered,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.hashCode,com.coveros.training.authentication.domainobjects.RegistrationResult.message,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.hashCode,com.coveros.training.authentication.domainobjects.RegistrationResult.status,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.hashCode,com.coveros.training.authentication.domainobjects.RegistrationResult.wasSuccessfullyRegistered,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.isEmpty,com.coveros.training.authentication.domainobjects.RegistrationResult.createEmpty,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.isEmpty,com.coveros.training.authentication.domainobjects.RegistrationResult.equals,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.toPrettyString,com.coveros.training.authentication.domainobjects.RegistrationResult.message,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.toPrettyString,com.coveros.training.authentication.domainobjects.RegistrationResult.status,1
+0,com.coveros.training.authentication.domainobjects.RegistrationResult.toPrettyString,com.coveros.training.authentication.domainobjects.RegistrationResult.wasSuccessfullyRegistered,1
+0,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.static {},com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.$VALUES,1
+0,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.static {},com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.ALREADY_REGISTERED,1
+0,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.static {},com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.BAD_PASSWORD,1
+0,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.static {},com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.EMPTY,1
+0,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.static {},com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.EMPTY_PASSWORD,1
+0,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.static {},com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.EMPTY_USERNAME,1
+0,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.static {},com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.RegistrationStatusEnums,1
+0,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.static {},com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.SUCCESSFULLY_REGISTERED,1
+0,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.values,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.$VALUES,1
+0,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.values,com.coveros.training.authentication.domainobjects.RegistrationStatusEnums[].clone,1
+0,com.coveros.training.authentication.domainobjects.User.User,com.coveros.training.authentication.domainobjects.User.id,1
+0,com.coveros.training.authentication.domainobjects.User.User,com.coveros.training.authentication.domainobjects.User.name,1
+0,com.coveros.training.authentication.domainobjects.User.createEmpty,com.coveros.training.authentication.domainobjects.User.User,1
+0,com.coveros.training.authentication.domainobjects.User.equals,com.coveros.training.authentication.domainobjects.User.id,1
+0,com.coveros.training.authentication.domainobjects.User.equals,com.coveros.training.authentication.domainobjects.User.name,1
+0,com.coveros.training.authentication.domainobjects.User.hashCode,com.coveros.training.authentication.domainobjects.User.id,1
+0,com.coveros.training.authentication.domainobjects.User.hashCode,com.coveros.training.authentication.domainobjects.User.name,1
+0,com.coveros.training.authentication.domainobjects.User.isEmpty,com.coveros.training.authentication.domainobjects.User.createEmpty,1
+0,com.coveros.training.authentication.domainobjects.User.isEmpty,com.coveros.training.authentication.domainobjects.User.equals,1
+0,com.coveros.training.expenses.AlcoholCalculator.calculate,com.coveros.training.expenses.AlcoholResult.returnEmpty,1
+0,com.coveros.training.expenses.AlcoholResult.AlcoholResult,com.coveros.training.expenses.AlcoholResult.alcoholPrice,1
+0,com.coveros.training.expenses.AlcoholResult.AlcoholResult,com.coveros.training.expenses.AlcoholResult.foodPrice,1
+0,com.coveros.training.expenses.AlcoholResult.AlcoholResult,com.coveros.training.expenses.AlcoholResult.foodRatio,1
+0,com.coveros.training.expenses.AlcoholResult.returnEmpty,com.coveros.training.expenses.AlcoholResult.AlcoholResult,1
+0,com.coveros.training.expenses.DinnerPrices.DinnerPrices,com.coveros.training.expenses.DinnerPrices.foodTotal,1
+0,com.coveros.training.expenses.DinnerPrices.DinnerPrices,com.coveros.training.expenses.DinnerPrices.subTotal,1
+0,com.coveros.training.expenses.DinnerPrices.DinnerPrices,com.coveros.training.expenses.DinnerPrices.tax,1
+0,com.coveros.training.expenses.DinnerPrices.DinnerPrices,com.coveros.training.expenses.DinnerPrices.tip,1
+0,com.coveros.training.helpers.CheckUtils.mustBeTrueAtThisPoint,com.coveros.training.helpers.AssertionException.AssertionException,1
+0,com.coveros.training.library.LibraryBookListAvailableServlet.doGet,com.coveros.training.helpers.ServletUtils.forwardToRestfulResult,1
+0,com.coveros.training.library.LibraryBookListAvailableServlet.doGet,com.coveros.training.library.LibraryBookListAvailableServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryBookListAvailableServlet.doGet,com.coveros.training.library.LibraryBookListAvailableServlet.logger,1
+0,com.coveros.training.library.LibraryBookListAvailableServlet.doGet,com.coveros.training.library.LibraryUtils.listAvailableBooks,1
+0,com.coveros.training.library.LibraryBookListAvailableServlet.static {},com.coveros.training.library.LibraryBookListAvailableServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryBookListAvailableServlet.static {},com.coveros.training.library.LibraryBookListAvailableServlet.logger,1
+0,com.coveros.training.library.LibraryBookListAvailableServlet.static {},com.coveros.training.library.LibraryUtils.LibraryUtils,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.doGet,com.coveros.training.helpers.ServletUtils.forwardToRestfulResult,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.doGet,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.doGet,com.coveros.training.library.LibraryBookListSearchServlet.listAllBooks,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.doGet,com.coveros.training.library.LibraryBookListSearchServlet.logger,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.doGet,com.coveros.training.library.LibraryBookListSearchServlet.searchById,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.doGet,com.coveros.training.library.LibraryBookListSearchServlet.searchByTitle,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.listAllBooks,com.coveros.training.library.LibraryBookListSearchServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.listAllBooks,com.coveros.training.library.LibraryBookListSearchServlet.logger,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.listAllBooks,com.coveros.training.library.LibraryUtils.listAllBooks,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.searchById,com.coveros.training.library.LibraryBookListSearchServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.searchById,com.coveros.training.library.LibraryBookListSearchServlet.logger,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.searchById,com.coveros.training.library.LibraryUtils.searchForBookById,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.searchById,com.coveros.training.library.domainobjects.Book.isEmpty,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.searchById,com.coveros.training.library.domainobjects.Book.toOutputString,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.searchByTitle,com.coveros.training.library.LibraryBookListSearchServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.searchByTitle,com.coveros.training.library.LibraryBookListSearchServlet.logger,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.searchByTitle,com.coveros.training.library.LibraryUtils.searchForBookByTitle,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.searchByTitle,com.coveros.training.library.domainobjects.Book.isEmpty,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.searchByTitle,com.coveros.training.library.domainobjects.Book.toOutputString,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.static {},com.coveros.training.library.LibraryBookListSearchServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.static {},com.coveros.training.library.LibraryBookListSearchServlet.logger,1
+0,com.coveros.training.library.LibraryBookListSearchServlet.static {},com.coveros.training.library.LibraryUtils.LibraryUtils,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.doGet,com.coveros.training.helpers.ServletUtils.forwardToRestfulResult,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.doGet,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.doGet,com.coveros.training.library.LibraryBorrowerListSearchServlet.listAllBorrowers,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.doGet,com.coveros.training.library.LibraryBorrowerListSearchServlet.logger,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.doGet,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchById,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.doGet,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchByName,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.listAllBorrowers,com.coveros.training.library.LibraryBorrowerListSearchServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.listAllBorrowers,com.coveros.training.library.LibraryBorrowerListSearchServlet.logger,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.listAllBorrowers,com.coveros.training.library.LibraryUtils.listAllBorrowers,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchById,com.coveros.training.library.LibraryBorrowerListSearchServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchById,com.coveros.training.library.LibraryBorrowerListSearchServlet.logger,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchById,com.coveros.training.library.LibraryUtils.searchForBorrowerById,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchById,com.coveros.training.library.domainobjects.Borrower.isEmpty,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchById,com.coveros.training.library.domainobjects.Borrower.toOutputString,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchByName,com.coveros.training.library.LibraryBorrowerListSearchServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchByName,com.coveros.training.library.LibraryBorrowerListSearchServlet.logger,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchByName,com.coveros.training.library.LibraryUtils.searchForBorrowerByName,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchByName,com.coveros.training.library.domainobjects.Borrower.isEmpty,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.searchByName,com.coveros.training.library.domainobjects.Borrower.toOutputString,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.static {},com.coveros.training.library.LibraryBorrowerListSearchServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.static {},com.coveros.training.library.LibraryBorrowerListSearchServlet.logger,1
+0,com.coveros.training.library.LibraryBorrowerListSearchServlet.static {},com.coveros.training.library.LibraryUtils.LibraryUtils,1
+0,com.coveros.training.library.LibraryLendServlet.doPost,com.coveros.training.helpers.ServletUtils.forwardToResult,1
+0,com.coveros.training.library.LibraryLendServlet.doPost,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.library.LibraryLendServlet.doPost,com.coveros.training.library.LibraryLendServlet.getDateNow,1
+0,com.coveros.training.library.LibraryLendServlet.doPost,com.coveros.training.library.LibraryLendServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryLendServlet.doPost,com.coveros.training.library.LibraryLendServlet.logger,1
+0,com.coveros.training.library.LibraryLendServlet.doPost,com.coveros.training.library.LibraryUtils.lendBook,1
+0,com.coveros.training.library.LibraryLendServlet.doPost,com.coveros.training.library.domainobjects.LibraryActionResults.NO_BOOK_TITLE_PROVIDED,1
+0,com.coveros.training.library.LibraryLendServlet.doPost,com.coveros.training.library.domainobjects.LibraryActionResults.NO_BORROWER_PROVIDED,1
+0,com.coveros.training.library.LibraryLendServlet.doPost,com.coveros.training.library.domainobjects.LibraryActionResults.toString,1
+0,com.coveros.training.library.LibraryLendServlet.static {},com.coveros.training.library.LibraryLendServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryLendServlet.static {},com.coveros.training.library.LibraryLendServlet.logger,1
+0,com.coveros.training.library.LibraryLendServlet.static {},com.coveros.training.library.LibraryUtils.LibraryUtils,1
+0,com.coveros.training.library.LibraryRegisterBookServlet.doPost,com.coveros.training.helpers.ServletUtils.forwardToResult,1
+0,com.coveros.training.library.LibraryRegisterBookServlet.doPost,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.library.LibraryRegisterBookServlet.doPost,com.coveros.training.library.LibraryRegisterBookServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryRegisterBookServlet.doPost,com.coveros.training.library.LibraryRegisterBookServlet.logger,1
+0,com.coveros.training.library.LibraryRegisterBookServlet.doPost,com.coveros.training.library.LibraryUtils.registerBook,1
+0,com.coveros.training.library.LibraryRegisterBookServlet.doPost,com.coveros.training.library.domainobjects.LibraryActionResults.NO_BOOK_TITLE_PROVIDED,1
+0,com.coveros.training.library.LibraryRegisterBookServlet.doPost,com.coveros.training.library.domainobjects.LibraryActionResults.toString,1
+0,com.coveros.training.library.LibraryRegisterBookServlet.static {},com.coveros.training.library.LibraryRegisterBookServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryRegisterBookServlet.static {},com.coveros.training.library.LibraryRegisterBookServlet.logger,1
+0,com.coveros.training.library.LibraryRegisterBookServlet.static {},com.coveros.training.library.LibraryUtils.LibraryUtils,1
+0,com.coveros.training.library.LibraryRegisterBorrowerServlet.doPost,com.coveros.training.helpers.ServletUtils.forwardToResult,1
+0,com.coveros.training.library.LibraryRegisterBorrowerServlet.doPost,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.library.LibraryRegisterBorrowerServlet.doPost,com.coveros.training.library.LibraryRegisterBorrowerServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryRegisterBorrowerServlet.doPost,com.coveros.training.library.LibraryRegisterBorrowerServlet.logger,1
+0,com.coveros.training.library.LibraryRegisterBorrowerServlet.doPost,com.coveros.training.library.LibraryUtils.registerBorrower,1
+0,com.coveros.training.library.LibraryRegisterBorrowerServlet.doPost,com.coveros.training.library.domainobjects.LibraryActionResults.NO_BORROWER_PROVIDED,1
+0,com.coveros.training.library.LibraryRegisterBorrowerServlet.doPost,com.coveros.training.library.domainobjects.LibraryActionResults.toString,1
+0,com.coveros.training.library.LibraryRegisterBorrowerServlet.static {},com.coveros.training.library.LibraryRegisterBorrowerServlet.libraryUtils,1
+0,com.coveros.training.library.LibraryRegisterBorrowerServlet.static {},com.coveros.training.library.LibraryRegisterBorrowerServlet.logger,1
+0,com.coveros.training.library.LibraryRegisterBorrowerServlet.static {},com.coveros.training.library.LibraryUtils.LibraryUtils,1
+0,com.coveros.training.library.LibraryUtils.LibraryUtils,com.coveros.training.persistence.PersistenceLayer.PersistenceLayer,1
+0,com.coveros.training.library.LibraryUtils.LibraryUtils,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.createEmpty,com.coveros.training.library.LibraryUtils.LibraryUtils,1
+0,com.coveros.training.library.LibraryUtils.createEmpty,com.coveros.training.persistence.PersistenceLayer.createEmpty,1
+0,com.coveros.training.library.LibraryUtils.createLoan,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.createLoan,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.createLoan,com.coveros.training.library.domainobjects.Book.title,1
+0,com.coveros.training.library.LibraryUtils.createLoan,com.coveros.training.library.domainobjects.Borrower.name,1
+0,com.coveros.training.library.LibraryUtils.createLoan,com.coveros.training.persistence.IPersistenceLayer.createLoan,1
+0,com.coveros.training.library.LibraryUtils.deleteBook,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.deleteBook,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.deleteBook,com.coveros.training.library.LibraryUtils.searchForBookByTitle,1
+0,com.coveros.training.library.LibraryUtils.deleteBook,com.coveros.training.library.domainobjects.Book.id,1
+0,com.coveros.training.library.LibraryUtils.deleteBook,com.coveros.training.library.domainobjects.Book.isEmpty,1
+0,com.coveros.training.library.LibraryUtils.deleteBook,com.coveros.training.library.domainobjects.Book.title,1
+0,com.coveros.training.library.LibraryUtils.deleteBook,com.coveros.training.library.domainobjects.LibraryActionResults.NON_REGISTERED_BOOK_CANNOT_BE_DELETED,1
+0,com.coveros.training.library.LibraryUtils.deleteBook,com.coveros.training.library.domainobjects.LibraryActionResults.SUCCESS,1
+0,com.coveros.training.library.LibraryUtils.deleteBook,com.coveros.training.persistence.IPersistenceLayer.deleteBook,1
+0,com.coveros.training.library.LibraryUtils.deleteBorrower,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.deleteBorrower,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.deleteBorrower,com.coveros.training.library.LibraryUtils.searchForBorrowerByName,1
+0,com.coveros.training.library.LibraryUtils.deleteBorrower,com.coveros.training.library.domainobjects.Borrower.id,1
+0,com.coveros.training.library.LibraryUtils.deleteBorrower,com.coveros.training.library.domainobjects.Borrower.isEmpty,1
+0,com.coveros.training.library.LibraryUtils.deleteBorrower,com.coveros.training.library.domainobjects.Borrower.name,1
+0,com.coveros.training.library.LibraryUtils.deleteBorrower,com.coveros.training.library.domainobjects.LibraryActionResults.NON_REGISTERED_BORROWER_CANNOT_BE_DELETED,1
+0,com.coveros.training.library.LibraryUtils.deleteBorrower,com.coveros.training.library.domainobjects.LibraryActionResults.SUCCESS,1
+0,com.coveros.training.library.LibraryUtils.deleteBorrower,com.coveros.training.persistence.IPersistenceLayer.deleteBorrower,1
+0,com.coveros.training.library.LibraryUtils.isEmpty,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.isEmpty,com.coveros.training.persistence.IPersistenceLayer.isEmpty,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.LibraryUtils.createLoan,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.LibraryUtils.logger,2
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.LibraryUtils.searchForLoanByBook,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.Book.id,2
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.Book.title,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.Borrower.id,2
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.Borrower.name,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.LibraryActionResults.BOOK_CHECKED_OUT,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.LibraryActionResults.BOOK_NOT_REGISTERED,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.LibraryActionResults.BORROWER_NOT_REGISTERED,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.LibraryActionResults.SUCCESS,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.Loan.checkoutDate,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.Loan.isEmpty,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.LibraryUtils.searchForBookByTitle,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.LibraryUtils.searchForBorrowerByName,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.Book.Book,1
+0,com.coveros.training.library.LibraryUtils.lendBook,com.coveros.training.library.domainobjects.Borrower.Borrower,1
+0,com.coveros.training.library.LibraryUtils.listAllBooks,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.listAllBooks,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.listAllBooks,com.coveros.training.persistence.IPersistenceLayer.listAllBooks,1
+0,com.coveros.training.library.LibraryUtils.listAllBorrowers,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.listAllBorrowers,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.listAllBorrowers,com.coveros.training.persistence.IPersistenceLayer.listAllBorrowers,1
+0,com.coveros.training.library.LibraryUtils.listAvailableBooks,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.listAvailableBooks,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.listAvailableBooks,com.coveros.training.persistence.IPersistenceLayer.listAvailableBooks,1
+0,com.coveros.training.library.LibraryUtils.registerBook,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.registerBook,com.coveros.training.library.LibraryUtils.saveNewBook,1
+0,com.coveros.training.library.LibraryUtils.registerBook,com.coveros.training.library.LibraryUtils.searchForBookByTitle,1
+0,com.coveros.training.library.LibraryUtils.registerBook,com.coveros.training.library.domainobjects.Book.isEmpty,1
+0,com.coveros.training.library.LibraryUtils.registerBook,com.coveros.training.library.domainobjects.LibraryActionResults.ALREADY_REGISTERED_BOOK,1
+0,com.coveros.training.library.LibraryUtils.registerBook,com.coveros.training.library.domainobjects.LibraryActionResults.SUCCESS,1
+0,com.coveros.training.library.LibraryUtils.registerBorrower,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.registerBorrower,com.coveros.training.library.LibraryUtils.saveNewBorrower,1
+0,com.coveros.training.library.LibraryUtils.registerBorrower,com.coveros.training.library.LibraryUtils.searchForBorrowerByName,1
+0,com.coveros.training.library.LibraryUtils.registerBorrower,com.coveros.training.library.domainobjects.Borrower.createEmpty,1
+0,com.coveros.training.library.LibraryUtils.registerBorrower,com.coveros.training.library.domainobjects.Borrower.equals,1
+0,com.coveros.training.library.LibraryUtils.registerBorrower,com.coveros.training.library.domainobjects.LibraryActionResults.ALREADY_REGISTERED_BORROWER,1
+0,com.coveros.training.library.LibraryUtils.registerBorrower,com.coveros.training.library.domainobjects.LibraryActionResults.SUCCESS,1
+0,com.coveros.training.library.LibraryUtils.saveNewBook,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.saveNewBook,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.saveNewBook,com.coveros.training.persistence.IPersistenceLayer.saveNewBook,1
+0,com.coveros.training.library.LibraryUtils.saveNewBorrower,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.saveNewBorrower,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.saveNewBorrower,com.coveros.training.persistence.IPersistenceLayer.saveNewBorrower,1
+0,com.coveros.training.library.LibraryUtils.searchForBookById,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.searchForBookById,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.searchForBookById,com.coveros.training.library.domainobjects.Book.createEmpty,1
+0,com.coveros.training.library.LibraryUtils.searchForBookById,com.coveros.training.library.domainobjects.Book.isEmpty,1
+0,com.coveros.training.library.LibraryUtils.searchForBookById,com.coveros.training.persistence.IPersistenceLayer.searchBooksById,1
+0,com.coveros.training.library.LibraryUtils.searchForBookByTitle,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.searchForBookByTitle,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.searchForBookByTitle,com.coveros.training.library.domainobjects.Book.createEmpty,1
+0,com.coveros.training.library.LibraryUtils.searchForBookByTitle,com.coveros.training.library.domainobjects.Book.isEmpty,1
+0,com.coveros.training.library.LibraryUtils.searchForBookByTitle,com.coveros.training.persistence.IPersistenceLayer.searchBooksByTitle,1
+0,com.coveros.training.library.LibraryUtils.searchForBorrowerById,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.searchForBorrowerById,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.searchForBorrowerById,com.coveros.training.library.domainobjects.Borrower.createEmpty,1
+0,com.coveros.training.library.LibraryUtils.searchForBorrowerById,com.coveros.training.library.domainobjects.Borrower.isEmpty,1
+0,com.coveros.training.library.LibraryUtils.searchForBorrowerById,com.coveros.training.persistence.IPersistenceLayer.searchBorrowersById,1
+0,com.coveros.training.library.LibraryUtils.searchForBorrowerByName,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.searchForBorrowerByName,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.searchForBorrowerByName,com.coveros.training.library.domainobjects.Borrower.createEmpty,1
+0,com.coveros.training.library.LibraryUtils.searchForBorrowerByName,com.coveros.training.persistence.IPersistenceLayer.searchBorrowerDataByName,1
+0,com.coveros.training.library.LibraryUtils.searchForLoanByBook,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.searchForLoanByBook,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.searchForLoanByBook,com.coveros.training.library.domainobjects.Book.title,1
+0,com.coveros.training.library.LibraryUtils.searchForLoanByBook,com.coveros.training.library.domainobjects.Loan.createEmpty,1
+0,com.coveros.training.library.LibraryUtils.searchForLoanByBook,com.coveros.training.persistence.IPersistenceLayer.searchForLoanByBook,1
+0,com.coveros.training.library.LibraryUtils.searchForLoanByBorrower,com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.LibraryUtils.searchForLoanByBorrower,com.coveros.training.library.LibraryUtils.persistence,1
+0,com.coveros.training.library.LibraryUtils.searchForLoanByBorrower,com.coveros.training.library.domainobjects.Borrower.name,1
+0,com.coveros.training.library.LibraryUtils.searchForLoanByBorrower,com.coveros.training.persistence.IPersistenceLayer.searchForLoanByBorrower,1
+0,com.coveros.training.library.LibraryUtils.static {},com.coveros.training.library.LibraryUtils.logger,1
+0,com.coveros.training.library.domainobjects.Book.Book,com.coveros.training.library.domainobjects.Book.id,1
+0,com.coveros.training.library.domainobjects.Book.Book,com.coveros.training.library.domainobjects.Book.title,1
+0,com.coveros.training.library.domainobjects.Book.createEmpty,com.coveros.training.library.domainobjects.Book.Book,1
+0,com.coveros.training.library.domainobjects.Book.equals,com.coveros.training.library.domainobjects.Book.id,1
+0,com.coveros.training.library.domainobjects.Book.equals,com.coveros.training.library.domainobjects.Book.title,1
+0,com.coveros.training.library.domainobjects.Book.hashCode,com.coveros.training.library.domainobjects.Book.id,1
+0,com.coveros.training.library.domainobjects.Book.hashCode,com.coveros.training.library.domainobjects.Book.title,1
+0,com.coveros.training.library.domainobjects.Book.isEmpty,com.coveros.training.library.domainobjects.Book.createEmpty,1
+0,com.coveros.training.library.domainobjects.Book.isEmpty,com.coveros.training.library.domainobjects.Book.equals,1
+0,com.coveros.training.library.domainobjects.Book.toOutputString,com.coveros.training.helpers.StringUtils.escapeForJson,1
+0,com.coveros.training.library.domainobjects.Book.toOutputString,com.coveros.training.library.domainobjects.Book.id,1
+0,com.coveros.training.library.domainobjects.Book.toOutputString,com.coveros.training.library.domainobjects.Book.title,1
+0,com.coveros.training.library.domainobjects.Borrower.Borrower,com.coveros.training.library.domainobjects.Borrower.id,1
+0,com.coveros.training.library.domainobjects.Borrower.Borrower,com.coveros.training.library.domainobjects.Borrower.name,1
+0,com.coveros.training.library.domainobjects.Borrower.createEmpty,com.coveros.training.library.domainobjects.Borrower.Borrower,1
+0,com.coveros.training.library.domainobjects.Borrower.equals,com.coveros.training.library.domainobjects.Borrower.id,1
+0,com.coveros.training.library.domainobjects.Borrower.equals,com.coveros.training.library.domainobjects.Borrower.name,1
+0,com.coveros.training.library.domainobjects.Borrower.hashCode,com.coveros.training.library.domainobjects.Borrower.id,1
+0,com.coveros.training.library.domainobjects.Borrower.hashCode,com.coveros.training.library.domainobjects.Borrower.name,1
+0,com.coveros.training.library.domainobjects.Borrower.isEmpty,com.coveros.training.library.domainobjects.Borrower.createEmpty,1
+0,com.coveros.training.library.domainobjects.Borrower.isEmpty,com.coveros.training.library.domainobjects.Borrower.equals,1
+0,com.coveros.training.library.domainobjects.Borrower.toOutputString,com.coveros.training.helpers.StringUtils.escapeForJson,1
+0,com.coveros.training.library.domainobjects.Borrower.toOutputString,com.coveros.training.library.domainobjects.Borrower.id,1
+0,com.coveros.training.library.domainobjects.Borrower.toOutputString,com.coveros.training.library.domainobjects.Borrower.name,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.$VALUES,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.ALREADY_REGISTERED_BOOK,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.ALREADY_REGISTERED_BORROWER,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.BOOK_CHECKED_OUT,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.BOOK_NOT_REGISTERED,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.BORROWER_NOT_REGISTERED,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.LibraryActionResults,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.NON_REGISTERED_BOOK_CANNOT_BE_DELETED,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.NON_REGISTERED_BORROWER_CANNOT_BE_DELETED,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.NO_BOOK_TITLE_PROVIDED,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.NO_BORROWER_PROVIDED,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.NULL,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.static {},com.coveros.training.library.domainobjects.LibraryActionResults.SUCCESS,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.values,com.coveros.training.library.domainobjects.LibraryActionResults.$VALUES,1
+0,com.coveros.training.library.domainobjects.LibraryActionResults.values,com.coveros.training.library.domainobjects.LibraryActionResults[].clone,1
+0,com.coveros.training.library.domainobjects.Loan.Loan,com.coveros.training.library.domainobjects.Loan.book,1
+0,com.coveros.training.library.domainobjects.Loan.Loan,com.coveros.training.library.domainobjects.Loan.borrower,1
+0,com.coveros.training.library.domainobjects.Loan.Loan,com.coveros.training.library.domainobjects.Loan.checkoutDate,1
+0,com.coveros.training.library.domainobjects.Loan.Loan,com.coveros.training.library.domainobjects.Loan.id,1
+0,com.coveros.training.library.domainobjects.Loan.createEmpty,com.coveros.training.library.domainobjects.Book.createEmpty,1
+0,com.coveros.training.library.domainobjects.Loan.createEmpty,com.coveros.training.library.domainobjects.Borrower.createEmpty,1
+0,com.coveros.training.library.domainobjects.Loan.createEmpty,com.coveros.training.library.domainobjects.Loan.Loan,1
+0,com.coveros.training.library.domainobjects.Loan.equals,com.coveros.training.library.domainobjects.Loan.book,1
+0,com.coveros.training.library.domainobjects.Loan.equals,com.coveros.training.library.domainobjects.Loan.borrower,1
+0,com.coveros.training.library.domainobjects.Loan.equals,com.coveros.training.library.domainobjects.Loan.checkoutDate,1
+0,com.coveros.training.library.domainobjects.Loan.equals,com.coveros.training.library.domainobjects.Loan.id,1
+0,com.coveros.training.library.domainobjects.Loan.hashCode,com.coveros.training.library.domainobjects.Loan.book,1
+0,com.coveros.training.library.domainobjects.Loan.hashCode,com.coveros.training.library.domainobjects.Loan.borrower,1
+0,com.coveros.training.library.domainobjects.Loan.hashCode,com.coveros.training.library.domainobjects.Loan.checkoutDate,1
+0,com.coveros.training.library.domainobjects.Loan.hashCode,com.coveros.training.library.domainobjects.Loan.id,1
+0,com.coveros.training.library.domainobjects.Loan.isEmpty,com.coveros.training.library.domainobjects.Loan.createEmpty,1
+0,com.coveros.training.library.domainobjects.Loan.isEmpty,com.coveros.training.library.domainobjects.Loan.equals,1
+0,com.coveros.training.mathematics.AckServlet.doPost,com.coveros.training.mathematics.AckServlet.forwardToResult,1
+0,com.coveros.training.mathematics.AckServlet.doPost,com.coveros.training.mathematics.AckServlet.logger,1
+0,com.coveros.training.mathematics.AckServlet.doPost,com.coveros.training.mathematics.AckServlet.putNumberInRequest,1
+0,com.coveros.training.mathematics.AckServlet.doPost,com.coveros.training.mathematics.AckServlet.regularRecursive,1
+0,com.coveros.training.mathematics.AckServlet.doPost,com.coveros.training.mathematics.AckServlet.tailRecursive,1
+0,com.coveros.training.mathematics.AckServlet.forwardToResult,com.coveros.training.helpers.ServletUtils.forwardToRestfulResult,1
+0,com.coveros.training.mathematics.AckServlet.regularRecursive,com.coveros.training.mathematics.AckServlet.logger,1
+0,com.coveros.training.mathematics.AckServlet.regularRecursive,com.coveros.training.mathematics.Ackermann.calculate,1
+0,com.coveros.training.mathematics.AckServlet.static {},com.coveros.training.mathematics.AckServlet.logger,1
+0,com.coveros.training.mathematics.AckServlet.tailRecursive,com.coveros.training.mathematics.AckServlet.logger,1
+0,com.coveros.training.mathematics.AckServlet.tailRecursive,com.coveros.training.mathematics.AckermannIterative.calculate,1
+0,com.coveros.training.mathematics.Ackermann.calculate,com.coveros.training.mathematics.Ackermann.ack,1
+0,com.coveros.training.mathematics.AckermannIterative.calculate,com.coveros.training.mathematics.AckermannIterative$$.main,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$1,com.coveros.training.mathematics.AckermannIterative$$.tail,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$2,com.coveros.training.mathematics.AckermannIterative$$.ONE,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$2,com.coveros.training.mathematics.AckermannIterative$$.THREE,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$2,com.coveros.training.mathematics.AckermannIterative$$.TWO,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$2,com.coveros.training.mathematics.AckermannIterative$$.ZERO,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$2,com.coveros.training.mathematics.AckermannIterative$$.tail,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$2,com.coveros.training.mathematics.AckermannIterative.flag,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$2,com.coveros.training.mathematics.AckermannIterative.number1,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$2,com.coveros.training.mathematics.AckermannIterative.number2,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$2,com.coveros.training.mathematics.AckermannIterative.stack,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$static$3,com.coveros.training.mathematics.AckermannIterative.stack,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$tail$0,com.coveros.training.mathematics.AckermannIterative$$$Field.ordinal,1
+0,com.coveros.training.mathematics.AckermannIterative$$.lambda$tail$0,com.coveros.training.mathematics.AckermannIterative$1.$SwitchMap$com$coveros$training$mathematics$AckermannIterative$$$Field,1
+0,com.coveros.training.mathematics.AckermannIterative$$.main,com.coveros.training.mathematics.AckermannIterative$$.ACKERMANN,1
+0,com.coveros.training.mathematics.AckermannIterative$$.static {},com.coveros.training.mathematics.AckermannIterative$$.$VALUES,1
+0,com.coveros.training.mathematics.AckermannIterative$$.static {},com.coveros.training.mathematics.AckermannIterative$$.ACKERMANN,1
+0,com.coveros.training.mathematics.AckermannIterative$$.static {},com.coveros.training.mathematics.AckermannIterative$$.AckermannIterative$$,1
+0,com.coveros.training.mathematics.AckermannIterative$$.static {},com.coveros.training.mathematics.AckermannIterative$$.END,1
+0,com.coveros.training.mathematics.AckermannIterative$$.static {},com.coveros.training.mathematics.AckermannIterative$$.ONE,1
+0,com.coveros.training.mathematics.AckermannIterative$$.static {},com.coveros.training.mathematics.AckermannIterative$$.THREE,1
+0,com.coveros.training.mathematics.AckermannIterative$$.static {},com.coveros.training.mathematics.AckermannIterative$$.TWO,1
+0,com.coveros.training.mathematics.AckermannIterative$$.static {},com.coveros.training.mathematics.AckermannIterative$$.ZERO,1
+0,com.coveros.training.mathematics.AckermannIterative$$.static {},com.coveros.training.mathematics.TailRecursive.tailie,1
+0,com.coveros.training.mathematics.AckermannIterative$$.values,com.coveros.training.mathematics.AckermannIterative$$.$VALUES,1
+0,com.coveros.training.mathematics.AckermannIterative$$.values,com.coveros.training.mathematics.AckermannIterative$$[].clone,1
+0,com.coveros.training.mathematics.AckermannIterative$$$Field.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.$VALUES,1
+0,com.coveros.training.mathematics.AckermannIterative$$$Field.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.AckermannIterative$$$Field,1
+0,com.coveros.training.mathematics.AckermannIterative$$$Field.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.FLAG,1
+0,com.coveros.training.mathematics.AckermannIterative$$$Field.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.NUMBER_1,1
+0,com.coveros.training.mathematics.AckermannIterative$$$Field.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.NUMBER_2,1
+0,com.coveros.training.mathematics.AckermannIterative$$$Field.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.STACK,1
+0,com.coveros.training.mathematics.AckermannIterative$$$Field.values,com.coveros.training.mathematics.AckermannIterative$$$Field.$VALUES,1
+0,com.coveros.training.mathematics.AckermannIterative$$$Field.values,com.coveros.training.mathematics.AckermannIterative$$$Field[].clone,1
+0,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.flag,com.coveros.training.mathematics.AckermannIterative$$$Field.FLAG,1
+0,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.flag,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.field,1
+0,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.number1,com.coveros.training.mathematics.AckermannIterative$$$Field.NUMBER_1,1
+0,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.number1,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.field,1
+0,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.number2,com.coveros.training.mathematics.AckermannIterative$$$Field.NUMBER_2,1
+0,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.number2,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.field,1
+0,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.stack,com.coveros.training.mathematics.AckermannIterative$$$Field.STACK,1
+0,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.stack,com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.field,1
+0,com.coveros.training.mathematics.AckermannIterative$1.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.FLAG,1
+0,com.coveros.training.mathematics.AckermannIterative$1.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.NUMBER_1,1
+0,com.coveros.training.mathematics.AckermannIterative$1.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.NUMBER_2,1
+0,com.coveros.training.mathematics.AckermannIterative$1.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.STACK,1
+0,com.coveros.training.mathematics.AckermannIterative$1.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.ordinal,1
+0,com.coveros.training.mathematics.AckermannIterative$1.static {},com.coveros.training.mathematics.AckermannIterative$$$Field.values,1
+0,com.coveros.training.mathematics.AckermannIterative$1.static {},com.coveros.training.mathematics.AckermannIterative$1.$SwitchMap$com$coveros$training$mathematics$AckermannIterative$$$Field,1
+0,com.coveros.training.mathematics.Calculator.Calculator,com.coveros.training.mathematics.Calculator$Baz.Calculator$Baz,1
+0,com.coveros.training.mathematics.Calculator.Calculator,com.coveros.training.mathematics.Calculator.baz,2
+0,com.coveros.training.mathematics.Calculator.calculateAndMore,com.coveros.training.mathematics.Calculator$iBar.doOtherComplexThing,1
+0,com.coveros.training.mathematics.Calculator.calculateAndMore,com.coveros.training.mathematics.Calculator$iFoo.doComplexThing,1
+0,com.coveros.training.mathematics.Calculator.calculateAndMorePart2,com.coveros.training.mathematics.Calculator$Baz.doThirdPartyThing,1
+0,com.coveros.training.mathematics.Calculator.calculateAndMorePart2,com.coveros.training.mathematics.Calculator.baz,1
+0,com.coveros.training.mathematics.Calculator.calculateAndMorePart3,com.coveros.training.mathematics.Calculator$Baz.doThirdPartyThing,1
+0,com.coveros.training.mathematics.Calculator.calculateAndMorePart3,com.coveros.training.mathematics.Calculator.baz,1
+0,com.coveros.training.mathematics.Calculator$Baz.Calculator$Baz,com.coveros.training.mathematics.Calculator$Baz.this$0,1
+0,com.coveros.training.mathematics.FibServlet.defaultRecursiveCalculation,com.coveros.training.mathematics.FibServlet.logger,1
+0,com.coveros.training.mathematics.FibServlet.defaultRecursiveCalculation,com.coveros.training.mathematics.Fibonacci.calculate,1
+0,com.coveros.training.mathematics.FibServlet.doPost,com.coveros.training.mathematics.FibServlet.defaultRecursiveCalculation,1
+0,com.coveros.training.mathematics.FibServlet.doPost,com.coveros.training.mathematics.FibServlet.forwardToResult,1
+0,com.coveros.training.mathematics.FibServlet.doPost,com.coveros.training.mathematics.FibServlet.logger,1
+0,com.coveros.training.mathematics.FibServlet.doPost,com.coveros.training.mathematics.FibServlet.putNumberInRequest,1
+0,com.coveros.training.mathematics.FibServlet.doPost,com.coveros.training.mathematics.FibServlet.tailRecursiveAlgo1Calc,1
+0,com.coveros.training.mathematics.FibServlet.doPost,com.coveros.training.mathematics.FibServlet.tailRecursiveAlgo2Calc,1
+0,com.coveros.training.mathematics.FibServlet.forwardToResult,com.coveros.training.helpers.ServletUtils.forwardToRestfulResult,1
+0,com.coveros.training.mathematics.FibServlet.static {},com.coveros.training.mathematics.FibServlet.logger,1
+0,com.coveros.training.mathematics.FibServlet.tailRecursiveAlgo1Calc,com.coveros.training.mathematics.FibServlet.logger,1
+0,com.coveros.training.mathematics.FibServlet.tailRecursiveAlgo1Calc,com.coveros.training.mathematics.FibonacciIterative.fibAlgo1,1
+0,com.coveros.training.mathematics.FibServlet.tailRecursiveAlgo2Calc,com.coveros.training.mathematics.FibServlet.logger,1
+0,com.coveros.training.mathematics.FibServlet.tailRecursiveAlgo2Calc,com.coveros.training.mathematics.FibonacciIterative.fibAlgo2,1
+0,com.coveros.training.mathematics.FunctionalField.field,com.coveros.training.mathematics.FunctionalField.untypedField,1
+0,com.coveros.training.mathematics.MathServlet.doPost,com.coveros.training.mathematics.MathServlet.forwardToResult,1
+0,com.coveros.training.mathematics.MathServlet.doPost,com.coveros.training.mathematics.MathServlet.logger,1
+0,com.coveros.training.mathematics.MathServlet.doPost,com.coveros.training.mathematics.MathServlet.putNumberInRequest,1
+0,com.coveros.training.mathematics.MathServlet.doPost,com.coveros.training.mathematics.MathServlet.setResultToSum,1
+0,com.coveros.training.mathematics.MathServlet.forwardToResult,com.coveros.training.helpers.ServletUtils.forwardToRestfulResult,1
+0,com.coveros.training.mathematics.MathServlet.setResultToSum,com.coveros.training.mathematics.Calculator.add,1
+0,com.coveros.training.mathematics.MathServlet.static {},com.coveros.training.mathematics.MathServlet.logger,1
+0,com.coveros.training.mathematics.TailRecursive.lambda$tailie$0,com.coveros.training.mathematics.TailRecursive$$.epsilon,1
+0,com.coveros.training.mathematics.TailRecursive$$.static {},com.coveros.training.mathematics.TailRecursive$$.$VALUES,1
+0,com.coveros.training.mathematics.TailRecursive$$.static {},com.coveros.training.mathematics.TailRecursive$$.END,1
+0,com.coveros.training.mathematics.TailRecursive$$.static {},com.coveros.training.mathematics.TailRecursive$$.TailRecursive$$,1
+0,com.coveros.training.mathematics.TailRecursive$$.values,com.coveros.training.mathematics.TailRecursive$$.$VALUES,1
+0,com.coveros.training.mathematics.TailRecursive$$.values,com.coveros.training.mathematics.TailRecursive$$[].clone,1
+0,com.coveros.training.persistence.DbServlet.DbServlet,com.coveros.training.persistence.DbServlet.pl,2
+0,com.coveros.training.persistence.DbServlet.DbServlet,com.coveros.training.persistence.PersistenceLayer.PersistenceLayer,1
+0,com.coveros.training.persistence.DbServlet.doGet,com.coveros.training.helpers.ServletUtils.forwardToResult,1
+0,com.coveros.training.persistence.DbServlet.doGet,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.persistence.DbServlet.doGet,com.coveros.training.persistence.DbServlet.logger,1
+0,com.coveros.training.persistence.DbServlet.doGet,com.coveros.training.persistence.DbServlet.pl,1
+0,com.coveros.training.persistence.DbServlet.doGet,com.coveros.training.persistence.IPersistenceLayer.cleanAndMigrateDatabase,1
+0,com.coveros.training.persistence.DbServlet.doGet,com.coveros.training.persistence.IPersistenceLayer.cleanDatabase,1
+0,com.coveros.training.persistence.DbServlet.doGet,com.coveros.training.persistence.IPersistenceLayer.migrateDatabase,1
+0,com.coveros.training.persistence.DbServlet.static {},com.coveros.training.persistence.DbServlet.logger,1
+0,com.coveros.training.persistence.EmptyDataSource.getConnection,com.coveros.training.persistence.NotImplementedException.NotImplementedException,2
+0,com.coveros.training.persistence.EmptyDataSource.getLogWriter,com.coveros.training.persistence.NotImplementedException.NotImplementedException,1
+0,com.coveros.training.persistence.EmptyDataSource.getLoginTimeout,com.coveros.training.persistence.NotImplementedException.NotImplementedException,1
+0,com.coveros.training.persistence.EmptyDataSource.getParentLogger,com.coveros.training.persistence.NotImplementedException.NotImplementedException,1
+0,com.coveros.training.persistence.EmptyDataSource.isWrapperFor,com.coveros.training.persistence.NotImplementedException.NotImplementedException,1
+0,com.coveros.training.persistence.EmptyDataSource.setLogWriter,com.coveros.training.persistence.NotImplementedException.NotImplementedException,1
+0,com.coveros.training.persistence.EmptyDataSource.setLoginTimeout,com.coveros.training.persistence.NotImplementedException.NotImplementedException,1
+0,com.coveros.training.persistence.EmptyDataSource.unwrap,com.coveros.training.persistence.NotImplementedException.NotImplementedException,1
+0,com.coveros.training.persistence.ParameterObject.ParameterObject,com.coveros.training.persistence.ParameterObject.data,1
+0,com.coveros.training.persistence.ParameterObject.ParameterObject,com.coveros.training.persistence.ParameterObject.type,1
+0,com.coveros.training.persistence.ParameterObject.createEmpty,com.coveros.training.persistence.ParameterObject.ParameterObject,1
+0,com.coveros.training.persistence.ParameterObject.equals,com.coveros.training.persistence.ParameterObject.data,1
+0,com.coveros.training.persistence.ParameterObject.equals,com.coveros.training.persistence.ParameterObject.type,1
+0,com.coveros.training.persistence.ParameterObject.hashCode,com.coveros.training.persistence.ParameterObject.data,1
+0,com.coveros.training.persistence.ParameterObject.hashCode,com.coveros.training.persistence.ParameterObject.type,1
+0,com.coveros.training.persistence.ParameterObject.isEmpty,com.coveros.training.persistence.ParameterObject.createEmpty,1
+0,com.coveros.training.persistence.ParameterObject.isEmpty,com.coveros.training.persistence.ParameterObject.equals,1
+0,com.coveros.training.persistence.PersistenceLayer.PersistenceLayer,com.coveros.training.persistence.PersistenceLayer.obtainConnectionPool,1
+0,com.coveros.training.persistence.PersistenceLayer.PersistenceLayer,com.coveros.training.persistence.PersistenceLayer.dataSource,1
+0,com.coveros.training.persistence.PersistenceLayer.areCredentialsValid,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.areCredentialsValid,com.coveros.training.persistence.PersistenceLayer.createHashedValueFromPassword,1
+0,com.coveros.training.persistence.PersistenceLayer.areCredentialsValid,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.areCredentialsValid,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.cleanAndMigrateDatabase,com.coveros.training.persistence.PersistenceLayer.cleanDatabase,1
+0,com.coveros.training.persistence.PersistenceLayer.cleanAndMigrateDatabase,com.coveros.training.persistence.PersistenceLayer.migrateDatabase,1
+0,com.coveros.training.persistence.PersistenceLayer.cleanDatabase,com.coveros.training.persistence.PersistenceLayer.configureFlyway,1
+0,com.coveros.training.persistence.PersistenceLayer.configureFlyway,com.coveros.training.persistence.PersistenceLayer.dataSource,1
+0,com.coveros.training.persistence.PersistenceLayer.createEmpty,com.coveros.training.persistence.EmptyDataSource.EmptyDataSource,1
+0,com.coveros.training.persistence.PersistenceLayer.createEmpty,com.coveros.training.persistence.PersistenceLayer.PersistenceLayer,1
+0,com.coveros.training.persistence.PersistenceLayer.createExtractor,com.coveros.training.persistence.PersistenceLayer.throwingFunctionWrapper,1
+0,com.coveros.training.persistence.PersistenceLayer.createHashedValueFromPassword,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.persistence.PersistenceLayer.createHashedValueFromPassword,com.coveros.training.persistence.PersistenceLayer.bytesToHex,1
+0,com.coveros.training.persistence.PersistenceLayer.createHashedValueFromPassword,com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException,1
+0,com.coveros.training.persistence.PersistenceLayer.createLoan,com.coveros.training.library.domainobjects.Book.id,1
+0,com.coveros.training.persistence.PersistenceLayer.createLoan,com.coveros.training.library.domainobjects.Borrower.id,1
+0,com.coveros.training.persistence.PersistenceLayer.createLoan,com.coveros.training.persistence.PersistenceLayer.executeInsertTemplate,1
+0,com.coveros.training.persistence.PersistenceLayer.deleteBook,com.coveros.training.helpers.CheckUtils.IntParameterMustBePositive,1
+0,com.coveros.training.persistence.PersistenceLayer.deleteBook,com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate,1
+0,com.coveros.training.persistence.PersistenceLayer.deleteBorrower,com.coveros.training.helpers.CheckUtils.IntParameterMustBePositive,1
+0,com.coveros.training.persistence.PersistenceLayer.deleteBorrower,com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate,1
+0,com.coveros.training.persistence.PersistenceLayer.executeInsertOnPreparedStatement,com.coveros.training.persistence.PersistenceLayer.$assertionsDisabled,1
+0,com.coveros.training.persistence.PersistenceLayer.executeInsertOnPreparedStatement,com.coveros.training.persistence.SqlData.applyParametersToPreparedStatement,1
+0,com.coveros.training.persistence.PersistenceLayer.executeInsertOnPreparedStatement,com.coveros.training.persistence.SqlData.description,1
+0,com.coveros.training.persistence.PersistenceLayer.executeInsertOnPreparedStatement,com.coveros.training.persistence.SqlData.preparedStatement,1
+0,com.coveros.training.persistence.PersistenceLayer.executeInsertOnPreparedStatement,com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException,1
+0,com.coveros.training.persistence.PersistenceLayer.executeInsertTemplate,com.coveros.training.persistence.PersistenceLayer.dataSource,1
+0,com.coveros.training.persistence.PersistenceLayer.executeInsertTemplate,com.coveros.training.persistence.PersistenceLayer.executeInsertOnPreparedStatement,1
+0,com.coveros.training.persistence.PersistenceLayer.executeInsertTemplate,com.coveros.training.persistence.PersistenceLayer.prepareStatementWithKeys,1
+0,com.coveros.training.persistence.PersistenceLayer.executeInsertTemplate,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.executeInsertTemplate,com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException,1
+0,com.coveros.training.persistence.PersistenceLayer.executeUpdateOnPreparedStatement,com.coveros.training.persistence.SqlData.applyParametersToPreparedStatement,1
+0,com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate,com.coveros.training.persistence.PersistenceLayer.dataSource,1
+0,com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate,com.coveros.training.persistence.PersistenceLayer.executeUpdateOnPreparedStatement,1
+0,com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate,com.coveros.training.persistence.PersistenceLayer.prepareStatementWithKeys,1
+0,com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate,com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException,1
+0,com.coveros.training.persistence.PersistenceLayer.getBorrowerName,com.coveros.training.helpers.CheckUtils.IntParameterMustBePositive,1
+0,com.coveros.training.persistence.PersistenceLayer.getBorrowerName,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.getBorrowerName,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.getBorrowerName,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.isEmpty,com.coveros.training.persistence.PersistenceLayer.dataSource,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$areCredentialsValid$12,com.coveros.training.persistence.PersistenceLayer.$assertionsDisabled,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$createExtractor$1,com.coveros.training.persistence.PersistenceLayer$ThrowingFunction.apply,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$getBorrowerName$2,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$listAllBorrowers$8,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$listAllBorrowers$8,com.coveros.training.library.domainobjects.Borrower.Borrower,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$listBooks$7,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$listBooks$7,com.coveros.training.library.domainobjects.Book.Book,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchBooksById$5,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchBooksById$5,com.coveros.training.library.domainobjects.Book.Book,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchBooksByTitle$4,com.coveros.training.library.domainobjects.Book.Book,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchBorrowerDataByName$3,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchBorrowerDataByName$3,com.coveros.training.library.domainobjects.Borrower.Borrower,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchBorrowersById$6,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchBorrowersById$6,com.coveros.training.library.domainobjects.Borrower.Borrower,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchForLoanByBook$10,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchForLoanByBook$10,com.coveros.training.library.domainobjects.Borrower.Borrower,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchForLoanByBook$10,com.coveros.training.library.domainobjects.Loan.Loan,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchForLoanByBorrower$9,com.coveros.training.helpers.StringUtils.makeNotNullable,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchForLoanByBorrower$9,com.coveros.training.library.domainobjects.Book.Book,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchForLoanByBorrower$9,com.coveros.training.library.domainobjects.Loan.Loan,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$searchForUserByName$11,com.coveros.training.authentication.domainobjects.User.User,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$throwingFunctionWrapper$0,com.coveros.training.persistence.PersistenceLayer$ThrowingFunction.apply,1
+0,com.coveros.training.persistence.PersistenceLayer.lambda$throwingFunctionWrapper$0,com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException,1
+0,com.coveros.training.persistence.PersistenceLayer.listAllBooks,com.coveros.training.persistence.PersistenceLayer.listBooks,1
+0,com.coveros.training.persistence.PersistenceLayer.listAllBorrowers,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.listAllBorrowers,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.listAllBorrowers,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.listAvailableBooks,com.coveros.training.persistence.PersistenceLayer.listBooks,1
+0,com.coveros.training.persistence.PersistenceLayer.listBooks,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.listBooks,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.listBooks,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.migrateDatabase,com.coveros.training.persistence.PersistenceLayer.configureFlyway,1
+0,com.coveros.training.persistence.PersistenceLayer.prepareStatementWithKeys,com.coveros.training.persistence.SqlData.preparedStatement,1
+0,com.coveros.training.persistence.PersistenceLayer.runBackup,com.coveros.training.persistence.PersistenceLayer.dataSource,1
+0,com.coveros.training.persistence.PersistenceLayer.runBackup,com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException,1
+0,com.coveros.training.persistence.PersistenceLayer.runQuery,com.coveros.training.persistence.PersistenceLayer.dataSource,1
+0,com.coveros.training.persistence.PersistenceLayer.runQuery,com.coveros.training.persistence.SqlData.applyParametersToPreparedStatement,1
+0,com.coveros.training.persistence.PersistenceLayer.runQuery,com.coveros.training.persistence.SqlData.extractor,1
+0,com.coveros.training.persistence.PersistenceLayer.runQuery,com.coveros.training.persistence.SqlData.preparedStatement,1
+0,com.coveros.training.persistence.PersistenceLayer.runQuery,com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException,1
+0,com.coveros.training.persistence.PersistenceLayer.runRestore,com.coveros.training.persistence.PersistenceLayer.dataSource,1
+0,com.coveros.training.persistence.PersistenceLayer.runRestore,com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException,1
+0,com.coveros.training.persistence.PersistenceLayer.saveNewBook,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.persistence.PersistenceLayer.saveNewBook,com.coveros.training.persistence.PersistenceLayer.executeInsertTemplate,1
+0,com.coveros.training.persistence.PersistenceLayer.saveNewBorrower,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.persistence.PersistenceLayer.saveNewBorrower,com.coveros.training.persistence.PersistenceLayer.executeInsertTemplate,1
+0,com.coveros.training.persistence.PersistenceLayer.saveNewUser,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.persistence.PersistenceLayer.saveNewUser,com.coveros.training.persistence.PersistenceLayer.executeInsertTemplate,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBooksById,com.coveros.training.helpers.CheckUtils.IntParameterMustBePositive,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBooksById,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBooksById,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBooksById,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBooksByTitle,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBooksByTitle,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBooksByTitle,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBooksByTitle,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBorrowerDataByName,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBorrowerDataByName,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBorrowerDataByName,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBorrowerDataByName,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBorrowersById,com.coveros.training.helpers.CheckUtils.IntParameterMustBePositive,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBorrowersById,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBorrowersById,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.searchBorrowersById,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForLoanByBook,com.coveros.training.library.domainobjects.Book.id,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForLoanByBook,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForLoanByBook,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForLoanByBook,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForLoanByBorrower,com.coveros.training.library.domainobjects.Borrower.id,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForLoanByBorrower,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForLoanByBorrower,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForLoanByBorrower,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForUserByName,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForUserByName,com.coveros.training.persistence.PersistenceLayer.createExtractor,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForUserByName,com.coveros.training.persistence.PersistenceLayer.runQuery,1
+0,com.coveros.training.persistence.PersistenceLayer.searchForUserByName,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.PersistenceLayer.static {},com.coveros.training.persistence.PersistenceLayer.$assertionsDisabled,1
+0,com.coveros.training.persistence.PersistenceLayer.updateBorrower,com.coveros.training.helpers.CheckUtils.IntParameterMustBePositive,1
+0,com.coveros.training.persistence.PersistenceLayer.updateBorrower,com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty,1
+0,com.coveros.training.persistence.PersistenceLayer.updateBorrower,com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate,1
+0,com.coveros.training.persistence.PersistenceLayer.updateUserWithPassword,com.coveros.training.helpers.CheckUtils.IntParameterMustBePositive,1
+0,com.coveros.training.persistence.PersistenceLayer.updateUserWithPassword,com.coveros.training.persistence.PersistenceLayer.createHashedValueFromPassword,1
+0,com.coveros.training.persistence.PersistenceLayer.updateUserWithPassword,com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate,1
+0,com.coveros.training.persistence.SqlData.SqlData,com.coveros.training.persistence.SqlData.description,1
+0,com.coveros.training.persistence.SqlData.SqlData,com.coveros.training.persistence.SqlData.extractor,1
+0,com.coveros.training.persistence.SqlData.SqlData,com.coveros.training.persistence.SqlData.generateParams,1
+0,com.coveros.training.persistence.SqlData.SqlData,com.coveros.training.persistence.SqlData.params,1
+0,com.coveros.training.persistence.SqlData.SqlData,com.coveros.training.persistence.SqlData.preparedStatement,1
+0,com.coveros.training.persistence.SqlData.addParameter,com.coveros.training.persistence.ParameterObject.ParameterObject,1
+0,com.coveros.training.persistence.SqlData.addParameter,com.coveros.training.persistence.SqlData.params,1
+0,com.coveros.training.persistence.SqlData.applyParametersToPreparedStatement,com.coveros.training.persistence.ParameterObject.data,1
+0,com.coveros.training.persistence.SqlData.applyParametersToPreparedStatement,com.coveros.training.persistence.ParameterObject.type,1
+0,com.coveros.training.persistence.SqlData.applyParametersToPreparedStatement,com.coveros.training.persistence.SqlData.params,1
+0,com.coveros.training.persistence.SqlData.applyParametersToPreparedStatement,com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException,1
+0,com.coveros.training.persistence.SqlData.createEmpty,com.coveros.training.persistence.SqlData.SqlData,1
+0,com.coveros.training.persistence.SqlData.equals,com.coveros.training.persistence.SqlData.description,1
+0,com.coveros.training.persistence.SqlData.equals,com.coveros.training.persistence.SqlData.extractor,1
+0,com.coveros.training.persistence.SqlData.equals,com.coveros.training.persistence.SqlData.params,1
+0,com.coveros.training.persistence.SqlData.equals,com.coveros.training.persistence.SqlData.preparedStatement,1
+0,com.coveros.training.persistence.SqlData.generateParams,com.coveros.training.persistence.SqlData.addParameter,1
+0,com.coveros.training.persistence.SqlData.hashCode,com.coveros.training.persistence.SqlData.description,1
+0,com.coveros.training.persistence.SqlData.hashCode,com.coveros.training.persistence.SqlData.extractor,1
+0,com.coveros.training.persistence.SqlData.hashCode,com.coveros.training.persistence.SqlData.params,1
+0,com.coveros.training.persistence.SqlData.hashCode,com.coveros.training.persistence.SqlData.preparedStatement,1
+0,com.coveros.training.persistence.SqlData.isEmpty,com.coveros.training.persistence.SqlData.createEmpty,1
+0,com.coveros.training.persistence.SqlData.isEmpty,com.coveros.training.persistence.SqlData.equals,1
+0,com.coveros.training.persistence.SqlData.toString,com.coveros.training.persistence.SqlData.description,1
+0,com.coveros.training.persistence.SqlData.toString,com.coveros.training.persistence.SqlData.params,1
+0,com.coveros.training.persistence.SqlData.toString,com.coveros.training.persistence.SqlData.preparedStatement,1
+0,com.coveros.training.tomcat.WebAppListener.WebAppListener,com.coveros.training.persistence.PersistenceLayer.PersistenceLayer,1
+0,com.coveros.training.tomcat.WebAppListener.WebAppListener,com.coveros.training.tomcat.WebAppListener.pl,2
+0,com.coveros.training.tomcat.WebAppListener.contextInitialized,com.coveros.training.persistence.IPersistenceLayer.cleanAndMigrateDatabase,1
+0,com.coveros.training.tomcat.WebAppListener.contextInitialized,com.coveros.training.tomcat.WebAppListener.pl,1

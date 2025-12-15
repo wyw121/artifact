@@ -1,0 +1,1214 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "BaseEntity.BaseEntity"
+                },
+                {
+                    "id": "BaseEntity.getId"
+                },
+                {
+                    "id": "BaseEntity.isNew"
+                },
+                {
+                    "id": "BaseEntity.setId"
+                },
+                {
+                    "id": "Owner.Owner"
+                },
+                {
+                    "id": "Owner.addPet"
+                },
+                {
+                    "id": "Owner.addVisit"
+                },
+                {
+                    "id": "Owner.getAddress"
+                },
+                {
+                    "id": "Owner.getCity"
+                },
+                {
+                    "id": "Owner.getFirstName"
+                },
+                {
+                    "id": "Owner.getId"
+                },
+                {
+                    "id": "Owner.getLastName"
+                },
+                {
+                    "id": "Owner.getPet"
+                },
+                {
+                    "id": "Owner.getPets"
+                },
+                {
+                    "id": "Owner.getTelephone"
+                },
+                {
+                    "id": "Owner.isNew"
+                },
+                {
+                    "id": "Owner.setAddress"
+                },
+                {
+                    "id": "Owner.setCity"
+                },
+                {
+                    "id": "Owner.setId"
+                },
+                {
+                    "id": "Owner.setLastName"
+                },
+                {
+                    "id": "Owner.setTelephone"
+                },
+                {
+                    "id": "Owner.toString"
+                },
+                {
+                    "id": "OwnerController.OwnerController"
+                },
+                {
+                    "id": "OwnerController.addPaginationModel"
+                },
+                {
+                    "id": "OwnerController.findOwner"
+                },
+                {
+                    "id": "OwnerController.findPaginatedForOwnersLastName"
+                },
+                {
+                    "id": "OwnerController.initCreationForm"
+                },
+                {
+                    "id": "OwnerController.initFindForm"
+                },
+                {
+                    "id": "OwnerController.initUpdateOwnerForm"
+                },
+                {
+                    "id": "OwnerController.processCreationForm"
+                },
+                {
+                    "id": "OwnerController.processFindForm"
+                },
+                {
+                    "id": "OwnerController.processUpdateOwnerForm"
+                },
+                {
+                    "id": "OwnerController.setAllowedFields"
+                },
+                {
+                    "id": "OwnerController.showOwner"
+                },
+                {
+                    "id": "Person.Person"
+                },
+                {
+                    "id": "Person.getFirstName"
+                },
+                {
+                    "id": "Person.getLastName"
+                },
+                {
+                    "id": "Person.setFirstName"
+                },
+                {
+                    "id": "Person.setLastName"
+                },
+                {
+                    "id": "Vet.Vet"
+                },
+                {
+                    "id": "Vet.addSpecialty"
+                },
+                {
+                    "id": "Vet.getNrOfSpecialties"
+                },
+                {
+                    "id": "Vet.getSpecialties"
+                },
+                {
+                    "id": "Vet.getSpecialtiesInternal"
+                },
+                {
+                    "id": "Vet.setSpecialtiesInternal"
+                },
+                {
+                    "id": "Visit.Visit"
+                },
+                {
+                    "id": "Visit.getDate"
+                },
+                {
+                    "id": "Visit.getDescription"
+                },
+                {
+                    "id": "Visit.setDate"
+                },
+                {
+                    "id": "Visit.setDescription"
+                },
+                {
+                    "id": "VisitController.VisitController"
+                },
+                {
+                    "id": "VisitController.initNewVisitForm"
+                },
+                {
+                    "id": "VisitController.loadPetWithVisit"
+                },
+                {
+                    "id": "VisitController.processNewVisitForm"
+                },
+                {
+                    "id": "VisitController.setAllowedFields"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "PetClinicApplication.PetClinicApplication"
+                },
+                {
+                    "id": "PetClinicApplication.main"
+                },
+                {
+                    "id": "VetController.VetController"
+                },
+                {
+                    "id": "VetController.addPaginationModel"
+                },
+                {
+                    "id": "VetController.findPaginated"
+                },
+                {
+                    "id": "VetController.showResourcesVetList"
+                },
+                {
+                    "id": "VetController.showVetList"
+                },
+                {
+                    "id": "Vets.Vets"
+                },
+                {
+                    "id": "Vets.getVetList"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "NamedEntity.NamedEntity"
+                },
+                {
+                    "id": "NamedEntity.getName"
+                },
+                {
+                    "id": "NamedEntity.setName"
+                },
+                {
+                    "id": "NamedEntity.toString"
+                },
+                {
+                    "id": "Pet.Pet"
+                },
+                {
+                    "id": "Pet.addVisit"
+                },
+                {
+                    "id": "Pet.getBirthDate"
+                },
+                {
+                    "id": "Pet.getId"
+                },
+                {
+                    "id": "Pet.getName"
+                },
+                {
+                    "id": "Pet.getType"
+                },
+                {
+                    "id": "Pet.getVisits"
+                },
+                {
+                    "id": "Pet.isNew"
+                },
+                {
+                    "id": "Pet.setBirthDate"
+                },
+                {
+                    "id": "Pet.setType"
+                },
+                {
+                    "id": "PetController.PetController"
+                },
+                {
+                    "id": "PetController.findOwner"
+                },
+                {
+                    "id": "PetController.findPet"
+                },
+                {
+                    "id": "PetController.initCreationForm"
+                },
+                {
+                    "id": "PetController.initOwnerBinder"
+                },
+                {
+                    "id": "PetController.initPetBinder"
+                },
+                {
+                    "id": "PetController.initUpdateForm"
+                },
+                {
+                    "id": "PetController.populatePetTypes"
+                },
+                {
+                    "id": "PetController.processCreationForm"
+                },
+                {
+                    "id": "PetController.processUpdateForm"
+                },
+                {
+                    "id": "PetType.PetType"
+                },
+                {
+                    "id": "PetType.getName"
+                },
+                {
+                    "id": "PetTypeFormatter.PetTypeFormatter"
+                },
+                {
+                    "id": "PetTypeFormatter.parse"
+                },
+                {
+                    "id": "PetTypeFormatter.print"
+                },
+                {
+                    "id": "PetValidator.PetValidator"
+                },
+                {
+                    "id": "PetValidator.supports"
+                },
+                {
+                    "id": "PetValidator.validate"
+                },
+                {
+                    "id": "Specialty.Specialty"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "NamedEntity.NamedEntity",
+                "target": "BaseEntity.BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "NamedEntity.toString",
+                "target": "NamedEntity.getName",
+                "weight": "1"
+            },
+            {
+                "source": "Person.Person",
+                "target": "BaseEntity.BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.Owner",
+                "target": "Person.Person",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.addPet",
+                "target": "Owner.getPets",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.addPet",
+                "target": "Pet.isNew",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.addVisit",
+                "target": "Owner.getPet",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.addVisit",
+                "target": "Pet.addVisit",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.getPet",
+                "target": "Owner.getPets",
+                "weight": "2"
+            },
+            {
+                "source": "Owner.getPet",
+                "target": "Pet.getId",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.getPet",
+                "target": "Pet.isNew",
+                "weight": "2"
+            },
+            {
+                "source": "Owner.getPet",
+                "target": "Pet.getName",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.toString",
+                "target": "Owner.getFirstName",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.toString",
+                "target": "Owner.getId",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.toString",
+                "target": "Owner.getLastName",
+                "weight": "1"
+            },
+            {
+                "source": "Owner.toString",
+                "target": "Owner.isNew",
+                "weight": "1"
+            },
+            {
+                "source": "OwnerController.findOwner",
+                "target": "Owner.Owner",
+                "weight": "1"
+            },
+            {
+                "source": "OwnerController.initCreationForm",
+                "target": "Owner.Owner",
+                "weight": "1"
+            },
+            {
+                "source": "OwnerController.processCreationForm",
+                "target": "Owner.getId",
+                "weight": "1"
+            },
+            {
+                "source": "OwnerController.processFindForm",
+                "target": "Owner.getId",
+                "weight": "1"
+            },
+            {
+                "source": "OwnerController.processFindForm",
+                "target": "Owner.getLastName",
+                "weight": "1"
+            },
+            {
+                "source": "OwnerController.processFindForm",
+                "target": "Owner.setLastName",
+                "weight": "1"
+            },
+            {
+                "source": "OwnerController.processFindForm",
+                "target": "OwnerController.addPaginationModel",
+                "weight": "1"
+            },
+            {
+                "source": "OwnerController.processFindForm",
+                "target": "OwnerController.findPaginatedForOwnersLastName",
+                "weight": "1"
+            },
+            {
+                "source": "OwnerController.processUpdateOwnerForm",
+                "target": "Owner.setId",
+                "weight": "1"
+            },
+            {
+                "source": "Pet.Pet",
+                "target": "NamedEntity.NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Pet.addVisit",
+                "target": "Pet.getVisits",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.findPet",
+                "target": "Owner.getPet",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.findPet",
+                "target": "Pet.Pet",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.initCreationForm",
+                "target": "Owner.addPet",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.initCreationForm",
+                "target": "Pet.Pet",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.initPetBinder",
+                "target": "PetValidator.PetValidator",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.initUpdateForm",
+                "target": "Owner.getPet",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.processCreationForm",
+                "target": "Owner.addPet",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.processCreationForm",
+                "target": "Owner.getPet",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.processCreationForm",
+                "target": "Pet.getName",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.processCreationForm",
+                "target": "Pet.isNew",
+                "weight": "1"
+            },
+            {
+                "source": "PetController.processUpdateForm",
+                "target": "Owner.addPet",
+                "weight": "1"
+            },
+            {
+                "source": "PetType.PetType",
+                "target": "NamedEntity.NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "PetTypeFormatter.parse",
+                "target": "PetType.getName",
+                "weight": "1"
+            },
+            {
+                "source": "PetTypeFormatter.print",
+                "target": "PetType.getName",
+                "weight": "1"
+            },
+            {
+                "source": "PetValidator.validate",
+                "target": "Pet.getBirthDate",
+                "weight": "1"
+            },
+            {
+                "source": "PetValidator.validate",
+                "target": "Pet.getName",
+                "weight": "1"
+            },
+            {
+                "source": "PetValidator.validate",
+                "target": "Pet.getType",
+                "weight": "1"
+            },
+            {
+                "source": "PetValidator.validate",
+                "target": "Pet.isNew",
+                "weight": "1"
+            },
+            {
+                "source": "Visit.Visit",
+                "target": "BaseEntity.BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "VisitController.loadPetWithVisit",
+                "target": "Owner.getPet",
+                "weight": "1"
+            },
+            {
+                "source": "VisitController.loadPetWithVisit",
+                "target": "Pet.addVisit",
+                "weight": "1"
+            },
+            {
+                "source": "VisitController.loadPetWithVisit",
+                "target": "Visit.Visit",
+                "weight": "1"
+            },
+            {
+                "source": "VisitController.processNewVisitForm",
+                "target": "Owner.addVisit",
+                "weight": "1"
+            },
+            {
+                "source": "Specialty.Specialty",
+                "target": "NamedEntity.NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Vet.Vet",
+                "target": "Person.Person",
+                "weight": "1"
+            },
+            {
+                "source": "Vet.addSpecialty",
+                "target": "Vet.getSpecialtiesInternal",
+                "weight": "1"
+            },
+            {
+                "source": "Vet.getNrOfSpecialties",
+                "target": "Vet.getSpecialtiesInternal",
+                "weight": "1"
+            },
+            {
+                "source": "Vet.getSpecialties",
+                "target": "Vet.getSpecialtiesInternal",
+                "weight": "1"
+            },
+            {
+                "source": "VetController.showResourcesVetList",
+                "target": "Vets.Vets",
+                "weight": "1"
+            },
+            {
+                "source": "VetController.showResourcesVetList",
+                "target": "Vets.getVetList",
+                "weight": "1"
+            },
+            {
+                "source": "VetController.showVetList",
+                "target": "VetController.addPaginationModel",
+                "weight": "1"
+            },
+            {
+                "source": "VetController.showVetList",
+                "target": "VetController.findPaginated",
+                "weight": "1"
+            },
+            {
+                "source": "VetController.showVetList",
+                "target": "Vets.Vets",
+                "weight": "1"
+            },
+            {
+                "source": "VetController.showVetList",
+                "target": "Vets.getVetList",
+                "weight": "1"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "BaseEntity.BaseEntity"
+                },
+                {
+                    "id": "BaseEntity.getId"
+                },
+                {
+                    "id": "BaseEntity.isNew"
+                },
+                {
+                    "id": "BaseEntity.setId"
+                },
+                {
+                    "id": "Owner.Owner"
+                },
+                {
+                    "id": "Owner.addPet"
+                },
+                {
+                    "id": "Owner.addVisit"
+                },
+                {
+                    "id": "Owner.getAddress"
+                },
+                {
+                    "id": "Owner.getCity"
+                },
+                {
+                    "id": "Owner.getFirstName"
+                },
+                {
+                    "id": "Owner.getId"
+                },
+                {
+                    "id": "Owner.getLastName"
+                },
+                {
+                    "id": "Owner.getPet"
+                },
+                {
+                    "id": "Owner.getPets"
+                },
+                {
+                    "id": "Owner.getTelephone"
+                },
+                {
+                    "id": "Owner.isNew"
+                },
+                {
+                    "id": "Owner.setAddress"
+                },
+                {
+                    "id": "Owner.setCity"
+                },
+                {
+                    "id": "Owner.setId"
+                },
+                {
+                    "id": "Owner.setLastName"
+                },
+                {
+                    "id": "Owner.setTelephone"
+                },
+                {
+                    "id": "Owner.toString"
+                },
+                {
+                    "id": "OwnerController.OwnerController"
+                },
+                {
+                    "id": "OwnerController.addPaginationModel"
+                },
+                {
+                    "id": "OwnerController.findOwner"
+                },
+                {
+                    "id": "OwnerController.findPaginatedForOwnersLastName"
+                },
+                {
+                    "id": "OwnerController.initCreationForm"
+                },
+                {
+                    "id": "OwnerController.initFindForm"
+                },
+                {
+                    "id": "OwnerController.initUpdateOwnerForm"
+                },
+                {
+                    "id": "OwnerController.processCreationForm"
+                },
+                {
+                    "id": "OwnerController.processFindForm"
+                },
+                {
+                    "id": "OwnerController.processUpdateOwnerForm"
+                },
+                {
+                    "id": "OwnerController.setAllowedFields"
+                },
+                {
+                    "id": "OwnerController.showOwner"
+                },
+                {
+                    "id": "Person.Person"
+                },
+                {
+                    "id": "Person.getFirstName"
+                },
+                {
+                    "id": "Person.getLastName"
+                },
+                {
+                    "id": "Person.setFirstName"
+                },
+                {
+                    "id": "Person.setLastName"
+                },
+                {
+                    "id": "Vet.Vet"
+                },
+                {
+                    "id": "Vet.addSpecialty"
+                },
+                {
+                    "id": "Vet.getNrOfSpecialties"
+                },
+                {
+                    "id": "Vet.getSpecialties"
+                },
+                {
+                    "id": "Vet.getSpecialtiesInternal"
+                },
+                {
+                    "id": "Vet.setSpecialtiesInternal"
+                },
+                {
+                    "id": "Visit.Visit"
+                },
+                {
+                    "id": "Visit.getDate"
+                },
+                {
+                    "id": "Visit.getDescription"
+                },
+                {
+                    "id": "Visit.setDate"
+                },
+                {
+                    "id": "Visit.setDescription"
+                },
+                {
+                    "id": "VisitController.VisitController"
+                },
+                {
+                    "id": "VisitController.initNewVisitForm"
+                },
+                {
+                    "id": "VisitController.loadPetWithVisit"
+                },
+                {
+                    "id": "VisitController.processNewVisitForm"
+                },
+                {
+                    "id": "VisitController.setAllowedFields"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "PetClinicApplication.PetClinicApplication"
+                },
+                {
+                    "id": "PetClinicApplication.main"
+                },
+                {
+                    "id": "VetController.VetController"
+                },
+                {
+                    "id": "VetController.addPaginationModel"
+                },
+                {
+                    "id": "VetController.findPaginated"
+                },
+                {
+                    "id": "VetController.showResourcesVetList"
+                },
+                {
+                    "id": "VetController.showVetList"
+                },
+                {
+                    "id": "Vets.Vets"
+                },
+                {
+                    "id": "Vets.getVetList"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "NamedEntity.NamedEntity"
+                },
+                {
+                    "id": "NamedEntity.getName"
+                },
+                {
+                    "id": "NamedEntity.setName"
+                },
+                {
+                    "id": "NamedEntity.toString"
+                },
+                {
+                    "id": "Pet.Pet"
+                },
+                {
+                    "id": "Pet.addVisit"
+                },
+                {
+                    "id": "Pet.getBirthDate"
+                },
+                {
+                    "id": "Pet.getId"
+                },
+                {
+                    "id": "Pet.getName"
+                },
+                {
+                    "id": "Pet.getType"
+                },
+                {
+                    "id": "Pet.getVisits"
+                },
+                {
+                    "id": "Pet.isNew"
+                },
+                {
+                    "id": "Pet.setBirthDate"
+                },
+                {
+                    "id": "Pet.setType"
+                },
+                {
+                    "id": "PetController.PetController"
+                },
+                {
+                    "id": "PetController.findOwner"
+                },
+                {
+                    "id": "PetController.findPet"
+                },
+                {
+                    "id": "PetController.initCreationForm"
+                },
+                {
+                    "id": "PetController.initOwnerBinder"
+                },
+                {
+                    "id": "PetController.initPetBinder"
+                },
+                {
+                    "id": "PetController.initUpdateForm"
+                },
+                {
+                    "id": "PetController.populatePetTypes"
+                },
+                {
+                    "id": "PetController.processCreationForm"
+                },
+                {
+                    "id": "PetController.processUpdateForm"
+                },
+                {
+                    "id": "PetType.PetType"
+                },
+                {
+                    "id": "PetType.getName"
+                },
+                {
+                    "id": "PetTypeFormatter.PetTypeFormatter"
+                },
+                {
+                    "id": "PetTypeFormatter.parse"
+                },
+                {
+                    "id": "PetTypeFormatter.print"
+                },
+                {
+                    "id": "PetValidator.PetValidator"
+                },
+                {
+                    "id": "PetValidator.supports"
+                },
+                {
+                    "id": "PetValidator.validate"
+                },
+                {
+                    "id": "Specialty.Specialty"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "BaseEntity.BaseEntity"
+                },
+                {
+                    "id": "BaseEntity.getId"
+                },
+                {
+                    "id": "BaseEntity.isNew"
+                },
+                {
+                    "id": "BaseEntity.setId"
+                },
+                {
+                    "id": "Owner.Owner"
+                },
+                {
+                    "id": "Owner.addPet"
+                },
+                {
+                    "id": "Owner.addVisit"
+                },
+                {
+                    "id": "Owner.getAddress"
+                },
+                {
+                    "id": "Owner.getCity"
+                },
+                {
+                    "id": "Owner.getFirstName"
+                },
+                {
+                    "id": "Owner.getId"
+                },
+                {
+                    "id": "Owner.getLastName"
+                },
+                {
+                    "id": "Owner.getPet"
+                },
+                {
+                    "id": "Owner.getPets"
+                },
+                {
+                    "id": "Owner.getTelephone"
+                },
+                {
+                    "id": "Owner.isNew"
+                },
+                {
+                    "id": "Owner.setAddress"
+                },
+                {
+                    "id": "Owner.setCity"
+                },
+                {
+                    "id": "Owner.setId"
+                },
+                {
+                    "id": "Owner.setLastName"
+                },
+                {
+                    "id": "Owner.setTelephone"
+                },
+                {
+                    "id": "Owner.toString"
+                },
+                {
+                    "id": "OwnerController.OwnerController"
+                },
+                {
+                    "id": "OwnerController.addPaginationModel"
+                },
+                {
+                    "id": "OwnerController.findOwner"
+                },
+                {
+                    "id": "OwnerController.findPaginatedForOwnersLastName"
+                },
+                {
+                    "id": "OwnerController.initCreationForm"
+                },
+                {
+                    "id": "OwnerController.initFindForm"
+                },
+                {
+                    "id": "OwnerController.initUpdateOwnerForm"
+                },
+                {
+                    "id": "OwnerController.processCreationForm"
+                },
+                {
+                    "id": "OwnerController.processFindForm"
+                },
+                {
+                    "id": "OwnerController.processUpdateOwnerForm"
+                },
+                {
+                    "id": "OwnerController.setAllowedFields"
+                },
+                {
+                    "id": "OwnerController.showOwner"
+                },
+                {
+                    "id": "Person.Person"
+                },
+                {
+                    "id": "Person.getFirstName"
+                },
+                {
+                    "id": "Person.getLastName"
+                },
+                {
+                    "id": "Person.setFirstName"
+                },
+                {
+                    "id": "Person.setLastName"
+                },
+                {
+                    "id": "Vet.Vet"
+                },
+                {
+                    "id": "Vet.addSpecialty"
+                },
+                {
+                    "id": "Vet.getNrOfSpecialties"
+                },
+                {
+                    "id": "Vet.getSpecialties"
+                },
+                {
+                    "id": "Vet.getSpecialtiesInternal"
+                },
+                {
+                    "id": "Vet.setSpecialtiesInternal"
+                },
+                {
+                    "id": "Visit.Visit"
+                },
+                {
+                    "id": "Visit.getDate"
+                },
+                {
+                    "id": "Visit.getDescription"
+                },
+                {
+                    "id": "Visit.setDate"
+                },
+                {
+                    "id": "Visit.setDescription"
+                },
+                {
+                    "id": "VisitController.VisitController"
+                },
+                {
+                    "id": "VisitController.initNewVisitForm"
+                },
+                {
+                    "id": "VisitController.loadPetWithVisit"
+                },
+                {
+                    "id": "VisitController.processNewVisitForm"
+                },
+                {
+                    "id": "VisitController.setAllowedFields"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "PetClinicApplication.PetClinicApplication"
+                },
+                {
+                    "id": "PetClinicApplication.main"
+                },
+                {
+                    "id": "VetController.VetController"
+                },
+                {
+                    "id": "VetController.addPaginationModel"
+                },
+                {
+                    "id": "VetController.findPaginated"
+                },
+                {
+                    "id": "VetController.showResourcesVetList"
+                },
+                {
+                    "id": "VetController.showVetList"
+                },
+                {
+                    "id": "Vets.Vets"
+                },
+                {
+                    "id": "Vets.getVetList"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "NamedEntity.NamedEntity"
+                },
+                {
+                    "id": "NamedEntity.getName"
+                },
+                {
+                    "id": "NamedEntity.setName"
+                },
+                {
+                    "id": "NamedEntity.toString"
+                },
+                {
+                    "id": "Pet.Pet"
+                },
+                {
+                    "id": "Pet.addVisit"
+                },
+                {
+                    "id": "Pet.getBirthDate"
+                },
+                {
+                    "id": "Pet.getId"
+                },
+                {
+                    "id": "Pet.getName"
+                },
+                {
+                    "id": "Pet.getType"
+                },
+                {
+                    "id": "Pet.getVisits"
+                },
+                {
+                    "id": "Pet.isNew"
+                },
+                {
+                    "id": "Pet.setBirthDate"
+                },
+                {
+                    "id": "Pet.setType"
+                },
+                {
+                    "id": "PetController.PetController"
+                },
+                {
+                    "id": "PetController.findOwner"
+                },
+                {
+                    "id": "PetController.findPet"
+                },
+                {
+                    "id": "PetController.initCreationForm"
+                },
+                {
+                    "id": "PetController.initOwnerBinder"
+                },
+                {
+                    "id": "PetController.initPetBinder"
+                },
+                {
+                    "id": "PetController.initUpdateForm"
+                },
+                {
+                    "id": "PetController.populatePetTypes"
+                },
+                {
+                    "id": "PetController.processCreationForm"
+                },
+                {
+                    "id": "PetController.processUpdateForm"
+                },
+                {
+                    "id": "PetType.PetType"
+                },
+                {
+                    "id": "PetType.getName"
+                },
+                {
+                    "id": "PetTypeFormatter.PetTypeFormatter"
+                },
+                {
+                    "id": "PetTypeFormatter.parse"
+                },
+                {
+                    "id": "PetTypeFormatter.print"
+                },
+                {
+                    "id": "PetValidator.PetValidator"
+                },
+                {
+                    "id": "PetValidator.supports"
+                },
+                {
+                    "id": "PetValidator.validate"
+                },
+                {
+                    "id": "Specialty.Specialty"
+                }
+            ]
+        },
+        "links": []
+    }
+}

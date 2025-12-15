@@ -1,0 +1,409 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "customers": [
+                {
+                    "id": "[duplicate (customers)] BaseEntity"
+                },
+                {
+                    "id": "[duplicate (customers)] NamedEntity"
+                },
+                {
+                    "id": "Owner"
+                },
+                {
+                    "id": "OwnerController"
+                },
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "[duplicate (customers)] Person"
+                },
+                {
+                    "id": "Pet"
+                },
+                {
+                    "id": "[duplicate (customers)] PetClinicApplication"
+                },
+                {
+                    "id": "PetController"
+                },
+                {
+                    "id": "PetType"
+                },
+                {
+                    "id": "PetValidator"
+                }
+            ],
+            "vets": [
+                {
+                    "id": "[duplicate (vets)] BaseEntity"
+                },
+                {
+                    "id": "CacheConfiguration"
+                },
+                {
+                    "id": "[duplicate (vets)] NamedEntity"
+                },
+                {
+                    "id": "[duplicate (vets)] Person"
+                },
+                {
+                    "id": "[duplicate (vets)] PetClinicApplication"
+                },
+                {
+                    "id": "Specialty"
+                },
+                {
+                    "id": "Vet"
+                },
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "VetRepository"
+                },
+                {
+                    "id": "Vets"
+                }
+            ],
+            "visits": [
+                {
+                    "id": "[duplicate (visits)] BaseEntity"
+                },
+                {
+                    "id": "[duplicate (visits)] NamedEntity"
+                },
+                {
+                    "id": "[duplicate (visits)] Person"
+                },
+                {
+                    "id": "[duplicate (visits)] PetClinicApplication"
+                },
+                {
+                    "id": "Visit"
+                },
+                {
+                    "id": "VisitController"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "[duplicate (customers)] NamedEntity",
+                "target": "[duplicate (customers)] BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "[duplicate (vets)] NamedEntity",
+                "target": "[duplicate (vets)] BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "[duplicate (visits)] NamedEntity",
+                "target": "[duplicate (visits)] BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "[duplicate (customers)] Person",
+                "target": "[duplicate (customers)] BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "[duplicate (vets)] Person",
+                "target": "[duplicate (vets)] BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "[duplicate (visits)] Person",
+                "target": "[duplicate (visits)] BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Owner",
+                "target": "[duplicate (customers)] Person",
+                "weight": "1"
+            },
+            {
+                "source": "Owner",
+                "target": "Pet",
+                "weight": "6"
+            },
+            {
+                "source": "OwnerController",
+                "target": "Owner",
+                "weight": "7"
+            },
+            {
+                "source": "OwnerController",
+                "target": "OwnerRepository",
+                "weight": "6"
+            },
+            {
+                "source": "Pet",
+                "target": "[duplicate (customers)] NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "PetController",
+                "target": "OwnerRepository",
+                "weight": "5"
+            },
+            {
+                "source": "PetController",
+                "target": "Owner",
+                "weight": "6"
+            },
+            {
+                "source": "PetController",
+                "target": "Pet",
+                "weight": "4"
+            },
+            {
+                "source": "PetController",
+                "target": "PetValidator",
+                "weight": "1"
+            },
+            {
+                "source": "PetType",
+                "target": "[duplicate (customers)] NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "PetValidator",
+                "target": "Pet",
+                "weight": "4"
+            },
+            {
+                "source": "Visit",
+                "target": "[duplicate (visits)] BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "VisitController",
+                "target": "Owner",
+                "weight": "2"
+            },
+            {
+                "source": "VisitController",
+                "target": "OwnerRepository",
+                "weight": "2"
+            },
+            {
+                "source": "VisitController",
+                "target": "Pet",
+                "weight": "1"
+            },
+            {
+                "source": "VisitController",
+                "target": "Visit",
+                "weight": "1"
+            },
+            {
+                "source": "Specialty",
+                "target": "[duplicate (vets)] NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Vet",
+                "target": "[duplicate (vets)] Person",
+                "weight": "1"
+            },
+            {
+                "source": "VetController",
+                "target": "VetRepository",
+                "weight": "2"
+            },
+            {
+                "source": "VetController",
+                "target": "Vets",
+                "weight": "4"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "customers": [
+                {
+                    "id": "[duplicate (customers)] BaseEntity"
+                },
+                {
+                    "id": "[duplicate (customers)] NamedEntity"
+                },
+                {
+                    "id": "Owner"
+                },
+                {
+                    "id": "OwnerController"
+                },
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "[duplicate (customers)] Person"
+                },
+                {
+                    "id": "Pet"
+                },
+                {
+                    "id": "[duplicate (customers)] PetClinicApplication"
+                },
+                {
+                    "id": "PetController"
+                },
+                {
+                    "id": "PetType"
+                },
+                {
+                    "id": "PetValidator"
+                }
+            ],
+            "vets": [
+                {
+                    "id": "[duplicate (vets)] BaseEntity"
+                },
+                {
+                    "id": "CacheConfiguration"
+                },
+                {
+                    "id": "[duplicate (vets)] NamedEntity"
+                },
+                {
+                    "id": "[duplicate (vets)] Person"
+                },
+                {
+                    "id": "[duplicate (vets)] PetClinicApplication"
+                },
+                {
+                    "id": "Specialty"
+                },
+                {
+                    "id": "Vet"
+                },
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "VetRepository"
+                },
+                {
+                    "id": "Vets"
+                }
+            ],
+            "visits": [
+                {
+                    "id": "[duplicate (visits)] BaseEntity"
+                },
+                {
+                    "id": "[duplicate (visits)] NamedEntity"
+                },
+                {
+                    "id": "[duplicate (visits)] Person"
+                },
+                {
+                    "id": "[duplicate (visits)] PetClinicApplication"
+                },
+                {
+                    "id": "Visit"
+                },
+                {
+                    "id": "VisitController"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "customers": [
+                {
+                    "id": "[duplicate (customers)] BaseEntity"
+                },
+                {
+                    "id": "[duplicate (customers)] NamedEntity"
+                },
+                {
+                    "id": "Owner"
+                },
+                {
+                    "id": "OwnerController"
+                },
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "[duplicate (customers)] Person"
+                },
+                {
+                    "id": "Pet"
+                },
+                {
+                    "id": "[duplicate (customers)] PetClinicApplication"
+                },
+                {
+                    "id": "PetController"
+                },
+                {
+                    "id": "PetType"
+                },
+                {
+                    "id": "PetValidator"
+                }
+            ],
+            "vets": [
+                {
+                    "id": "[duplicate (vets)] BaseEntity"
+                },
+                {
+                    "id": "CacheConfiguration"
+                },
+                {
+                    "id": "[duplicate (vets)] NamedEntity"
+                },
+                {
+                    "id": "[duplicate (vets)] Person"
+                },
+                {
+                    "id": "[duplicate (vets)] PetClinicApplication"
+                },
+                {
+                    "id": "Specialty"
+                },
+                {
+                    "id": "Vet"
+                },
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "VetRepository"
+                },
+                {
+                    "id": "Vets"
+                }
+            ],
+            "visits": [
+                {
+                    "id": "[duplicate (visits)] BaseEntity"
+                },
+                {
+                    "id": "[duplicate (visits)] NamedEntity"
+                },
+                {
+                    "id": "[duplicate (visits)] Person"
+                },
+                {
+                    "id": "[duplicate (visits)] PetClinicApplication"
+                },
+                {
+                    "id": "Visit"
+                },
+                {
+                    "id": "VisitController"
+                }
+            ]
+        },
+        "links": []
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "Data_Centric_Process": {
+      "decomposition": {
+        "PetMangementService": [
+          {
+            "id": "Pets"
+          },
+          {
+            "id": "Types"
+          },
+          {
+            "id": "Owners"
+          }
+        ],
+        "VetManagementService": [
+          {
+            "id": "Vets"
+          },
+          {
+            "id": "Vet_Specialties"
+          },
+          {
+            "id": "Specialties"
+          }
+        ],
+        "VisitManagementService": [
+            {
+              "id": "Visits"
+            }
+          ]
+      }
+    }
+  }

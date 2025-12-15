@@ -1,0 +1,8 @@
+Class Coverage:
+    symT: 21  run: 17  cover: 80%
+Method Coverage:
+    symT: 100  run: 86  cover: 86%
+Call Volume:
+    # of context: 1  Total calls: 1411  Avg: 1411.0
+Classes without label in runlogs:
+    # of classes: 0  Total classes: 17  percentage: 0%

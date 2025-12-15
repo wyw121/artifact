@@ -1,0 +1,1329 @@
+method: com.coveros.training.authentication.LoginServlet.doPost | lines: 27:50 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/LoginServlet.java
+commit: 86e58a92d50a9b0fc7e65a8c59c6af2575798b05 | author: Byron Katz
+commit: 59dbea431a93d5fb9f49501bc56f4ede22ec48a5 | author: Byron Katz
+commit: c851c36b7f4cda1ffc8f0b22f6c2f3aab36aab06 | author: Byron Katz
+commit: ce0f52a5c534621059ad3774eed71afd9487fe9e | author: Byron Katz
+commit: b157c48becf8e9823ceda7fffac877c6e89de3a7 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 1a07b46b2a555f84a6a47ad4361b6af0e9a03216 | author: Byron Katz
+commit: 409803d575a5efe35b3a6b786761edeb4ff295d7 | author: Byron Katz
+commit: 2460935a6690c159b5ce4b554fadcc2f09ee1579 | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 16434d200c3702e225bbddd19e2424e34b340e98 | author: Byron Katz
+commit: db3f2b5b0752a7402b37e9bed2f80cc7417f02b7 | author: Byron Katz
+commit: 96322cdd539d90f06fec7c227e17caa4b32cf8cd | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 833aa6ca895e4c2d4f9dbbfdc86ae490683985ec | author: Byron Katz
+commit: 3edca423af98cdb4e789c290fe6829762abbbe43 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.LoginUtils.LoginUtils | lines: 17:19 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/LoginUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.LoginUtils.LoginUtils | lines: 17:19 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/LoginUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.LoginUtils.createEmpty | lines: 41:43 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/LoginUtils.java
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+method: com.coveros.training.authentication.LoginUtils.isEmpty | lines: 45:47 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/LoginUtils.java
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+method: com.coveros.training.authentication.LoginUtils.isUserRegistered | lines: 29:39 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/LoginUtils.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 3b11cd6d3f774000c7f25bcdd64295336f58460b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: c144c05aa2193e7ecbdaa6e51da4f580f544d353 | author: Byron Katz
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.RegisterServlet.doPost | lines: 26:51 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/RegisterServlet.java
+commit: 86e58a92d50a9b0fc7e65a8c59c6af2575798b05 | author: Byron Katz
+commit: c851c36b7f4cda1ffc8f0b22f6c2f3aab36aab06 | author: Byron Katz
+commit: ce0f52a5c534621059ad3774eed71afd9487fe9e | author: Byron Katz
+commit: 86853ed6a36948cd70c009bc1c5b8699eb06e028 | author: Byron Katz
+commit: b157c48becf8e9823ceda7fffac877c6e89de3a7 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 1a07b46b2a555f84a6a47ad4361b6af0e9a03216 | author: Byron Katz
+commit: 9cbb7f08cbfbcdc82fbbbfd999c0a568736dd447 | author: Byron Katz
+commit: 409803d575a5efe35b3a6b786761edeb4ff295d7 | author: Byron Katz
+commit: 01cd49d1d708f568163d902c3d554eb7d90d998c | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 16434d200c3702e225bbddd19e2424e34b340e98 | author: Byron Katz
+commit: db3f2b5b0752a7402b37e9bed2f80cc7417f02b7 | author: Byron Katz
+commit: 96322cdd539d90f06fec7c227e17caa4b32cf8cd | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 833aa6ca895e4c2d4f9dbbfdc86ae490683985ec | author: Byron Katz
+commit: 3edca423af98cdb4e789c290fe6829762abbbe43 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.RegisterServlet.forwardToResult | lines: 56:58 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/RegisterServlet.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 1a07b46b2a555f84a6a47ad4361b6af0e9a03216 | author: Byron Katz
+commit: 9cbb7f08cbfbcdc82fbbbfd999c0a568736dd447 | author: Byron Katz
+commit: 409803d575a5efe35b3a6b786761edeb4ff295d7 | author: Byron Katz
+commit: 01cd49d1d708f568163d902c3d554eb7d90d998c | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 16434d200c3702e225bbddd19e2424e34b340e98 | author: Byron Katz
+commit: db3f2b5b0752a7402b37e9bed2f80cc7417f02b7 | author: Byron Katz
+commit: 96322cdd539d90f06fec7c227e17caa4b32cf8cd | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 833aa6ca895e4c2d4f9dbbfdc86ae490683985ec | author: Byron Katz
+commit: 3edca423af98cdb4e789c290fe6829762abbbe43 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.RegistrationUtils.RegistrationUtils | lines: 28:30 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/RegistrationUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.RegistrationUtils.RegistrationUtils | lines: 28:30 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/RegistrationUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.RegistrationUtils.createEmpty | lines: 69:71 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/RegistrationUtils.java
+commit: 8d52ba936097029280b5206ee5a979af5b50a503 | author: Byron Katz
+method: com.coveros.training.authentication.RegistrationUtils.isEmpty | lines: 73:75 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/RegistrationUtils.java
+commit: 8d52ba936097029280b5206ee5a979af5b50a503 | author: Byron Katz
+method: com.coveros.training.authentication.RegistrationUtils.isPasswordGood | lines: 92:133 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/RegistrationUtils.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: bb987531d819fb55f01a3254be0007cdb35010c8 | author: Byron Katz
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: 0b5a91c239055359ff6e694c3b281a5fe7d3b9e5 | author: Byron Katz
+commit: c5671bc40a084f4de0728c9017636f8bdc618ae7 | author: Byron Katz
+commit: 5c52b08859e9a965802daacae8f43d9b365536bc | author: Byron Katz
+commit: 58a2823e8b8e7c19ff2eee4e702f9798731a93ea | author: Byron Katz
+commit: af46dd15aa71265c6e6d7bfb8226d8b4f3a0103f | author: Byron Katz
+commit: 2e7da562f8999a888814e4818f0bbe8c8674e3af | author: Byron Katz
+commit: 92361e0101df5afc6c2b311075432b54492a4e9a | author: Byron Katz
+commit: 4fe31d956a21da29a8683b7a78902f77275c98f9 | author: Byron Katz
+commit: 5bebfd6c03fa1c9401442a1290d0c2c4547a1a09 | author: Byron Katz
+commit: ac6836bd78a4465de7b4940e66d1f6ce262b8c1d | author: Byron Katz
+commit: c7d7220adb84fabb7de52447eb66a401d5e67af5 | author: Byron Katz
+commit: 44be22801a3a6e1a9cc531ccf0cf821843e5114e | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.RegistrationUtils.isUserInDatabase | lines: 50:53 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/RegistrationUtils.java
+commit: 0b5a91c239055359ff6e694c3b281a5fe7d3b9e5 | author: Byron Katz
+commit: fd1613406afcc77f37ee98dd8cdf293b255336f2 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.RegistrationUtils.processRegistration | lines: 45:67 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/RegistrationUtils.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 8d52ba936097029280b5206ee5a979af5b50a503 | author: Byron Katz
+commit: 86853ed6a36948cd70c009bc1c5b8699eb06e028 | author: Byron Katz
+commit: 62285d962900f11cbfe5e5013f63d4fb7dcf6176 | author: Byron Katz
+commit: 21df9ac86ea150538b2f9612c9ec4d9819cea8a8 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 8a4f7a7164b93cdcf203245c3ebb57fe0be4befb | author: Byron Katz
+commit: 0b5a91c239055359ff6e694c3b281a5fe7d3b9e5 | author: Byron Katz
+commit: 1e53518427075a49334222ad506234c900dda2ad | author: Byron Katz
+commit: fd1613406afcc77f37ee98dd8cdf293b255336f2 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.RegistrationUtils.saveToDatabase | lines: 139:142 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/RegistrationUtils.java
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.PasswordResult.PasswordResult | lines: 42:44 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/PasswordResult.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.PasswordResult.createDefault | lines: 42:44 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/PasswordResult.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.PasswordResult.createEmpty | lines: 96:98 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/PasswordResult.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.PasswordResult.equals | lines: 47:65 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/PasswordResult.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.PasswordResult.hashCode | lines: 68:78 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/PasswordResult.java
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.PasswordResult.isEmpty | lines: 100:102 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/PasswordResult.java
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.PasswordResult.toPrettyString | lines: 84:90 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/PasswordResult.java
+commit: 59dbea431a93d5fb9f49501bc56f4ede22ec48a5 | author: Byron Katz
+commit: c26807913b7e4f547ae30282bb4c3bbd70d679ff | author: Byron Katz
+commit: 86853ed6a36948cd70c009bc1c5b8699eb06e028 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.PasswordResult.toString | lines: 80:82 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/PasswordResult.java
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.PasswordResultEnums.PasswordResultEnums | lines: 7:27 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/PasswordResultEnums.java
+commit: 36bd75e211aea1ccbb53b63af64b4dc7c86b93d5 | author: Byron Katz
+commit: 58a2823e8b8e7c19ff2eee4e702f9798731a93ea | author: Byron Katz
+commit: af46dd15aa71265c6e6d7bfb8226d8b4f3a0103f | author: Byron Katz
+commit: 1a07b46b2a555f84a6a47ad4361b6af0e9a03216 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.RegistrationResult.RegistrationResult | lines: 18:22 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/RegistrationResult.java
+commit: fd1613406afcc77f37ee98dd8cdf293b255336f2 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.RegistrationResult.RegistrationResult | lines: 18:22 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/RegistrationResult.java
+commit: fd1613406afcc77f37ee98dd8cdf293b255336f2 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.RegistrationResult.createEmpty | lines: 66:68 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/RegistrationResult.java
+commit: fd1613406afcc77f37ee98dd8cdf293b255336f2 | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.RegistrationResult.equals | lines: 28:44 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/RegistrationResult.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fd1613406afcc77f37ee98dd8cdf293b255336f2 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.RegistrationResult.hashCode | lines: 46:54 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/RegistrationResult.java
+commit: fd1613406afcc77f37ee98dd8cdf293b255336f2 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.RegistrationResult.isEmpty | lines: 70:72 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/RegistrationResult.java
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.RegistrationResult.toPrettyString | lines: 60:64 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/RegistrationResult.java
+commit: 59dbea431a93d5fb9f49501bc56f4ede22ec48a5 | author: Byron Katz
+commit: c26807913b7e4f547ae30282bb4c3bbd70d679ff | author: Byron Katz
+commit: 86853ed6a36948cd70c009bc1c5b8699eb06e028 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.RegistrationResult.toString | lines: 56:58 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/RegistrationResult.java
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.RegistrationStatusEnums.RegistrationStatusEnums | lines: 7:15 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/RegistrationStatusEnums.java
+commit: fd3e0ac47e965d35a0e3ac4bb031c7f3ea776b55 | author: Byron Katz
+commit: 1e53518427075a49334222ad506234c900dda2ad | author: Byron Katz
+commit: 3d0b66084149bba286b7c5ac5b9a9dce795ad6c6 | author: Byron Katz
+commit: fd1613406afcc77f37ee98dd8cdf293b255336f2 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.User.User | lines: 25:28 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/User.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 26631401860b01c1faf4c1092f1d4b2e49d85008 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.User.createEmpty | lines: 60:62 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/User.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 26631401860b01c1faf4c1092f1d4b2e49d85008 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.User.equals | lines: 30:45 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/User.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 26631401860b01c1faf4c1092f1d4b2e49d85008 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.User.hashCode | lines: 47:54 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/User.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 26631401860b01c1faf4c1092f1d4b2e49d85008 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.User.isEmpty | lines: 64:66 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/User.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 26631401860b01c1faf4c1092f1d4b2e49d85008 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.authentication.domainobjects.User.toString | lines: 56:58 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/authentication/domainobjects/User.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 26631401860b01c1faf4c1092f1d4b2e49d85008 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.cartesianproduct.CartesianProduct.calculate | lines: 7:9 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/cartesianproduct/CartesianProduct.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: a243815314a44347ad1e5df7d0e746a1581dd829 | author: Byron Katz
+method: com.coveros.training.expenses.AlcoholCalculator.calculate | lines: 4:6 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/expenses/AlcoholCalculator.java
+commit: a243815314a44347ad1e5df7d0e746a1581dd829 | author: Byron Katz
+method: com.coveros.training.expenses.AlcoholResult.AlcoholResult | lines: 8:12 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/expenses/AlcoholResult.java
+commit: a243815314a44347ad1e5df7d0e746a1581dd829 | author: Byron Katz
+method: com.coveros.training.expenses.AlcoholResult.returnEmpty | lines: 14:16 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/expenses/AlcoholResult.java
+commit: a243815314a44347ad1e5df7d0e746a1581dd829 | author: Byron Katz
+method: com.coveros.training.expenses.DinnerPrices.DinnerPrices | lines: 9:14 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/expenses/DinnerPrices.java
+commit: a243815314a44347ad1e5df7d0e746a1581dd829 | author: Byron Katz
+method: com.coveros.training.helpers.AssertionException.AssertionException | lines: 10:12 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/AssertionException.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+method: com.coveros.training.helpers.CheckUtils.CheckUtils | lines: 9:11 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/CheckUtils.java
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+method: com.coveros.training.helpers.CheckUtils.IntParameterMustBePositive | lines: 18:22 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/CheckUtils.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: acbe0848427328f8b7a1417cbaec7249c52b2685 | author: Byron Katz
+method: com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty | lines: 29:35 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/CheckUtils.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 3b11cd6d3f774000c7f25bcdd64295336f58460b | author: Byron Katz
+commit: 8d52ba936097029280b5206ee5a979af5b50a503 | author: Byron Katz
+method: com.coveros.training.helpers.CheckUtils.mustBeTrueAtThisPoint | lines: 43:47 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/CheckUtils.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 8d52ba936097029280b5206ee5a979af5b50a503 | author: Byron Katz
+method: com.coveros.training.helpers.ServletUtils.ServletUtils | lines: 19:21 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/ServletUtils.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+method: com.coveros.training.helpers.ServletUtils.forwardToRestfulResult | lines: 39:45 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/ServletUtils.java
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: dab3d571267d4309210880e6f6359ff9651393c7 | author: Byron Katz
+commit: 95f2f4e3dd085cd3120bcb3d916be291c8729a42 | author: Byron Katz
+method: com.coveros.training.helpers.ServletUtils.forwardToResult | lines: 27:33 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/ServletUtils.java
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: dab3d571267d4309210880e6f6359ff9651393c7 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 29d6005aebddbe14112d0be50e58b44eee424166 | author: Byron Katz
+commit: ab0a3fe6c08de338cd8f6b904f402fe2bfccdc24 | author: Byron Katz
+method: com.coveros.training.helpers.StringUtils.StringUtils | lines: 14:16 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/StringUtils.java
+commit: b7cb9a732986aa3c3d83290a13552c629adc33e5 | author: Byron Katz
+method: com.coveros.training.helpers.StringUtils.escapeForJson | lines: 44:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/StringUtils.java
+commit: ed9b468253c44cfea51ddb2fd8f41cce7ebe2760 | author: Byron Katz
+method: com.coveros.training.helpers.StringUtils.makeNotNullable | lines: 22:24 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/helpers/StringUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: acbe0848427328f8b7a1417cbaec7249c52b2685 | author: Byron Katz
+method: com.coveros.training.library.LibraryBookListAvailableServlet.doGet | lines: 29:42 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryBookListAvailableServlet.java
+commit: 23f0cffc3ea6cb4b96fb0c090771cbe7548bd037 | author: Byron Katz
+method: com.coveros.training.library.LibraryBookListSearchServlet.doGet | lines: 30:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryBookListSearchServlet.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: cc185a649d7bce1958df78546c7fd46e67d3bf2d | author: Byron Katz
+commit: 95f2f4e3dd085cd3120bcb3d916be291c8729a42 | author: Byron Katz
+commit: 626af93e082ddb1514c38041d8272f85499c84e8 | author: Byron Katz
+commit: b841d246adee6462b7f308dbb0a4c44a36cbe539 | author: Byron Katz
+method: com.coveros.training.library.LibraryBookListSearchServlet.listAllBooks | lines: 74:82 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryBookListSearchServlet.java
+commit: 49ba0642d7c0413c324dc3cddee61090c9d1cf8b | author: Byron Katz
+commit: cc185a649d7bce1958df78546c7fd46e67d3bf2d | author: Byron Katz
+method: com.coveros.training.library.LibraryBookListSearchServlet.searchById | lines: 59:72 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryBookListSearchServlet.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 49ba0642d7c0413c324dc3cddee61090c9d1cf8b | author: Byron Katz
+commit: cc185a649d7bce1958df78546c7fd46e67d3bf2d | author: Byron Katz
+method: com.coveros.training.library.LibraryBookListSearchServlet.searchByTitle | lines: 50:57 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryBookListSearchServlet.java
+commit: 49ba0642d7c0413c324dc3cddee61090c9d1cf8b | author: Byron Katz
+commit: cc185a649d7bce1958df78546c7fd46e67d3bf2d | author: Byron Katz
+method: com.coveros.training.library.LibraryBorrowerListSearchServlet.doGet | lines: 30:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryBorrowerListSearchServlet.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 4b6b7f904537a100033f6d14b5f1e12b8983aa2b | author: Byron Katz
+commit: b841d246adee6462b7f308dbb0a4c44a36cbe539 | author: Byron Katz
+method: com.coveros.training.library.LibraryBorrowerListSearchServlet.listAllBorrowers | lines: 74:82 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryBorrowerListSearchServlet.java
+commit: 49ba0642d7c0413c324dc3cddee61090c9d1cf8b | author: Byron Katz
+commit: 4b6b7f904537a100033f6d14b5f1e12b8983aa2b | author: Byron Katz
+commit: 95f2f4e3dd085cd3120bcb3d916be291c8729a42 | author: Byron Katz
+commit: b841d246adee6462b7f308dbb0a4c44a36cbe539 | author: Byron Katz
+method: com.coveros.training.library.LibraryBorrowerListSearchServlet.searchById | lines: 59:72 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryBorrowerListSearchServlet.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 49ba0642d7c0413c324dc3cddee61090c9d1cf8b | author: Byron Katz
+commit: 4b6b7f904537a100033f6d14b5f1e12b8983aa2b | author: Byron Katz
+commit: b841d246adee6462b7f308dbb0a4c44a36cbe539 | author: Byron Katz
+method: com.coveros.training.library.LibraryBorrowerListSearchServlet.searchByName | lines: 50:57 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryBorrowerListSearchServlet.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 49ba0642d7c0413c324dc3cddee61090c9d1cf8b | author: Byron Katz
+commit: 4b6b7f904537a100033f6d14b5f1e12b8983aa2b | author: Byron Katz
+commit: b841d246adee6462b7f308dbb0a4c44a36cbe539 | author: Byron Katz
+method: com.coveros.training.library.LibraryLendServlet.doPost | lines: 27:51 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryLendServlet.java
+commit: 86e58a92d50a9b0fc7e65a8c59c6af2575798b05 | author: Byron Katz
+commit: c851c36b7f4cda1ffc8f0b22f6c2f3aab36aab06 | author: Byron Katz
+commit: ce0f52a5c534621059ad3774eed71afd9487fe9e | author: Byron Katz
+commit: b157c48becf8e9823ceda7fffac877c6e89de3a7 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 409803d575a5efe35b3a6b786761edeb4ff295d7 | author: Byron Katz
+commit: 203bd85b4f455303452deec0cc625bb333d7f907 | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 16434d200c3702e225bbddd19e2424e34b340e98 | author: Byron Katz
+commit: db3f2b5b0752a7402b37e9bed2f80cc7417f02b7 | author: Byron Katz
+commit: 96322cdd539d90f06fec7c227e17caa4b32cf8cd | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 833aa6ca895e4c2d4f9dbbfdc86ae490683985ec | author: Byron Katz
+commit: 3edca423af98cdb4e789c290fe6829762abbbe43 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.LibraryLendServlet.getDateNow | lines: 57:59 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryLendServlet.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 203bd85b4f455303452deec0cc625bb333d7f907 | author: Byron Katz
+commit: db3f2b5b0752a7402b37e9bed2f80cc7417f02b7 | author: Byron Katz
+method: com.coveros.training.library.LibraryRegisterBookServlet.doPost | lines: 25:43 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryRegisterBookServlet.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 86e58a92d50a9b0fc7e65a8c59c6af2575798b05 | author: Byron Katz
+commit: c851c36b7f4cda1ffc8f0b22f6c2f3aab36aab06 | author: Byron Katz
+commit: ce0f52a5c534621059ad3774eed71afd9487fe9e | author: Byron Katz
+commit: b157c48becf8e9823ceda7fffac877c6e89de3a7 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 409803d575a5efe35b3a6b786761edeb4ff295d7 | author: Byron Katz
+commit: 9eb2127612eedb13c9ed518e72c8ba8bc45c8132 | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 16434d200c3702e225bbddd19e2424e34b340e98 | author: Byron Katz
+commit: db3f2b5b0752a7402b37e9bed2f80cc7417f02b7 | author: Byron Katz
+commit: 96322cdd539d90f06fec7c227e17caa4b32cf8cd | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.LibraryRegisterBorrowerServlet.doPost | lines: 25:43 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryRegisterBorrowerServlet.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 86e58a92d50a9b0fc7e65a8c59c6af2575798b05 | author: Byron Katz
+commit: c851c36b7f4cda1ffc8f0b22f6c2f3aab36aab06 | author: Byron Katz
+commit: ce0f52a5c534621059ad3774eed71afd9487fe9e | author: Byron Katz
+commit: b157c48becf8e9823ceda7fffac877c6e89de3a7 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 409803d575a5efe35b3a6b786761edeb4ff295d7 | author: Byron Katz
+commit: a05eb9e316af7d761d22184796fd7092a47b41fd | author: Byron Katz
+commit: 6a5d0f0de3d45680e48b543b73fff554acde47d3 | author: Byron Katz
+commit: 16434d200c3702e225bbddd19e2424e34b340e98 | author: Byron Katz
+commit: db3f2b5b0752a7402b37e9bed2f80cc7417f02b7 | author: Byron Katz
+commit: 96322cdd539d90f06fec7c227e17caa4b32cf8cd | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 833aa6ca895e4c2d4f9dbbfdc86ae490683985ec | author: Byron Katz
+commit: 3edca423af98cdb4e789c290fe6829762abbbe43 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.LibraryUtils | lines: 24:26 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.LibraryUtils | lines: 24:26 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.createEmpty | lines: 199:201 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: ac8b0cc82559710602ba2e4f1abf17beeeb1719e | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.createLoan | lines: 74:77 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: fd877dcbb8d579256bf49087f45ae7b3900bec5d | author: Byron Katz
+commit: 8b79c2bbdab18d30a0e0ffd9586324c30201f528 | author: Byron Katz
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.deleteBook | lines: 207:217 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 7a3a6d18668b325fe5548cc298e64626a5e24826 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.deleteBorrower | lines: 219:229 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: e178e016c1690559c05c53891c7ed9d759df7cd9 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.isEmpty | lines: 60:63 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 9ddd38d75e90bb60b514e5b0efeb6db33c1737a0 | author: Byron Katz
+commit: 62285d962900f11cbfe5e5013f63d4fb7dcf6176 | author: Byron Katz
+commit: 3fa9e11a80ecc47ec1b78fe4f6878c14152b23e1 | author: Byron Katz
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.lendBook | lines: 39:46 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: fd877dcbb8d579256bf49087f45ae7b3900bec5d | author: Byron Katz
+commit: 3fa9e11a80ecc47ec1b78fe4f6878c14152b23e1 | author: Byron Katz
+commit: 203bd85b4f455303452deec0cc625bb333d7f907 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.lendBook | lines: 39:46 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: fd877dcbb8d579256bf49087f45ae7b3900bec5d | author: Byron Katz
+commit: 3fa9e11a80ecc47ec1b78fe4f6878c14152b23e1 | author: Byron Katz
+commit: 203bd85b4f455303452deec0cc625bb333d7f907 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.listAllBooks | lines: 231:234 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 4c2e373fb6738c0fe19b2067860741d3957aad41 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.listAllBorrowers | lines: 237:240 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 16b876992047bd04b500fdbe939d5bb3ab5a859d | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.listAvailableBooks | lines: 243:246 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 14ff9a0aa551587275df44bcff8a59c0b6a21de9 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.registerBook | lines: 111:124 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 7a3a6d18668b325fe5548cc298e64626a5e24826 | author: Byron Katz
+commit: c144c05aa2193e7ecbdaa6e51da4f580f544d353 | author: Byron Katz
+commit: 9ddd38d75e90bb60b514e5b0efeb6db33c1737a0 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.registerBorrower | lines: 84:95 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: c144c05aa2193e7ecbdaa6e51da4f580f544d353 | author: Byron Katz
+commit: 9ddd38d75e90bb60b514e5b0efeb6db33c1737a0 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: ac8b0cc82559710602ba2e4f1abf17beeeb1719e | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.saveNewBook | lines: 130:133 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.saveNewBorrower | lines: 101:104 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.searchForBookById | lines: 168:180 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 4c2e373fb6738c0fe19b2067860741d3957aad41 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.searchForBookByTitle | lines: 151:163 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 4c2e373fb6738c0fe19b2067860741d3957aad41 | author: Byron Katz
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.searchForBorrowerById | lines: 185:197 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 16b876992047bd04b500fdbe939d5bb3ab5a859d | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.searchForBorrowerByName | lines: 146:149 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.searchForLoanByBook | lines: 135:138 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 70410c4b610956dcf2fa121664a128035e3bca43 | author: Byron Katz
+commit: 5762a020caa9611ef083697db04f8cd38ff353eb | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.LibraryUtils.searchForLoanByBorrower | lines: 141:144 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/LibraryUtils.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 70410c4b610956dcf2fa121664a128035e3bca43 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Book.Book | lines: 25:28 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Book.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 8aba36eab4adb5e37b403267742e583abe9bb37a | author: Byron Katz
+commit: f333afdcbf3228b686381691d4fda0594ad13c66 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Book.createEmpty | lines: 64:66 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Book.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 8aba36eab4adb5e37b403267742e583abe9bb37a | author: Byron Katz
+commit: f333afdcbf3228b686381691d4fda0594ad13c66 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Book.equals | lines: 30:45 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Book.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 8aba36eab4adb5e37b403267742e583abe9bb37a | author: Byron Katz
+commit: f333afdcbf3228b686381691d4fda0594ad13c66 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Book.hashCode | lines: 47:54 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Book.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 8aba36eab4adb5e37b403267742e583abe9bb37a | author: Byron Katz
+commit: f333afdcbf3228b686381691d4fda0594ad13c66 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Book.isEmpty | lines: 68:70 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Book.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 8aba36eab4adb5e37b403267742e583abe9bb37a | author: Byron Katz
+commit: f333afdcbf3228b686381691d4fda0594ad13c66 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Book.toOutputString | lines: 56:58 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Book.java
+commit: ed9b468253c44cfea51ddb2fd8f41cce7ebe2760 | author: Byron Katz
+commit: 49ba0642d7c0413c324dc3cddee61090c9d1cf8b | author: Byron Katz
+commit: b841d246adee6462b7f308dbb0a4c44a36cbe539 | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Book.toString | lines: 60:62 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Book.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 8aba36eab4adb5e37b403267742e583abe9bb37a | author: Byron Katz
+commit: f333afdcbf3228b686381691d4fda0594ad13c66 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Borrower.Borrower | lines: 30:33 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Borrower.java
+commit: 56875996cdbadc1d459076ccb6ef0b652790996a | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Borrower.createEmpty | lines: 69:71 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Borrower.java
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Borrower.equals | lines: 35:50 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Borrower.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Borrower.hashCode | lines: 52:59 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Borrower.java
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Borrower.isEmpty | lines: 73:75 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Borrower.java
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Borrower.toOutputString | lines: 61:63 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Borrower.java
+commit: ed9b468253c44cfea51ddb2fd8f41cce7ebe2760 | author: Byron Katz
+commit: 49ba0642d7c0413c324dc3cddee61090c9d1cf8b | author: Byron Katz
+commit: b841d246adee6462b7f308dbb0a4c44a36cbe539 | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Borrower.toString | lines: 65:67 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Borrower.java
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+method: com.coveros.training.library.domainobjects.LibraryActionResults.LibraryActionResults | lines: 9:42 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/LibraryActionResults.java
+commit: 36bd75e211aea1ccbb53b63af64b4dc7c86b93d5 | author: Byron Katz
+commit: c851c36b7f4cda1ffc8f0b22f6c2f3aab36aab06 | author: Byron Katz
+commit: e178e016c1690559c05c53891c7ed9d759df7cd9 | author: Byron Katz
+commit: 7a3a6d18668b325fe5548cc298e64626a5e24826 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Loan.Loan | lines: 38:43 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Loan.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 9a27e1f7b47e618f3f8a3f55d34e01c8db3efba0 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Loan.createEmpty | lines: 79:81 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Loan.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Loan.equals | lines: 45:62 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Loan.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Loan.hashCode | lines: 64:73 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Loan.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: d71d81e7ac2d5e0f8644ddef898f0351b9c36540 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Loan.isEmpty | lines: 83:85 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Loan.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: fb3c2d0183b626145123b3d09202cd299d62bd46 | author: Byron Katz
+commit: 9a27e1f7b47e618f3f8a3f55d34e01c8db3efba0 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.library.domainobjects.Loan.toString | lines: 75:77 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/library/domainobjects/Loan.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: d71d81e7ac2d5e0f8644ddef898f0351b9c36540 | author: Byron Katz
+method: com.coveros.training.mathematics.AckServlet.doPost | lines: 29:47 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckServlet.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 9090b5bb93ea0925cb784eb6075cf0181ce1b985 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+commit: 9fc11ef2dd86150856475f60ad628a60ad2c0b79 | author: Byron Katz
+method: com.coveros.training.mathematics.AckServlet.forwardToResult | lines: 52:54 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckServlet.java
+commit: 95f2f4e3dd085cd3120bcb3d916be291c8729a42 | author: Byron Katz
+commit: 9fc11ef2dd86150856475f60ad628a60ad2c0b79 | author: Byron Katz
+method: com.coveros.training.mathematics.AckServlet.putNumberInRequest | lines: 22:26 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckServlet.java
+commit: 9fc11ef2dd86150856475f60ad628a60ad2c0b79 | author: Byron Katz
+method: com.coveros.training.mathematics.AckServlet.regularRecursive | lines: 59:63 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckServlet.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+commit: 3b2676fdc49e8bbed2899c511855f847e8a2b3fd | author: Byron Katz
+commit: 9fc11ef2dd86150856475f60ad628a60ad2c0b79 | author: Byron Katz
+method: com.coveros.training.mathematics.AckServlet.tailRecursive | lines: 68:72 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckServlet.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.Ackermann.Ackermann | lines: 8:10 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Ackermann.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+method: com.coveros.training.mathematics.Ackermann.ack | lines: 17:25 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Ackermann.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 3b2676fdc49e8bbed2899c511855f847e8a2b3fd | author: Byron Katz
+commit: bbd11289f68b8f1c91caa482e59fec8f70107d76 | author: Byron Katz
+commit: 27c74627cddf9387b9cc51e086ad7c4babbeadef | author: Byron Katz
+method: com.coveros.training.mathematics.Ackermann.calculate | lines: 31:35 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Ackermann.java
+commit: 3b2676fdc49e8bbed2899c511855f847e8a2b3fd | author: Byron Katz
+commit: bbd11289f68b8f1c91caa482e59fec8f70107d76 | author: Byron Katz
+commit: 27c74627cddf9387b9cc51e086ad7c4babbeadef | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative.calculate | lines: 14:18 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: 626af93e082ddb1514c38041d8272f85499c84e8 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative.flag | lines: 34:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative.number1 | lines: 34:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative.number2 | lines: 34:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative.stack | lines: 34:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative$$.main | lines: 115:117 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative$$.tail | lines: 34:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.field | lines: 36:46 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.flag | lines: 34:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.number1 | lines: 34:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.number2 | lines: 34:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.AckermannIterative$$$FunctionalAckermann.stack | lines: 34:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/AckermannIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator.Calculator | lines: 12:14 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: 5b77ce90695467e2fdb6e40a9621ad1d45b7f4c0 | author: Byron Katz
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator.Calculator | lines: 12:14 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: 5b77ce90695467e2fdb6e40a9621ad1d45b7f4c0 | author: Byron Katz
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator.add | lines: 24:26 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: 786dfaf9224fc41a28de4ce39b10dfec7dd707c3 | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator.add | lines: 24:26 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: 786dfaf9224fc41a28de4ce39b10dfec7dd707c3 | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator.add | lines: 24:26 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: 786dfaf9224fc41a28de4ce39b10dfec7dd707c3 | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator.calculateAndMore | lines: 69:73 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: 231e3c712b4abe8b3e3706405555033abf1a7b39 | author: Byron Katz
+commit: 5b77ce90695467e2fdb6e40a9621ad1d45b7f4c0 | author: Byron Katz
+commit: bc59ae0c1ac892c3cc9371c367d63f4dae00f00e | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator.calculateAndMorePart2 | lines: 79:82 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: 5b77ce90695467e2fdb6e40a9621ad1d45b7f4c0 | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator.calculateAndMorePart3 | lines: 88:90 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: 5bc0309544875c39a16cccd01e5900246e3fd523 | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator.toStringZeroToTen | lines: 39:54 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: 786dfaf9224fc41a28de4ce39b10dfec7dd707c3 | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator$Bar.doOtherComplexThing | lines: 114:116 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: bc59ae0c1ac892c3cc9371c367d63f4dae00f00e | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator$Baz.doThirdPartyThing | lines: 124:126 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: 5b77ce90695467e2fdb6e40a9621ad1d45b7f4c0 | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator$Foo.doComplexThing | lines: 100:102 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: bc59ae0c1ac892c3cc9371c367d63f4dae00f00e | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator$iBar.doOtherComplexThing | lines: 114:116 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: bc59ae0c1ac892c3cc9371c367d63f4dae00f00e | author: Byron Katz
+method: com.coveros.training.mathematics.Calculator$iFoo.doComplexThing | lines: 100:102 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Calculator.java
+commit: bc59ae0c1ac892c3cc9371c367d63f4dae00f00e | author: Byron Katz
+method: com.coveros.training.mathematics.FibServlet.defaultRecursiveCalculation | lines: 72:76 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/FibServlet.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+commit: 410897e6ed9464234e48ab5f975865f7b6f6fcc0 | author: Byron Katz
+method: com.coveros.training.mathematics.FibServlet.doPost | lines: 30:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/FibServlet.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 9090b5bb93ea0925cb784eb6075cf0181ce1b985 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+commit: 410897e6ed9464234e48ab5f975865f7b6f6fcc0 | author: Byron Katz
+method: com.coveros.training.mathematics.FibServlet.forwardToResult | lines: 65:67 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/FibServlet.java
+commit: 95f2f4e3dd085cd3120bcb3d916be291c8729a42 | author: Byron Katz
+commit: 410897e6ed9464234e48ab5f975865f7b6f6fcc0 | author: Byron Katz
+method: com.coveros.training.mathematics.FibServlet.putNumberInRequest | lines: 23:27 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/FibServlet.java
+commit: 410897e6ed9464234e48ab5f975865f7b6f6fcc0 | author: Byron Katz
+method: com.coveros.training.mathematics.FibServlet.tailRecursiveAlgo1Calc | lines: 56:60 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/FibServlet.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 626af93e082ddb1514c38041d8272f85499c84e8 | author: Byron Katz
+commit: 79edb576f00f9bfb2b7d319941fd81f75a90e8fd | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.FibServlet.tailRecursiveAlgo2Calc | lines: 50:54 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/FibServlet.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 626af93e082ddb1514c38041d8272f85499c84e8 | author: Byron Katz
+commit: 79edb576f00f9bfb2b7d319941fd81f75a90e8fd | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.Fibonacci.Fibonacci | lines: 5:7 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Fibonacci.java
+commit: ff52abc818b2adea965a49d2183e6154afdf1034 | author: Byron Katz
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+method: com.coveros.training.mathematics.Fibonacci.calculate | lines: 9:19 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/Fibonacci.java
+commit: d52b872ce223db5e4ce94a7e8147ce5ceb2ad00e | author: Byron Katz
+commit: ea13738c4c13291aff67bd0cc86b40f10eb6af5a | author: Byron Katz
+method: com.coveros.training.mathematics.FibonacciIterative.FibonacciIterative | lines: 10:12 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/FibonacciIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+method: com.coveros.training.mathematics.FibonacciIterative.fibAlgo1 | lines: 17:46 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/FibonacciIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: f0a0b73a3330fb580046f07e9ac4aafa7fcc38b4 | author: Byron Katz
+commit: 79edb576f00f9bfb2b7d319941fd81f75a90e8fd | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.FibonacciIterative.fibAlgo2 | lines: 48:64 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/FibonacciIterative.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 79edb576f00f9bfb2b7d319941fd81f75a90e8fd | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.FunctionalField.field | lines: 8:10 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/FunctionalField.java
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.MathServlet.doPost | lines: 30:42 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/MathServlet.java
+commit: b157c48becf8e9823ceda7fffac877c6e89de3a7 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 1a07b46b2a555f84a6a47ad4361b6af0e9a03216 | author: Byron Katz
+commit: d9016ccd455ce8b2dda7e7f8fb609e105c6ff325 | author: Byron Katz
+commit: 409803d575a5efe35b3a6b786761edeb4ff295d7 | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 62eb07e7f80da0010bfb436b1da567b004d336c1 | author: Byron Katz
+commit: 5257e6260d883e439a5212f13a57b3f427954ba3 | author: Byron Katz
+commit: 0e52cad943666c892be9ef0c5e05438293c739c4 | author: Byron Katz
+commit: 96322cdd539d90f06fec7c227e17caa4b32cf8cd | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.mathematics.MathServlet.forwardToResult | lines: 47:49 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/MathServlet.java
+commit: 95f2f4e3dd085cd3120bcb3d916be291c8729a42 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 1a07b46b2a555f84a6a47ad4361b6af0e9a03216 | author: Byron Katz
+commit: d9016ccd455ce8b2dda7e7f8fb609e105c6ff325 | author: Byron Katz
+commit: 409803d575a5efe35b3a6b786761edeb4ff295d7 | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 62eb07e7f80da0010bfb436b1da567b004d336c1 | author: Byron Katz
+commit: 5257e6260d883e439a5212f13a57b3f427954ba3 | author: Byron Katz
+commit: 0e52cad943666c892be9ef0c5e05438293c739c4 | author: Byron Katz
+commit: 96322cdd539d90f06fec7c227e17caa4b32cf8cd | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.mathematics.MathServlet.putNumberInRequest | lines: 23:27 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/MathServlet.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 1a07b46b2a555f84a6a47ad4361b6af0e9a03216 | author: Byron Katz
+commit: d9016ccd455ce8b2dda7e7f8fb609e105c6ff325 | author: Byron Katz
+commit: 409803d575a5efe35b3a6b786761edeb4ff295d7 | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 62eb07e7f80da0010bfb436b1da567b004d336c1 | author: Byron Katz
+commit: 5257e6260d883e439a5212f13a57b3f427954ba3 | author: Byron Katz
+commit: 0e52cad943666c892be9ef0c5e05438293c739c4 | author: Byron Katz
+commit: 96322cdd539d90f06fec7c227e17caa4b32cf8cd | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.mathematics.MathServlet.setResultToSum | lines: 54:57 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/MathServlet.java
+commit: 3556a1bbe7555112d09f4ce084b051c290ad9dc2 | author: Byron Katz
+commit: c144c05aa2193e7ecbdaa6e51da4f580f544d353 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 1a07b46b2a555f84a6a47ad4361b6af0e9a03216 | author: Byron Katz
+commit: d9016ccd455ce8b2dda7e7f8fb609e105c6ff325 | author: Byron Katz
+commit: 409803d575a5efe35b3a6b786761edeb4ff295d7 | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 62eb07e7f80da0010bfb436b1da567b004d336c1 | author: Byron Katz
+commit: 5257e6260d883e439a5212f13a57b3f427954ba3 | author: Byron Katz
+commit: 0e52cad943666c892be9ef0c5e05438293c739c4 | author: Byron Katz
+commit: 96322cdd539d90f06fec7c227e17caa4b32cf8cd | author: Byron Katz
+commit: 4355506fbd7aac1f83fcd4f07d6308c62f064d68 | author: Byron Katz
+method: com.coveros.training.mathematics.TailRecursive.tailie | lines: 11:22 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/TailRecursive.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.mathematics.TailRecursive$$.epsilon | lines: 27:34 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/mathematics/TailRecursive.java
+commit: c6f758b7e48f9e6ae545f6d6906f28ab1b8c6d72 | author: Byron Katz
+commit: 6095c0a54067b9fc34c61813391d9660370c20b3 | author: Byron Katz
+method: com.coveros.training.persistence.DbServlet.DbServlet | lines: 19:21 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/DbServlet.java
+commit: 626af93e082ddb1514c38041d8272f85499c84e8 | author: Byron Katz
+method: com.coveros.training.persistence.DbServlet.DbServlet | lines: 19:21 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/DbServlet.java
+commit: 626af93e082ddb1514c38041d8272f85499c84e8 | author: Byron Katz
+method: com.coveros.training.persistence.DbServlet.doGet | lines: 31:52 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/DbServlet.java
+commit: 626af93e082ddb1514c38041d8272f85499c84e8 | author: Byron Katz
+commit: ce0f52a5c534621059ad3774eed71afd9487fe9e | author: Byron Katz
+commit: 4e609b62eadca044ddb3853921646fced21de12d | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 2d24dba562f3a284a5dd74639f0c033fb454f8b6 | author: Byron Katz
+commit: 1a07b46b2a555f84a6a47ad4361b6af0e9a03216 | author: Byron Katz
+commit: e0c3c29f8e542f158381318464e52a2557f8bcab | author: Byron Katz
+commit: f1a21f58888bf5fff2082ab4b5f27ce0cdc3b8ad | author: Byron Katz
+commit: 79d08f61d1b965c8ad37c7b8bafa269b1afe7386 | author: Byron Katz
+commit: 2abd7d4efaf910be4f6d9fc6410f5677edc17dcb | author: Byron Katz
+commit: 45b543bba4b60709c0086ba0c96bab7d13098d2d | author: Byron Katz
+commit: 0ded33dbac4e6fb42765f63f3420eeeecc387baf | author: Byron Katz
+commit: f14a1abcf10dfe2892c57147318661b6d50b1b82 | author: Byron Katz
+commit: b55b46891aaf308025be1cdb52838b4a5c9d87d5 | author: Byron Katz
+commit: c0ac814045b3d376d4de09a468dd70040e5df089 | author: Byron Katz
+commit: b376aeae6d02da5933c9fe42130b5297312bb168 | author: Byron Katz
+method: com.coveros.training.persistence.EmptyDataSource.getConnection | lines: 16:18 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/EmptyDataSource.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4fb88e725c52b774554db490eb4c8d2fad8cadb | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+method: com.coveros.training.persistence.EmptyDataSource.getConnection | lines: 16:18 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/EmptyDataSource.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4fb88e725c52b774554db490eb4c8d2fad8cadb | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+method: com.coveros.training.persistence.EmptyDataSource.getLogWriter | lines: 36:38 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/EmptyDataSource.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4fb88e725c52b774554db490eb4c8d2fad8cadb | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+method: com.coveros.training.persistence.EmptyDataSource.getLoginTimeout | lines: 51:53 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/EmptyDataSource.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4fb88e725c52b774554db490eb4c8d2fad8cadb | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+method: com.coveros.training.persistence.EmptyDataSource.getParentLogger | lines: 56:58 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/EmptyDataSource.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4fb88e725c52b774554db490eb4c8d2fad8cadb | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+method: com.coveros.training.persistence.EmptyDataSource.isWrapperFor | lines: 31:33 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/EmptyDataSource.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4fb88e725c52b774554db490eb4c8d2fad8cadb | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+method: com.coveros.training.persistence.EmptyDataSource.setLogWriter | lines: 41:43 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/EmptyDataSource.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4fb88e725c52b774554db490eb4c8d2fad8cadb | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+method: com.coveros.training.persistence.EmptyDataSource.setLoginTimeout | lines: 46:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/EmptyDataSource.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4fb88e725c52b774554db490eb4c8d2fad8cadb | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+method: com.coveros.training.persistence.EmptyDataSource.unwrap | lines: 26:28 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/EmptyDataSource.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: b4fb88e725c52b774554db490eb4c8d2fad8cadb | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+method: com.coveros.training.persistence.ParameterObject.ParameterObject | lines: 24:27 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/ParameterObject.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+commit: 2628a8d96c163ade0bdc94a1002b16cb4b156965 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.ParameterObject.createEmpty | lines: 55:57 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/ParameterObject.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.ParameterObject.equals | lines: 29:44 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/ParameterObject.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.ParameterObject.hashCode | lines: 46:53 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/ParameterObject.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.ParameterObject.isEmpty | lines: 59:61 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/ParameterObject.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.ParameterObject.toString | lines: 63:65 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/ParameterObject.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.PersistenceLayer | lines: 37:39 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 9e1a2987331ec795a6877606ad45adbb51d471d4 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: d20ee82d765f8c802d3d25cf399d51d9d42a0e7f | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.PersistenceLayer | lines: 37:39 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 9e1a2987331ec795a6877606ad45adbb51d471d4 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: d20ee82d765f8c802d3d25cf399d51d9d42a0e7f | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.areCredentialsValid | lines: 473:485 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: 279796fab7e9f2e8c787d5c519e63df4dc3e5163 | author: Byron Katz
+commit: e4d1be55f82f51b456d5e42daf6b68c7ce219e1b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: 0f62ba7d2009b71fc18f0ff8a57942fca0e70d56 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 41c6848b6ce8c809d95ff54183fa3e07832ae3d0 | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.bytesToHex | lines: 523:531 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 279796fab7e9f2e8c787d5c519e63df4dc3e5163 | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.cleanAndMigrateDatabase | lines: 600:603 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 2d24dba562f3a284a5dd74639f0c033fb454f8b6 | author: Byron Katz
+commit: 2abd7d4efaf910be4f6d9fc6410f5677edc17dcb | author: Byron Katz
+commit: 45b543bba4b60709c0086ba0c96bab7d13098d2d | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.cleanDatabase | lines: 606:609 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 2d24dba562f3a284a5dd74639f0c033fb454f8b6 | author: Byron Katz
+commit: 2abd7d4efaf910be4f6d9fc6410f5677edc17dcb | author: Byron Katz
+commit: 45b543bba4b60709c0086ba0c96bab7d13098d2d | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.configureFlyway | lines: 617:622 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 2d24dba562f3a284a5dd74639f0c033fb454f8b6 | author: Byron Katz
+commit: 9e1a2987331ec795a6877606ad45adbb51d471d4 | author: Byron Katz
+commit: 2abd7d4efaf910be4f6d9fc6410f5677edc17dcb | author: Byron Katz
+commit: 45b543bba4b60709c0086ba0c96bab7d13098d2d | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.createEmpty | lines: 545:547 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 279796fab7e9f2e8c787d5c519e63df4dc3e5163 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.createExtractor | lines: 290:294 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: e4d1be55f82f51b456d5e42daf6b68c7ce219e1b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: 0f62ba7d2009b71fc18f0ff8a57942fca0e70d56 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 41c6848b6ce8c809d95ff54183fa3e07832ae3d0 | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: b1f284a22756478a8f5c9df5f89d7f589debe8b9 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: acbe0848427328f8b7a1417cbaec7249c52b2685 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.createHashedValueFromPassword | lines: 505:515 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.createLoan | lines: 230:234 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: f7fd50caa0cc8b63fbaee01d6eb1a514b3abce41 | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: c94b14202324c6300f0a207a053410ef00f84820 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 2628a8d96c163ade0bdc94a1002b16cb4b156965 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+commit: 79a0a3e9183f3b0193232a1720ccab39f396a0b3 | author: Byron Katz
+commit: 4ef3c45d9b63c0d8868f608468c16c9d30100af3 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.deleteBook | lines: 257:262 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: f7fd50caa0cc8b63fbaee01d6eb1a514b3abce41 | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 7a3a6d18668b325fe5548cc298e64626a5e24826 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.deleteBorrower | lines: 266:271 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: f7fd50caa0cc8b63fbaee01d6eb1a514b3abce41 | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: e178e016c1690559c05c53891c7ed9d759df7cd9 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.executeInsertOnPreparedStatement | lines: 98:111 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: c94b14202324c6300f0a207a053410ef00f84820 | author: Byron Katz
+commit: 721cf5af531e4860c47859fccee683d8b6b8ab75 | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.executeUpdateOnPreparedStatement | lines: 114:117 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 45b543bba4b60709c0086ba0c96bab7d13098d2d | author: Byron Katz
+commit: c94b14202324c6300f0a207a053410ef00f84820 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate | lines: 71:80 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: f7fd50caa0cc8b63fbaee01d6eb1a514b3abce41 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: c94b14202324c6300f0a207a053410ef00f84820 | author: Byron Katz
+commit: 77a7290214f54ece69c3f0e467730550de35ddad | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 2628a8d96c163ade0bdc94a1002b16cb4b156965 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+commit: 79a0a3e9183f3b0193232a1720ccab39f396a0b3 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: b1f284a22756478a8f5c9df5f89d7f589debe8b9 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: acbe0848427328f8b7a1417cbaec7249c52b2685 | author: Byron Katz
+commit: 54bdbde81c200bda9bec2736404ca90828be0aa0 | author: Byron Katz
+commit: 875d29bc6e14db740ccb4e54cb29d1f54b240249 | author: Byron Katz
+commit: d20ee82d765f8c802d3d25cf399d51d9d42a0e7f | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.getBorrowerName | lines: 275:284 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: d52b872ce223db5e4ce94a7e8147ce5ceb2ad00e | author: Byron Katz
+commit: e4d1be55f82f51b456d5e42daf6b68c7ce219e1b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: 0f62ba7d2009b71fc18f0ff8a57942fca0e70d56 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 673f09feba89fb08478e9dc3745adb1947b3afa5 | author: Byron Katz
+commit: 41c6848b6ce8c809d95ff54183fa3e07832ae3d0 | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: b1f284a22756478a8f5c9df5f89d7f589debe8b9 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: acbe0848427328f8b7a1417cbaec7249c52b2685 | author: Byron Katz
+commit: 42e5daabd85b4012c4735f119d606252903d63f0 | author: Byron Katz
+commit: 54bdbde81c200bda9bec2736404ca90828be0aa0 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.isEmpty | lines: 551:553 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: ac8b0cc82559710602ba2e4f1abf17beeeb1719e | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.listAllBooks | lines: 351:353 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 8cbb38c0aa259a4e2709c69fd0cfa6a5a95d38a7 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: 4c2e373fb6738c0fe19b2067860741d3957aad41 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.listAllBorrowers | lines: 381:396 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: e4d1be55f82f51b456d5e42daf6b68c7ce219e1b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: 16b876992047bd04b500fdbe939d5bb3ab5a859d | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.listAvailableBooks | lines: 357:359 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: 8cbb38c0aa259a4e2709c69fd0cfa6a5a95d38a7 | author: Byron Katz
+commit: 14ff9a0aa551587275df44bcff8a59c0b6a21de9 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.listBooks | lines: 362:377 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: e4d1be55f82f51b456d5e42daf6b68c7ce219e1b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 8cbb38c0aa259a4e2709c69fd0cfa6a5a95d38a7 | author: Byron Katz
+commit: 14ff9a0aa551587275df44bcff8a59c0b6a21de9 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.migrateDatabase | lines: 612:615 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 2d24dba562f3a284a5dd74639f0c033fb454f8b6 | author: Byron Katz
+commit: 2abd7d4efaf910be4f6d9fc6410f5677edc17dcb | author: Byron Katz
+commit: 45b543bba4b60709c0086ba0c96bab7d13098d2d | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.obtainConnectionPool | lines: 45:48 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 2d24dba562f3a284a5dd74639f0c033fb454f8b6 | author: Byron Katz
+commit: e0c3c29f8e542f158381318464e52a2557f8bcab | author: Byron Katz
+commit: 9e1a2987331ec795a6877606ad45adbb51d471d4 | author: Byron Katz
+commit: 45b543bba4b60709c0086ba0c96bab7d13098d2d | author: Byron Katz
+commit: a05eb9e316af7d761d22184796fd7092a47b41fd | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 2c9ccda725803be6016dd198e5d75ca44f7af845 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.prepareStatementWithKeys | lines: 74:76 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c94b14202324c6300f0a207a053410ef00f84820 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 2628a8d96c163ade0bdc94a1002b16cb4b156965 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+commit: 79a0a3e9183f3b0193232a1720ccab39f396a0b3 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: b1f284a22756478a8f5c9df5f89d7f589debe8b9 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: acbe0848427328f8b7a1417cbaec7249c52b2685 | author: Byron Katz
+commit: 54bdbde81c200bda9bec2736404ca90828be0aa0 | author: Byron Katz
+commit: 875d29bc6e14db740ccb4e54cb29d1f54b240249 | author: Byron Katz
+commit: d20ee82d765f8c802d3d25cf399d51d9d42a0e7f | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.runBackup | lines: 556:565 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 45b543bba4b60709c0086ba0c96bab7d13098d2d | author: Byron Katz
+commit: aa28391e263903249f57f4b1c56c616e8d7838e7 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.runQuery | lines: 135:148 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 48b1d3d84728d3bd71fbdd3c67692e05adc583f1 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.runRestore | lines: 568:585 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: 778e1c078f78630e4a59d04452d3ea9b4fc57dc2 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 45b543bba4b60709c0086ba0c96bab7d13098d2d | author: Byron Katz
+commit: aa28391e263903249f57f4b1c56c616e8d7838e7 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.saveNewBook | lines: 238:243 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: f7fd50caa0cc8b63fbaee01d6eb1a514b3abce41 | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: c94b14202324c6300f0a207a053410ef00f84820 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 2628a8d96c163ade0bdc94a1002b16cb4b156965 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+commit: 79a0a3e9183f3b0193232a1720ccab39f396a0b3 | author: Byron Katz
+commit: 4ef3c45d9b63c0d8868f608468c16c9d30100af3 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.saveNewBorrower | lines: 221:226 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: f7fd50caa0cc8b63fbaee01d6eb1a514b3abce41 | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: c94b14202324c6300f0a207a053410ef00f84820 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 2628a8d96c163ade0bdc94a1002b16cb4b156965 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+commit: 4ef3c45d9b63c0d8868f608468c16c9d30100af3 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.saveNewUser | lines: 449:454 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 279796fab7e9f2e8c787d5c519e63df4dc3e5163 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.searchBooksById | lines: 319:331 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: e4d1be55f82f51b456d5e42daf6b68c7ce219e1b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: 4c2e373fb6738c0fe19b2067860741d3957aad41 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.searchBooksByTitle | lines: 304:315 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: e4d1be55f82f51b456d5e42daf6b68c7ce219e1b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: 0f62ba7d2009b71fc18f0ff8a57942fca0e70d56 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 41c6848b6ce8c809d95ff54183fa3e07832ae3d0 | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 8aba36eab4adb5e37b403267742e583abe9bb37a | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.searchBorrowerDataByName | lines: 288:300 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: e4d1be55f82f51b456d5e42daf6b68c7ce219e1b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: 0f62ba7d2009b71fc18f0ff8a57942fca0e70d56 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 41c6848b6ce8c809d95ff54183fa3e07832ae3d0 | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: b1f284a22756478a8f5c9df5f89d7f589debe8b9 | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: acbe0848427328f8b7a1417cbaec7249c52b2685 | author: Byron Katz
+commit: 3016a7a223b1805cac1847f8fa3b55b6a48b53d3 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.searchBorrowersById | lines: 335:347 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: e4d1be55f82f51b456d5e42daf6b68c7ce219e1b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: 16b876992047bd04b500fdbe939d5bb3ab5a859d | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.searchForLoanByBook | lines: 425:442 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: 279796fab7e9f2e8c787d5c519e63df4dc3e5163 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.searchForLoanByBorrower | lines: 400:421 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: 279796fab7e9f2e8c787d5c519e63df4dc3e5163 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.searchForUserByName | lines: 458:469 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: 99008cb5ce18edfa2d9327e1afd4011c742a5a9e | author: Byron Katz
+commit: 279796fab7e9f2e8c787d5c519e63df4dc3e5163 | author: Byron Katz
+commit: e4d1be55f82f51b456d5e42daf6b68c7ce219e1b | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 41c6848b6ce8c809d95ff54183fa3e07832ae3d0 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.throwingFunctionWrapper | lines: 196:202 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: 48b1d3d84728d3bd71fbdd3c67692e05adc583f1 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.updateBorrower | lines: 247:253 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: f7fd50caa0cc8b63fbaee01d6eb1a514b3abce41 | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+commit: 871ecc47278f4a87c097397a494cb6f0dc2a3e22 | author: Byron Katz
+commit: acbe0848427328f8b7a1417cbaec7249c52b2685 | author: Byron Katz
+commit: 54bdbde81c200bda9bec2736404ca90828be0aa0 | author: Byron Katz
+method: com.coveros.training.persistence.PersistenceLayer.updateUserWithPassword | lines: 489:495 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/PersistenceLayer.java
+commit: c828aa612929b78514f14fb2a68bbba4ef6711b7 | author: Byron Katz
+commit: f7fd50caa0cc8b63fbaee01d6eb1a514b3abce41 | author: Byron Katz
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: de199f7d3edd3b36ceac821a6ee1f7b7c92e29e2 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 340f96edca25606f0cff6b33ea493e92a039c10a | author: Byron Katz
+commit: 461ccf574cf733091a83990c41d7da9e63c5cfd6 | author: Byron Katz
+commit: 41ac804af51d72cb47720a7932e7ab21fabe95a2 | author: Byron Katz
+commit: b4f301839c1c830db0a4f97ef93d41e8d2f2a894 | author: Byron Katz
+commit: 0cc6e2ffa8547ed00e234ff3f74ea4a6d16111bd | author: Byron Katz
+method: com.coveros.training.persistence.SqlData.SqlData | lines: 53:55 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlData.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 822d15ab5dc2ab2b984419b6d0f91929498b6c9d | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.SqlData.SqlData | lines: 53:55 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlData.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 822d15ab5dc2ab2b984419b6d0f91929498b6c9d | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.SqlData.addParameter | lines: 98:100 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlData.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 822d15ab5dc2ab2b984419b6d0f91929498b6c9d | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.SqlData.applyParametersToPreparedStatement | lines: 108:125 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlData.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 822d15ab5dc2ab2b984419b6d0f91929498b6c9d | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.SqlData.createEmpty | lines: 170:172 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlData.java
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+method: com.coveros.training.persistence.SqlData.equals | lines: 127:144 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlData.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+commit: cdf5f5f8d254f0c7428f211b0216569c1c26a760 | author: Byron Katz
+commit: 62a21e97e4a76ae48643408ecbcf3b45feaa5225 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 822d15ab5dc2ab2b984419b6d0f91929498b6c9d | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+commit: 8d51efe28f238e053461eea6629601a5e3500216 | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.SqlData.generateParams | lines: 79:83 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlData.java
+commit: 0f3b02dfccc94e847d68e947494db72cfcf0b9d1 | author: Byron Katz
+method: com.coveros.training.persistence.SqlData.hashCode | lines: 146:155 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlData.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+method: com.coveros.training.persistence.SqlData.isEmpty | lines: 174:176 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlData.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+commit: 1fd4dc57e75d4f107d86b0afd574060f4d6b6b73 | author: Byron Katz
+method: com.coveros.training.persistence.SqlData.toString | lines: 157:168 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlData.java
+commit: c5941053ae2038fa4d213ee8d2ca76652532c5f0 | author: Byron Katz
+commit: f78b8435cced3c0fd24ec371f2f84fb87516ca03 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 23ac52d87ae43dc548fd4a92bdb611af073f0f79 | author: Byron Katz
+method: com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException | lines: 5:7 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlRuntimeException.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+method: com.coveros.training.persistence.SqlRuntimeException.SqlRuntimeException | lines: 5:7 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/persistence/SqlRuntimeException.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 258993af613030fef7bc327efb0fc8ef886a8d79 | author: Byron Katz
+method: com.coveros.training.tomcat.WebAppListener.WebAppListener | lines: 19:21 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/tomcat/WebAppListener.java
+commit: 626af93e082ddb1514c38041d8272f85499c84e8 | author: Byron Katz
+method: com.coveros.training.tomcat.WebAppListener.WebAppListener | lines: 19:21 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/tomcat/WebAppListener.java
+commit: 626af93e082ddb1514c38041d8272f85499c84e8 | author: Byron Katz
+method: com.coveros.training.tomcat.WebAppListener.contextDestroyed | lines: 41:43 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/tomcat/WebAppListener.java
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: af46dd15aa71265c6e6d7bfb8226d8b4f3a0103f | author: Byron Katz
+commit: 92361e0101df5afc6c2b311075432b54492a4e9a | author: Byron Katz
+commit: 12a5b9cf01c1754b52286f1879370286ca624c4e | author: Byron Katz
+method: com.coveros.training.tomcat.WebAppListener.contextInitialized | lines: 32:35 | file: D:\msdecomp\2022_microservice_tools\code\scripts\metrics\casestudies/demo/src/main/java/com/coveros/training/tomcat/WebAppListener.java
+commit: 626af93e082ddb1514c38041d8272f85499c84e8 | author: Byron Katz
+commit: efde5332a9f33fd1cb7962f675ef6f9a80507f6e | author: Byron Katz
+commit: 2d24dba562f3a284a5dd74639f0c033fb454f8b6 | author: Byron Katz
+commit: 45b543bba4b60709c0086ba0c96bab7d13098d2d | author: Byron Katz
+commit: f14a1abcf10dfe2892c57147318661b6d50b1b82 | author: Byron Katz
+commit: b766e7343596fe775ffa11efe9319f2c0d818463 | author: Byron Katz
+commit: 9425f3943a08e19e637ac11cbf5c1017ac500051 | author: Byron Katz
+commit: 12a5b9cf01c1754b52286f1879370286ca624c4e | author: Byron Katz

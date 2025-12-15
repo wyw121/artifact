@@ -1,0 +1,23 @@
+{
+    "com.coveros.training.helpers.CheckUtils": 1.0,
+    "com.coveros.training.helpers.StringUtils": 0.91,
+    "com.coveros.training.expenses.AlcoholCalculator": 0.76,
+    "com.coveros.training.authentication.LoginUtils": 0.52,
+    "com.coveros.training.authentication.RegistrationUtils": 0.52,
+    "com.coveros.training.persistence.PersistenceLayer": 0.5,
+    "com.coveros.training.persistence.NotImplementedException": 0.42,
+    "com.coveros.training.persistence.EmptyDataSource": 0.39,
+    "com.coveros.training.persistence.SqlRuntimeException": 0.35,
+    "com.coveros.training.helpers.AssertionException": 0.35,
+    "com.coveros.training.library.LibraryUtils": 0.34,
+    "com.coveros.training.authentication.domainobjects.PasswordResult": 0.3,
+    "com.coveros.training.expenses.AlcoholResult": 0.28,
+    "com.coveros.training.persistence.SqlData": 0.15,
+    "com.coveros.training.library.domainobjects.Book": 0.13,
+    "com.coveros.training.authentication.domainobjects.User": 0.11,
+    "com.coveros.training.library.domainobjects.Loan": 0.11,
+    "com.coveros.training.persistence.ParameterObject": 0.11,
+    "com.coveros.training.library.domainobjects.Borrower": 0.11,
+    "com.coveros.training.authentication.domainobjects.RegistrationResult": 0.09,
+    "com.coveros.training.tomcat.WebAppListener": 0.0
+}

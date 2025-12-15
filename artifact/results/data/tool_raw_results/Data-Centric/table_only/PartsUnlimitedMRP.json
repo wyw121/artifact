@@ -1,0 +1,30 @@
+{
+    "Data_Centric_Process": {
+      "decomposition": {
+        "CatalogManagementService": [
+          {
+            "id": "Catalog"
+          }
+            
+        ],
+        "DealersManagementService": [
+          {
+            "id": "Dealers"
+          }
+        ],
+        "OrderManagementService": [
+            {
+              "id": "Orders"
+            },
+            {
+              "id": "Shipments"
+            }
+        ],
+        "QuotesManagementService": [
+            {
+              "id": "Quotes"
+            }  
+          ]
+      }
+    }
+  }

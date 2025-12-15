@@ -1,0 +1,15 @@
+partitionID,className,classID
+0,PostgresqlProperties.java,src/Backend/OrderService/src/main/java/smpl/ordering/PostgresqlProperties.java
+0,QuoteController.java,src/Backend/OrderService/src/main/java/smpl/ordering/controllers/QuoteController.java
+0,ShipmentControllerTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/controllers/ShipmentControllerTest.java
+0,DealersRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/DealersRepositoryTest.java
+0,QuoteControllerTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/controllers/QuoteControllerTest.java
+1,MongoDealersRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoDealersRepositoryTest.java
+1,MongoQuoteRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoQuoteRepositoryTest.java
+1,MongoOrderRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoOrderRepositoryTest.java
+1,MongoCatalogItemsRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoCatalogItemsRepositoryTest.java
+1,MongoShipmentRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoShipmentRepositoryTest.java
+1,MockDealersRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mock/test/MockDealersRepositoryTest.java
+1,TestOrderingConfiguration.java,src/Backend/OrderService/src/test/java/smpl/ordering/TestOrderingConfiguration.java
+2,app.py,Labfiles/DevOps200.1x-PracticesandPrinciples/Mod03/python-ci-example-master/app/src/app.py
+2,app-test.py,Labfiles/DevOps200.1x-PracticesandPrinciples/Mod03/python-ci-example-master/app/tests/app-test.py

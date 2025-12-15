@@ -1,0 +1,447 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "AccountManagementService": [
+                {
+                    "id": "AbstractActionBean"
+                },
+                {
+                    "id": "Account"
+                },
+                {
+                    "id": "AccountActionBean"
+                },
+                {
+                    "id": "AccountMapper"
+                },
+                {
+                    "id": "AccountService"
+                }
+            ],
+            "ItemManagementService": [
+                {
+                    "id": "Cart"
+                },
+                {
+                    "id": "CartActionBean"
+                },
+                {
+                    "id": "CartItem"
+                },
+                {
+                    "id": "CatalogActionBean"
+                },
+                {
+                    "id": "CatalogService"
+                },
+                {
+                    "id": "Category"
+                },
+                {
+                    "id": "CategoryMapper"
+                },
+                {
+                    "id": "Item"
+                },
+                {
+                    "id": "ItemMapper"
+                },
+                {
+                    "id": "LineItem"
+                },
+                {
+                    "id": "LineItemMapper"
+                },
+                {
+                    "id": "Product"
+                },
+                {
+                    "id": "ProductMapper"
+                }
+            ],
+            "OrderManagementService": [
+                {
+                    "id": "Order"
+                },
+                {
+                    "id": "OrderActionBean"
+                },
+                {
+                    "id": "OrderMapper"
+                },
+                {
+                    "id": "OrderService"
+                },
+                {
+                    "id": "Sequence"
+                },
+                {
+                    "id": "SequenceMapper"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "Cart",
+                "target": "CartItem",
+                "weight": "10"
+            },
+            {
+                "source": "Cart",
+                "target": "Item",
+                "weight": "2"
+            },
+            {
+                "source": "Item",
+                "target": "Product",
+                "weight": "1"
+            },
+            {
+                "source": "LineItem",
+                "target": "CartItem",
+                "weight": "2"
+            },
+            {
+                "source": "LineItem",
+                "target": "Item",
+                "weight": "2"
+            },
+            {
+                "source": "Order",
+                "target": "LineItem",
+                "weight": "1"
+            },
+            {
+                "source": "Order",
+                "target": "Account",
+                "weight": "9"
+            },
+            {
+                "source": "Order",
+                "target": "Cart",
+                "weight": "2"
+            },
+            {
+                "source": "AccountService",
+                "target": "AccountMapper",
+                "weight": "8"
+            },
+            {
+                "source": "AccountService",
+                "target": "Account",
+                "weight": "1"
+            },
+            {
+                "source": "CatalogService",
+                "target": "CategoryMapper",
+                "weight": "2"
+            },
+            {
+                "source": "CatalogService",
+                "target": "ItemMapper",
+                "weight": "3"
+            },
+            {
+                "source": "CatalogService",
+                "target": "ProductMapper",
+                "weight": "3"
+            },
+            {
+                "source": "OrderService",
+                "target": "Sequence",
+                "weight": "2"
+            },
+            {
+                "source": "OrderService",
+                "target": "SequenceMapper",
+                "weight": "2"
+            },
+            {
+                "source": "OrderService",
+                "target": "Order",
+                "weight": "5"
+            },
+            {
+                "source": "OrderService",
+                "target": "LineItemMapper",
+                "weight": "2"
+            },
+            {
+                "source": "OrderService",
+                "target": "OrderMapper",
+                "weight": "4"
+            },
+            {
+                "source": "OrderService",
+                "target": "Item",
+                "weight": "1"
+            },
+            {
+                "source": "OrderService",
+                "target": "LineItem",
+                "weight": "5"
+            },
+            {
+                "source": "OrderService",
+                "target": "ItemMapper",
+                "weight": "3"
+            },
+            {
+                "source": "AccountActionBean",
+                "target": "Account",
+                "weight": "13"
+            },
+            {
+                "source": "AccountActionBean",
+                "target": "AbstractActionBean",
+                "weight": "1"
+            },
+            {
+                "source": "AccountActionBean",
+                "target": "AccountService",
+                "weight": "5"
+            },
+            {
+                "source": "AccountActionBean",
+                "target": "CatalogService",
+                "weight": "3"
+            },
+            {
+                "source": "CartActionBean",
+                "target": "Cart",
+                "weight": "8"
+            },
+            {
+                "source": "CartActionBean",
+                "target": "AbstractActionBean",
+                "weight": "1"
+            },
+            {
+                "source": "CartActionBean",
+                "target": "CatalogService",
+                "weight": "2"
+            },
+            {
+                "source": "CartActionBean",
+                "target": "CartItem",
+                "weight": "1"
+            },
+            {
+                "source": "CartActionBean",
+                "target": "Item",
+                "weight": "1"
+            },
+            {
+                "source": "CatalogActionBean",
+                "target": "AbstractActionBean",
+                "weight": "1"
+            },
+            {
+                "source": "CatalogActionBean",
+                "target": "CatalogService",
+                "weight": "6"
+            },
+            {
+                "source": "CatalogActionBean",
+                "target": "Item",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean",
+                "target": "Order",
+                "weight": "7"
+            },
+            {
+                "source": "OrderActionBean",
+                "target": "AbstractActionBean",
+                "weight": "1"
+            },
+            {
+                "source": "OrderActionBean",
+                "target": "Account",
+                "weight": "2"
+            },
+            {
+                "source": "OrderActionBean",
+                "target": "OrderService",
+                "weight": "3"
+            },
+            {
+                "source": "OrderActionBean",
+                "target": "AccountActionBean",
+                "weight": "4"
+            },
+            {
+                "source": "OrderActionBean",
+                "target": "CartActionBean",
+                "weight": "2"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "AccountManagementService": [
+                {
+                    "id": "AbstractActionBean"
+                },
+                {
+                    "id": "Account"
+                },
+                {
+                    "id": "AccountActionBean"
+                },
+                {
+                    "id": "AccountMapper"
+                },
+                {
+                    "id": "AccountService"
+                }
+            ],
+            "ItemManagementService": [
+                {
+                    "id": "Cart"
+                },
+                {
+                    "id": "CartActionBean"
+                },
+                {
+                    "id": "CartItem"
+                },
+                {
+                    "id": "CatalogActionBean"
+                },
+                {
+                    "id": "CatalogService"
+                },
+                {
+                    "id": "Category"
+                },
+                {
+                    "id": "CategoryMapper"
+                },
+                {
+                    "id": "Item"
+                },
+                {
+                    "id": "ItemMapper"
+                },
+                {
+                    "id": "LineItem"
+                },
+                {
+                    "id": "LineItemMapper"
+                },
+                {
+                    "id": "Product"
+                },
+                {
+                    "id": "ProductMapper"
+                }
+            ],
+            "OrderManagementService": [
+                {
+                    "id": "Order"
+                },
+                {
+                    "id": "OrderActionBean"
+                },
+                {
+                    "id": "OrderMapper"
+                },
+                {
+                    "id": "OrderService"
+                },
+                {
+                    "id": "Sequence"
+                },
+                {
+                    "id": "SequenceMapper"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "AccountManagementService": [
+                {
+                    "id": "AbstractActionBean"
+                },
+                {
+                    "id": "Account"
+                },
+                {
+                    "id": "AccountActionBean"
+                },
+                {
+                    "id": "AccountMapper"
+                },
+                {
+                    "id": "AccountService"
+                }
+            ],
+            "ItemManagementService": [
+                {
+                    "id": "Cart"
+                },
+                {
+                    "id": "CartActionBean"
+                },
+                {
+                    "id": "CartItem"
+                },
+                {
+                    "id": "CatalogActionBean"
+                },
+                {
+                    "id": "CatalogService"
+                },
+                {
+                    "id": "Category"
+                },
+                {
+                    "id": "CategoryMapper"
+                },
+                {
+                    "id": "Item"
+                },
+                {
+                    "id": "ItemMapper"
+                },
+                {
+                    "id": "LineItem"
+                },
+                {
+                    "id": "LineItemMapper"
+                },
+                {
+                    "id": "Product"
+                },
+                {
+                    "id": "ProductMapper"
+                }
+            ],
+            "OrderManagementService": [
+                {
+                    "id": "Order"
+                },
+                {
+                    "id": "OrderActionBean"
+                },
+                {
+                    "id": "OrderMapper"
+                },
+                {
+                    "id": "OrderService"
+                },
+                {
+                    "id": "Sequence"
+                },
+                {
+                    "id": "SequenceMapper"
+                }
+            ]
+        },
+        "links": []
+    }
+}

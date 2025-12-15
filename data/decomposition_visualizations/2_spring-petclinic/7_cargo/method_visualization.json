@@ -1,0 +1,14 @@
+{
+    "1_structural_static": {
+        "decomposition": {},
+        "links": []
+    },
+    "3_business_use_cases": {
+        "decomposition": {},
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {},
+        "links": []
+    }
+}

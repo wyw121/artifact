@@ -1,0 +1,108 @@
+{
+  "mosaic": {
+    "decomposition": {
+      "partition0": [
+        {
+          "id": "org.mybatis.jpetstore.domain.Order"
+        },
+        {
+          "id": "org.mybatis.jpetstore.domain.Sequence"
+        },
+        {
+          "id": "org.mybatis.jpetstore.domain.LineItem"
+        },
+        {
+          "id": "org.mybatis.jpetstore.mapper.LineItemMapper"
+        },
+        {
+          "id": "org.mybatis.jpetstore.mapper.OrderMapper"
+        },
+        {
+          "id": "org.mybatis.jpetstore.mapper.SequenceMapper"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.OrderActionBean"
+        },
+        {
+          "id": "org.mybatis.jpetstore.service.OrderService"
+        }
+      ],
+      "partition1": [
+        {
+          "id": "org.mybatis.jpetstore.domain.Product"
+        },
+        {
+          "id": "org.mybatis.jpetstore.domain.Category"
+        },
+        {
+          "id": "org.mybatis.jpetstore.domain.CartItem"
+        },
+        {
+          "id": "org.mybatis.jpetstore.domain.Cart"
+        },
+        {
+          "id": "org.mybatis.jpetstore.domain.Item"
+        },
+        {
+          "id": "org.mybatis.jpetstore.mapper.CategoryMapper"
+        },
+        {
+          "id": "org.mybatis.jpetstore.mapper.ItemMapper"
+        },
+        {
+          "id": "org.mybatis.jpetstore.mapper.ProductMapper"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.CartActionBean"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.CatalogActionBean"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.AccountActionBean.getMyList"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.AccountActionBean.setMyList"
+        },
+        {
+          "id": "org.mybatis.jpetstore.service.CatalogService"
+        }
+      ],
+      "partition2": [
+        {
+          "id": "org.mybatis.jpetstore.domain.Account"
+        },
+        {
+          "id": "org.mybatis.jpetstore.mapper.AccountMapper"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.AccountActionBean.getAccount"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.AccountActionBean.getUsername"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.AccountActionBean.getPassword"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.AccountActionBean.newAccount"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.AccountActionBean.editAccount"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.AccountActionBean.signon"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.AccountActionBean.signoff"
+        },
+        {
+          "id": "org.mybatis.jpetstore.web.actions.AccountActionBean.clear"
+        },
+        {
+          "id": "org.mybatis.jpetstore.service.AccountService"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,702 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "BadRequestException"
+                },
+                {
+                    "id": "CatalogController"
+                },
+                {
+                    "id": "DealerController"
+                },
+                {
+                    "id": "DealerInfo"
+                },
+                {
+                    "id": "MockCatalogItemsRepository"
+                },
+                {
+                    "id": "MockDealersRepository"
+                },
+                {
+                    "id": "MockQuoteRepository"
+                },
+                {
+                    "id": "OrderingInitializer"
+                },
+                {
+                    "id": "QuoteController"
+                },
+                {
+                    "id": "Utility"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "MockOrderRepository"
+                },
+                {
+                    "id": "Order"
+                },
+                {
+                    "id": "OrderController"
+                },
+                {
+                    "id": "OrderEventInfo"
+                },
+                {
+                    "id": "OrderUpdateInfo"
+                },
+                {
+                    "id": "Quote"
+                },
+                {
+                    "id": "QuoteItemInfo"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "MongoCatalogItemsRepository"
+                },
+                {
+                    "id": "MongoDealersRepository"
+                },
+                {
+                    "id": "MongoOperationsWithRetry"
+                },
+                {
+                    "id": "MongoOrderRepository"
+                },
+                {
+                    "id": "MongoQuoteRepository"
+                },
+                {
+                    "id": "MongoShipmentRepository"
+                },
+                {
+                    "id": "OrderingConfiguration"
+                },
+                {
+                    "id": "RepositoryFactory"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "DeliveryAddress"
+                },
+                {
+                    "id": "MockShipmentRepository"
+                },
+                {
+                    "id": "ShipmentController"
+                },
+                {
+                    "id": "ShipmentEventInfo"
+                },
+                {
+                    "id": "ShipmentRecord"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "PhoneInfo"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "OrderingConfiguration",
+                "target": "Utility",
+                "weight": "2"
+            },
+            {
+                "source": "OrderingConfiguration",
+                "target": "RepositoryFactory",
+                "weight": "2"
+            },
+            {
+                "source": "Utility",
+                "target": "OrderingConfiguration",
+                "weight": "1"
+            },
+            {
+                "source": "CatalogController",
+                "target": "OrderingInitializer",
+                "weight": "1"
+            },
+            {
+                "source": "CatalogController",
+                "target": "Utility",
+                "weight": "5"
+            },
+            {
+                "source": "CatalogController",
+                "target": "RepositoryFactory",
+                "weight": "1"
+            },
+            {
+                "source": "DealerController",
+                "target": "OrderingInitializer",
+                "weight": "1"
+            },
+            {
+                "source": "DealerController",
+                "target": "Utility",
+                "weight": "5"
+            },
+            {
+                "source": "DealerController",
+                "target": "DealerInfo",
+                "weight": "3"
+            },
+            {
+                "source": "DealerController",
+                "target": "RepositoryFactory",
+                "weight": "1"
+            },
+            {
+                "source": "OrderController",
+                "target": "Utility",
+                "weight": "7"
+            },
+            {
+                "source": "OrderController",
+                "target": "Order",
+                "weight": "4"
+            },
+            {
+                "source": "OrderController",
+                "target": "OrderEventInfo",
+                "weight": "2"
+            },
+            {
+                "source": "OrderController",
+                "target": "BadRequestException",
+                "weight": "2"
+            },
+            {
+                "source": "OrderController",
+                "target": "OrderingInitializer",
+                "weight": "1"
+            },
+            {
+                "source": "OrderController",
+                "target": "RepositoryFactory",
+                "weight": "2"
+            },
+            {
+                "source": "OrderController",
+                "target": "OrderUpdateInfo",
+                "weight": "1"
+            },
+            {
+                "source": "QuoteController",
+                "target": "BadRequestException",
+                "weight": "1"
+            },
+            {
+                "source": "QuoteController",
+                "target": "OrderingInitializer",
+                "weight": "1"
+            },
+            {
+                "source": "QuoteController",
+                "target": "Utility",
+                "weight": "5"
+            },
+            {
+                "source": "QuoteController",
+                "target": "Quote",
+                "weight": "3"
+            },
+            {
+                "source": "QuoteController",
+                "target": "RepositoryFactory",
+                "weight": "1"
+            },
+            {
+                "source": "ShipmentController",
+                "target": "Utility",
+                "weight": "6"
+            },
+            {
+                "source": "ShipmentController",
+                "target": "ShipmentEventInfo",
+                "weight": "2"
+            },
+            {
+                "source": "ShipmentController",
+                "target": "BadRequestException",
+                "weight": "1"
+            },
+            {
+                "source": "ShipmentController",
+                "target": "OrderingInitializer",
+                "weight": "1"
+            },
+            {
+                "source": "ShipmentController",
+                "target": "ShipmentRecord",
+                "weight": "5"
+            },
+            {
+                "source": "ShipmentController",
+                "target": "Order",
+                "weight": "1"
+            },
+            {
+                "source": "ShipmentController",
+                "target": "RepositoryFactory",
+                "weight": "3"
+            },
+            {
+                "source": "DealerInfo",
+                "target": "Utility",
+                "weight": "1"
+            },
+            {
+                "source": "Order",
+                "target": "Utility",
+                "weight": "1"
+            },
+            {
+                "source": "OrderUpdateInfo",
+                "target": "OrderEventInfo",
+                "weight": "1"
+            },
+            {
+                "source": "Quote",
+                "target": "QuoteItemInfo",
+                "weight": "1"
+            },
+            {
+                "source": "Quote",
+                "target": "Utility",
+                "weight": "1"
+            },
+            {
+                "source": "ShipmentRecord",
+                "target": "ShipmentEventInfo",
+                "weight": "4"
+            },
+            {
+                "source": "ShipmentRecord",
+                "target": "DeliveryAddress",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "OrderingConfiguration",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "MockCatalogItemsRepository",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "MockDealersRepository",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "MockOrderRepository",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "MockQuoteRepository",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "MockShipmentRepository",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "MongoCatalogItemsRepository",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "MongoDealersRepository",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "MongoOrderRepository",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "MongoQuoteRepository",
+                "weight": "1"
+            },
+            {
+                "source": "RepositoryFactory",
+                "target": "MongoShipmentRepository",
+                "weight": "1"
+            },
+            {
+                "source": "MockDealersRepository",
+                "target": "DealerInfo",
+                "weight": "4"
+            },
+            {
+                "source": "MockOrderRepository",
+                "target": "BadRequestException",
+                "weight": "2"
+            },
+            {
+                "source": "MockOrderRepository",
+                "target": "Order",
+                "weight": "14"
+            },
+            {
+                "source": "MockOrderRepository",
+                "target": "Quote",
+                "weight": "1"
+            },
+            {
+                "source": "MockOrderRepository",
+                "target": "OrderUpdateInfo",
+                "weight": "2"
+            },
+            {
+                "source": "MockQuoteRepository",
+                "target": "BadRequestException",
+                "weight": "1"
+            },
+            {
+                "source": "MockQuoteRepository",
+                "target": "DealerInfo",
+                "weight": "2"
+            },
+            {
+                "source": "MockQuoteRepository",
+                "target": "Quote",
+                "weight": "9"
+            },
+            {
+                "source": "MockShipmentRepository",
+                "target": "ShipmentEventInfo",
+                "weight": "3"
+            },
+            {
+                "source": "MockShipmentRepository",
+                "target": "ShipmentRecord",
+                "weight": "10"
+            },
+            {
+                "source": "MockShipmentRepository",
+                "target": "BadRequestException",
+                "weight": "1"
+            },
+            {
+                "source": "MockShipmentRepository",
+                "target": "Order",
+                "weight": "1"
+            },
+            {
+                "source": "MongoCatalogItemsRepository",
+                "target": "MongoOperationsWithRetry",
+                "weight": "1"
+            },
+            {
+                "source": "MongoDealersRepository",
+                "target": "MongoOperationsWithRetry",
+                "weight": "1"
+            },
+            {
+                "source": "MongoDealersRepository",
+                "target": "DealerInfo",
+                "weight": "1"
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "Utility",
+                "weight": "1"
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "MongoOperationsWithRetry",
+                "weight": "1"
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "BadRequestException",
+                "weight": "1"
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "Order",
+                "weight": "9"
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "OrderUpdateInfo",
+                "weight": "2"
+            },
+            {
+                "source": "MongoQuoteRepository",
+                "target": "MongoOperationsWithRetry",
+                "weight": "1"
+            },
+            {
+                "source": "MongoQuoteRepository",
+                "target": "BadRequestException",
+                "weight": "1"
+            },
+            {
+                "source": "MongoQuoteRepository",
+                "target": "DealerInfo",
+                "weight": "2"
+            },
+            {
+                "source": "MongoQuoteRepository",
+                "target": "Quote",
+                "weight": "6"
+            },
+            {
+                "source": "MongoShipmentRepository",
+                "target": "MongoOperationsWithRetry",
+                "weight": "1"
+            },
+            {
+                "source": "MongoShipmentRepository",
+                "target": "ShipmentRecord",
+                "weight": "4"
+            },
+            {
+                "source": "MongoShipmentRepository",
+                "target": "BadRequestException",
+                "weight": "1"
+            },
+            {
+                "source": "MongoShipmentRepository",
+                "target": "Order",
+                "weight": "1"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "BadRequestException"
+                },
+                {
+                    "id": "CatalogController"
+                },
+                {
+                    "id": "DealerController"
+                },
+                {
+                    "id": "DealerInfo"
+                },
+                {
+                    "id": "MockCatalogItemsRepository"
+                },
+                {
+                    "id": "MockDealersRepository"
+                },
+                {
+                    "id": "MockQuoteRepository"
+                },
+                {
+                    "id": "OrderingInitializer"
+                },
+                {
+                    "id": "QuoteController"
+                },
+                {
+                    "id": "Utility"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "MockOrderRepository"
+                },
+                {
+                    "id": "Order"
+                },
+                {
+                    "id": "OrderController"
+                },
+                {
+                    "id": "OrderEventInfo"
+                },
+                {
+                    "id": "OrderUpdateInfo"
+                },
+                {
+                    "id": "Quote"
+                },
+                {
+                    "id": "QuoteItemInfo"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "MongoCatalogItemsRepository"
+                },
+                {
+                    "id": "MongoDealersRepository"
+                },
+                {
+                    "id": "MongoOperationsWithRetry"
+                },
+                {
+                    "id": "MongoOrderRepository"
+                },
+                {
+                    "id": "MongoQuoteRepository"
+                },
+                {
+                    "id": "MongoShipmentRepository"
+                },
+                {
+                    "id": "OrderingConfiguration"
+                },
+                {
+                    "id": "RepositoryFactory"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "DeliveryAddress"
+                },
+                {
+                    "id": "MockShipmentRepository"
+                },
+                {
+                    "id": "ShipmentController"
+                },
+                {
+                    "id": "ShipmentEventInfo"
+                },
+                {
+                    "id": "ShipmentRecord"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "PhoneInfo"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "BadRequestException"
+                },
+                {
+                    "id": "CatalogController"
+                },
+                {
+                    "id": "DealerController"
+                },
+                {
+                    "id": "DealerInfo"
+                },
+                {
+                    "id": "MockCatalogItemsRepository"
+                },
+                {
+                    "id": "MockDealersRepository"
+                },
+                {
+                    "id": "MockQuoteRepository"
+                },
+                {
+                    "id": "OrderingInitializer"
+                },
+                {
+                    "id": "QuoteController"
+                },
+                {
+                    "id": "Utility"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "MockOrderRepository"
+                },
+                {
+                    "id": "Order"
+                },
+                {
+                    "id": "OrderController"
+                },
+                {
+                    "id": "OrderEventInfo"
+                },
+                {
+                    "id": "OrderUpdateInfo"
+                },
+                {
+                    "id": "Quote"
+                },
+                {
+                    "id": "QuoteItemInfo"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "MongoCatalogItemsRepository"
+                },
+                {
+                    "id": "MongoDealersRepository"
+                },
+                {
+                    "id": "MongoOperationsWithRetry"
+                },
+                {
+                    "id": "MongoOrderRepository"
+                },
+                {
+                    "id": "MongoQuoteRepository"
+                },
+                {
+                    "id": "MongoShipmentRepository"
+                },
+                {
+                    "id": "OrderingConfiguration"
+                },
+                {
+                    "id": "RepositoryFactory"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "DeliveryAddress"
+                },
+                {
+                    "id": "MockShipmentRepository"
+                },
+                {
+                    "id": "ShipmentController"
+                },
+                {
+                    "id": "ShipmentEventInfo"
+                },
+                {
+                    "id": "ShipmentRecord"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "PhoneInfo"
+                }
+            ]
+        },
+        "links": []
+    }
+}

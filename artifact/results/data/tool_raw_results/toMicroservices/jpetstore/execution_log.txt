@@ -1,0 +1,544 @@
+cd /home/wesley/NetBeansProjects/tomicroservices-feature-TSE; JAVA_HOME=/usr/lib/jvm/jdk-13.0.1 /usr/local/netbeans-11.1/netbeans/java/maven/bin/mvn "-Dexec.args=-classpath %classpath MainNew" -Dexec.executable=/usr/lib/jvm/jdk-13.0.1/bin/java process-classes org.codehaus.mojo:exec-maven-plugin:1.5.0:exec
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building toMicroServices 0.0.1-SNAPSHOT
+------------------------------------------------------------------------
+
+--- maven-resources-plugin:2.6:resources (default-resources) @ toMicroServices ---
+Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+skip non existing resourceDirectory /home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/main/resources
+
+--- maven-compiler-plugin:3.8.0:compile (default-compile) @ toMicroServices ---
+Changes detected - recompiling the module!
+File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+Compiling 51 source files to /home/wesley/NetBeansProjects/tomicroservices-feature-TSE/target/classes
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/Edge.java: Some input files use or override a deprecated API.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/Edge.java: Recompile with -Xlint:deprecation for details.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/GenerateDOT.java: Some input files use unchecked or unsafe operations.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/GenerateDOT.java: Recompile with -Xlint:unchecked for details.
+
+--- exec-maven-plugin:1.5.0:exec (default-cli) @ toMicroServices ---
+
+---acceptListFile---
+.org.mybatis.jpetstore
+
+
+---rejectListFile---
+
+
+---featuresGeneralFile---
+SF:Order<org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext,org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain,org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword,org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm,org.mybatis.jpetstore.web.actions.AccountActionBean.getUsername,org.mybatis.jpetstore.web.actions.AccountActionBean.setPassword,org.mybatis.jpetstore.web.actions.AccountActionBean.setUsername,org.mybatis.jpetstore.web.actions.AccountActionBean.signon,org.mybatis.jpetstore.web.actions.AccountActionBean.isAuthenticated,org.mybatis.jpetstore.web.actions.AccountActionBean.getAccount,org.mybatis.jpetstore.domain.Account.getFirstName,org.mybatis.jpetstore.domain.Account.isBannerOption,org.mybatis.jpetstore.domain.Account.getBannerName,org.mybatis.jpetstore.web.actions.CatalogActionBean.setKeyword,org.mybatis.jpetstore.web.actions.CatalogActionBean.searchProducts,org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList,org.mybatis.jpetstore.domain.Product.getProductId,org.mybatis.jpetstore.domain.Product.getDescription,org.mybatis.jpetstore.domain.Product.getName,org.mybatis.jpetstore.web.actions.CatalogActionBean.setProductId,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewProduct,org.mybatis.jpetstore.web.actions.CatalogActionBean.getProduct,org.mybatis.jpetstore.domain.Product.getCategoryId,org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemList,org.mybatis.jpetstore.domain.Item.getItemId,org.mybatis.jpetstore.domain.Item.getProduct,org.mybatis.jpetstore.domain.Item.getAttribute1,org.mybatis.jpetstore.domain.Item.getAttribute2,org.mybatis.jpetstore.domain.Item.getAttribute3,org.mybatis.jpetstore.domain.Item.getAttribute4,org.mybatis.jpetstore.domain.Item.getAttribute5,org.mybatis.jpetstore.domain.Item.getListPrice,org.mybatis.jpetstore.web.actions.CartActionBean.setWorkingItemId,org.mybatis.jpetstore.web.actions.CartActionBean.addItemToCart,org.mybatis.jpetstore.web.actions.CartActionBean.getCart,org.mybatis.jpetstore.domain.Cart.getNumberOfItems,org.mybatis.jpetstore.domain.Cart.getCartItems,org.mybatis.jpetstore.domain.CartItem.getItem,org.mybatis.jpetstore.domain.CartItem.isInStock,org.mybatis.jpetstore.domain.CartItem.getQuantity,org.mybatis.jpetstore.domain.CartItem.getTotal,org.mybatis.jpetstore.domain.Cart.getSubTotal,org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory,org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory,org.mybatis.jpetstore.domain.Category.getName,org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemId,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewItem,org.mybatis.jpetstore.web.actions.CatalogActionBean.getItem,org.mybatis.jpetstore.domain.Item.getQuantity,org.mybatis.jpetstore.web.actions.CartActionBean.updateCartQuantities,org.mybatis.jpetstore.web.actions.CartActionBean.removeItemFromCart,org.mybatis.jpetstore.web.actions.OrderActionBean.newOrderForm,org.mybatis.jpetstore.web.actions.OrderActionBean.getOrder,org.mybatis.jpetstore.domain.Order.getCardType,org.mybatis.jpetstore.web.actions.OrderActionBean.getCreditCardTypes,org.mybatis.jpetstore.domain.Order.getCreditCard,org.mybatis.jpetstore.domain.Order.getExpiryDate,org.mybatis.jpetstore.domain.Order.getBillToFirstName,org.mybatis.jpetstore.domain.Order.getBillToLastName,org.mybatis.jpetstore.domain.Order.getBillAddress1,org.mybatis.jpetstore.domain.Order.getBillAddress2,org.mybatis.jpetstore.domain.Order.getBillCity,org.mybatis.jpetstore.domain.Order.getBillState,org.mybatis.jpetstore.domain.Order.getBillZip,org.mybatis.jpetstore.domain.Order.getBillCountry,org.mybatis.jpetstore.web.actions.OrderActionBean.isShippingAddressRequired,org.mybatis.jpetstore.domain.Order.setBillZip,org.mybatis.jpetstore.domain.Order.setBillCity,org.mybatis.jpetstore.domain.Order.setCardType,org.mybatis.jpetstore.domain.Order.setBillState,org.mybatis.jpetstore.domain.Order.setCreditCard,org.mybatis.jpetstore.domain.Order.setExpiryDate,org.mybatis.jpetstore.domain.Order.setBillCountry,org.mybatis.jpetstore.domain.Order.setBillAddress1,org.mybatis.jpetstore.domain.Order.setBillAddress2,org.mybatis.jpetstore.domain.Order.setBillToLastName,org.mybatis.jpetstore.domain.Order.setBillToFirstName,org.mybatis.jpetstore.web.actions.OrderActionBean.setShippingAddressRequired,org.mybatis.jpetstore.web.actions.OrderActionBean.newOrder,org.mybatis.jpetstore.domain.Order.getShipToFirstName,org.mybatis.jpetstore.domain.Order.getShipToLastName,org.mybatis.jpetstore.domain.Order.getShipAddress1,org.mybatis.jpetstore.domain.Order.getShipAddress2,org.mybatis.jpetstore.domain.Order.getShipCity,org.mybatis.jpetstore.domain.Order.getShipState,org.mybatis.jpetstore.domain.Order.getShipZip,org.mybatis.jpetstore.domain.Order.getShipCountry,org.mybatis.jpetstore.domain.Order.setShipZip,org.mybatis.jpetstore.domain.Order.setShipCity,org.mybatis.jpetstore.domain.Order.setShipState,org.mybatis.jpetstore.domain.Order.setShipCountry,org.mybatis.jpetstore.domain.Order.setShipAddress1,org.mybatis.jpetstore.domain.Order.setShipAddress2,org.mybatis.jpetstore.domain.Order.setShipToLastName,org.mybatis.jpetstore.domain.Order.setShipToFirstName,org.mybatis.jpetstore.domain.Order.getOrderDate,org.mybatis.jpetstore.web.actions.OrderActionBean.setConfirmed,org.mybatis.jpetstore.domain.Order.getOrderId,org.mybatis.jpetstore.domain.Order.getCourier,org.mybatis.jpetstore.domain.Order.getStatus,org.mybatis.jpetstore.domain.Order.getLineItems,org.mybatis.jpetstore.domain.LineItem.getItem,org.mybatis.jpetstore.domain.LineItem.getQuantity,org.mybatis.jpetstore.domain.LineItem.getUnitPrice,org.mybatis.jpetstore.domain.LineItem.getTotal,org.mybatis.jpetstore.domain.Order.getTotalPrice,org.mybatis.jpetstore.web.actions.AccountActionBean.editAccountForm,org.mybatis.jpetstore.web.actions.AccountActionBean.getPassword,org.mybatis.jpetstore.domain.Account.getLastName,org.mybatis.jpetstore.domain.Account.getEmail,org.mybatis.jpetstore.domain.Account.getPhone,org.mybatis.jpetstore.domain.Account.getAddress1,org.mybatis.jpetstore.domain.Account.getAddress2,org.mybatis.jpetstore.domain.Account.getCity,org.mybatis.jpetstore.domain.Account.getState,org.mybatis.jpetstore.domain.Account.getZip,org.mybatis.jpetstore.domain.Account.getCountry,org.mybatis.jpetstore.domain.Account.getLanguagePreference,org.mybatis.jpetstore.web.actions.AccountActionBean.getLanguages,org.mybatis.jpetstore.domain.Account.getFavouriteCategoryId,org.mybatis.jpetstore.web.actions.AccountActionBean.getCategories,org.mybatis.jpetstore.domain.Account.isListOption,org.mybatis.jpetstore.web.actions.OrderActionBean.listOrders,org.mybatis.jpetstore.web.actions.OrderActionBean.getOrderList,org.mybatis.jpetstore.web.actions.OrderActionBean.setOrderId,org.mybatis.jpetstore.web.actions.OrderActionBean.viewOrder,org.mybatis.jpetstore.web.actions.AccountActionBean.signoff>
+UpdateProfile<org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext,org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain,org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword,org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm,org.mybatis.jpetstore.web.actions.AccountActionBean.getUsername,org.mybatis.jpetstore.web.actions.AccountActionBean.setPassword,org.mybatis.jpetstore.web.actions.AccountActionBean.setUsername,org.mybatis.jpetstore.web.actions.AccountActionBean.signon,org.mybatis.jpetstore.web.actions.AccountActionBean.isAuthenticated,org.mybatis.jpetstore.web.actions.AccountActionBean.getAccount,org.mybatis.jpetstore.domain.Account.getFirstName,org.mybatis.jpetstore.domain.Account.isBannerOption,org.mybatis.jpetstore.domain.Account.getBannerName,org.mybatis.jpetstore.web.actions.AccountActionBean.editAccountForm,org.mybatis.jpetstore.web.actions.AccountActionBean.getPassword,org.mybatis.jpetstore.domain.Account.getLastName,org.mybatis.jpetstore.domain.Account.getEmail,org.mybatis.jpetstore.domain.Account.getPhone,org.mybatis.jpetstore.domain.Account.getAddress1,org.mybatis.jpetstore.domain.Account.getAddress2,org.mybatis.jpetstore.domain.Account.getCity,org.mybatis.jpetstore.domain.Account.getState,org.mybatis.jpetstore.domain.Account.getZip,org.mybatis.jpetstore.domain.Account.getCountry,org.mybatis.jpetstore.domain.Account.getLanguagePreference,org.mybatis.jpetstore.web.actions.AccountActionBean.getLanguages,org.mybatis.jpetstore.domain.Account.getFavouriteCategoryId,org.mybatis.jpetstore.web.actions.AccountActionBean.getCategories,org.mybatis.jpetstore.domain.Account.isListOption,org.mybatis.jpetstore.domain.Account.setZip,org.mybatis.jpetstore.domain.Account.setCity,org.mybatis.jpetstore.domain.Account.setEmail,org.mybatis.jpetstore.domain.Account.setPhone,org.mybatis.jpetstore.domain.Account.setState,org.mybatis.jpetstore.domain.Account.setCountry,org.mybatis.jpetstore.domain.Account.setAddress1,org.mybatis.jpetstore.domain.Account.setAddress2,org.mybatis.jpetstore.domain.Account.setLastName,org.mybatis.jpetstore.domain.Account.setFirstName,org.mybatis.jpetstore.domain.Account.setListOption,org.mybatis.jpetstore.domain.Account.setBannerOption,org.mybatis.jpetstore.domain.Account.setLanguagePreference,org.mybatis.jpetstore.domain.Account.setFavouriteCategoryId,org.mybatis.jpetstore.web.actions.AccountActionBean.signoff>
+RegistrationUser<org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext,org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain,org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword,org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm,org.mybatis.jpetstore.web.actions.AccountActionBean.getUsername,org.mybatis.jpetstore.web.actions.AccountActionBean.newAccountForm,org.mybatis.jpetstore.web.actions.AccountActionBean.getPassword,org.mybatis.jpetstore.web.actions.AccountActionBean.getAccount,org.mybatis.jpetstore.domain.Account.getFirstName,org.mybatis.jpetstore.domain.Account.getLastName,org.mybatis.jpetstore.domain.Account.getEmail,org.mybatis.jpetstore.domain.Account.getPhone,org.mybatis.jpetstore.domain.Account.getAddress1,org.mybatis.jpetstore.domain.Account.getAddress2,org.mybatis.jpetstore.domain.Account.getCity,org.mybatis.jpetstore.domain.Account.getState,org.mybatis.jpetstore.domain.Account.getZip,org.mybatis.jpetstore.domain.Account.getCountry,org.mybatis.jpetstore.domain.Account.getLanguagePreference,org.mybatis.jpetstore.web.actions.AccountActionBean.getLanguages,org.mybatis.jpetstore.domain.Account.getFavouriteCategoryId,org.mybatis.jpetstore.web.actions.AccountActionBean.getCategories,org.mybatis.jpetstore.domain.Account.isListOption,org.mybatis.jpetstore.domain.Account.isBannerOption,org.mybatis.jpetstore.web.actions.AccountActionBean.setPassword,org.mybatis.jpetstore.web.actions.AccountActionBean.setUsername,org.mybatis.jpetstore.domain.Account.setZip,org.mybatis.jpetstore.domain.Account.setCity,org.mybatis.jpetstore.domain.Account.setEmail,org.mybatis.jpetstore.domain.Account.setPhone,org.mybatis.jpetstore.domain.Account.setState,org.mybatis.jpetstore.domain.Account.setCountry,org.mybatis.jpetstore.domain.Account.setAddress1,org.mybatis.jpetstore.domain.Account.setAddress2,org.mybatis.jpetstore.domain.Account.setLastName,org.mybatis.jpetstore.domain.Account.setFirstName,org.mybatis.jpetstore.domain.Account.setListOption,org.mybatis.jpetstore.domain.Account.setBannerOption,org.mybatis.jpetstore.domain.Account.setLanguagePreference,org.mybatis.jpetstore.domain.Account.setFavouriteCategoryId,org.mybatis.jpetstore.web.actions.AccountActionBean.newAccount,org.mybatis.jpetstore.web.actions.AccountActionBean.signon,org.mybatis.jpetstore.web.actions.AccountActionBean.isAuthenticated,org.mybatis.jpetstore.domain.Account.getBannerName,org.mybatis.jpetstore.web.actions.AccountActionBean.signoff>
+SelectItems<org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext,org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain,org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword,org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory,org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory,org.mybatis.jpetstore.domain.Category.getName,org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList,org.mybatis.jpetstore.domain.Product.getProductId,org.mybatis.jpetstore.domain.Product.getName,org.mybatis.jpetstore.web.actions.CatalogActionBean.setProductId,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewProduct,org.mybatis.jpetstore.web.actions.CatalogActionBean.getProduct,org.mybatis.jpetstore.domain.Product.getCategoryId,org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemList,org.mybatis.jpetstore.domain.Item.getItemId,org.mybatis.jpetstore.domain.Item.getProduct,org.mybatis.jpetstore.domain.Item.getAttribute1,org.mybatis.jpetstore.domain.Item.getAttribute2,org.mybatis.jpetstore.domain.Item.getAttribute3,org.mybatis.jpetstore.domain.Item.getAttribute4,org.mybatis.jpetstore.domain.Item.getAttribute5,org.mybatis.jpetstore.domain.Item.getListPrice,org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemId,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewItem,org.mybatis.jpetstore.domain.Product.getDescription,org.mybatis.jpetstore.web.actions.CatalogActionBean.getItem,org.mybatis.jpetstore.domain.Item.getQuantity>
+ViewCart<org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext,org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain,org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword,org.mybatis.jpetstore.web.actions.CartActionBean.viewCart,org.mybatis.jpetstore.web.actions.CartActionBean.getCart,org.mybatis.jpetstore.domain.Cart.getNumberOfItems,org.mybatis.jpetstore.domain.Cart.getCartItems,org.mybatis.jpetstore.domain.Cart.getSubTotal>
+ViewHelp<org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext,org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain,org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword>
+SidebarContentOnTopPage<org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext,org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain,org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword,org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory,org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory,org.mybatis.jpetstore.domain.Category.getName,org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList,org.mybatis.jpetstore.domain.Product.getProductId,org.mybatis.jpetstore.domain.Product.getName>
+QuickLinks<org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext,org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain,org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword,org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory,org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory,org.mybatis.jpetstore.domain.Category.getName,org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList,org.mybatis.jpetstore.domain.Product.getProductId,org.mybatis.jpetstore.domain.Product.getName>
+MainImageContentOnTopPage<org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext,org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain,org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword,org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory,org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory,org.mybatis.jpetstore.domain.Category.getName,org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList,org.mybatis.jpetstore.domain.Product.getProductId,org.mybatis.jpetstore.domain.Product.getName>
+LogoContent<org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext,org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain,org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword,org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory,org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory,org.mybatis.jpetstore.domain.Category.getName,org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList,org.mybatis.jpetstore.domain.Product.getProductId,org.mybatis.jpetstore.domain.Product.getName>
+
+
+---Static!---
+
+---Dynamic!---
+
+---Graph!---
+Graph size = 238
+
+Nodes:
+org.mybatis.jpetstore.domain.Account.getZip
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.LineItem.getItem
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.AccountActionBean.isAuthenticated
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.LineItem.getItemId
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.getPassword
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.CartActionBean.viewCart
+ - - > [ViewCart]
+org.mybatis.jpetstore.domain.Order.addLineItem
+ - - > [Order, ViewCart]
+org.mybatis.jpetstore.domain.Order.getShipCity
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.setBannerOption
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Account.isBannerOption
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.getBillToLastName
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.OrderActionBean.viewOrder
+ - - > [Order]
+org.mybatis.jpetstore.domain.Item.setItemId
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.mapper.AccountMapper.updateSignon
+ - - > []
+org.mybatis.jpetstore.domain.LineItem.getTotal
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewItem
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Order.setBillCountry
+ - - > [Order]
+org.mybatis.jpetstore.mapper.AccountMapper.insertAccount
+ - - > []
+org.mybatis.jpetstore.service.OrderService.insertOrder
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.getShipToFirstName
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.OrderActionBean.getCreditCardTypes
+ - - > [Order]
+org.mybatis.jpetstore.domain.Item.getProduct
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Item.setProduct
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.CartItem.incrementQuantity
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.web.actions.OrderActionBean.setConfirmed
+ - - > [Order]
+org.mybatis.jpetstore.domain.Item.setAttribute1
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Order.getCardType
+ - - > [Order]
+org.mybatis.jpetstore.domain.CartItem.setQuantity
+ - - > [Order, ViewCart, SelectItems]
+org.mybatis.jpetstore.domain.Order.getCourier
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory
+ - - > [Order, QuickLinks, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, SelectItems]
+org.mybatis.jpetstore.domain.Order.getShipToLastName
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CartActionBean.clear
+ - - > [Order]
+org.mybatis.jpetstore.service.AccountService.insertAccount
+ - - > [RegistrationUser]
+org.mybatis.jpetstore.domain.Product.getName
+ - - > [Order, QuickLinks, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, SelectItems]
+org.mybatis.jpetstore.service.OrderService.getNextId
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.OrderActionBean.clear
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setCreditCard
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setLocale
+ - - > [Order]
+org.mybatis.jpetstore.mapper.OrderMapper.insertOrderStatus
+ - - > []
+org.mybatis.jpetstore.web.actions.AbstractActionBean.setMessage
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setShipToLastName
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.getUsername
+ - - > [Order, RegistrationUser]
+org.mybatis.jpetstore.domain.Item.getAttribute1
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.service.OrderService.getOrder
+ - - > [Order]
+org.mybatis.jpetstore.domain.Item.getAttribute2
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Product.setDescription
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Item.getAttribute3
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.service.CatalogService.isItemInStock
+ - - > [Order]
+org.mybatis.jpetstore.domain.Item.getAttribute4
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.LineItem.LineItem
+ - - > []
+org.mybatis.jpetstore.domain.Item.getAttribute5
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Cart.setQuantityByItemId
+ - - > [Order, ViewCart]
+org.mybatis.jpetstore.domain.CartItem.getQuantity
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setShipAddress1
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.getCity
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.setShipAddress2
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain
+ - - > [Order, QuickLinks, UpdateProfile, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, ViewHelp, ViewCart, RegistrationUser, SelectItems]
+org.mybatis.jpetstore.domain.Order.getBillCity
+ - - > [Order]
+org.mybatis.jpetstore.domain.LineItem.getQuantity
+ - - > [Order]
+org.mybatis.jpetstore.service.AccountService.lambda$updateAccount$1
+ - - > []
+org.mybatis.jpetstore.domain.Order.initOrder
+ - - > [Order, ViewCart]
+org.mybatis.jpetstore.domain.Account.setAddress1
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.getBillToFirstName
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.setAddress2
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.OrderActionBean.setOrderId
+ - - > [Order]
+org.mybatis.jpetstore.domain.Product.setName
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Order.setBillAddress2
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setBillAddress1
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.OrderActionBean.isConfirmed
+ - - > [Order]
+org.mybatis.jpetstore.domain.CartItem.setInStock
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.web.actions.CartActionBean.updateCartQuantities
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setCardType
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemId
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Product.getCategoryId
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.CartItem.calculateTotal
+ - - > [Order, ViewCart, SelectItems]
+org.mybatis.jpetstore.domain.Item.setSupplierId
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Item.setStatus
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Order.getShipCountry
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getItem
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.mapper.AccountMapper.updateProfile
+ - - > []
+org.mybatis.jpetstore.domain.Account.setListOption
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.getShipZip
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setLineItems
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.getFirstName
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Account.getState
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Cart.addItem
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setCourier
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.setLanguagePreference
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.getExpiryDate
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext
+ - - > [Order, QuickLinks, UpdateProfile, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, ViewHelp, ViewCart, RegistrationUser, SelectItems]
+org.mybatis.jpetstore.domain.Sequence.getNextId
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CartActionBean.setWorkingItemId
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setBillToLastName
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.getOrderDate
+ - - > [Order]
+org.mybatis.jpetstore.domain.LineItem.getUnitPrice
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setOrderId
+ - - > [Order]
+org.mybatis.jpetstore.mapper.OrderMapper.insertOrder
+ - - > []
+org.mybatis.jpetstore.domain.Category.getName
+ - - > [Order, QuickLinks, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, SelectItems]
+org.mybatis.jpetstore.domain.LineItem.setItem
+ - - > [Order]
+org.mybatis.jpetstore.mapper.AccountMapper.insertSignon
+ - - > []
+org.mybatis.jpetstore.domain.Order.setShipCountry
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.AccountActionBean.signoff
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.CartActionBean.removeItemFromCart
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.getEmail
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword
+ - - > [Order, QuickLinks, UpdateProfile, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, ViewHelp, ViewCart, RegistrationUser, SelectItems]
+org.mybatis.jpetstore.domain.LineItem.calculateTotal
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setBillZip
+ - - > [Order]
+org.mybatis.jpetstore.domain.Product.setCategoryId
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Order.setShipToFirstName
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.AccountActionBean.newAccount
+ - - > [RegistrationUser]
+org.mybatis.jpetstore.domain.LineItem.getOrderId
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId
+ - - > [Order, QuickLinks, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, SelectItems]
+org.mybatis.jpetstore.service.OrderService.lambda$insertOrder$0
+ - - > [Order]
+org.mybatis.jpetstore.service.OrderService.lambda$insertOrder$1
+ - - > [Order]
+org.mybatis.jpetstore.domain.Product.setProductId
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Account.setZip
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.getBillCountry
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setShipState
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.getShipState
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.OrderActionBean.newOrderForm
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setStatus
+ - - > [Order]
+org.mybatis.jpetstore.domain.LineItem.setLineNumber
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setBillToFirstName
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.setStatus
+ - - > [RegistrationUser]
+org.mybatis.jpetstore.domain.Order.setBillState
+ - - > [Order]
+org.mybatis.jpetstore.domain.CartItem.getItem
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.AccountActionBean.getAccount
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.LineItem.setQuantity
+ - - > [Order]
+org.mybatis.jpetstore.domain.Item.getListPrice
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.web.actions.OrderActionBean.listOrders
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.setCountry
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.service.OrderService.getOrdersByUsername
+ - - > [Order, RegistrationUser]
+org.mybatis.jpetstore.domain.LineItem.setItemId
+ - - > [Order]
+org.mybatis.jpetstore.service.CatalogService.searchProductList
+ - - > [Order]
+org.mybatis.jpetstore.domain.Product.getProductId
+ - - > [Order, QuickLinks, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, SelectItems]
+org.mybatis.jpetstore.service.CatalogService.getProductListByCategory
+ - - > [Order, QuickLinks, UpdateProfile, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, RegistrationUser, SelectItems]
+org.mybatis.jpetstore.domain.Order.getLocale
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory
+ - - > [Order, QuickLinks, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, SelectItems]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemList
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Item.getQuantity
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.web.actions.AccountActionBean.editAccountForm
+ - - > [Order, UpdateProfile]
+org.mybatis.jpetstore.domain.Account.getAddress1
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.OrderActionBean.setShippingAddressRequired
+ - - > [Order]
+org.mybatis.jpetstore.domain.Item.getItemId
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Account.setCity
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.CartItem.isInStock
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.getPhone
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.service.CatalogService.getItemListByProduct
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Cart.containsItemId
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setBillCity
+ - - > [Order]
+org.mybatis.jpetstore.domain.Product.getDescription
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Order.setExpiryDate
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.AccountActionBean.getCategories
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.AccountActionBean.getLanguages
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.getShipAddress2
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.getAddress2
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.getBillState
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.getShipAddress1
+ - - > [Order]
+org.mybatis.jpetstore.domain.Sequence.setNextId
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.getCountry
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.setOrderDate
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewProduct
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Account.getLastName
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.LineItem.getLineNumber
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.setPhone
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Account.setFirstName
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Item.setUnitCost
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.service.OrderService.lambda$getOrder$2
+ - - > [Order]
+org.mybatis.jpetstore.domain.CartItem.getTotal
+ - - > [Order]
+org.mybatis.jpetstore.domain.Item.setQuantity
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setProductId
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.web.actions.AccountActionBean.newAccountForm
+ - - > [RegistrationUser]
+org.mybatis.jpetstore.service.CatalogService.getCategory
+ - - > [Order, QuickLinks, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, SelectItems]
+org.mybatis.jpetstore.domain.CartItem.lambda$calculateTotal$0
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.service.AccountService.updateAccount
+ - - > []
+org.mybatis.jpetstore.domain.Account.getFavouriteCategoryId
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.AccountActionBean.clear
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Cart.removeItemById
+ - - > [Order]
+org.mybatis.jpetstore.service.CatalogService.getProduct
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setKeyword
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.getBillZip
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.isListOption
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Sequence.getName
+ - - > [Order]
+org.mybatis.jpetstore.domain.Sequence.setName
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.setState
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.mapper.LineItemMapper.insertLineItem
+ - - > []
+org.mybatis.jpetstore.web.actions.CartActionBean.addItemToCart
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.getCreditCard
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.AccountActionBean.getPassword
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.setShipCity
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.setLastName
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Account.getUsername
+ - - > [Order, UpdateProfile, ViewCart, RegistrationUser]
+org.mybatis.jpetstore.service.CatalogService.getItem
+ - - > [Order, SelectItems]
+_star_t_._star_t_
+ - - > []
+org.mybatis.jpetstore.domain.Order.setUsername
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setTotalPrice
+ - - > [Order]
+org.mybatis.jpetstore.domain.Cart.getAllCartItems
+ - - > [Order, ViewCart]
+org.mybatis.jpetstore.domain.Order.getOrderId
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.setBannerName
+ - - > [RegistrationUser]
+org.mybatis.jpetstore.domain.LineItem.lambda$calculateTotal$0
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.CartItem.setItem
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Order.getStatus
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.AccountActionBean.setUsername
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Cart.getCartItems
+ - - > [Order, ViewCart]
+org.mybatis.jpetstore.domain.Cart.getSubTotal
+ - - > [Order, ViewCart]
+org.mybatis.jpetstore.domain.Account.setPassword
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.CartActionBean.getCart
+ - - > [Order, ViewCart]
+org.mybatis.jpetstore.domain.LineItem.setOrderId
+ - - > [Order]
+org.mybatis.jpetstore.domain.Cart.lambda$getSubTotal$0
+ - - > [Order, ViewCart]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList
+ - - > [Order, QuickLinks, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, SelectItems]
+org.mybatis.jpetstore.web.actions.OrderActionBean.newOrder
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.OrderActionBean.getOrderList
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.getStatus
+ - - > [RegistrationUser]
+org.mybatis.jpetstore.domain.Account.setFavouriteCategoryId
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.getTotalPrice
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.searchProducts
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.setShipZip
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.OrderActionBean.isShippingAddressRequired
+ - - > [Order]
+org.mybatis.jpetstore.domain.Account.setUsername
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Order.getBillAddress1
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getProduct
+ - - > [Order, SelectItems]
+org.mybatis.jpetstore.domain.Account.getBannerName
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.AccountActionBean.signon
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Account.getLanguagePreference
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.service.AccountService.getAccount
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.Cart.getNumberOfItems
+ - - > [Order, ViewCart]
+org.mybatis.jpetstore.web.actions.OrderActionBean.getOrder
+ - - > [Order]
+org.mybatis.jpetstore.domain.Order.getBillAddress2
+ - - > [Order]
+org.mybatis.jpetstore.mapper.AccountMapper.updateAccount
+ - - > []
+org.mybatis.jpetstore.web.actions.AccountActionBean.getUsername
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.mapper.AccountMapper.insertProfile
+ - - > []
+org.mybatis.jpetstore.domain.Account.setEmail
+ - - > [UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.web.actions.AccountActionBean.setPassword
+ - - > [Order, UpdateProfile, RegistrationUser]
+org.mybatis.jpetstore.domain.LineItem.setUnitPrice
+ - - > [Order]
+org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext
+ - - > [Order, QuickLinks, UpdateProfile, MainImageContentOnTopPage, LogoContent, SidebarContentOnTopPage, ViewHelp, ViewCart, RegistrationUser, SelectItems]
+org.mybatis.jpetstore.domain.Order.getLineItems
+ - - > [Order]
+org.mybatis.jpetstore.domain.Item.setListPrice
+ - - > [Order, SelectItems]
+
+
+NUMBER OF MICROSERVICES: 3
+
+NSGA-III
+2023-04-24 21:46:29.413 INFO: Loggers configured with null [org.uma.jmetal.util.JMetalLogger configureLoggers]
+2023-04-24 21:46:29.460 INFO: rpssize: 455 [org.uma.jmetal.algorithm.multiobjective.nsgaiii.NSGAIII <init>]
+Finished
+Ranking
+Save Solution
+/home/wesley/NetBeansProjects/projects/JPetStore/results/output_toMicroservices.txt
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 05:14 min
+Finished at: 2023-04-24T21:51:33+02:00
+Final Memory: 20M/77M
+------------------------------------------------------------------------

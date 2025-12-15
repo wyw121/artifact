@@ -1,0 +1,720 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "IPersistenceLayer"
+                },
+                {
+                    "id": "LoginServlet"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "RegistrationStatusEnums"
+                },
+                {
+                    "id": "TailRecursive"
+                },
+                {
+                    "id": "[duplicate (partition1)] package-info"
+                }
+            ],
+            "partition10": [
+                {
+                    "id": "AlcoholResult"
+                },
+                {
+                    "id": "[duplicate (partition10)] package-info"
+                }
+            ],
+            "partition11": [
+                {
+                    "id": "AckermannIterative"
+                },
+                {
+                    "id": "LibraryActionResults"
+                },
+                {
+                    "id": "LibraryLendServlet"
+                },
+                {
+                    "id": "MathServlet"
+                }
+            ],
+            "partition12": [
+                {
+                    "id": "WebAppListener"
+                }
+            ],
+            "partition14": [
+                {
+                    "id": "Calculator"
+                },
+                {
+                    "id": "CartesianProduct"
+                },
+                {
+                    "id": "LoginUtils"
+                }
+            ],
+            "partition15": [
+                {
+                    "id": "AlcoholCalculator"
+                },
+                {
+                    "id": "[duplicate (partition15)] package-info"
+                }
+            ],
+            "partition16": [
+                {
+                    "id": "PasswordResult"
+                },
+                {
+                    "id": "[duplicate (partition16)] package-info"
+                }
+            ],
+            "partition17": [
+                {
+                    "id": "LibraryBorrowerListSearchServlet"
+                },
+                {
+                    "id": "LibraryRegisterBookServlet"
+                },
+                {
+                    "id": "StringUtils"
+                },
+                {
+                    "id": "[duplicate (partition17)] package-info"
+                }
+            ],
+            "partition18": [
+                {
+                    "id": "[duplicate (partition18)] package-info"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "FunctionalField"
+                },
+                {
+                    "id": "Loan"
+                },
+                {
+                    "id": "ServletUtils"
+                }
+            ],
+            "partition20": [
+                {
+                    "id": "AckServlet"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "User"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "Borrower"
+                }
+            ],
+            "partition5": [
+                {
+                    "id": "FibServlet"
+                },
+                {
+                    "id": "PasswordResultEnums"
+                },
+                {
+                    "id": "[duplicate (partition5)] package-info"
+                }
+            ],
+            "partition6": [
+                {
+                    "id": "LibraryBookListAvailableServlet"
+                },
+                {
+                    "id": "[duplicate (partition6)] package-info"
+                }
+            ],
+            "partition7": [
+                {
+                    "id": "Ackermann"
+                },
+                {
+                    "id": "LibraryUtils"
+                },
+                {
+                    "id": "[duplicate (partition7)] package-info"
+                }
+            ],
+            "partition8": [
+                {
+                    "id": "CheckUtils"
+                },
+                {
+                    "id": "LibraryRegisterBorrowerServlet"
+                }
+            ],
+            "partition9": [
+                {
+                    "id": "DbServlet"
+                },
+                {
+                    "id": "RegistrationResult"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "LoginServlet",
+                "target": "LoginUtils",
+                "weight": "2"
+            },
+            {
+                "source": "LoginServlet",
+                "target": "ServletUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LoginServlet",
+                "target": "StringUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LoginUtils",
+                "target": "IPersistenceLayer",
+                "weight": "2"
+            },
+            {
+                "source": "LoginUtils",
+                "target": "CheckUtils",
+                "weight": "1"
+            },
+            {
+                "source": "PasswordResult",
+                "target": "PasswordResultEnums",
+                "weight": "1"
+            },
+            {
+                "source": "RegistrationResult",
+                "target": "RegistrationStatusEnums",
+                "weight": "1"
+            },
+            {
+                "source": "AlcoholCalculator",
+                "target": "AlcoholResult",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryBookListAvailableServlet",
+                "target": "ServletUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryBookListAvailableServlet",
+                "target": "LibraryUtils",
+                "weight": "2"
+            },
+            {
+                "source": "LibraryBorrowerListSearchServlet",
+                "target": "ServletUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryBorrowerListSearchServlet",
+                "target": "StringUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryBorrowerListSearchServlet",
+                "target": "LibraryUtils",
+                "weight": "4"
+            },
+            {
+                "source": "LibraryBorrowerListSearchServlet",
+                "target": "Borrower",
+                "weight": "4"
+            },
+            {
+                "source": "LibraryLendServlet",
+                "target": "ServletUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryLendServlet",
+                "target": "StringUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryLendServlet",
+                "target": "LibraryUtils",
+                "weight": "2"
+            },
+            {
+                "source": "LibraryLendServlet",
+                "target": "LibraryActionResults",
+                "weight": "3"
+            },
+            {
+                "source": "LibraryRegisterBookServlet",
+                "target": "ServletUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryRegisterBookServlet",
+                "target": "StringUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryRegisterBookServlet",
+                "target": "LibraryUtils",
+                "weight": "2"
+            },
+            {
+                "source": "LibraryRegisterBookServlet",
+                "target": "LibraryActionResults",
+                "weight": "2"
+            },
+            {
+                "source": "LibraryRegisterBorrowerServlet",
+                "target": "ServletUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryRegisterBorrowerServlet",
+                "target": "StringUtils",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryRegisterBorrowerServlet",
+                "target": "LibraryUtils",
+                "weight": "2"
+            },
+            {
+                "source": "LibraryRegisterBorrowerServlet",
+                "target": "LibraryActionResults",
+                "weight": "2"
+            },
+            {
+                "source": "LibraryUtils",
+                "target": "Borrower",
+                "weight": "14"
+            },
+            {
+                "source": "LibraryUtils",
+                "target": "IPersistenceLayer",
+                "weight": "15"
+            },
+            {
+                "source": "LibraryUtils",
+                "target": "LibraryActionResults",
+                "weight": "12"
+            },
+            {
+                "source": "LibraryUtils",
+                "target": "Loan",
+                "weight": "3"
+            },
+            {
+                "source": "Borrower",
+                "target": "StringUtils",
+                "weight": "1"
+            },
+            {
+                "source": "Loan",
+                "target": "Borrower",
+                "weight": "1"
+            },
+            {
+                "source": "AckServlet",
+                "target": "ServletUtils",
+                "weight": "1"
+            },
+            {
+                "source": "AckServlet",
+                "target": "Ackermann",
+                "weight": "1"
+            },
+            {
+                "source": "AckServlet",
+                "target": "AckermannIterative",
+                "weight": "1"
+            },
+            {
+                "source": "FibServlet",
+                "target": "ServletUtils",
+                "weight": "1"
+            },
+            {
+                "source": "MathServlet",
+                "target": "ServletUtils",
+                "weight": "1"
+            },
+            {
+                "source": "MathServlet",
+                "target": "Calculator",
+                "weight": "1"
+            },
+            {
+                "source": "DbServlet",
+                "target": "ServletUtils",
+                "weight": "1"
+            },
+            {
+                "source": "DbServlet",
+                "target": "StringUtils",
+                "weight": "1"
+            },
+            {
+                "source": "DbServlet",
+                "target": "IPersistenceLayer",
+                "weight": "3"
+            },
+            {
+                "source": "WebAppListener",
+                "target": "IPersistenceLayer",
+                "weight": "1"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "IPersistenceLayer"
+                },
+                {
+                    "id": "LoginServlet"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "RegistrationStatusEnums"
+                },
+                {
+                    "id": "TailRecursive"
+                },
+                {
+                    "id": "[duplicate (partition1)] package-info"
+                }
+            ],
+            "partition10": [
+                {
+                    "id": "AlcoholResult"
+                },
+                {
+                    "id": "[duplicate (partition10)] package-info"
+                }
+            ],
+            "partition11": [
+                {
+                    "id": "AckermannIterative"
+                },
+                {
+                    "id": "LibraryActionResults"
+                },
+                {
+                    "id": "LibraryLendServlet"
+                },
+                {
+                    "id": "MathServlet"
+                }
+            ],
+            "partition12": [
+                {
+                    "id": "WebAppListener"
+                }
+            ],
+            "partition14": [
+                {
+                    "id": "Calculator"
+                },
+                {
+                    "id": "CartesianProduct"
+                },
+                {
+                    "id": "LoginUtils"
+                }
+            ],
+            "partition15": [
+                {
+                    "id": "AlcoholCalculator"
+                },
+                {
+                    "id": "[duplicate (partition15)] package-info"
+                }
+            ],
+            "partition16": [
+                {
+                    "id": "PasswordResult"
+                },
+                {
+                    "id": "[duplicate (partition16)] package-info"
+                }
+            ],
+            "partition17": [
+                {
+                    "id": "LibraryBorrowerListSearchServlet"
+                },
+                {
+                    "id": "LibraryRegisterBookServlet"
+                },
+                {
+                    "id": "StringUtils"
+                },
+                {
+                    "id": "[duplicate (partition17)] package-info"
+                }
+            ],
+            "partition18": [
+                {
+                    "id": "[duplicate (partition18)] package-info"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "FunctionalField"
+                },
+                {
+                    "id": "Loan"
+                },
+                {
+                    "id": "ServletUtils"
+                }
+            ],
+            "partition20": [
+                {
+                    "id": "AckServlet"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "User"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "Borrower"
+                }
+            ],
+            "partition5": [
+                {
+                    "id": "FibServlet"
+                },
+                {
+                    "id": "PasswordResultEnums"
+                },
+                {
+                    "id": "[duplicate (partition5)] package-info"
+                }
+            ],
+            "partition6": [
+                {
+                    "id": "LibraryBookListAvailableServlet"
+                },
+                {
+                    "id": "[duplicate (partition6)] package-info"
+                }
+            ],
+            "partition7": [
+                {
+                    "id": "Ackermann"
+                },
+                {
+                    "id": "LibraryUtils"
+                },
+                {
+                    "id": "[duplicate (partition7)] package-info"
+                }
+            ],
+            "partition8": [
+                {
+                    "id": "CheckUtils"
+                },
+                {
+                    "id": "LibraryRegisterBorrowerServlet"
+                }
+            ],
+            "partition9": [
+                {
+                    "id": "DbServlet"
+                },
+                {
+                    "id": "RegistrationResult"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "IPersistenceLayer"
+                },
+                {
+                    "id": "LoginServlet"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "RegistrationStatusEnums"
+                },
+                {
+                    "id": "TailRecursive"
+                },
+                {
+                    "id": "[duplicate (partition1)] package-info"
+                }
+            ],
+            "partition10": [
+                {
+                    "id": "AlcoholResult"
+                },
+                {
+                    "id": "[duplicate (partition10)] package-info"
+                }
+            ],
+            "partition11": [
+                {
+                    "id": "AckermannIterative"
+                },
+                {
+                    "id": "LibraryActionResults"
+                },
+                {
+                    "id": "LibraryLendServlet"
+                },
+                {
+                    "id": "MathServlet"
+                }
+            ],
+            "partition12": [
+                {
+                    "id": "WebAppListener"
+                }
+            ],
+            "partition14": [
+                {
+                    "id": "Calculator"
+                },
+                {
+                    "id": "CartesianProduct"
+                },
+                {
+                    "id": "LoginUtils"
+                }
+            ],
+            "partition15": [
+                {
+                    "id": "AlcoholCalculator"
+                },
+                {
+                    "id": "[duplicate (partition15)] package-info"
+                }
+            ],
+            "partition16": [
+                {
+                    "id": "PasswordResult"
+                },
+                {
+                    "id": "[duplicate (partition16)] package-info"
+                }
+            ],
+            "partition17": [
+                {
+                    "id": "LibraryBorrowerListSearchServlet"
+                },
+                {
+                    "id": "LibraryRegisterBookServlet"
+                },
+                {
+                    "id": "StringUtils"
+                },
+                {
+                    "id": "[duplicate (partition17)] package-info"
+                }
+            ],
+            "partition18": [
+                {
+                    "id": "[duplicate (partition18)] package-info"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "FunctionalField"
+                },
+                {
+                    "id": "Loan"
+                },
+                {
+                    "id": "ServletUtils"
+                }
+            ],
+            "partition20": [
+                {
+                    "id": "AckServlet"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "User"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "Borrower"
+                }
+            ],
+            "partition5": [
+                {
+                    "id": "FibServlet"
+                },
+                {
+                    "id": "PasswordResultEnums"
+                },
+                {
+                    "id": "[duplicate (partition5)] package-info"
+                }
+            ],
+            "partition6": [
+                {
+                    "id": "LibraryBookListAvailableServlet"
+                },
+                {
+                    "id": "[duplicate (partition6)] package-info"
+                }
+            ],
+            "partition7": [
+                {
+                    "id": "Ackermann"
+                },
+                {
+                    "id": "LibraryUtils"
+                },
+                {
+                    "id": "[duplicate (partition7)] package-info"
+                }
+            ],
+            "partition8": [
+                {
+                    "id": "CheckUtils"
+                },
+                {
+                    "id": "LibraryRegisterBorrowerServlet"
+                }
+            ],
+            "partition9": [
+                {
+                    "id": "DbServlet"
+                },
+                {
+                    "id": "RegistrationResult"
+                }
+            ]
+        },
+        "links": []
+    }
+}

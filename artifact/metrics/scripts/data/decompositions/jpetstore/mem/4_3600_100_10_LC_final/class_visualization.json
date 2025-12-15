@@ -1,0 +1,271 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "AccountMapper"
+                },
+                {
+                    "id": "CategoryMapper"
+                },
+                {
+                    "id": "LineItemMapper"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "AccountService"
+                },
+                {
+                    "id": "Cart"
+                },
+                {
+                    "id": "CatalogService"
+                },
+                {
+                    "id": "LineItem"
+                },
+                {
+                    "id": "Order"
+                },
+                {
+                    "id": "OrderService"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "AbstractActionBean"
+                },
+                {
+                    "id": "Product"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "Account"
+                },
+                {
+                    "id": "CartItem"
+                },
+                {
+                    "id": "Category"
+                },
+                {
+                    "id": "Sequence"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "ProductMapper"
+                },
+                {
+                    "id": "SequenceMapper"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "Cart",
+                "target": "CartItem",
+                "weight": "10"
+            },
+            {
+                "source": "LineItem",
+                "target": "CartItem",
+                "weight": "2"
+            },
+            {
+                "source": "Order",
+                "target": "LineItem",
+                "weight": "1"
+            },
+            {
+                "source": "Order",
+                "target": "Account",
+                "weight": "9"
+            },
+            {
+                "source": "Order",
+                "target": "Cart",
+                "weight": "2"
+            },
+            {
+                "source": "AccountService",
+                "target": "AccountMapper",
+                "weight": "8"
+            },
+            {
+                "source": "AccountService",
+                "target": "Account",
+                "weight": "1"
+            },
+            {
+                "source": "CatalogService",
+                "target": "CategoryMapper",
+                "weight": "2"
+            },
+            {
+                "source": "CatalogService",
+                "target": "ProductMapper",
+                "weight": "3"
+            },
+            {
+                "source": "OrderService",
+                "target": "Sequence",
+                "weight": "2"
+            },
+            {
+                "source": "OrderService",
+                "target": "SequenceMapper",
+                "weight": "2"
+            },
+            {
+                "source": "OrderService",
+                "target": "Order",
+                "weight": "5"
+            },
+            {
+                "source": "OrderService",
+                "target": "LineItemMapper",
+                "weight": "2"
+            },
+            {
+                "source": "OrderService",
+                "target": "LineItem",
+                "weight": "5"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "AccountMapper"
+                },
+                {
+                    "id": "CategoryMapper"
+                },
+                {
+                    "id": "LineItemMapper"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "AccountService"
+                },
+                {
+                    "id": "Cart"
+                },
+                {
+                    "id": "CatalogService"
+                },
+                {
+                    "id": "LineItem"
+                },
+                {
+                    "id": "Order"
+                },
+                {
+                    "id": "OrderService"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "AbstractActionBean"
+                },
+                {
+                    "id": "Product"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "Account"
+                },
+                {
+                    "id": "CartItem"
+                },
+                {
+                    "id": "Category"
+                },
+                {
+                    "id": "Sequence"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "ProductMapper"
+                },
+                {
+                    "id": "SequenceMapper"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "AccountMapper"
+                },
+                {
+                    "id": "CategoryMapper"
+                },
+                {
+                    "id": "LineItemMapper"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "AccountService"
+                },
+                {
+                    "id": "Cart"
+                },
+                {
+                    "id": "CatalogService"
+                },
+                {
+                    "id": "LineItem"
+                },
+                {
+                    "id": "Order"
+                },
+                {
+                    "id": "OrderService"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "AbstractActionBean"
+                },
+                {
+                    "id": "Product"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "Account"
+                },
+                {
+                    "id": "CartItem"
+                },
+                {
+                    "id": "Category"
+                },
+                {
+                    "id": "Sequence"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "ProductMapper"
+                },
+                {
+                    "id": "SequenceMapper"
+                }
+            ]
+        },
+        "links": []
+    }
+}

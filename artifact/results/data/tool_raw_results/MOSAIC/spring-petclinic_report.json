@@ -1,0 +1,67 @@
+{
+  "mosaic": {
+    "decomposition": {
+      "partition0": [
+        {
+          "id": "org.springframework.samples.petclinic.vet.Vet"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.vet.Specialty"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.vet.Vets"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.model.Person"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.model.BaseEntity"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.model.NamedEntity"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.vet.VetRepository"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.vet.VetController"
+        }
+      ],
+      "partition1": [
+        {
+          "id": "org.springframework.samples.petclinic.owner.Pet"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.owner.Owner"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.owner.Visit"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.owner.PetType"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.model.Person"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.model.BaseEntity"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.model.NamedEntity"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.owner.OwnerRepository"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.owner.VisitController"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.owner.OwnerController"
+        },
+        {
+          "id": "org.springframework.samples.petclinic.owner.PetController"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+    "Data_Centric_Process": {
+      "decomposition": {
+        "UserManagementService": [
+          {
+          "Tables": [
+          {
+            "id": "User"
+          }
+        ],
+          "Classes": [
+          {
+            "id": "user"
+          },
+          {
+            "id": "passwordresult"
+          },
+          {
+            "id": "registrationutils"
+          },
+          {
+            "id": "loginutils"
+          },
+          {
+            "id": "alcoholresult"
+          },
+          {
+            "id": "ackservlet"
+          },
+          {
+            "id": "fibservlet"
+          },
+          {
+            "id": "mathservlet"
+          },
+          {
+            "id": "loginservlet"
+          },
+          {
+            "id": "registerservlet"
+          },
+          {
+            "id": "tailrecursive"
+          },
+          {
+            "id": "registrationresult"
+          },
+          {
+            "id": "parameterobject"
+          },
+          {
+            "id": "throwingfunction"
+          },
+          {
+            "id": "webapplistener"
+          },
+          {
+            "id": "assertionexception"
+          },
+          {
+            "id": "notimplementedexception"
+          },
+          {
+            "id": "checkutils"
+          },
+          {
+            "id": "servletutils"
+          },
+          {
+            "id": "stringutils"
+          },
+          {
+            "id": "persistencelayer"
+          },
+          {
+            "id": "dbservlet"
+          },
+          {
+            "id": "emptydatasource"
+          },
+          {
+            "id": "sqldata"
+          },
+          {
+            "id": "sqlruntimeexception"
+          },
+          {
+            "id": "invalidclaimsexception"
+          }
+
+          ]
+        }
+        ],
+        "BorrowManagementService": [
+          {
+           "Tables": [
+          {
+            "id": "Borrower"
+          },
+          {
+            "id": "Loan"
+          }
+        ],
+          "Classes":[
+          {
+            "id": "borrower"
+          },
+          {
+            "id": "loan"
+          }
+        ]
+        }
+        ],
+        "BookManagementService": [
+          {
+           "Tables": [
+           {
+             "id": "Book"
+           }
+        ],
+          "Classes": [
+            {
+              "id": "book"
+            },
+            {
+              "id": "librarybooklistsearchservlet"
+            },
+            {
+              "id": "libraryborrowerlistsearchservlet"
+            },
+            {
+              "id": "librarylendservlet"
+            },
+            {
+              "id": "librarybooklistavailableservlet"
+            },
+            {
+              "id": "libraryregisterborrowerservlet"
+            },
+            {
+              "id": "libraryregisterbookservlet"
+            },
+            {
+              "id": "libraryutils"
+            },
+            {
+              "id": "calculator"
+            },
+            {
+              "id":"ipersistencelayer"
+            }
+         ]
+        }
+        ],
+        "CalculateManagementService": [
+           {
+           "Classes": [ 
+            {
+              "id": "dinnerprices"
+            },
+            {
+              "id": "alcoholcalculator"
+            },
+            {
+              "id": "ackermann"
+            },
+            {
+              "id": "cartesianproduct"
+            },
+            {
+              "id": "functionalackermann"
+            },
+            {
+              "id": "ackermanniterative"
+            },
+            {
+              "id": "fibonacci"
+            },
+            {
+              "id": "fibonacciiterative"
+            },
+            {
+              "id": "functionalfield"
+            }
+        ]
+      }
+    ]
+      }
+    }
+  }

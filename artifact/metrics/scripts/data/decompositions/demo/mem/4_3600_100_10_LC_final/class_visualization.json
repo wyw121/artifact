@@ -1,0 +1,285 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "Book"
+                },
+                {
+                    "id": "LibraryUtils"
+                },
+                {
+                    "id": "PasswordResult"
+                },
+                {
+                    "id": "User"
+                },
+                {
+                    "id": "WebAppListener"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "Ackermann"
+                }
+            ],
+            "partition11": [
+                {
+                    "id": "LoginUtils"
+                }
+            ],
+            "partition12": [
+                {
+                    "id": "AlcoholCalculator"
+                },
+                {
+                    "id": "CartesianProduct"
+                },
+                {
+                    "id": "DinnerPrices"
+                }
+            ],
+            "partition7": [
+                {
+                    "id": "LoginServlet"
+                },
+                {
+                    "id": "MathServlet"
+                },
+                {
+                    "id": "PasswordResultEnums"
+                },
+                {
+                    "id": "RegisterServlet"
+                },
+                {
+                    "id": "RegistrationResult"
+                },
+                {
+                    "id": "RegistrationStatusEnums"
+                }
+            ],
+            "partition8": [
+                {
+                    "id": "AssertionException"
+                }
+            ],
+            "partition9": [
+                {
+                    "id": "DbServlet"
+                },
+                {
+                    "id": "Fibonacci"
+                },
+                {
+                    "id": "StringUtils"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "LoginServlet",
+                "target": "LoginUtils",
+                "weight": "2"
+            },
+            {
+                "source": "LoginServlet",
+                "target": "StringUtils",
+                "weight": "1"
+            },
+            {
+                "source": "RegisterServlet",
+                "target": "RegistrationResult",
+                "weight": "1"
+            },
+            {
+                "source": "RegisterServlet",
+                "target": "StringUtils",
+                "weight": "1"
+            },
+            {
+                "source": "PasswordResult",
+                "target": "PasswordResultEnums",
+                "weight": "1"
+            },
+            {
+                "source": "RegistrationResult",
+                "target": "RegistrationStatusEnums",
+                "weight": "1"
+            },
+            {
+                "source": "LibraryUtils",
+                "target": "Book",
+                "weight": "14"
+            },
+            {
+                "source": "Book",
+                "target": "StringUtils",
+                "weight": "1"
+            },
+            {
+                "source": "DbServlet",
+                "target": "StringUtils",
+                "weight": "1"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "Book"
+                },
+                {
+                    "id": "LibraryUtils"
+                },
+                {
+                    "id": "PasswordResult"
+                },
+                {
+                    "id": "User"
+                },
+                {
+                    "id": "WebAppListener"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "Ackermann"
+                }
+            ],
+            "partition11": [
+                {
+                    "id": "LoginUtils"
+                }
+            ],
+            "partition12": [
+                {
+                    "id": "AlcoholCalculator"
+                },
+                {
+                    "id": "CartesianProduct"
+                },
+                {
+                    "id": "DinnerPrices"
+                }
+            ],
+            "partition7": [
+                {
+                    "id": "LoginServlet"
+                },
+                {
+                    "id": "MathServlet"
+                },
+                {
+                    "id": "PasswordResultEnums"
+                },
+                {
+                    "id": "RegisterServlet"
+                },
+                {
+                    "id": "RegistrationResult"
+                },
+                {
+                    "id": "RegistrationStatusEnums"
+                }
+            ],
+            "partition8": [
+                {
+                    "id": "AssertionException"
+                }
+            ],
+            "partition9": [
+                {
+                    "id": "DbServlet"
+                },
+                {
+                    "id": "Fibonacci"
+                },
+                {
+                    "id": "StringUtils"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "Book"
+                },
+                {
+                    "id": "LibraryUtils"
+                },
+                {
+                    "id": "PasswordResult"
+                },
+                {
+                    "id": "User"
+                },
+                {
+                    "id": "WebAppListener"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "Ackermann"
+                }
+            ],
+            "partition11": [
+                {
+                    "id": "LoginUtils"
+                }
+            ],
+            "partition12": [
+                {
+                    "id": "AlcoholCalculator"
+                },
+                {
+                    "id": "CartesianProduct"
+                },
+                {
+                    "id": "DinnerPrices"
+                }
+            ],
+            "partition7": [
+                {
+                    "id": "LoginServlet"
+                },
+                {
+                    "id": "MathServlet"
+                },
+                {
+                    "id": "PasswordResultEnums"
+                },
+                {
+                    "id": "RegisterServlet"
+                },
+                {
+                    "id": "RegistrationResult"
+                },
+                {
+                    "id": "RegistrationStatusEnums"
+                }
+            ],
+            "partition8": [
+                {
+                    "id": "AssertionException"
+                }
+            ],
+            "partition9": [
+                {
+                    "id": "DbServlet"
+                },
+                {
+                    "id": "Fibonacci"
+                },
+                {
+                    "id": "StringUtils"
+                }
+            ]
+        },
+        "links": []
+    }
+}

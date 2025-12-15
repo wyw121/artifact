@@ -1,0 +1,25 @@
+{
+    "Data_Centric_Process": {
+      "decomposition": {
+        "UserManagementService": [
+          {
+            "id": "User"
+          }
+          
+        ],
+        "BorrowManagementService": [
+          {
+            "id": "Borrower"
+          },
+          {
+            "id": "Loan"
+          }
+        ],
+        "BookManagementService": [
+            {
+              "id": "Book"
+            }
+          ]
+      }
+    }
+  }

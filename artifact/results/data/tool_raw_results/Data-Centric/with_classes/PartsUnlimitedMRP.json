@@ -1,0 +1,280 @@
+{
+    "Data_Centric_Process": {
+      "decomposition": {
+        "CatalogManagementService": [
+          {
+          "Tables": [
+          {
+            "id": "Catalog"
+          }
+        ],
+         "Classes": [
+          {
+            "id": "catalogitem"
+          },
+          {
+            "id": "catalogitemsrepository"
+          },
+          {
+            "id": "repositoryfactory"
+          },
+          {
+            "id": "mockcatalogitemsrepository"
+          },
+          {
+            "id": "mongocatalogitemsrepository"
+          },
+          {
+            "id": "mongooperationswithretry"
+          },
+          {
+            "id": "mrpconnectservice"
+          },
+          {
+            "id": "queuefactory"
+          },
+          {
+            "id": "queueservice"
+          },
+          {
+            "id": "catalogcontroller"
+          },
+          {
+            "id": "catalogitem1"
+          },
+          {
+            "id": "catalogitem2"
+          },
+          {
+            "id": "queueresponse"
+          },
+          {
+            "id": "productitem"
+          },
+          {
+            "id": "productmessage"
+          },
+          {
+            "id": "createorderprocesstask"
+          },
+          {
+            "id": "updateproductprocesstask"
+          },
+          {
+            "id": "badrequestexception"
+          },
+          {
+            "id": "conflictingrequestexception"
+          },
+          {
+            "id": "mongodbproperties"
+          },
+          {
+            "id": "testpath"
+          },
+          {
+            "id": "utility"
+          }
+         ]
+
+        }
+
+        ],
+        "DealersManagementService": [
+          {
+          "Tables": [
+          {
+            "id": "Dealers"
+          }
+        ],
+          "Classes":[
+          {
+            "id": "dealer"
+          },
+          {
+            "id": "dealersrepository"
+          },
+          {
+            "id": "mockdealersrepository"
+          },
+          {
+            "id": "mongodealersrepository"
+          },
+          {
+            "id": "dealercontroller"
+          },
+          {
+            "id": "dealerinfo"
+          },
+          {
+            "id": "postgresqlproperties"
+          }
+          ]
+        }
+        ],
+        "OrderManagementService": [
+          {
+            "Tables": [
+            {
+              "id": "Orders"
+            },
+            {
+              "id": "Shipments"
+            }
+          ],
+            "Classes":[
+            {
+              "id": "orderdetails"
+            },
+            {
+              "id": "shipmentdetails"
+            },
+            {
+              "id": "orderrepository"
+            },
+            {
+              "id": "shipmentrepository"
+            },
+            {
+              "id": "mockorderrepository"
+            },
+            {
+              "id": "mockshipmentrepository"
+            },
+            {
+              "id": "mongoorderrepository"
+            },
+            {
+              "id": "mongoshipmentrepository"
+            },
+            {
+              "id": "ordercontroller"
+            },
+            {
+              "id": "pingcontroller"
+            },
+            {
+              "id": "shipmentcontroller"
+            },
+            {
+              "id": "orderingserviceproperties"
+            },
+            {
+              "id": "configurationhelpers"
+            },
+            {
+              "id": "configurationmanager"
+            },
+            {
+              "id": "deliveryaddress"
+            },
+            {
+              "id": "order"
+            },
+            {
+              "id": "phoneinfo"
+            },
+            {
+              "id": "shipmenteventinfo"
+            },
+            {
+              "id": "shipmentrecord"
+            },
+            {
+              "id": "appinsightsfilter"
+            },
+            {
+              "id": "delivery"
+            },
+            {
+              "id": "deliveryaddress1"
+            },
+            {
+              "id": "order1"
+            },
+            {
+              "id": "ordereventinfo"
+            },
+            {
+              "id": "orderupdateinfo"
+            },
+            {
+              "id": "phoneinfo1"
+            },
+            {
+              "id": "orderingconfiguration"
+            },
+            {
+              "id": "orderinginitializer"
+            },
+            {
+              "id": "propertyhelper"
+            },
+            {
+              "id": "simplecorsfilter"
+            },
+            {
+              "id": "shipmenteventinfo1"
+            },
+            {
+              "id": "shipmentrecord1"
+            },
+            {
+              "id": "main"
+            },
+            {
+              "id": "constants"
+           }
+            ]
+          }
+        ],
+        "QuotesManagementService": [
+          {
+            "Tables": [
+            {
+              "id": "Quotes"
+            }
+          ],
+            "Classes":[
+            {
+              "id": "quotedetails"
+            },
+            {
+              "id": "quoterepository"
+            },
+            {
+              "id": "repositories"
+            },
+            {
+              "id": "mockquoterepository"
+            },
+            {
+              "id": "mongoquoterepository"
+            },
+            {
+              "id": "quotecontroller"
+            },
+            {
+              "id": "quote"
+            },
+            {
+              "id": "quoteiteminfo"
+            },
+            {
+              "id": "orderitem"
+            },
+            {
+              "id": "ordermessage"
+            },
+            {
+              "id": "quote1"
+            },
+            {
+              "id": "quoteiteminfo1"
+            }
+            ]  
+          }
+          ]
+      }
+    }
+  }

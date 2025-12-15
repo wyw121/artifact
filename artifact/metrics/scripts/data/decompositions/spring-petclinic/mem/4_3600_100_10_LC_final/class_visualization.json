@@ -1,0 +1,273 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "BaseEntity"
+                },
+                {
+                    "id": "NamedEntity"
+                },
+                {
+                    "id": "Person"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "Owner"
+                },
+                {
+                    "id": "VisitController"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "CrashController"
+                },
+                {
+                    "id": "PetValidator"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "Pet"
+                },
+                {
+                    "id": "Specialty"
+                },
+                {
+                    "id": "Vet"
+                },
+                {
+                    "id": "Visit"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "PetTypeFormatter"
+                }
+            ],
+            "partition5": [
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "VetRepository"
+                },
+                {
+                    "id": "package-info"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "NamedEntity",
+                "target": "BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Person",
+                "target": "BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Owner",
+                "target": "Person",
+                "weight": "1"
+            },
+            {
+                "source": "Owner",
+                "target": "Pet",
+                "weight": "6"
+            },
+            {
+                "source": "Pet",
+                "target": "NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "PetTypeFormatter",
+                "target": "OwnerRepository",
+                "weight": "1"
+            },
+            {
+                "source": "PetValidator",
+                "target": "Pet",
+                "weight": "4"
+            },
+            {
+                "source": "Visit",
+                "target": "BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "VisitController",
+                "target": "Owner",
+                "weight": "2"
+            },
+            {
+                "source": "VisitController",
+                "target": "OwnerRepository",
+                "weight": "2"
+            },
+            {
+                "source": "VisitController",
+                "target": "Pet",
+                "weight": "1"
+            },
+            {
+                "source": "VisitController",
+                "target": "Visit",
+                "weight": "1"
+            },
+            {
+                "source": "Specialty",
+                "target": "NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Vet",
+                "target": "Person",
+                "weight": "1"
+            },
+            {
+                "source": "VetController",
+                "target": "VetRepository",
+                "weight": "2"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "BaseEntity"
+                },
+                {
+                    "id": "NamedEntity"
+                },
+                {
+                    "id": "Person"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "Owner"
+                },
+                {
+                    "id": "VisitController"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "CrashController"
+                },
+                {
+                    "id": "PetValidator"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "Pet"
+                },
+                {
+                    "id": "Specialty"
+                },
+                {
+                    "id": "Vet"
+                },
+                {
+                    "id": "Visit"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "PetTypeFormatter"
+                }
+            ],
+            "partition5": [
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "VetRepository"
+                },
+                {
+                    "id": "package-info"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "BaseEntity"
+                },
+                {
+                    "id": "NamedEntity"
+                },
+                {
+                    "id": "Person"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "Owner"
+                },
+                {
+                    "id": "VisitController"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "CrashController"
+                },
+                {
+                    "id": "PetValidator"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "Pet"
+                },
+                {
+                    "id": "Specialty"
+                },
+                {
+                    "id": "Vet"
+                },
+                {
+                    "id": "Visit"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "PetTypeFormatter"
+                }
+            ],
+            "partition5": [
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "VetRepository"
+                },
+                {
+                    "id": "package-info"
+                }
+            ]
+        },
+        "links": []
+    }
+}

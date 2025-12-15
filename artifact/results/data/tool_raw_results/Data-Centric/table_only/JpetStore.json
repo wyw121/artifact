@@ -1,0 +1,51 @@
+{
+    "Data_Centric_Process": {
+      "decomposition": {
+        "AccountManagementService": [
+          {
+            "id": "Account"
+          },
+          {
+            "id": "Profile"
+          }
+          {
+            "id": "Bannerdata"
+          },
+          {
+            "id": "Signon"
+          },
+          {
+            "id": "Supplier"
+          }
+        ],
+        "ItemManagementService": [
+          {
+            "id": "Category"
+          },
+          {
+            "id": "Inventory"
+          },
+          {
+            "id": "Item"
+          },
+          {
+            "id": "Lineitem"
+          },
+          {
+            "id": "Product"
+          }
+        ],
+        "OrderManagementService": [
+            {
+              "id": "Orders"
+            },
+            {
+              "id": "Orderstatus"
+            },
+            {
+              "id": "Sequence"
+            }  
+          ]
+      }
+    }
+  }

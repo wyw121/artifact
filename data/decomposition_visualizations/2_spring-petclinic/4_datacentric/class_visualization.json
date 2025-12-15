@@ -1,0 +1,363 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "PetMangementService": [
+                {
+                    "id": "BaseEntity"
+                },
+                {
+                    "id": "CacheConfiguration"
+                },
+                {
+                    "id": "CrashController"
+                },
+                {
+                    "id": "Owner"
+                },
+                {
+                    "id": "OwnerController"
+                },
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "Person"
+                },
+                {
+                    "id": "Pet"
+                },
+                {
+                    "id": "PetClinicApplication"
+                },
+                {
+                    "id": "PetClinicRuntimeHints"
+                },
+                {
+                    "id": "PetController"
+                },
+                {
+                    "id": "PetType"
+                },
+                {
+                    "id": "PetTypeFormatter"
+                },
+                {
+                    "id": "PetValidator"
+                }
+            ],
+            "VetManagementService": [
+                {
+                    "id": "NamedEntity"
+                },
+                {
+                    "id": "Specialty"
+                },
+                {
+                    "id": "Vet"
+                },
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "VetRepository"
+                },
+                {
+                    "id": "Vets"
+                }
+            ],
+            "VisitManagementService": [
+                {
+                    "id": "Visit"
+                },
+                {
+                    "id": "VisitController"
+                },
+                {
+                    "id": "WelcomeController"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "NamedEntity",
+                "target": "BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Person",
+                "target": "BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Owner",
+                "target": "Person",
+                "weight": "1"
+            },
+            {
+                "source": "Owner",
+                "target": "Pet",
+                "weight": "6"
+            },
+            {
+                "source": "OwnerController",
+                "target": "Owner",
+                "weight": "7"
+            },
+            {
+                "source": "OwnerController",
+                "target": "OwnerRepository",
+                "weight": "6"
+            },
+            {
+                "source": "Pet",
+                "target": "NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "PetController",
+                "target": "OwnerRepository",
+                "weight": "5"
+            },
+            {
+                "source": "PetController",
+                "target": "Owner",
+                "weight": "6"
+            },
+            {
+                "source": "PetController",
+                "target": "Pet",
+                "weight": "4"
+            },
+            {
+                "source": "PetController",
+                "target": "PetValidator",
+                "weight": "1"
+            },
+            {
+                "source": "PetType",
+                "target": "NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "PetTypeFormatter",
+                "target": "OwnerRepository",
+                "weight": "1"
+            },
+            {
+                "source": "PetTypeFormatter",
+                "target": "PetType",
+                "weight": "2"
+            },
+            {
+                "source": "PetValidator",
+                "target": "Pet",
+                "weight": "4"
+            },
+            {
+                "source": "Visit",
+                "target": "BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "VisitController",
+                "target": "Owner",
+                "weight": "2"
+            },
+            {
+                "source": "VisitController",
+                "target": "OwnerRepository",
+                "weight": "2"
+            },
+            {
+                "source": "VisitController",
+                "target": "Pet",
+                "weight": "1"
+            },
+            {
+                "source": "VisitController",
+                "target": "Visit",
+                "weight": "1"
+            },
+            {
+                "source": "Specialty",
+                "target": "NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Vet",
+                "target": "Person",
+                "weight": "1"
+            },
+            {
+                "source": "VetController",
+                "target": "VetRepository",
+                "weight": "2"
+            },
+            {
+                "source": "VetController",
+                "target": "Vets",
+                "weight": "4"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "PetMangementService": [
+                {
+                    "id": "BaseEntity"
+                },
+                {
+                    "id": "CacheConfiguration"
+                },
+                {
+                    "id": "CrashController"
+                },
+                {
+                    "id": "Owner"
+                },
+                {
+                    "id": "OwnerController"
+                },
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "Person"
+                },
+                {
+                    "id": "Pet"
+                },
+                {
+                    "id": "PetClinicApplication"
+                },
+                {
+                    "id": "PetClinicRuntimeHints"
+                },
+                {
+                    "id": "PetController"
+                },
+                {
+                    "id": "PetType"
+                },
+                {
+                    "id": "PetTypeFormatter"
+                },
+                {
+                    "id": "PetValidator"
+                }
+            ],
+            "VetManagementService": [
+                {
+                    "id": "NamedEntity"
+                },
+                {
+                    "id": "Specialty"
+                },
+                {
+                    "id": "Vet"
+                },
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "VetRepository"
+                },
+                {
+                    "id": "Vets"
+                }
+            ],
+            "VisitManagementService": [
+                {
+                    "id": "Visit"
+                },
+                {
+                    "id": "VisitController"
+                },
+                {
+                    "id": "WelcomeController"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "PetMangementService": [
+                {
+                    "id": "BaseEntity"
+                },
+                {
+                    "id": "CacheConfiguration"
+                },
+                {
+                    "id": "CrashController"
+                },
+                {
+                    "id": "Owner"
+                },
+                {
+                    "id": "OwnerController"
+                },
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "Person"
+                },
+                {
+                    "id": "Pet"
+                },
+                {
+                    "id": "PetClinicApplication"
+                },
+                {
+                    "id": "PetClinicRuntimeHints"
+                },
+                {
+                    "id": "PetController"
+                },
+                {
+                    "id": "PetType"
+                },
+                {
+                    "id": "PetTypeFormatter"
+                },
+                {
+                    "id": "PetValidator"
+                }
+            ],
+            "VetManagementService": [
+                {
+                    "id": "NamedEntity"
+                },
+                {
+                    "id": "Specialty"
+                },
+                {
+                    "id": "Vet"
+                },
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "VetRepository"
+                },
+                {
+                    "id": "Vets"
+                }
+            ],
+            "VisitManagementService": [
+                {
+                    "id": "Visit"
+                },
+                {
+                    "id": "VisitController"
+                },
+                {
+                    "id": "WelcomeController"
+                }
+            ]
+        },
+        "links": []
+    }
+}

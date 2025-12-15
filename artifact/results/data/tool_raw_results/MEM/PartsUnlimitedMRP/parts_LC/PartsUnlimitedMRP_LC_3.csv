@@ -1,0 +1,17 @@
+partitionID,className,classID
+0,PostgresqlProperties.java,src/Backend/OrderService/src/main/java/smpl/ordering/PostgresqlProperties.java
+0,QuoteController.java,src/Backend/OrderService/src/main/java/smpl/ordering/controllers/QuoteController.java
+0,ShipmentControllerTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/controllers/ShipmentControllerTest.java
+0,QuoteControllerTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/controllers/QuoteControllerTest.java
+0,DealersRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/DealersRepositoryTest.java
+1,ShipmentRecord.java,src/Backend/IntegrationService/src/main/java/integration/models/mrp/ShipmentRecord.java
+1,Quote.java,src/Backend/IntegrationService/src/main/java/integration/models/mrp/Quote.java
+2,MongoDealersRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoDealersRepositoryTest.java
+2,MongoQuoteRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoQuoteRepositoryTest.java
+2,MongoOrderRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoOrderRepositoryTest.java
+2,MongoCatalogItemsRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoCatalogItemsRepositoryTest.java
+2,MongoShipmentRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoShipmentRepositoryTest.java
+2,MockDealersRepositoryTest.java,src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mock/test/MockDealersRepositoryTest.java
+2,TestOrderingConfiguration.java,src/Backend/OrderService/src/test/java/smpl/ordering/TestOrderingConfiguration.java
+3,locustfile.py,Labfiles/DevOps200.1x-PracticesandPrinciples/Mod04/load_testing_locust-master/locustfile.py
+3,app-test.py,Labfiles/DevOps200.1x-PracticesandPrinciples/Mod03/python-ci-example-master/app/tests/app-test.py

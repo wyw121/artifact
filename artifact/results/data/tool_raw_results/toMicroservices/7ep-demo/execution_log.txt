@@ -1,0 +1,320 @@
+cd /home/wesley/NetBeansProjects/tomicroservices-feature-TSE; JAVA_HOME=/usr/lib/jvm/jdk-13.0.1 /usr/local/netbeans-11.1/netbeans/java/maven/bin/mvn "-Dexec.args=-classpath %classpath MainNew" -Dexec.executable=/usr/lib/jvm/jdk-13.0.1/bin/java process-classes org.codehaus.mojo:exec-maven-plugin:1.5.0:exec
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building toMicroServices 0.0.1-SNAPSHOT
+------------------------------------------------------------------------
+
+--- maven-resources-plugin:2.6:resources (default-resources) @ toMicroServices ---
+Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+skip non existing resourceDirectory /home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/main/resources
+
+--- maven-compiler-plugin:3.8.0:compile (default-compile) @ toMicroServices ---
+Changes detected - recompiling the module!
+File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+Compiling 51 source files to /home/wesley/NetBeansProjects/tomicroservices-feature-TSE/target/classes
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/Edge.java: Some input files use or override a deprecated API.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/Edge.java: Recompile with -Xlint:deprecation for details.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/GenerateDOT.java: Some input files use unchecked or unsafe operations.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/GenerateDOT.java: Recompile with -Xlint:unchecked for details.
+
+--- exec-maven-plugin:1.5.0:exec (default-cli) @ toMicroServices ---
+
+---acceptListFile---
+.com.coveros.training
+
+
+---rejectListFile---
+
+
+---featuresGeneralFile---
+SF:Login<com.coveros.training.authentication.LoginServlet.doPost>
+Register<com.coveros.training.authentication.RegisterServlet.doPost>
+LibraryBookListAvailable<com.coveros.training.library.LibraryBookListAvailableServlet.doGet>
+LibraryBookListSearch<com.coveros.training.library.LibraryBookListSearchServlet.doGet>
+LibraryBorrowerListSearch<com.coveros.training.library.LibraryBorrowerListSearchServlet.doGet>
+LibraryLend<com.coveros.training.library.LibraryLendServlet.doPost>
+LibraryRegisterBook<com.coveros.training.library.LibraryRegisterBookServlet.doPost>
+LibraryRegisterBorrower<com.coveros.training.library.LibraryRegisterBorrowerServlet.doPost>
+Ack<com.coveros.training.mathematics.AckServlet.doPost>
+Fib<com.coveros.training.mathematics.FibServlet.doPost>
+Math<com.coveros.training.mathematics.MathServlet.doPost>
+Db<com.coveros.training.persistence.DbServlet.doGet>
+
+
+---Static!---
+
+---Dynamic!---
+
+---Graph!---
+Graph size = 125
+
+Nodes:
+com.coveros.training.library.LibraryRegisterBookServlet.doPost
+ - - > [LibraryRegisterBook]
+com.coveros.training.persistence.IPersistenceLayer.searchForLoanByBorrower
+ - - > []
+com.coveros.training.persistence.PersistenceLayer.cleanAndMigrateDatabase
+ - - > [Persistence, Db]
+com.coveros.training.library.domainobjects.Loan.isEmpty
+ - - > [LibraryLend]
+com.coveros.training.mathematics.MathServlet.putNumberInRequest
+ - - > [Math]
+com.coveros.training.persistence.PersistenceLayer.searchBorrowerDataByName
+ - - > [LibraryLend, LibraryBorrowerListSearch, LibraryRegisterBorrower]
+com.coveros.training.library.LibraryUtils.registerBorrower
+ - - > [LibraryRegisterBorrower]
+com.coveros.training.authentication.RegisterServlet.forwardToResult
+ - - > [Register]
+com.coveros.training.mathematics.MathServlet.doPost
+ - - > [Math]
+com.coveros.training.library.LibraryBookListSearchServlet.searchByTitle
+ - - > [LibraryBookListSearch]
+com.coveros.training.mathematics.MathServlet.setResultToSum
+ - - > [Math]
+com.coveros.training.mathematics.Ackermann.ack
+ - - > [Ack, Mathematics]
+com.coveros.training.authentication.domainobjects.RegistrationResult.toPrettyString
+ - - > [Register]
+com.coveros.training.persistence.PersistenceLayer.lambda$searchForLoanByBorrower$9
+ - - > []
+com.coveros.training.persistence.SqlData.addParameter
+ - - > [LibraryRegisterBook, Register, LibraryLend, Authentication, LibraryBorrowerListSearch, Login, LibraryRegisterBorrower, LibraryBookListSearch]
+com.coveros.training.mathematics.Calculator.add
+ - - > [Math]
+com.coveros.training.library.LibraryUtils.registerBook
+ - - > [LibraryRegisterBook]
+com.coveros.training.library.domainobjects.Book.equals
+ - - > [LibraryRegisterBook, LibraryLend, LibraryBookListSearch]
+com.coveros.training.persistence.DbServlet.doGet
+ - - > [Persistence, Db]
+com.coveros.training.persistence.PersistenceLayer.listAllBorrowers
+ - - > [LibraryBorrowerListSearch]
+com.coveros.training.library.LibraryUtils.searchForLoanByBorrower
+ - - > []
+com.coveros.training.library.LibraryBookListAvailableServlet.doGet
+ - - > [LibraryBookListAvailable, Library]
+com.coveros.training.authentication.LoginServlet.doPost
+ - - > [Authentication, Login]
+com.coveros.training.library.domainobjects.Borrower.createEmpty
+ - - > [LibraryLend, LibraryBorrowerListSearch, LibraryRegisterBorrower]
+com.coveros.training.library.LibraryBorrowerListSearchServlet.searchById
+ - - > [LibraryBorrowerListSearch]
+com.coveros.training.helpers.StringUtils.makeNotNullable
+ - - > [Persistence, LibraryRegisterBook, Register, LibraryLend, Authentication, LibraryBookListAvailable, LibraryBorrowerListSearch, Login, Library, LibraryRegisterBorrower, LibraryBookListSearch, Db]
+com.coveros.training.helpers.ServletUtils.forwardToRestfulResult
+ - - > [Ack, LibraryBookListAvailable, LibraryBorrowerListSearch, Mathematics, Library, Math, LibraryBookListSearch, Fib]
+com.coveros.training.persistence.PersistenceLayer.searchForUserByName
+ - - > [Register]
+com.coveros.training.library.LibraryUtils.listAvailableBooks
+ - - > [LibraryBookListAvailable, Library]
+com.coveros.training.library.LibraryLendServlet.getDateNow
+ - - > [LibraryLend]
+com.coveros.training.persistence.PersistenceLayer.listAvailableBooks
+ - - > [LibraryBookListAvailable, Library]
+com.coveros.training.mathematics.AckServlet.putNumberInRequest
+ - - > [Ack, Mathematics]
+com.coveros.training.library.domainobjects.Borrower.equals
+ - - > [LibraryLend, LibraryBorrowerListSearch, LibraryRegisterBorrower]
+com.coveros.training.authentication.RegistrationUtils.processRegistration
+ - - > [Register]
+com.coveros.training.library.LibraryUtils.searchForBookById
+ - - > [LibraryBookListSearch]
+com.coveros.training.library.LibraryUtils.searchForLoanByBook
+ - - > [LibraryLend]
+com.coveros.training.persistence.PersistenceLayer.throwingFunctionWrapper
+ - - > [LibraryRegisterBook, Register, LibraryLend, Authentication, LibraryBookListAvailable, LibraryBorrowerListSearch, Login, Library, LibraryRegisterBorrower, LibraryBookListSearch]
+com.coveros.training.mathematics.FibServlet.tailRecursiveAlgo1Calc
+ - - > [Fib]
+com.coveros.training.persistence.PersistenceLayer.saveNewBorrower
+ - - > [LibraryRegisterBorrower]
+com.coveros.training.persistence.PersistenceLayer.executeUpdateTemplate
+ - - > [Register]
+com.coveros.training.mathematics.AckServlet.tailRecursive
+ - - > [Ack, Mathematics]
+com.coveros.training.persistence.IPersistenceLayer.createLoan
+ - - > []
+com.coveros.training.authentication.domainobjects.PasswordResult.PasswordResult
+ - - > []
+com.coveros.training.authentication.RegistrationUtils.isPasswordGood
+ - - > [Register]
+com.coveros.training.library.LibraryUtils.createLoan
+ - - > [LibraryLend]
+com.coveros.training.persistence.PersistenceLayer.createExtractor
+ - - > [LibraryRegisterBook, Register, LibraryLend, Authentication, LibraryBookListAvailable, LibraryBorrowerListSearch, Login, Library, LibraryRegisterBorrower, LibraryBookListSearch]
+com.coveros.training.persistence.PersistenceLayer.executeInsertTemplate
+ - - > [LibraryRegisterBook, Register, LibraryLend, LibraryRegisterBorrower]
+com.coveros.training.library.domainobjects.Loan.createEmpty
+ - - > [LibraryLend]
+com.coveros.training.persistence.PersistenceLayer.createLoan
+ - - > [LibraryLend]
+com.coveros.training.library.domainobjects.Borrower.toOutputString
+ - - > [LibraryBorrowerListSearch]
+com.coveros.training.persistence.PersistenceLayer.runQuery
+ - - > [LibraryRegisterBook, Register, LibraryLend, Authentication, LibraryBookListAvailable, LibraryBorrowerListSearch, Login, Library, LibraryRegisterBorrower, LibraryBookListSearch]
+com.coveros.training.mathematics.FibonacciIterative.fibAlgo1
+ - - > [Fib]
+com.coveros.training.library.LibraryUtils.searchForBorrowerById
+ - - > [LibraryBorrowerListSearch]
+com.coveros.training.mathematics.FibonacciIterative.fibAlgo2
+ - - > [Fib]
+com.coveros.training.authentication.domainobjects.RegistrationResult.RegistrationResult
+ - - > []
+com.coveros.training.persistence.PersistenceLayer.searchBooksById
+ - - > [LibraryBookListSearch]
+com.coveros.training.library.LibraryUtils.listAllBooks
+ - - > [LibraryBookListSearch]
+com.coveros.training.persistence.PersistenceLayer.saveNewBook
+ - - > [LibraryRegisterBook]
+com.coveros.training.library.LibraryLendServlet.doPost
+ - - > [LibraryLend]
+com.coveros.training.mathematics.AckServlet.forwardToResult
+ - - > [Ack, Mathematics]
+com.coveros.training.persistence.PersistenceLayer.cleanDatabase
+ - - > [Persistence, Db]
+com.coveros.training.persistence.PersistenceLayer.searchForLoanByBorrower
+ - - > []
+com.coveros.training.library.domainobjects.Borrower.isEmpty
+ - - > [LibraryBorrowerListSearch]
+com.coveros.training.mathematics.AckermannIterative$$.main
+ - - > [Ack, Mathematics]
+com.coveros.training.library.LibraryUtils.lendBook
+ - - > [LibraryLend]
+com.coveros.training.persistence.PersistenceLayer.configureFlyway
+ - - > [Persistence, Db]
+com.coveros.training.library.domainobjects.Loan.Loan
+ - - > []
+com.coveros.training.mathematics.AckServlet.regularRecursive
+ - - > [Ack, Mathematics]
+com.coveros.training.mathematics.FibServlet.putNumberInRequest
+ - - > [Fib]
+com.coveros.training.mathematics.AckermannIterative$$.tail
+ - - > [Ack, Mathematics]
+com.coveros.training.mathematics.Ackermann.calculate
+ - - > [Ack, Mathematics]
+com.coveros.training.mathematics.TailRecursive$$.epsilon
+ - - > [Ack, Mathematics]
+com.coveros.training.authentication.RegistrationUtils.isUserInDatabase
+ - - > [Register]
+com.coveros.training.persistence.PersistenceLayer.listBooks
+ - - > [LibraryBookListAvailable, Library, LibraryBookListSearch]
+com.coveros.training.persistence.PersistenceLayer.createHashedValueFromPassword
+ - - > [Register, Authentication, Login]
+com.coveros.training.persistence.PersistenceLayer.updateUserWithPassword
+ - - > [Register]
+com.coveros.training.helpers.CheckUtils.mustBeTrueAtThisPoint
+ - - > [Register]
+com.coveros.training.library.LibraryBorrowerListSearchServlet.listAllBorrowers
+ - - > [LibraryBorrowerListSearch]
+com.coveros.training.persistence.PersistenceLayer.areCredentialsValid
+ - - > [Authentication, Login]
+com.coveros.training.persistence.PersistenceLayer.migrateDatabase
+ - - > [Persistence, Db]
+com.coveros.training.persistence.PersistenceLayer.saveNewUser
+ - - > [Register]
+com.coveros.training.mathematics.MathServlet.forwardToResult
+ - - > [Math]
+com.coveros.training.library.LibraryRegisterBorrowerServlet.doPost
+ - - > [LibraryRegisterBorrower]
+com.coveros.training.mathematics.FibServlet.forwardToResult
+ - - > [Fib]
+com.coveros.training.persistence.PersistenceLayer.executeUpdateOnPreparedStatement
+ - - > [Register]
+com.coveros.training.helpers.ServletUtils.forwardToResult
+ - - > [Persistence, LibraryRegisterBook, Register, LibraryLend, Authentication, Login, LibraryRegisterBorrower, Db]
+com.coveros.training.authentication.LoginUtils.isUserRegistered
+ - - > [Authentication, Login]
+com.coveros.training.mathematics.FibServlet.doPost
+ - - > [Fib]
+com.coveros.training.authentication.domainobjects.PasswordResult.createDefault
+ - - > []
+com.coveros.training.persistence.PersistenceLayer.executeInsertOnPreparedStatement
+ - - > [LibraryRegisterBook, Register, LibraryLend, LibraryRegisterBorrower]
+com.coveros.training.mathematics.AckServlet.doPost
+ - - > [Ack, Mathematics]
+com.coveros.training.library.LibraryUtils.searchForBorrowerByName
+ - - > [LibraryLend, LibraryBorrowerListSearch, LibraryRegisterBorrower]
+com.coveros.training.library.domainobjects.Book.toOutputString
+ - - > [LibraryBookListAvailable, Library, LibraryBookListSearch]
+com.coveros.training.library.LibraryBookListSearchServlet.listAllBooks
+ - - > [LibraryBookListSearch]
+com.coveros.training.library.LibraryUtils.searchForBookByTitle
+ - - > [LibraryRegisterBook, LibraryLend, LibraryBookListSearch]
+_star_t_._star_t_
+ - - > []
+com.coveros.training.library.LibraryBorrowerListSearchServlet.doGet
+ - - > [LibraryBorrowerListSearch]
+com.coveros.training.authentication.RegistrationUtils.saveToDatabase
+ - - > [Register]
+com.coveros.training.library.LibraryUtils.listAllBorrowers
+ - - > [LibraryBorrowerListSearch]
+com.coveros.training.persistence.PersistenceLayer.searchForLoanByBook
+ - - > [LibraryLend]
+com.coveros.training.persistence.PersistenceLayer.listAllBooks
+ - - > [LibraryBookListSearch]
+com.coveros.training.persistence.PersistenceLayer.searchBorrowersById
+ - - > [LibraryBorrowerListSearch]
+com.coveros.training.helpers.StringUtils.escapeForJson
+ - - > [LibraryBookListAvailable, LibraryBorrowerListSearch, Library, LibraryBookListSearch]
+com.coveros.training.library.domainobjects.Book.createEmpty
+ - - > [LibraryRegisterBook, LibraryLend, LibraryBookListSearch]
+com.coveros.training.library.domainobjects.Book.isEmpty
+ - - > [LibraryRegisterBook, LibraryLend, LibraryBookListSearch]
+com.coveros.training.mathematics.Fibonacci.calculate
+ - - > [Fib]
+com.coveros.training.persistence.PersistenceLayer.lambda$searchForLoanByBook$10
+ - - > []
+com.coveros.training.persistence.SqlData.generateParams
+ - - > [LibraryRegisterBook, Register, LibraryLend, Authentication, LibraryBorrowerListSearch, Login, LibraryRegisterBorrower, LibraryBookListSearch]
+com.coveros.training.mathematics.FibServlet.tailRecursiveAlgo2Calc
+ - - > [Fib]
+com.coveros.training.persistence.PersistenceLayer.bytesToHex
+ - - > [Register, Authentication, Login]
+com.coveros.training.library.LibraryBookListSearchServlet.searchById
+ - - > [LibraryBookListSearch]
+com.coveros.training.library.LibraryUtils.saveNewBook
+ - - > [LibraryRegisterBook]
+com.coveros.training.mathematics.AckermannIterative$$$Field.values
+ - - > [Ack, Mathematics]
+com.coveros.training.library.LibraryBorrowerListSearchServlet.searchByName
+ - - > [LibraryBorrowerListSearch]
+com.coveros.training.library.domainobjects.Loan.equals
+ - - > [LibraryLend]
+com.coveros.training.persistence.SqlData.applyParametersToPreparedStatement
+ - - > [LibraryRegisterBook, Register, LibraryLend, Authentication, LibraryBookListAvailable, LibraryBorrowerListSearch, Login, Library, LibraryRegisterBorrower, LibraryBookListSearch]
+com.coveros.training.persistence.PersistenceLayer.prepareStatementWithKeys
+ - - > [LibraryRegisterBook, Register, LibraryLend, LibraryRegisterBorrower]
+com.coveros.training.library.LibraryBookListSearchServlet.doGet
+ - - > [LibraryBookListSearch]
+com.coveros.training.mathematics.FibServlet.defaultRecursiveCalculation
+ - - > [Fib]
+com.coveros.training.authentication.RegisterServlet.doPost
+ - - > [Register]
+com.coveros.training.helpers.CheckUtils.IntParameterMustBePositive
+ - - > [Register, LibraryBorrowerListSearch, LibraryBookListSearch]
+com.coveros.training.persistence.IPersistenceLayer.searchForLoanByBook
+ - - > []
+com.coveros.training.helpers.CheckUtils.StringMustNotBeNullOrEmpty
+ - - > [LibraryRegisterBook, Register, LibraryLend, Authentication, LibraryBorrowerListSearch, Login, LibraryRegisterBorrower, LibraryBookListSearch]
+com.coveros.training.library.LibraryUtils.saveNewBorrower
+ - - > [LibraryRegisterBorrower]
+com.coveros.training.persistence.PersistenceLayer.searchBooksByTitle
+ - - > [LibraryRegisterBook, LibraryLend, LibraryBookListSearch]
+
+
+NUMBER OF MICROSERVICES: 4
+
+NSGA-III
+2023-06-07 20:29:41.850 INFO: Loggers configured with null [org.uma.jmetal.util.JMetalLogger configureLoggers]
+2023-06-07 20:29:41.930 INFO: rpssize: 455 [org.uma.jmetal.algorithm.multiobjective.nsgaiii.NSGAIII <init>]
+Finished
+Ranking
+Save Solution
+/home/wesley/NetBeansProjects/projects/7ep-demo/results/output_toMicroservices_4ms.txt
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 02:29 min
+Finished at: 2023-06-07T20:32:04+02:00
+Final Memory: 20M/80M
+------------------------------------------------------------------------

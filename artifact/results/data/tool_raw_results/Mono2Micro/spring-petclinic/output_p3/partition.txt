@@ -1,0 +1,17 @@
+PetClinicApplication,partition1
+OwnerController,partition0
+Owner,partition0
+Person,partition0
+BaseEntity,partition0
+Pet,partition2
+NamedEntity,partition2
+PetType,partition2
+Visit,partition0
+PetController,partition2
+PetTypeFormatter,partition2
+PetValidator,partition2
+VisitController,partition0
+VetController,partition1
+Vet,partition0
+Specialty,partition2
+Vets,partition1

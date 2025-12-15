@@ -1,0 +1,234 @@
+{
+    "1_structural_static": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "OwnerController"
+                },
+                {
+                    "id": "PetController"
+                },
+                {
+                    "id": "VisitController"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "CacheConfiguration"
+                },
+                {
+                    "id": "VetRepository"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "BaseEntity"
+                },
+                {
+                    "id": "NamedEntity"
+                },
+                {
+                    "id": "Person"
+                },
+                {
+                    "id": "PetType"
+                },
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "package-info"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "Pet"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "PetTypeFormatter"
+                }
+            ]
+        },
+        "links": [
+            {
+                "source": "NamedEntity",
+                "target": "BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "Person",
+                "target": "BaseEntity",
+                "weight": "1"
+            },
+            {
+                "source": "OwnerController",
+                "target": "OwnerRepository",
+                "weight": "6"
+            },
+            {
+                "source": "Pet",
+                "target": "NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "PetController",
+                "target": "OwnerRepository",
+                "weight": "5"
+            },
+            {
+                "source": "PetController",
+                "target": "Pet",
+                "weight": "4"
+            },
+            {
+                "source": "PetType",
+                "target": "NamedEntity",
+                "weight": "1"
+            },
+            {
+                "source": "PetTypeFormatter",
+                "target": "OwnerRepository",
+                "weight": "1"
+            },
+            {
+                "source": "PetTypeFormatter",
+                "target": "PetType",
+                "weight": "2"
+            },
+            {
+                "source": "VisitController",
+                "target": "OwnerRepository",
+                "weight": "2"
+            },
+            {
+                "source": "VisitController",
+                "target": "Pet",
+                "weight": "1"
+            },
+            {
+                "source": "VetController",
+                "target": "VetRepository",
+                "weight": "2"
+            }
+        ]
+    },
+    "3_business_use_cases": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "OwnerController"
+                },
+                {
+                    "id": "PetController"
+                },
+                {
+                    "id": "VisitController"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "CacheConfiguration"
+                },
+                {
+                    "id": "VetRepository"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "BaseEntity"
+                },
+                {
+                    "id": "NamedEntity"
+                },
+                {
+                    "id": "Person"
+                },
+                {
+                    "id": "PetType"
+                },
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "package-info"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "Pet"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "PetTypeFormatter"
+                }
+            ]
+        },
+        "links": []
+    },
+    "4_database_access": {
+        "decomposition": {
+            "partition0": [
+                {
+                    "id": "OwnerController"
+                },
+                {
+                    "id": "PetController"
+                },
+                {
+                    "id": "VisitController"
+                }
+            ],
+            "partition1": [
+                {
+                    "id": "CacheConfiguration"
+                },
+                {
+                    "id": "VetRepository"
+                }
+            ],
+            "partition2": [
+                {
+                    "id": "BaseEntity"
+                },
+                {
+                    "id": "NamedEntity"
+                },
+                {
+                    "id": "Person"
+                },
+                {
+                    "id": "PetType"
+                },
+                {
+                    "id": "VetController"
+                },
+                {
+                    "id": "package-info"
+                }
+            ],
+            "partition3": [
+                {
+                    "id": "Pet"
+                }
+            ],
+            "partition4": [
+                {
+                    "id": "OwnerRepository"
+                },
+                {
+                    "id": "PetTypeFormatter"
+                }
+            ]
+        },
+        "links": []
+    }
+}

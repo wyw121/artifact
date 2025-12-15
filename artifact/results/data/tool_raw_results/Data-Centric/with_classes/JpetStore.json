@@ -1,0 +1,143 @@
+{
+    "Data_Centric_Process": {
+      "decomposition": {
+        "AccountManagementService": [
+          {
+          "Tables": [
+          {
+            "id": "Account"
+          },
+          {
+            "id": "Profile"
+          },
+          {
+            "id": "Bannerdata"
+          },
+          {
+            "id": "Signon"
+          },
+          {
+            "id": "Supplier"
+          }
+          ],
+          "Classes": [
+          {
+            "id": "account"
+          },
+          {
+            "id": "accountmapper"
+          },
+          {
+            "id": "accountservice"
+          },
+          {
+            "id": "accountactionbean"
+          },
+          {
+            "id": "abstractactionbean"
+          }
+
+          ]
+        }
+        ],
+        "ItemManagementService": [
+          {
+          "Tables": [
+          {
+            "id": "Category"
+          },
+          {
+            "id": "Inventory"
+          },
+          {
+            "id": "Item"
+          },
+          {
+            "id": "Lineitem"
+          },
+          {
+            "id": "Product"
+          }
+        ],
+         "Classes": [
+          {
+            "id": "category"
+          },
+          {
+            "id": "item"
+          },
+          {
+            "id": "lineitem"
+          },
+          {
+            "id": "product"
+          },
+          {
+            "id": "categorymapper"
+          },
+          {
+            "id": "itemmapper"
+          },
+          {
+            "id": "productmapper"
+          },
+          {
+            "id": "lineitemmapper"
+          },
+          {
+            "id": "catalogservice"
+          },
+          {
+            "id": "cart"
+          },
+          {
+            "id": "cartitem"
+          },
+          {
+            "id": "cartactionbean"
+          },
+          {
+            "id": "catalogactionbean"
+          }
+          
+         ]
+        }
+        ],
+        "OrderManagementService": [
+          {
+          "Tables": [
+           {
+             "id": "Orders"
+           },
+           {
+             "id": "Orderstatus"
+           },
+           {
+             "id": "Sequence"
+           }
+          ], 
+          "Classes": [
+           {
+             "id": "order" 
+           },
+           {
+             "id": "sequence"
+           },
+           {
+             "id": "ordermapper"
+           },
+           {
+             "id": "sequencemapper"
+           },
+           {
+             "id": "orderservice"
+           },
+           {
+             "id": "orderactionbean"
+           }
+          ] 
+        }
+          ]
+      }
+    }
+  }

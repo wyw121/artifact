@@ -1,0 +1,200 @@
+cd /home/wesley/NetBeansProjects/tomicroservices-feature-TSE; JAVA_HOME=/usr/lib/jvm/jdk-13.0.1 /usr/local/netbeans-11.1/netbeans/java/maven/bin/mvn "-Dexec.args=-classpath %classpath MainNew" -Dexec.executable=/usr/lib/jvm/jdk-13.0.1/bin/java process-classes org.codehaus.mojo:exec-maven-plugin:1.5.0:exec
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building toMicroServices 0.0.1-SNAPSHOT
+------------------------------------------------------------------------
+
+--- maven-resources-plugin:2.6:resources (default-resources) @ toMicroServices ---
+Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+skip non existing resourceDirectory /home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/main/resources
+
+--- maven-compiler-plugin:3.8.0:compile (default-compile) @ toMicroServices ---
+Changes detected - recompiling the module!
+File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+Compiling 51 source files to /home/wesley/NetBeansProjects/tomicroservices-feature-TSE/target/classes
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/Edge.java: Some input files use or override a deprecated API.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/Edge.java: Recompile with -Xlint:deprecation for details.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/GenerateDOT.java: Some input files use unchecked or unsafe operations.
+/home/wesley/NetBeansProjects/tomicroservices-feature-TSE/src/br/pucrio/inf/les/opus/tomicroservices/graph/GenerateDOT.java: Recompile with -Xlint:unchecked for details.
+
+--- exec-maven-plugin:1.5.0:exec (default-cli) @ toMicroServices ---
+
+---acceptListFile---
+.org.springframework.samples.petclinic
+
+
+---rejectListFile---
+
+
+---featuresGeneralFile---
+SF:Owner<org.springframework.samples.petclinic.model.BaseEntity.setId,org.springframework.samples.petclinic.model.Person.setFirstName,org.springframework.samples.petclinic.model.Person.setLastName,org.springframework.samples.petclinic.owner.Owner.setAddress,org.springframework.samples.petclinic.owner.Owner.setCity,org.springframework.samples.petclinic.owner.Owner.setTelephone,org.springframework.samples.petclinic.model.NamedEntity.setName,org.springframework.samples.petclinic.owner.Pet.setType,org.springframework.samples.petclinic.owner.Pet.setBirthDate,org.springframework.samples.petclinic.owner.Owner.addPet,org.springframework.samples.petclinic.owner.Visit.setDate,org.springframework.samples.petclinic.owner.Owner.getPet,org.springframework.samples.petclinic.owner.Pet.getVisits,org.springframework.samples.petclinic.owner.OwnerController.setAllowedFields,org.springframework.samples.petclinic.owner.OwnerController.findOwner,org.springframework.samples.petclinic.owner.OwnerController.initCreationForm,org.springframework.samples.petclinic.model.Person.getFirstName,org.springframework.samples.petclinic.model.Person.getLastName,org.springframework.samples.petclinic.owner.Owner.getAddress,org.springframework.samples.petclinic.owner.Owner.getCity,org.springframework.samples.petclinic.owner.Owner.getTelephone,org.springframework.samples.petclinic.model.BaseEntity.isNew,org.springframework.samples.petclinic.owner.Owner.toString,org.springframework.samples.petclinic.owner.OwnerController.processCreationForm,org.springframework.samples.petclinic.owner.OwnerController.initFindForm,org.springframework.samples.petclinic.owner.OwnerController.processFindForm,org.springframework.samples.petclinic.model.BaseEntity.getId,org.springframework.samples.petclinic.owner.Owner.getPets,org.springframework.samples.petclinic.model.NamedEntity.toString,org.springframework.samples.petclinic.owner.OwnerController.initUpdateOwnerForm,org.springframework.samples.petclinic.owner.OwnerController.processUpdateOwnerForm,org.springframework.samples.petclinic.owner.OwnerController.showOwner,org.springframework.samples.petclinic.model.NamedEntity.getName,org.springframework.samples.petclinic.owner.Pet.getBirthDate,org.springframework.samples.petclinic.owner.Pet.getType,org.springframework.samples.petclinic.owner.Visit.getDate,org.springframework.samples.petclinic.owner.Visit.getDescription>
+Pet<org.springframework.samples.petclinic.model.BaseEntity.setId,org.springframework.samples.petclinic.model.NamedEntity.setName,org.springframework.samples.petclinic.owner.Owner.addPet,org.springframework.samples.petclinic.owner.PetController.populatePetTypes,org.springframework.samples.petclinic.owner.PetController.findOwner,org.springframework.samples.petclinic.owner.PetController.findPet,org.springframework.samples.petclinic.owner.PetController.initOwnerBinder,org.springframework.samples.petclinic.owner.PetController.initCreationForm,org.springframework.samples.petclinic.owner.PetController.initPetBinder,org.springframework.samples.petclinic.model.BaseEntity.isNew,org.springframework.samples.petclinic.model.BaseEntity.getId,org.springframework.samples.petclinic.model.Person.getFirstName,org.springframework.samples.petclinic.model.Person.getLastName,org.springframework.samples.petclinic.model.NamedEntity.getName,org.springframework.samples.petclinic.owner.Pet.getBirthDate,org.springframework.samples.petclinic.owner.Pet.getType,org.springframework.samples.petclinic.model.NamedEntity.toString,org.springframework.samples.petclinic.owner.PetTypeFormatter.parse,org.springframework.samples.petclinic.owner.Owner.toString,org.springframework.samples.petclinic.owner.Pet.setBirthDate,org.springframework.samples.petclinic.owner.Pet.setType,org.springframework.samples.petclinic.owner.PetValidator.validate,org.springframework.samples.petclinic.owner.PetController.processCreationForm,org.springframework.samples.petclinic.owner.PetController.initUpdateForm,org.springframework.samples.petclinic.owner.PetController.processUpdateForm>
+Visit<org.springframework.samples.petclinic.owner.Owner.addPet,org.springframework.samples.petclinic.model.BaseEntity.setId,org.springframework.samples.petclinic.owner.VisitController.setAllowedFields,org.springframework.samples.petclinic.owner.VisitController.loadPetWithVisit,org.springframework.samples.petclinic.owner.VisitController.initNewVisitForm,org.springframework.samples.petclinic.model.BaseEntity.isNew,org.springframework.samples.petclinic.model.NamedEntity.getName,org.springframework.samples.petclinic.owner.Pet.getBirthDate,org.springframework.samples.petclinic.owner.Pet.getType,org.springframework.samples.petclinic.model.Person.getFirstName,org.springframework.samples.petclinic.model.Person.getLastName,org.springframework.samples.petclinic.owner.Visit.getDate,org.springframework.samples.petclinic.owner.Visit.getDescription,org.springframework.samples.petclinic.model.BaseEntity.getId,org.springframework.samples.petclinic.owner.Pet.getVisits,org.springframework.samples.petclinic.model.NamedEntity.toString,org.springframework.samples.petclinic.owner.Owner.toString,org.springframework.samples.petclinic.owner.Visit.setDescription,org.springframework.samples.petclinic.owner.VisitController.processNewVisitForm>
+Vet<org.springframework.samples.petclinic.model.Person.setFirstName,org.springframework.samples.petclinic.model.Person.setLastName,org.springframework.samples.petclinic.model.BaseEntity.setId,org.springframework.samples.petclinic.model.NamedEntity.setName,org.springframework.samples.petclinic.vet.Vet.addSpecialty,org.springframework.samples.petclinic.vet.VetController.showVetList,org.springframework.samples.petclinic.model.Person.getFirstName,org.springframework.samples.petclinic.model.Person.getLastName,org.springframework.samples.petclinic.vet.Vet.getSpecialties,org.springframework.samples.petclinic.vet.Vet.getNrOfSpecialties,org.springframework.samples.petclinic.model.NamedEntity.getName,org.springframework.samples.petclinic.vet.VetController.showResourcesVetList,org.springframework.samples.petclinic.vet.Vets.getVetList,org.springframework.samples.petclinic.model.BaseEntity.getId,org.springframework.samples.petclinic.model.BaseEntity.isNew>
+
+
+---Static!---
+
+---Dynamic!---
+
+---Graph!---
+Graph size = 69
+
+Nodes:
+org.springframework.samples.petclinic.owner.OwnerController.initUpdateOwnerForm
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.Pet.getType
+ - - > [Owner, Visit, Pet]
+org.springframework.samples.petclinic.owner.Pet.setBirthDate
+ - - > [Owner, Pet]
+org.springframework.samples.petclinic.vet.VetController.showResourcesVetList
+ - - > [Vet]
+org.springframework.samples.petclinic.owner.OwnerRepository.save
+ - - > []
+org.springframework.samples.petclinic.owner.PetController.processUpdateForm
+ - - > [Pet]
+org.springframework.samples.petclinic.owner.PetController.initOwnerBinder
+ - - > [Pet]
+org.springframework.samples.petclinic.owner.VisitController.initNewVisitForm
+ - - > [Visit]
+org.springframework.samples.petclinic.vet.VetController.addPaginationModel
+ - - > [Vet]
+org.springframework.samples.petclinic.owner.PetController.populatePetTypes
+ - - > [Pet]
+org.springframework.samples.petclinic.vet.Vets.getVetList
+ - - > [Vet]
+org.springframework.samples.petclinic.vet.VetController.findPaginated
+ - - > [Vet]
+org.springframework.samples.petclinic.owner.Visit.getDescription
+ - - > [Owner, Visit]
+org.springframework.samples.petclinic.owner.OwnerController.initCreationForm
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.PetController.initPetBinder
+ - - > [Pet]
+org.springframework.samples.petclinic.owner.OwnerController.processUpdateOwnerForm
+ - - > [Owner]
+org.springframework.samples.petclinic.model.BaseEntity.getId
+ - - > [Owner, Vet, Visit, Pet]
+org.springframework.samples.petclinic.vet.Vet.getSpecialtiesInternal
+ - - > [Vet]
+org.springframework.samples.petclinic.owner.PetController.initUpdateForm
+ - - > [Pet]
+org.springframework.samples.petclinic.model.NamedEntity.setName
+ - - > [Owner, Vet, Pet]
+org.springframework.samples.petclinic.owner.OwnerController.addPaginationModel
+ - - > [Owner, Vet]
+org.springframework.samples.petclinic.owner.VisitController.setAllowedFields
+ - - > [Visit]
+org.springframework.samples.petclinic.owner.Owner.getCity
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.PetValidator.validate
+ - - > [Pet]
+org.springframework.samples.petclinic.owner.Owner.getTelephone
+ - - > [Owner]
+org.springframework.samples.petclinic.model.NamedEntity.getName
+ - - > [Owner, Vet, Visit, Pet]
+org.springframework.samples.petclinic.owner.Owner.addVisit
+ - - > [Visit]
+org.springframework.samples.petclinic.owner.OwnerController.processFindForm
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.Pet.getBirthDate
+ - - > [Owner, Visit, Pet]
+org.springframework.samples.petclinic.owner.PetController.findPet
+ - - > [Pet]
+org.springframework.samples.petclinic.owner.OwnerController.showOwner
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.PetController.processCreationForm
+ - - > [Pet]
+org.springframework.samples.petclinic.owner.Pet.getVisits
+ - - > [Owner, Visit]
+org.springframework.samples.petclinic.owner.PetValidator.supports
+ - - > [Pet]
+org.springframework.samples.petclinic.vet.Vet.getNrOfSpecialties
+ - - > [Vet]
+org.springframework.samples.petclinic.model.Person.getLastName
+ - - > [Owner, Vet, Visit, Pet]
+org.springframework.samples.petclinic.model.NamedEntity.toString
+ - - > [Owner, Visit, Pet]
+org.springframework.samples.petclinic.owner.Owner.addPet
+ - - > [Owner, Visit, Pet]
+org.springframework.samples.petclinic.owner.Owner.getPet
+ - - > [Owner]
+_star_t_._star_t_
+ - - > []
+org.springframework.samples.petclinic.vet.VetController.showVetList
+ - - > [Vet]
+org.springframework.samples.petclinic.owner.PetController.findOwner
+ - - > [Pet]
+org.springframework.samples.petclinic.owner.PetController.initCreationForm
+ - - > [Pet]
+org.springframework.samples.petclinic.model.BaseEntity.setId
+ - - > [Owner, Vet, Visit, Pet]
+org.springframework.samples.petclinic.model.BaseEntity.isNew
+ - - > [Owner, Vet, Visit, Pet]
+org.springframework.samples.petclinic.owner.Visit.getDate
+ - - > [Owner, Visit]
+org.springframework.samples.petclinic.model.Person.setFirstName
+ - - > [Owner, Vet]
+org.springframework.samples.petclinic.owner.Pet.addVisit
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.PetTypeFormatter.parse
+ - - > [Pet]
+org.springframework.samples.petclinic.owner.Owner.toString
+ - - > [Owner, Visit, Pet]
+org.springframework.samples.petclinic.owner.Owner.getPets
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.Owner.setTelephone
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.VisitController.processNewVisitForm
+ - - > [Visit]
+org.springframework.samples.petclinic.owner.Owner.setAddress
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.Owner.setCity
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.OwnerController.initFindForm
+ - - > [Owner]
+org.springframework.samples.petclinic.vet.Vet.getSpecialties
+ - - > [Vet]
+org.springframework.samples.petclinic.model.Person.getFirstName
+ - - > [Owner, Vet, Visit, Pet]
+org.springframework.samples.petclinic.owner.VisitController.loadPetWithVisit
+ - - > [Visit]
+org.springframework.samples.petclinic.owner.OwnerController.findOwner
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.OwnerController.processCreationForm
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.Owner.getAddress
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.OwnerController.setAllowedFields
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.OwnerController.findPaginatedForOwnersLastName
+ - - > [Owner, Vet]
+org.springframework.samples.petclinic.vet.Vet.addSpecialty
+ - - > [Vet]
+org.springframework.samples.petclinic.owner.Pet.setType
+ - - > [Owner, Pet]
+org.springframework.samples.petclinic.model.Person.setLastName
+ - - > [Owner, Vet]
+org.springframework.samples.petclinic.owner.Visit.setDate
+ - - > [Owner]
+org.springframework.samples.petclinic.owner.Visit.setDescription
+ - - > [Visit]
+
+
+NUMBER OF MICROSERVICES: 3
+
+NSGA-III
+2023-04-24 22:10:46.378 INFO: Loggers configured with null [org.uma.jmetal.util.JMetalLogger configureLoggers]
+2023-04-24 22:10:46.422 INFO: rpssize: 455 [org.uma.jmetal.algorithm.multiobjective.nsgaiii.NSGAIII <init>]
+Finished
+Ranking
+Save Solution
+/home/wesley/NetBeansProjects/projects/spring-petclinic/results/output_toMicroservices.txt
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 02:09 min
+Finished at: 2023-04-24T22:12:31+02:00
+Final Memory: 20M/77M
+------------------------------------------------------------------------

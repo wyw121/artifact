@@ -1,0 +1,13 @@
+partitionID,className,classID
+0,AccountActionBeanTest.java,src/test/java/org/mybatis/jpetstore/web/actions/AccountActionBeanTest.java
+0,OrderActionBeanTest.java,src/test/java/org/mybatis/jpetstore/web/actions/OrderActionBeanTest.java
+1,OrderActionBean.java,src/main/java/org/mybatis/jpetstore/web/actions/OrderActionBean.java
+1,CatalogServiceTest.java,src/test/java/org/mybatis/jpetstore/service/CatalogServiceTest.java
+1,Order.java,src/main/java/org/mybatis/jpetstore/domain/Order.java
+1,OrderService.java,src/main/java/org/mybatis/jpetstore/service/OrderService.java
+1,LineItem.java,src/main/java/org/mybatis/jpetstore/domain/LineItem.java
+1,CatalogService.java,src/main/java/org/mybatis/jpetstore/service/CatalogService.java
+1,ScreenTransitionIT.java,src/test/java/org/mybatis/jpetstore/ScreenTransitionIT.java
+1,CartItem.java,src/main/java/org/mybatis/jpetstore/domain/CartItem.java
+2,AccountActionBean.java,src/main/java/org/mybatis/jpetstore/web/actions/AccountActionBean.java
+2,AccountServiceTest.java,src/test/java/org/mybatis/jpetstore/service/AccountServiceTest.java
