@@ -1,175 +1,225 @@
-# 鍩轰簬澶ц瑷€妯″瀷鐨勫井鏈嶅姟鎷嗗垎杩唬鏂规涔?
-**椤圭洰鍚嶇О**: JPetStore 寰湇鍔℃媶鍒嗕笌澶氳疆杩唬璇勪及
-**璁烘枃鍩虹**: Microservice Decomposition Techniques: An Independent Tool Comparison (ASE 2024)
-**璇勪及宸ュ叿**: GitHub Copilot AI + 璁烘枃閲忓寲璇勪及鎸囨爣浣撶郴
-**鎵ц鍛ㄦ湡**: 涓夎疆杩唬
-**鏂囨。鐢熸垚鏃ユ湡**: 2025骞?2鏈?6鏃?
----
+# 基于大语言模型的微服务拆分迭代方案书
 
-## 鐩綍
-
-1. [绗竴閮ㄥ垎锛氱爺绌惰儗鏅笌鐩爣](#绗竴閮ㄥ垎)
-2. [绗簩閮ㄥ垎锛氳瘎浼颁綋绯伙紙寰呰ˉ鍏咃級](#绗簩閮ㄥ垎)
-3. [绗笁閮ㄥ垎锛氫笁杞凯浠ｈ缁嗘柟妗堬紙寰呰ˉ鍏咃級](#绗笁閮ㄥ垎)
-4. [绗洓閮ㄥ垎锛氭彁绀鸿瘝璁捐涓庝紭鍖栵紙寰呰ˉ鍏咃級](#绗洓閮ㄥ垎)
-5. [绗簲閮ㄥ垎锛氭墽琛屾祦绋嬩笌楠岃瘉鏍囧噯锛堝緟琛ュ厖锛塢(#绗簲閮ㄥ垎)
+**项目名称**: JPetStore 微服务拆分与多轮迭代评估
+**论文基础**: Microservice Decomposition Techniques: An Independent Tool Comparison (ASE 2024)
+**评估工具**: GitHub Copilot AI + 论文量化评估指标体系
+**执行周期**: 三轮迭代
+**文档生成日期**: 2025年12月16日
 
 ---
 
-## 绗竴閮ㄥ垎锛氱爺绌惰儗鏅笌鐩爣
+## 目录
 
-### 1.1 鐮旂┒鎰忎箟
+1. [第一部分：研究背景与目标](#第一部分)
+2. [第二部分：评估体系（待补充）](#第二部分)
+3. [第三部分：三轮迭代详细方案（待补充）](#第三部分)
+4. [第四部分：提示词设计与优化（待补充）](#第四部分)
+5. [第五部分：执行流程与验证标准（待补充）](#第五部分)
 
-#### 璁烘枃鏍稿績璐＄尞
+---
 
-銆奙icroservice Decomposition Techniques: An Independent Tool Comparison銆?ASE 2024) 閫氳繃瀵?涓井鏈嶅姟鍒嗚В宸ュ叿鐨勭嫭绔嬭瘎浼帮紝鎻ず浜嗙幇鏈夎嚜鍔ㄥ寲鎷嗗垎鎶€鏈殑浼樼己鐐癸細
+## 第一部分：研究背景与目标
 
-| 宸ュ叿鍚嶇О                  | 鎶€鏈師鐞?            | 璇勪及缁撴灉                      | 灞€闄愭€?            |
+### 1.1 研究意义
+
+#### 论文核心贡献
+
+《Microservice Decomposition Techniques: An Independent Tool Comparison》(ASE 2024) 通过对8个微服务分解工具的独立评估，揭示了现有自动化拆分技术的优缺点：
+
+| 工具名称                  | 技术原理             | 评估结果                      | 局限性             |
 | ------------------------- | -------------------- | ----------------------------- | ------------------ |
-| **CARGO**           | 闈欐€佷緷璧栧垎鏋?        | TurboMQ: 31.76                | 绫荤骇鍒槗鍑虹幇绌哄垎鍖?|
-| **Data-Centric**    | 鏁版嵁娴佽拷韪?          | MoJoFM: 72.49                 | 闇€瑕佸畬鏁存暟鎹ā鍨?  |
-| **HyDec**           | 娣峰悎鏂规硶 (浠ｇ爜+鏃ュ織) | TurboMQ: 60.64                | 瀵规棩蹇楁牸寮忔晱鎰?    |
-| **Log2MS**          | 鎵ц鏃ュ織鍒嗘瀽         | MoJoFM: 88.67 (JPetStore鏈€浣? | 闇€瑕佽繍琛屾椂鏁版嵁     |
-| **MEM**             | 杩涘寲鍒嗘瀽 (Git鍘嗗彶)   | MoJoFM: 46.28                 | 鍘嗗彶鏁版嵁渚濊禆寮?    |
-| **Mono2Micro**      | 鏈哄櫒瀛︿範 (ML)        | TurboMQ: 73.73                | 闇€瑕佹爣娉ㄦ暟鎹?      |
-| **MOSAIC**          | 澶氭簮铻嶅悎鑱氱被         | TurboMQ: 92.71, MoJoFM: 82.71 | 鎬ц兘鏈€绋冲畾         |
-| **toMicroservices** | 浼樺寲绠楁硶             | TurboMQ: 44.91                | 鍙傛暟璋冧紭澶嶆潅       |
+| **CARGO**           | 静态依赖分析         | TurboMQ: 31.76                | 类级别易出现空分区 |
+| **Data-Centric**    | 数据流追踪           | MoJoFM: 72.49                 | 需要完整数据模型   |
+| **HyDec**           | 混合方法 (代码+日志) | TurboMQ: 60.64                | 对日志格式敏感     |
+| **Log2MS**          | 执行日志分析         | MoJoFM: 88.67 (JPetStore最佳) | 需要运行时数据     |
+| **MEM**             | 进化分析 (Git历史)   | MoJoFM: 46.28                 | 历史数据依赖强     |
+| **Mono2Micro**      | 机器学习 (ML)        | TurboMQ: 73.73                | 需要标注数据       |
+| **MOSAIC**          | 多源融合聚类         | TurboMQ: 92.71, MoJoFM: 82.71 | 性能最稳定         |
+| **toMicroservices** | 优化算法             | TurboMQ: 44.91                | 参数调优复杂       |
 
-#### 鍒涙柊鏂瑰悜锛欰I椹卞姩鐨勬媶鍒嗘柟妗?
-鏈爺绌跺紩鍏?**GitHub Copilot** 浣滀负鏂扮殑鎷嗗垎宸ュ叿锛屾帰绱互涓嬪垱鏂扮偣锛?
-1. **澶氳疆瀵硅瘽浼樺寲**锛氶€氳繃娓愯繘寮忔彁绀鸿瘝鏀硅繘锛岄€愭鎻愬崌鎷嗗垎璐ㄩ噺
-2. **娣峰悎璇勪及浣撶郴**锛氱粨鍚堣鏂囩殑閲忓寲鎸囨爣锛圱urboMQ銆丮oJoFM锛? AI鍙В閲婃€у垎鏋?3. **鐭ヨ瘑绉疮鏈哄埗**锛氭瘡杞凯浠ｄ繚鐣橝I鐨勬帹鐞嗚繃绋嬶紝寤虹珛寰湇鍔¤瘑鍒殑"瀛︿範杞ㄨ抗"
-4. **涓庝紶缁熷伐鍏峰姣?*锛氬皢Copilot缁撴灉涓嶭og2MS銆丮OSAIC绛夋渶浼樺伐鍏峰苟鍒楄瘎浼?
-### 1.2 鏍稿績鐩爣
+#### 创新方向：AI驱动的拆分方案
 
-#### 鐩爣1锛氶獙璇丄I鍦ㄥ井鏈嶅姟鎷嗗垎涓殑鏈夋晥鎬?
-- 鐩爣鎸囨爣锛欳opilot鏈€缁堢殑MoJoFM璇勫垎 **鈮?65%**锛堣秴杩嘓yDec 58.59%锛?- 瀵规爣宸ュ叿锛歀og2MS锛?8.67%锛夈€丮OSAIC锛?2.71%锛?- 璇勪及缁村害锛氬噯纭€с€佸彲瑙ｉ噴鎬с€佽凯浠ｆ敹鏁涢€熷害
+本研究引入 **GitHub Copilot** 作为新的拆分工具，探索以下创新点：
 
-#### 鐩爣2锛氬缓绔婣I鎻愮ず璇嶇殑鏈€浣冲疄璺?
-- 绗竴杞細鍩虹鎻愮ず 鈫?鑾峰緱鍒濇鎷嗗垎 (棰勬湡 40-50% MoJoFM)
-- 绗簩杞細浼樺寲鎻愮ず 鈫?鍔犲叆涓婁笅鏂囧拰绾︽潫 (棰勬湡 50-65% MoJoFM)
-- 绗笁杞細涓撳鎻愮ず 鈫?铻嶅悎璁烘枃鐭ヨ瘑 (棰勬湡 65-80% MoJoFM)
+1. **多轮对话优化**：通过渐进式提示词改进，逐步提升拆分质量
+2. **混合评估体系**：结合论文的量化指标（TurboMQ、MoJoFM）+ AI可解释性分析
+3. **知识积累机制**：每轮迭代保留AI的推理过程，建立微服务识别的"学习轨迹"
+4. **与传统工具对比**：将Copilot结果与Log2MS、MOSAIC等最优工具并列评估
 
-#### 鐩爣3锛氱敓鎴愬彲澶嶇幇鐨凙I寰湇鍔℃媶鍒嗘鏋?
-- 杈撳嚭鐗╋細涓変唤杩唬鎷嗗垎鏂规 + 瀹屾暣鎻愮ず璇嶆。妗堝簱
-- 瀛樺偍褰㈠紡锛氭瘡杞凯浠ｇ殑JPetStore椤圭洰鐙珛淇濆瓨锛岀粨鏋勬竻鏅?- 璇勪及鎶ュ憡锛氶噺鍖栨寚鏍?+ 瀹氭€у垎鏋?+ AI鎺ㄧ悊鍙鍖?
-### 1.3 妗堜緥搴旂敤锛欽PetStore
+### 1.2 核心目标
 
-#### 搴旂敤鑳屾櫙
+#### 目标1：验证AI在微服务拆分中的有效性
 
-- **瑙勬ā**锛?4涓被锛?02涓柟娉曪紙绫荤骇鍒級锛屾槸璁烘枃涓渶灏忕殑瀹為檯搴旂敤
-- **棰嗗煙**锛氱數鍟嗙郴缁燂紙瀹犵墿鍦ㄧ嚎鍟嗗簵锛?- **鍙傝€冨垎瑙?*锛圙round Truth锛夛細3涓井鏈嶅姟
-  - **account**锛氳处鎴风鐞嗗井鏈嶅姟
-  - **catalog**锛氬晢鍝佺洰褰曞井鏈嶅姟
-  - **order**锛氳鍗曞鐞嗗井鏈嶅姟
+- 目标指标：Copilot最终的MoJoFM评分 **≥ 65%**（超过HyDec 58.59%）
+- 对标工具：Log2MS（88.67%）、MOSAIC（82.71%）
+- 评估维度：准确性、可解释性、迭代收敛速度
 
-#### 涓轰粈涔堥€夋嫨JPetStore
+#### 目标2：建立AI提示词的最佳实践
 
-1. **瑙勬ā閫備腑**锛氫究浜嶢I鍦ㄥ崟娆″璇濅腑瀹屾暣鐞嗚В鍏ㄨ矊
-2. **缁撴瀯娓呮櫚**锛?涓井鏈嶅姟鐨凣round Truth鏄庣‘瀹氫箟锛屾槗浜庨獙璇?3. **璁烘枃鏁版嵁瀹屾暣**锛氭墍鏈?涓伐鍏烽兘鏈夊JPetStore鐨勮瘎浼扮粨鏋?4. **鏈€浣冲疄楠屽璞?*锛歀og2MS鍦ㄦ搴旂敤杈惧埌100% MoJoFM寰楀垎锛屼负AI璁惧畾鏄庣‘鐩爣
+- 第一轮：基础提示 → 获得初步拆分 (预期 40-50% MoJoFM)
+- 第二轮：优化提示 → 加入上下文和约束 (预期 50-65% MoJoFM)
+- 第三轮：专家提示 → 融合论文知识 (预期 65-80% MoJoFM)
+
+#### 目标3：生成可复现的AI微服务拆分框架
+
+- 输出物：三份迭代拆分方案 + 完整提示词档案库
+- 存储形式：每轮迭代的JPetStore项目独立保存，结构清晰
+- 评估报告：量化指标 + 定性分析 + AI推理可视化
+
+### 1.3 案例应用：JPetStore
+
+#### 应用背景
+
+- **规模**：24个类，302个方法（类级别），是论文中最小的实际应用
+- **领域**：电商系统（宠物在线商店）
+- **参考分解**（Ground Truth）：3个微服务
+  - **account**：账户管理微服务
+  - **catalog**：商品目录微服务
+  - **order**：订单处理微服务
+
+#### 为什么选择JPetStore
+
+1. **规模适中**：便于AI在单次对话中完整理解全貌
+2. **结构清晰**：3个微服务的Ground Truth明确定义，易于验证
+3. **论文数据完整**：所有8个工具都有对JPetStore的评估结果
+4. **最佳实验对象**：Log2MS在此应用达到100% MoJoFM得分，为AI设定明确目标
 
 ---
 
 ---
 
-## 绗簩閮ㄥ垎锛氳瘎浼颁綋绯昏瑙?
-### 2.1 璁烘枃鐨勯噺鍖栨寚鏍囦綋绯绘瑙?
-璁烘枃閲囩敤涓ょ被鎸囨爣璇勪及寰湇鍔℃媶鍒嗚川閲忥細
+## 第二部分：评估体系详解
 
-| 鎸囨爣绫诲埆             | 鎸囨爣鍚嶇О | 琛￠噺缁村害               | 璁＄畻鏂规硶        | 鏈€浼樺€?        |
+### 2.1 论文的量化指标体系概览
+
+论文采用两类指标评估微服务拆分质量：
+
+| 指标类别             | 指标名称 | 衡量维度               | 计算方法        | 最优值         |
 | -------------------- | -------- | ---------------------- | --------------- | -------------- |
-| **璐ㄩ噺璇勪及**   | TurboMQ  | 闈欐€佺粨鏋勬ā鍧楀寲璐ㄩ噺     | 鑰﹀悎搴?绮樿仛搴?  | 100            |
-| **璐ㄩ噺璇勪及**   | 鍒嗗尯鏁伴噺 | 寰湇鍔＄矑搴︽帶鍒?        | 鍒嗗尯涓暟        | 鈮圙round Truth |
-| **鐩镐技搴﹁瘎浼?* | MoJoFM   | 涓嶨round Truth鐨勪竴鑷存€?| 绫?鏂规硶閲嶅彔鍖归厤 | 100            |
-| **鍙В閲婃€?*   | 鎺ㄧ悊閾?  | AI鍐崇瓥杩囩▼             | 鏂囨湰璇存槑        | 娓呮櫚瀹屾暣       |
+| **质量评估**   | TurboMQ  | 静态结构模块化质量     | 耦合度-粘聚度   | 100            |
+| **质量评估**   | 分区数量 | 微服务粒度控制         | 分区个数        | ≈Ground Truth |
+| **相似度评估** | MoJoFM   | 与Ground Truth的一致性 | 类/方法重叠匹配 | 100            |
+| **可解释性**   | 推理链   | AI决策过程             | 文本说明        | 清晰完整       |
 
-### 2.2 鏍稿績鎸囨爣璇﹁В
+### 2.2 核心指标详解
 
-#### 2.2.1 TurboMQ锛氭ā鍧楀寲璐ㄩ噺鎸囨爣
+#### 2.2.1 TurboMQ：模块化质量指标
 
-**瀹氫箟**锛氳　閲忓垎瑙ｇ殑楂樺唴鑱氫綆鑰﹀悎绋嬪害銆?
-**鍏紡**锛?
+**定义**：衡量分解的高内聚低耦合程度。
+
+**公式**：
+
 $$
 TurboMQ = \frac{\text{Cohesion} - \text{Coupling}}{\text{Cohesion} + \text{Coupling}} \times 100
 $$
 
-鍏朵腑锛?
-- **Cohesion锛堝唴鑱氬害锛?*锛氬垎鍖哄唴閮ㄧ殑渚濊禆鍏崇郴鏁伴噺
-- **Coupling锛堣€﹀悎搴︼級**锛氬垎鍖洪棿鐨勮法瓒婁緷璧栧叧绯绘暟閲?
-**鏁板€艰寖鍥?*锛?-100
+其中：
 
-- 90-100锛氫紭绉€锛圡OSAIC鍦↗PetStore杈惧埌100锛?- 70-89锛氳壇濂斤紙Mono2Micro: 73.73锛?- 50-69锛氫腑绛夛紙HyDec: 60.64锛?- 30-49锛氳緝宸紙CARGO: 31.76锛?- <30锛氬樊锛圡EM: 28.13锛?
-**JPetStore Ground Truth鐨凾urboMQ鍩哄噯**锛?
-- 棰勬湡鍊硷細绾?0-100锛堣鏂囦腑MOSAIC杈惧埌100锛?- 绗竴杞瓹opilot鐩爣锛氣墺50
-- 绗簩杞瓹opilot鐩爣锛氣墺65
-- 绗笁杞瓹opilot鐩爣锛氣墺80
+- **Cohesion（内聚度）**：分区内部的依赖关系数量
+- **Coupling（耦合度）**：分区间的跨越依赖关系数量
+
+**数值范围**：0-100
+
+- 90-100：优秀（MOSAIC在JPetStore达到100）
+- 70-89：良好（Mono2Micro: 73.73）
+- 50-69：中等（HyDec: 60.64）
+- 30-49：较差（CARGO: 31.76）
+- <30：差（MEM: 28.13）
+
+**JPetStore Ground Truth的TurboMQ基准**：
+
+- 预期值：约90-100（论文中MOSAIC达到100）
+- 第一轮Copilot目标：≥50
+- 第二轮Copilot目标：≥65
+- 第三轮Copilot目标：≥80
 
 ---
 
-#### 2.2.2 MoJoFM锛氱浉浼煎害鎸囨爣
+#### 2.2.2 MoJoFM：相似度指标
 
-**瀹氫箟**锛氳　閲廋opilot鎷嗗垎涓嶨round Truth锛堜笓瀹跺弬鑰冨垎瑙ｏ級鐨勪竴鑷存€с€?
-**鍏紡**锛?
+**定义**：衡量Copilot拆分与Ground Truth（专家参考分解）的一致性。
+
+**公式**：
+
 $$
 MoJoFM = \frac{1}{max(|A|, |B|)} \times \sum_{i=1}^{|A|} |A_i \cap B_{\sigma(i)}|
 $$
 
-鍏朵腑锛?
-- $A$锛欳opilot鐨勫垎瑙ｆ柟妗堬紙鍒嗗尯闆嗗悎锛?- $B$锛欸round Truth鐨勫弬鑰冨垎瑙ｏ紙鍒嗗尯闆嗗悎锛?- $\sigma$锛氭渶浼樺尮閰嶆帓鍒楋紙浣夸氦闆嗘渶澶у寲锛?- $|A_i|$锛氱i涓垎鍖虹殑绫?鏂规硶鏁伴噺
+其中：
 
-**鏁板€艰寖鍥?*锛?-100
+- $A$：Copilot的分解方案（分区集合）
+- $B$：Ground Truth的参考分解（分区集合）
+- $\sigma$：最优匹配排列（使交集最大化）
+- $|A_i|$：第i个分区的类/方法数量
 
-- 90-100锛氭帴杩戝畬缇庯紙Log2MS鍦↗PetStore杈惧埌100锛?- 75-89锛氫紭绉€锛圡OSAIC: 82.71锛?- 60-74锛氳壇濂斤紙Data-Centric: 72.49锛?- 40-59锛氫腑绛夛紙HyDec: 58.59锛?- <40锛氳緝宸紙CARGO: 42.86锛?
-**JPetStore Ground Truth鐨勫弬鑰冨€?*锛?
+**数值范围**：0-100
+
+- 90-100：接近完美（Log2MS在JPetStore达到100）
+- 75-89：优秀（MOSAIC: 82.71）
+- 60-74：良好（Data-Centric: 72.49）
+- 40-59：中等（HyDec: 58.59）
+- <40：较差（CARGO: 42.86）
+
+**JPetStore Ground Truth的参考值**：
+
 ```
-account 寰湇鍔★紙7涓被锛屽涓柟娉曪級锛?  - Account, AccountActionBean, AccountMapper, AccountService
+account 微服务（7个类，多个方法）：
+  - Account, AccountActionBean, AccountMapper, AccountService
 
-catalog 寰湇鍔★紙8涓被锛夛細
+catalog 微服务（8个类）：
   - Category, CategoryMapper, CatalogActionBean, CatalogService
   - CartActionBean, Item, ItemMapper, Product, ProductMapper
 
-order 寰湇鍔★紙7涓被锛夛細
+order 微服务（7个类）：
   - Cart, CartItem, Order, OrderActionBean, OrderMapper
   - OrderService, LineItem, LineItemMapper, Sequence, SequenceMapper
 ```
 
-**绗竴杞瓹opilot鐩爣**锛氣墺35-45% MoJoFM
-**绗簩杞瓹opilot鐩爣**锛氣墺50-60% MoJoFM
-**绗笁杞瓹opilot鐩爣**锛氣墺65-75% MoJoFM
+**第一轮Copilot目标**：≥35-45% MoJoFM
+**第二轮Copilot目标**：≥50-60% MoJoFM
+**第三轮Copilot目标**：≥65-75% MoJoFM
 
 ---
 
-#### 2.2.3 缁撴瀯鍖栬瘎浼版寚鏍?
-闄や簡TurboMQ鍜孧oJoFM锛岃繕闇€璇勪及浠ヤ笅缁村害锛?
-| 鎸囨爣                     | 璁＄畻鏂规硶                   | 鐩爣鍊?     | 璇存槑                                        |
+#### 2.2.3 结构化评估指标
+
+除了TurboMQ和MoJoFM，还需评估以下维度：
+
+| 指标                     | 计算方法                   | 目标值      | 说明                                        |
 | ------------------------ | -------------------------- | ----------- | ------------------------------------------- |
-| **鍒嗗尯鏁伴噺**       | 鐢熸垚鐨勫井鏈嶅姟涓暟           | 3锛堟帴杩慓T锛?| Ground Truth涓?锛岃繃澶氭媶鍒嗚繃缁嗭紝杩囧皯鑱氬悎杩囩矖 |
-| **鍒嗗尯澶у皬鍧囪　搴?* | Std Dev of partition sizes | 浣庢柟宸?     | 閬垮厤鏌愪釜寰湇鍔¤繃澶?                         |
-| **鏈€澶у垎鍖鸿妯?*   | largest partition size     | <50%        | 閬垮厤鍑虹幇鍗曠嫭鐨勫法澶у井鏈嶅姟                    |
-| **鏈€灏忓垎鍖鸿妯?*   | smallest partition size    | >2          | 閬垮厤鍙湁1-2涓被鐨勫井鏈嶅姟                     |
+| **分区数量**       | 生成的微服务个数           | 3（接近GT） | Ground Truth为3，过多拆分过细，过少聚合过粗 |
+| **分区大小均衡度** | Std Dev of partition sizes | 低方差      | 避免某个微服务过大                          |
+| **最大分区规模**   | largest partition size     | <50%        | 避免出现单独的巨大微服务                    |
+| **最小分区规模**   | smallest partition size    | >2          | 避免只有1-2个类的微服务                     |
 
 ---
 
-### 2.3 JPetStore鏁版嵁鍩哄噯
+### 2.3 JPetStore数据基准
 
-#### 2.3.1 Ground Truth鍙傝€冨垎瑙?
-**鎬讳綋缁熻**锛?
-- 鎬荤被鏁帮細24
-- 鎬绘柟娉曟暟锛?02
-- 鍒嗗尯鏁帮細3
-- 鏈€澶у垎鍖猴細8涓被锛坈atalog锛?- 鏈€灏忓垎鍖猴細7涓被锛坅ccount, order鍚?涓級
+#### 2.3.1 Ground Truth参考分解
 
-**鍏蜂綋鍒嗚В**锛?
-| 寰湇鍔″悕          | 绫绘暟 | 鏂规硶鏁?| 涓昏鑱岃矗                         |
+**总体统计**：
+
+- 总类数：24
+- 总方法数：302
+- 分区数：3
+- 最大分区：8个类（catalog）
+- 最小分区：7个类（account, order各7个）
+
+**具体分解**：
+
+| 微服务名          | 类数 | 方法数 | 主要职责                         |
 | ----------------- | ---- | ------ | -------------------------------- |
-| **account** | 7    | ~100   | 鐢ㄦ埛璐︽埛绠＄悊銆佺櫥闄嗐€佷釜浜轰俊鎭淮鎶?|
-| **catalog** | 8    | ~100   | 鍟嗗搧鍒嗙被銆佹悳绱€佹祻瑙?            |
-| **order**   | 9    | ~102   | 璐墿杞︺€佷笅鍗曘€佽鍗曠鐞?          |
+| **account** | 7    | ~100   | 用户账户管理、登陆、个人信息维护 |
+| **catalog** | 8    | ~100   | 商品分类、搜索、浏览             |
+| **order**   | 9    | ~102   | 购物车、下单、订单管理           |
 
-#### 2.3.2 璁烘枃涓?涓伐鍏峰JPetStore鐨勮瘎浼扮粨鏋?
-**TurboMQ璇勫垎锛堢被绾у埆锛?*锛?
+#### 2.3.2 论文中8个工具对JPetStore的评估结果
+
+**TurboMQ评分（类级别）**：
+
 ```
-MOSAIC:           100.00 鉁?(鏈€浼?
+MOSAIC:           100.00 ✅ (最优)
 Ground Truth:      89.73
 Mono2Micro:        73.64
 Data-Centric:      79.74
@@ -179,159 +229,209 @@ toMicroservices:   18.20
 CARGO:             52.15
 ```
 
-**MoJoFM璇勫垎锛堜笌Ground Truth姣旇緝锛?*锛?
+**MoJoFM评分（与Ground Truth比较）**：
+
 ```
-Log2MS:           100.00 鉁?(瀹岀編鍖归厤)
-Data-Centric:      76.19 (绫荤骇) / 85.53 (鏂规硶绾?
+Log2MS:           100.00 ✅ (完美匹配)
+Data-Centric:      76.19 (类级) / 85.53 (方法级)
 MOSAIC:            89.47
-HyDec:             57.14 (绫荤骇) / 88.49 (鏂规硶绾?
-Mono2Micro:        74.67 (鏂规硶绾?
+HyDec:             57.14 (类级) / 88.49 (方法级)
+Mono2Micro:        74.67 (方法级)
 toMicroservices:   51.85
-MEM:               70.07 (鏂规硶绾?
+MEM:               70.07 (方法级)
 CARGO:             42.86
 ```
 
-**鍒嗗尯鏁伴噺瀵规瘮**锛?
+**分区数量对比**：
+
 ```
-Ground Truth:  3涓?Log2MS:        3涓?(绮惧噯)
-MOSAIC:        3涓?(绮惧噯)
-Data-Centric:  3涓?HyDec:         4-5涓?(鐣ヨ繃鎷嗗垎)
-Mono2Micro:    2-4涓?(鍙彉)
-CARGO:         2-3涓?MEM:           澶氳揪8-10涓?(杩囧害鎷嗗垎)
-toMicroservices: 4-5涓?```
+Ground Truth:  3个
+Log2MS:        3个 (精准)
+MOSAIC:        3个 (精准)
+Data-Centric:  3个
+HyDec:         4-5个 (略过拆分)
+Mono2Micro:    2-4个 (可变)
+CARGO:         2-3个
+MEM:           多达8-10个 (过度拆分)
+toMicroservices: 4-5个
+```
 
 ---
 
-### 2.4 璇勪及鏁版嵁鏀堕泦涓庤绠楁祦绋?
-#### 2.4.1 鏁版嵁鏀堕泦娓呭崟
+### 2.4 评估数据收集与计算流程
 
-姣忚疆杩唬闇€鏀堕泦浠ヤ笅鏁版嵁锛?
+#### 2.4.1 数据收集清单
+
+每轮迭代需收集以下数据：
+
 ```
-杩唬 X 鏁版嵁鍖?
-鈹溾攢鈹€ prompt_used.txt          # 鏈疆浣跨敤鐨勬彁绀鸿瘝
-鈹溾攢鈹€ decomposition_result.json # Copilot杈撳嚭鐨勬媶鍒嗘柟妗?鈹?  鈹溾攢鈹€ partitions: [        # 鍒嗗尯鍒楄〃
-鈹?  鈹?  {
-鈹?  鈹?    "name": "account",
-鈹?  鈹?    "classes": [...],
-鈹?  鈹?    "methods": [...]
-鈹?  鈹?  },
-鈹?  鈹?  ...
-鈹?  鈹?]
-鈹?  鈹斺攢鈹€ reasoning: "..."      # 鎷嗗垎鎺ㄧ悊杩囩▼
-鈹溾攢鈹€ evaluation_metrics.csv    # 璇勪及鎸囨爣缁撴灉
-鈹?  鈹溾攢鈹€ TurboMQ
-鈹?  鈹溾攢鈹€ MoJoFM
-鈹?  鈹溾攢鈹€ partition_count
-鈹?  鈹斺攢鈹€ timestamp
-鈹斺攢鈹€ analysis.md              # 瀹氭€у垎鏋愭姤鍛?    鈹溾攢鈹€ 涓嶨round Truth鐨勫姣?    鈹溾攢鈹€ 鎷嗗垎璐ㄩ噺璇勪环
-    鈹溾攢鈹€ 鏀硅繘寤鸿
-    鈹斺攢鈹€ 闂璇婃柇
+迭代 X 数据包/
+├── prompt_used.txt          # 本轮使用的提示词
+├── decomposition_result.json # Copilot输出的拆分方案
+│   ├── partitions: [        # 分区列表
+│   │   {
+│   │     "name": "account",
+│   │     "classes": [...],
+│   │     "methods": [...]
+│   │   },
+│   │   ...
+│   │ ]
+│   └── reasoning: "..."      # 拆分推理过程
+├── evaluation_metrics.csv    # 评估指标结果
+│   ├── TurboMQ
+│   ├── MoJoFM
+│   ├── partition_count
+│   └── timestamp
+└── analysis.md              # 定性分析报告
+    ├── 与Ground Truth的对比
+    ├── 拆分质量评价
+    ├── 改进建议
+    └── 问题诊断
 ```
 
-#### 2.4.2 璁＄畻娴佺▼
+#### 2.4.2 计算流程
 
-**姝ラ1**锛氭彁鍙朇opilot鎷嗗垎缁撴灉
+**步骤1**：提取Copilot拆分结果
 
-- 浠嶤opilot杈撳嚭涓瘑鍒垎鍖鸿竟鐣?- 鍒楀嚭姣忎釜鍒嗗尯鐨勭被鍜屾柟娉?- 淇濆瓨涓篔SON鏍煎紡
+- 从Copilot输出中识别分区边界
+- 列出每个分区的类和方法
+- 保存为JSON格式
 
-**姝ラ2**锛氳绠桾urboMQ
+**步骤2**：计算TurboMQ
 
-- 鎻愬彇渚濊禆鍥撅紙浣跨敤鐜版湁鐨剆tructural_static.csv锛?- 璁＄畻鍒嗗尯闂磋€﹀悎搴?- 璁＄畻鍒嗗尯鍐呯矘鑱氬害
-- 浠ｅ叆鍏紡璁＄畻TurboMQ
+- 提取依赖图（使用现有的structural_static.csv）
+- 计算分区间耦合度
+- 计算分区内粘聚度
+- 代入公式计算TurboMQ
 
-**姝ラ3**锛氳绠桵oJoFM
+**步骤3**：计算MoJoFM
 
-- 涓嶨round Truth杩涜绫?鏂规硶绾у尮閰?- 浣跨敤鏈€浼樺垎閰嶇畻娉曪紙Hungarian绠楁硶锛夊鎵炬渶浣冲搴?- 璁＄畻閲嶅彔绯绘暟
-- 浠ｅ叆鍏紡璁＄畻MoJoFM
+- 与Ground Truth进行类/方法级匹配
+- 使用最优分配算法（Hungarian算法）寻找最佳对应
+- 计算重叠系数
+- 代入公式计算MoJoFM
 
-**姝ラ4**锛氱敓鎴愯瘎浼版姤鍛?
-- 鍒惰〃瀵规瘮鍚勮疆杩唬鎸囨爣
-- 鍒嗘瀽鏀舵暃瓒嬪娍
-- 鏍囨敞鏀硅繘鐐瑰拰闂鏍规簮
+**步骤4**：生成评估报告
+
+- 制表对比各轮迭代指标
+- 分析收敛趋势
+- 标注改进点和问题根源
 
 ---
 
-## 绗簩閮ㄥ垎瀹屾垚
+## 第二部分完成
 
-**鏍稿績瑕佺偣鎬荤粨**锛?
-- TurboMQ锛氳　閲忓垎瑙ｇ殑妯″潡鍖栬川閲忥紙0-100锛岃秺楂樿秺濂斤級
-- MoJoFM锛氳　閲忎笌Ground Truth鐨勫尮閰嶇▼搴︼紙0-100锛岃秺楂樿秺濂斤級
-- JPetStore Ground Truth锛?涓井鏈嶅姟锛?4涓被锛?02涓柟娉?- Copilot鐩爣锛氱涓夎疆杈惧埌MoJoFM 鈮?5%锛堣秴杩嘓yDec锛?
+**核心要点总结**：
+
+- TurboMQ：衡量分解的模块化质量（0-100，越高越好）
+- MoJoFM：衡量与Ground Truth的匹配程度（0-100，越高越好）
+- JPetStore Ground Truth：3个微服务，24个类，302个方法
+- Copilot目标：第三轮达到MoJoFM ≥65%（超过HyDec）
+
 ---
 
-## 绗笁閮ㄥ垎锛氫笁杞凯浠ｈ缁嗘柟妗?
-### 3.1 杩唬鎬讳綋妗嗘灦
+## 第三部分：三轮迭代详细方案
 
-姣忚疆杩唬閬靛惊浠ヤ笅娴佺▼锛?
+### 3.1 迭代总体框架
+
+每轮迭代遵循以下流程：
+
 ```
-杈撳叆鎻愮ず璇?鈫?AI鐢熸垚鎷嗗垎鏂规 鈫?鎻愬彇缁撴瀯鍖栫粨鏋?鈫?璁＄畻璇勪及鎸囨爣 鈫?瀹氭€у垎鏋?鈫?浼樺寲鎻愮ず璇?                 鈫?                                                       鈫?                 鈹斺攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ 鍙嶉涓庢敼杩?鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?```
+输入提示词 → AI生成拆分方案 → 提取结构化结果 → 计算评估指标 → 定性分析 → 优化提示词
+                 ↑                                                        ↓
+                 └─────────────── 反馈与改进 ──────────────────────────┘
+```
 
-**鏃堕棿瀹夋帓**锛氭瘡杞凯浠?2-3 灏忔椂
+**时间安排**：每轮迭代 2-3 小时
 
-- 鎻愮ず璇嶈璁′笌瀵硅瘽锛?灏忔椂
-- 缁撴灉鎻愬彇涓庢暟鎹竻鐞嗭細30鍒嗛挓
-- 鎸囨爣璁＄畻涓庡彲瑙嗗寲锛?5鍒嗛挓
-- 瀹氭€у垎鏋愪笌璇婃柇锛?0鍒嗛挓
+- 提示词设计与对话：1小时
+- 结果提取与数据清理：30分钟
+- 指标计算与可视化：45分钟
+- 定性分析与诊断：30分钟
 
 ---
 
-### 3.2 绗竴杞凯浠ｏ細鍩虹鎷嗗垎锛圗xpected MoJoFM: 35-45%锛?
-#### 3.2.1 杩唬鐩爣
+### 3.2 第一轮迭代：基础拆分（Expected MoJoFM: 35-45%）
 
-| 缁村害                  | 鐩爣         | 璇存槑                            |
+#### 3.2.1 迭代目标
+
+| 维度                  | 目标         | 说明                            |
 | --------------------- | ------------ | ------------------------------- |
-| **鎻愮ず绛栫暐**    | 鍩虹浠诲姟鎻忚堪 | 鐩存帴璇存槑JPetStore鐨勫姛鑳戒笌绫荤粨鏋?|
-| **AI鐞嗚В娣卞害**  | 绮楃矑搴︾悊瑙?  | AI闇€瑕佺悊瑙?杩欐槸涓€涓數鍟嗙郴缁?    |
-| **鏈熸湜鍒嗗尯鏁?*  | 2-5涓?       | 鍙兘杩囧害鎷嗗垎鎴栬仛鍚?             |
-| **鏈熸湜MoJoFM**  | 35-45%       | 鏄捐憲浣庝簬璁烘枃鏈€浼樺伐鍏?           |
-| **鏈熸湜TurboMQ** | 30-50        | 涓瓑姘村钩                        |
+| **提示策略**    | 基础任务描述 | 直接说明JPetStore的功能与类结构 |
+| **AI理解深度**  | 粗粒度理解   | AI需要理解"这是一个电商系统"    |
+| **期望分区数**  | 2-5个        | 可能过度拆分或聚合              |
+| **期望MoJoFM**  | 35-45%       | 显著低于论文最优工具            |
+| **期望TurboMQ** | 30-50        | 中等水平                        |
 
-#### 3.2.2 杈撳叆鎻愮ず璇嶏紙Prompt v1.0锛?
+#### 3.2.2 输入提示词（Prompt v1.0）
+
 ```
-璇峰涓嬪垪JPetStore鐢靛晢绯荤粺杩涜寰湇鍔℃媶鍒嗐€?
-## 绯荤粺姒傝堪
-JPetStore鏄竴涓疇鐗╁湪绾垮晢搴楃郴缁燂紝鐢ㄦ埛鍙互娴忚鍟嗗搧銆佺鐞嗚处鎴枫€佽喘鐗╁拰涓嬪崟銆?绯荤粺涓昏鍔熻兘鍖呮嫭锛氳处鎴风鐞嗐€佸晢鍝佺鐞嗐€佽喘鐗╄溅銆佽鍗曞鐞嗐€?
-## 绯荤粺绫诲垪琛紙鍏?4涓被锛?02涓柟娉曪級
+请对下列JPetStore电商系统进行微服务拆分。
 
-銆愯处鎴风浉鍏炽€?- Account锛氱敤鎴疯处鎴峰疄浣撶被锛坓etUsername, getPassword, getEmail绛?8涓柟娉曪級
-- AccountActionBean锛氳处鎴峰鐞嗙殑Web Action锛堢櫥闄嗐€佺櫥鍑恒€佷釜浜轰俊鎭鐞嗭級
-- AccountService锛氳处鎴蜂笟鍔￠€昏緫鏈嶅姟
-- AccountMapper锛氭暟鎹簱鏄犲皠鎺ュ彛
+## 系统概述
+JPetStore是一个宠物在线商店系统，用户可以浏览商品、管理账户、购物和下单。
+系统主要功能包括：账户管理、商品管理、购物车、订单处理。
 
-銆愬晢鍝佺浉鍏炽€?- Category锛氬晢鍝佸垎绫诲疄浣?- CategoryMapper锛氬垎绫绘暟鎹槧灏?- Item锛氬晢鍝侀」瀹炰綋
-- ItemMapper锛氬晢鍝佹暟鎹槧灏?- Product锛氬晢鍝佸疄浣?- ProductMapper锛氬晢鍝佹暟鎹槧灏?- CatalogActionBean锛氬晢鍝佹祻瑙堢殑Web Action
-- CatalogService锛氬晢鍝佷笟鍔￠€昏緫鏈嶅姟
+## 系统类列表（共24个类，302个方法）
 
-銆愯鍗曠浉鍏炽€?- Cart锛氳喘鐗╄溅瀹炰綋
-- CartItem锛氳喘鐗╄溅椤?- CartActionBean锛氳喘鐗╄溅Web Action
-- Order锛氳鍗曞疄浣?- OrderActionBean锛氳鍗曞鐞哤eb Action
-- OrderMapper锛氳鍗曟暟鎹槧灏?- OrderService锛氳鍗曚笟鍔￠€昏緫鏈嶅姟
-- LineItem锛氳鍗曡椤?- LineItemMapper锛氳鍗曡鏁版嵁鏄犲皠
-- Sequence锛氬簭鍒楀彿鐢熸垚
-- SequenceMapper锛氬簭鍒楀彿鏁版嵁鏄犲皠
+【账户相关】
+- Account：用户账户实体类（getUsername, getPassword, getEmail等18个方法）
+- AccountActionBean：账户处理的Web Action（登陆、登出、个人信息管理）
+- AccountService：账户业务逻辑服务
+- AccountMapper：数据库映射接口
 
-## 浠诲姟瑕佹眰
+【商品相关】
+- Category：商品分类实体
+- CategoryMapper：分类数据映射
+- Item：商品项实体
+- ItemMapper：商品数据映射
+- Product：商品实体
+- ProductMapper：商品数据映射
+- CatalogActionBean：商品浏览的Web Action
+- CatalogService：商品业务逻辑服务
 
-璇峰熀浜庝笂杩扮被鐨勫姛鑳藉拰鑱岃矗锛屽皢绯荤粺鎷嗗垎涓哄井鏈嶅姟銆傚浜庢瘡涓媶鍒嗙殑寰湇鍔★細
-1. 缁欏嚭寰湇鍔″悕绉?2. 鍒楀嚭鍖呭惈鐨勭被鍒楄〃
-3. 绠€瑕佽鏄庡井鏈嶅姟鐨勬牳蹇冭亴璐?4. 瑙ｉ噴涓轰粈涔堣繖浜涚被搴旇鑱氬悎鍦ㄤ竴璧?
-璇烽噰鐢ㄤ互涓婮SON鏍煎紡杈撳嚭缁撴灉锛?{
+【订单相关】
+- Cart：购物车实体
+- CartItem：购物车项
+- CartActionBean：购物车Web Action
+- Order：订单实体
+- OrderActionBean：订单处理Web Action
+- OrderMapper：订单数据映射
+- OrderService：订单业务逻辑服务
+- LineItem：订单行项
+- LineItemMapper：订单行数据映射
+- Sequence：序列号生成
+- SequenceMapper：序列号数据映射
+
+## 任务要求
+
+请基于上述类的功能和职责，将系统拆分为微服务。对于每个拆分的微服务：
+1. 给出微服务名称
+2. 列出包含的类列表
+3. 简要说明微服务的核心职责
+4. 解释为什么这些类应该聚合在一起
+
+请采用以下JSON格式输出结果：
+{
   "decomposition": [
     {
-      "service_name": "鏈嶅姟鍚?,
-      "classes": ["绫?", "绫?", ...],
-      "responsibility": "鏍稿績鑱岃矗璇存槑",
-      "reasoning": "鎷嗗垎鐞嗙敱"
+      "service_name": "服务名",
+      "classes": ["类1", "类2", ...],
+      "responsibility": "核心职责说明",
+      "reasoning": "拆分理由"
     }
   ],
-  "total_services": 鏁板瓧,
-  "quality_assessment": "鎷嗗垎璐ㄩ噺鐨勮嚜鎴戣瘎浼?
+  "total_services": 数字,
+  "quality_assessment": "拆分质量的自我评估"
 }
 
-甯屾湜浣犵殑鎷嗗垎閬靛惊寰湇鍔¤璁″師鍒欙細
-- 楂樺唴鑱氾細鍚屼竴鏈嶅姟鍐呯殑绫诲簲璇ユ湁寮虹浉鍏虫€?- 浣庤€﹀悎锛氫笉鍚屾湇鍔￠棿搴旇灏藉彲鑳界嫭绔?- 鍗曚竴鑱岃矗锛氭瘡涓湇鍔″簲璇ヤ笓娉ㄤ簬涓€涓笟鍔¤兘鍔?```
+希望你的拆分遵循微服务设计原则：
+- 高内聚：同一服务内的类应该有强相关性
+- 低耦合：不同服务间应该尽可能独立
+- 单一职责：每个服务应该专注于一个业务能力
+```
 
-#### 3.2.3 棰勬湡杈撳嚭绀轰緥
+#### 3.2.3 预期输出示例
 
 ```json
 {
@@ -339,514 +439,669 @@ JPetStore鏄竴涓疇鐗╁湪绾垮晢搴楃郴缁燂紝鐢ㄦ埛鍙�
     {
       "service_name": "account-service",
       "classes": ["Account", "AccountActionBean", "AccountService", "AccountMapper"],
-      "responsibility": "澶勭悊鐢ㄦ埛璐︽埛鐨勭櫥闄嗐€佹敞鍐屻€佷釜浜轰俊鎭鐞?,
-      "reasoning": "杩欎簺绫婚兘涓庣敤鎴疯处鎴风浉鍏筹紝褰㈡垚鐙珛鐨勪笟鍔¤兘鍔?
+      "responsibility": "处理用户账户的登陆、注册、个人信息管理",
+      "reasoning": "这些类都与用户账户相关，形成独立的业务能力"
     },
     {
       "service_name": "catalog-service",
       "classes": ["Category", "CategoryMapper", "Item", "ItemMapper", "Product", 
                   "ProductMapper", "CatalogActionBean", "CatalogService"],
-      "responsibility": "绠＄悊鍟嗗搧鍒嗙被鍜屽晢鍝佷俊鎭紝鎻愪緵娴忚鍜屾悳绱㈠姛鑳?,
-      "reasoning": "鍟嗗搧淇℃伅绠＄悊鏄嫭绔嬬殑鏍稿績涓氬姟锛屽寘鎷垎绫汇€佸晢鍝併€佹槧灏?
+      "responsibility": "管理商品分类和商品信息，提供浏览和搜索功能",
+      "reasoning": "商品信息管理是独立的核心业务，包括分类、商品、映射"
     },
     {
       "service_name": "order-service",
       "classes": ["Cart", "CartItem", "CartActionBean", "Order", "OrderActionBean", 
                   "OrderMapper", "OrderService", "LineItem", "LineItemMapper", 
                   "Sequence", "SequenceMapper"],
-      "responsibility": "澶勭悊璐墿杞︺€佽鍗曞垱寤恒€佽鍗曠鐞?,
-      "reasoning": "璐墿鍜岃鍗曞鐞嗘槸鐙珛鐨勪笟鍔℃祦绋嬶紝鍖呭惈瀹屾暣鐨勮喘鐗╄溅鍜岃鍗曠鐞?
+      "responsibility": "处理购物车、订单创建、订单管理",
+      "reasoning": "购物和订单处理是独立的业务流程，包含完整的购物车和订单管理"
     }
   ],
   "total_services": 3,
-  "quality_assessment": "杩欎釜鎷嗗垎閬靛惊鍔熻兘鍩熷垎绂伙紝璇嗗埆浜?涓富瑕佺殑涓氬姟鑳藉姏"
+  "quality_assessment": "这个拆分遵循功能域分离，识别了3个主要的业务能力"
 }
 ```
 
-#### 3.2.4 鏁版嵁鏀堕泦涓庤瘎浼?
-**鏀堕泦姝ラ**锛?
-1. 灏咰opilot鐨凧SON杈撳嚭淇濆瓨涓?`杩唬1/decomposition_result.json`
-2. 浠嶫SON涓彁鍙栫被-鏈嶅姟鏄犲皠锛?   ```
+#### 3.2.4 数据收集与评估
+
+**收集步骤**：
+
+1. 将Copilot的JSON输出保存为 `迭代1/decomposition_result.json`
+2. 从JSON中提取类-服务映射：
+   ```
    class,service
    Account,account-service
    AccountActionBean,account-service
    ...
    ```
-3. 涓嶨round Truth瀵规瘮锛坅ccount, catalog, order锛?4. 璁＄畻MoJoFM銆乀urboMQ
+3. 与Ground Truth对比（account, catalog, order）
+4. 计算MoJoFM、TurboMQ
 
-**棰勬湡缁撴灉**锛?
-- TurboMQ锛殈35-45锛堝皻鏈紭鍖栵級
-- MoJoFM锛殈35-45%锛堝彧鏈夐儴鍒嗙被姝ｇ‘褰掔被锛?- 鍒嗗尯鏁帮細~3涓紙鍙兘鍑嗙‘锛屼絾鍐呴儴鍒嗛厤涓嶅綋锛?
-#### 3.2.5 瀹氭€у垎鏋愭鏋?
-**闂璇婃柇**锛堥鏈熼棶棰橈級锛?
-1. 鉂?**閿欒鍒嗛厤**锛欰bstractActionBean鐨勫鐢ㄦ€у彲鑳藉鑷村垎閰嶅埌澶氫釜鏈嶅姟
-2. 鉂?**绮掑害涓嶅綋**锛氬彲鑳藉皢鏌愪簺Service鍜孧apper鍒嗙鍒颁笉鍚屾湇鍔?3. 鉂?**Mapper瀹炰綋婕傜Щ**锛?Mapper绫诲彲鑳芥病鏈夎姝ｇ‘褰掔被
+**预期结果**：
 
-**鏀硅繘鏂瑰悜**锛?
-- 绗竴杞弽棣堬細鎻愮ずAI鏄庣‘鎸囧嚭AbstractActionBean鐨勪娇鐢ㄦ儏鍐?- 绗簩杞紭鍖栵細鎻愪緵渚濊禆鍏崇郴淇℃伅锛屽府鍔〢I鐞嗚ВMapper涓庡疄浣撶殑瀵瑰簲鍏崇郴
+- TurboMQ：~35-45（尚未优化）
+- MoJoFM：~35-45%（只有部分类正确归类）
+- 分区数：~3个（可能准确，但内部分配不当）
+
+#### 3.2.5 定性分析框架
+
+**问题诊断**（预期问题）：
+
+1. ❌ **错误分配**：AbstractActionBean的复用性可能导致分配到多个服务
+2. ❌ **粒度不当**：可能将某些Service和Mapper分离到不同服务
+3. ❌ **Mapper实体漂移**：*Mapper类可能没有被正确归类
+
+**改进方向**：
+
+- 第一轮反馈：提示AI明确指出AbstractActionBean的使用情况
+- 第二轮优化：提供依赖关系信息，帮助AI理解Mapper与实体的对应关系
 
 ---
 
-### 3.3 绗簩杞凯浠ｏ細渚濊禆椹卞姩鎷嗗垎锛圗xpected MoJoFM: 50-65%锛?
-#### 3.3.1 杩唬鏀硅繘鐐?
-| 缁村害                 | 绗竴杞?        | 绗簩杞敼杩?            |
+### 3.3 第二轮迭代：依赖驱动拆分（Expected MoJoFM: 50-65%）
+
+#### 3.3.1 迭代改进点
+
+| 维度                 | 第一轮         | 第二轮改进             |
 | -------------------- | -------------- | ---------------------- |
-| **鎻愮ず闀垮害**   | 500瀛?         | 1000瀛?                |
-| **涓婁笅鏂囦俊鎭?* | 浠呯被鍒楄〃       | +渚濊禆鍏崇郴              |
-| **绾︽潫鏉′欢**   | 寰湇鍔¤璁″師鍒?| +瑙ｅ喅绗竴杞殑闂      |
-| **AI鐞嗚В娣卞害** | 绮楃矑搴?        | 涓矑搴︼紙鍖呭惈渚濊禆瑙嗚锛?|
-| **鏈熸湜MoJoFM** | 35-45%         | 50-65%                 |
+| **提示长度**   | 500字          | 1000字                 |
+| **上下文信息** | 仅类列表       | +依赖关系              |
+| **约束条件**   | 微服务设计原则 | +解决第一轮的问题      |
+| **AI理解深度** | 粗粒度         | 中粒度（包含依赖视角） |
+| **期望MoJoFM** | 35-45%         | 50-65%                 |
 
-#### 3.3.2 杈撳叆鎻愮ず璇嶏紙Prompt v2.0锛?
+#### 3.3.2 输入提示词（Prompt v2.0）
+
 ```
-銆愮浜岃疆杩唬銆戣瀵笿PetStore绯荤粺杩涜鏀硅繘鐨勫井鏈嶅姟鎷嗗垎銆?
-## 绯荤粺姒傝堪
-JPetStore鏄竴涓疇鐗╁湪绾垮晢搴楃郴缁燂紝鐢ㄦ埛鍙互娴忚鍟嗗搧銆佺鐞嗚处鎴枫€佽喘鐗╁拰涓嬪崟銆?
-## 绯荤粺绫诲垪琛紙瀹屾暣鐗堟湰锛屽甫渚濊禆鍒嗘瀽锛?
-銆愯处鎴峰井鏈嶅姟鐩稿叧绫汇€?- Account锛氱敤鎴蜂俊鎭疄浣擄紙瀛楁锛歶sername, password, email, address, city绛夛級
-- AccountActionBean锛氬鐞嗚处鎴稺eb璇锋眰鐨凙ction绫?  渚濊禆鍏崇郴锛氫娇鐢ˋccount瀹炰綋锛岃皟鐢ˋccountService杩涜涓氬姟閫昏緫
-- AccountService锛氳处鎴蜂笟鍔￠€昏緫鏈嶅姟
-  渚濊禆鍏崇郴锛氫娇鐢ˋccount瀹炰綋鍜孉ccountMapper杩涜鏁版嵁璁块棶
-- AccountMapper锛氳处鎴锋暟鎹寔涔呭寲鎺ュ彛
-  渚濊禆鍏崇郴锛氭搷浣淎ccount瀵硅薄锛屼笌鏁版嵁搴撲氦浜?
-銆愬晢鍝佸井鏈嶅姟鐩稿叧绫汇€?- Category锛氬晢鍝佸垎绫诲疄浣?- CategoryMapper锛氬垎绫绘暟鎹槧灏?  渚濊禆锛氭搷浣淐ategory瀵硅薄
-- Item锛氬晢鍝侀」瀹炰綋锛堝寘鍚叿浣撳晢鍝佸瀷鍙凤級
-- ItemMapper锛氬晢鍝侀」鏁版嵁鏄犲皠
-  渚濊禆锛氭搷浣淚tem瀵硅薄
-- Product锛氬晢鍝佸疄浣擄紙鍟嗗搧鍩烘湰淇℃伅锛?- ProductMapper锛氬晢鍝佹暟鎹槧灏?  渚濊禆锛氭搷浣淧roduct瀵硅薄
-- CatalogActionBean锛氬鐞嗗晢鍝佹祻瑙堝拰鎼滅储璇锋眰
-  渚濊禆锛氫娇鐢≒roduct/Item/Category瀹炰綋锛岃皟鐢–atalogService
-- CatalogService锛氬晢鍝佷笟鍔￠€昏緫
-  渚濊禆锛氫娇鐢≒roduct/Item/Category/mapper
+【第二轮迭代】请对JPetStore系统进行改进的微服务拆分。
 
-銆愯鍗曞井鏈嶅姟鐩稿叧绫汇€?- Cart锛氳喘鐗╄溅瀹炰綋
-- CartItem锛氳喘鐗╄溅涓殑鍗曢」
-  渚濊禆锛氬紩鐢↖tem
-- CartActionBean锛氬鐞嗚喘鐗╄溅璇锋眰
-  渚濊禆锛氫娇鐢–art鍜孋artItem锛岃皟鐢ㄧ浉鍏虫湇鍔?- Order锛氳鍗曞疄浣?- OrderActionBean锛氬鐞嗚鍗曡姹?  渚濊禆锛氫娇鐢∣rder瀹炰綋锛岃皟鐢∣rderService
-- OrderMapper锛氳鍗曟暟鎹槧灏?  渚濊禆锛氭搷浣淥rder瀵硅薄
-- OrderService锛氳鍗曚笟鍔￠€昏緫
-  渚濊禆锛氫娇鐢∣rder/OrderMapper/LineItemMapper
-- LineItem锛氳鍗曡椤瑰疄浣?- LineItemMapper锛氳鍗曡鏁版嵁鏄犲皠
-  渚濊禆锛氭搷浣淟ineItem瀵硅薄
-- Sequence锛氬簭鍒楀彿鐢熸垚锛堢敤浜庤鍗曠紪鍙凤級
-- SequenceMapper锛氬簭鍒楀彿鏁版嵁鏄犲皠
-  渚濊禆锛氭搷浣淪equence瀵硅薄
+## 系统概述
+JPetStore是一个宠物在线商店系统，用户可以浏览商品、管理账户、购物和下单。
 
-銆愬叡浜熀纭€绫汇€?- AbstractActionBean锛氭墍鏈堿ction鐨勫熀绫?  璇存槑锛氭墍鏈?ActionBean閮界户鎵挎绫伙紝琚玜ccount/catalog/order寰湇鍔″叡浜?  寤鸿锛氫綔涓鸿法鏈嶅姟鍏变韩缁勪欢锛屼絾鍦ㄨ瘎浼版椂搴旀牴鎹叿浣揂ctionBean鐨勪富瑕佽亴璐ｅ垎閰?
-## 绗竴杞媶鍒嗛棶棰樹笌鏀硅繘鎸囧
+## 系统类列表（完整版本，带依赖分析）
 
-銆愮涓€杞父瑙侀棶棰樸€?1. AbstractActionBean鐨勫綊灞烇細铏界劧琚涓猻ervice鐨凙ction浣跨敤锛屼絾搴旀牴鎹瓵ction鏈韩鐨勮亴璐ｅ垎閰?   - AccountActionBean搴斿睘account鏈嶅姟
-   - CatalogActionBean搴斿睘catalog鏈嶅姟
-   - CartActionBean/OrderActionBean搴斿睘order鏈嶅姟
+【账户微服务相关类】
+- Account：用户信息实体（字段：username, password, email, address, city等）
+- AccountActionBean：处理账户Web请求的Action类
+  依赖关系：使用Account实体，调用AccountService进行业务逻辑
+- AccountService：账户业务逻辑服务
+  依赖关系：使用Account实体和AccountMapper进行数据访问
+- AccountMapper：账户数据持久化接口
+  依赖关系：操作Account对象，与数据库交互
 
-2. Mapper涓庡疄浣撶殑瀵瑰簲锛氭瘡涓?Mapper搴斾笌鍏跺搴旂殑瀹炰綋鏀惧湪鍚屼竴鏈嶅姟
-   - AccountMapper涓嶢ccount鈫抋ccount鏈嶅姟
-   - CategoryMapper/ItemMapper/ProductMapper涓嶤ategory/Item/Product鈫抍atalog鏈嶅姟
-   - OrderMapper/LineItemMapper/SequenceMapper涓嶰rder/LineItem/Sequence鈫抩rder鏈嶅姟
+【商品微服务相关类】
+- Category：商品分类实体
+- CategoryMapper：分类数据映射
+  依赖：操作Category对象
+- Item：商品项实体（包含具体商品型号）
+- ItemMapper：商品项数据映射
+  依赖：操作Item对象
+- Product：商品实体（商品基本信息）
+- ProductMapper：商品数据映射
+  依赖：操作Product对象
+- CatalogActionBean：处理商品浏览和搜索请求
+  依赖：使用Product/Item/Category实体，调用CatalogService
+- CatalogService：商品业务逻辑
+  依赖：使用Product/Item/Category/mapper
 
-## 浠诲姟瑕佹眰
+【订单微服务相关类】
+- Cart：购物车实体
+- CartItem：购物车中的单项
+  依赖：引用Item
+- CartActionBean：处理购物车请求
+  依赖：使用Cart和CartItem，调用相关服务
+- Order：订单实体
+- OrderActionBean：处理订单请求
+  依赖：使用Order实体，调用OrderService
+- OrderMapper：订单数据映射
+  依赖：操作Order对象
+- OrderService：订单业务逻辑
+  依赖：使用Order/OrderMapper/LineItemMapper
+- LineItem：订单行项实体
+- LineItemMapper：订单行数据映射
+  依赖：操作LineItem对象
+- Sequence：序列号生成（用于订单编号）
+- SequenceMapper：序列号数据映射
+  依赖：操作Sequence对象
 
-璇峰熀浜庝互涓婂垎鏋愶紝鐢熸垚鏀硅繘鐨勫井鏈嶅姟鎷嗗垎鏂规銆傝姹傦細
-1. 姝ｇ‘澶勭悊AbstractActionBean锛堟牴鎹叿浣揂ction鐨勮亴璐ｏ級
-2. 纭繚姣忎釜Mapper涓庡搴斿疄浣撳湪鍚屼竴鏈嶅姟
-3. 淇濇寔Cart鍜孫rder鐨勯€昏緫鍏崇郴锛堥兘灞瀘rder鏈嶅姟锛?4. 閬靛惊楂樺唴鑱氥€佷綆鑰﹀悎鍘熷垯
+【共享基础类】
+- AbstractActionBean：所有Action的基类
+  说明：所有*ActionBean都继承此类，被account/catalog/order微服务共享
+  建议：作为跨服务共享组件，但在评估时应根据具体ActionBean的主要职责分配
 
-璇烽噰鐢ㄤ互涓婮SON鏍煎紡杈撳嚭锛?{
+## 第一轮拆分问题与改进指导
+
+【第一轮常见问题】
+1. AbstractActionBean的归属：虽然被多个service的Action使用，但应根据Action本身的职责分配
+   - AccountActionBean应属account服务
+   - CatalogActionBean应属catalog服务
+   - CartActionBean/OrderActionBean应属order服务
+
+2. Mapper与实体的对应：每个*Mapper应与其对应的实体放在同一服务
+   - AccountMapper与Account→account服务
+   - CategoryMapper/ItemMapper/ProductMapper与Category/Item/Product→catalog服务
+   - OrderMapper/LineItemMapper/SequenceMapper与Order/LineItem/Sequence→order服务
+
+## 任务要求
+
+请基于以上分析，生成改进的微服务拆分方案。要求：
+1. 正确处理AbstractActionBean（根据具体Action的职责）
+2. 确保每个Mapper与对应实体在同一服务
+3. 保持Cart和Order的逻辑关系（都属order服务）
+4. 遵循高内聚、低耦合原则
+
+请采用以下JSON格式输出：
+{
   "decomposition": [
     {
-      "service_name": "鏈嶅姟鍚?,
-      "classes": ["绫?", "绫?", ...],
-      "responsibility": "鏍稿績鑱岃矗",
-      "reasoning": "璇︾粏鎷嗗垎鐞嗙敱锛屽寘鎷緷璧栧叧绯诲垎鏋?
+      "service_name": "服务名",
+      "classes": ["类1", "类2", ...],
+      "responsibility": "核心职责",
+      "reasoning": "详细拆分理由，包括依赖关系分析"
     }
   ],
-  "total_services": 鏁板瓧,
-  "improvements_from_round1": "瀵规瘮绗竴杞殑鏀硅繘璇存槑",
-  "confidence_level": "鎷嗗垎璐ㄩ噺璇勫垎锛堜綆/涓?楂橈級"
+  "total_services": 数字,
+  "improvements_from_round1": "对比第一轮的改进说明",
+  "confidence_level": "拆分质量评分（低/中/高）"
 }
 
-鎻愰啋锛氳纭繚鎵€鏈?4涓被閮借鍒嗛厤鍒版煇涓湇鍔′腑锛屼笖姣忎釜绫诲彧灞炰簬涓€涓湇鍔°€?```
+提醒：请确保所有24个类都被分配到某个服务中，且每个类只属于一个服务。
+```
 
-#### 3.3.3 棰勬湡鏀硅繘鐐?
-**涓庣涓€杞殑宸紓**锛堥鏈燂級锛?
-- 鉁?AbstractActionBean鐨勬纭鐞?- 鉁?Mapper涓庡疄浣撶殑閰嶅鏇村姞鏄庣‘
-- 鉁?瀵笴ross-service渚濊禆鐨勮鐭ワ紙濡侰art鈫扞tem鐨勪緷璧栵級
-- 鈿狅笍 鍙兘浠嶇劧瀛樺湪杈圭晫妯＄硦鐨勭被锛堝Sequence/SequenceMapper锛?
-**棰勬湡缁撴灉鎸囨爣**锛?
-- TurboMQ锛殈50-60锛堟湁鎵€鏀瑰杽锛?- MoJoFM锛殈50-65%锛堟樉钁楁彁鍗囷級
-- 鍒嗗尯鏁帮細3涓紙鍙兘鍑嗙‘锛?
-#### 3.3.4 闂璇婃柇涓庢敼杩涙柟鍚?
-**鍙兘鐨勬畫浣欓棶棰?*锛?
-1. **Sequence澶勭悊**锛氳櫧鐒舵妧鏈笂灞瀘rder锛堝簭鍒楀彿鐢ㄤ簬璁㈠崟锛夛紝浣哠equence鐨勯€氱敤鎬у彲鑳藉鑷撮敊鍒?2. **Cart鐨勭粏鑺?*锛欳artItem寮曠敤Item锛屽彲鑳借AI鍒ゆ柇涓哄簲灞瀋atalog锛坕tem鐨勪笂娓革級
-3. **AbstractActionBean鍘诲悜**锛氳櫧鐒惰鏄庝簡锛屼絾浠嶅彲鑳借AI淇濈暀涓虹嫭绔媠ervice鎴栭敊璇垎閰?
-**绗笁杞紭鍖栨柟鍚?*锛?
-- 鎻愪緵鍏蜂綋鐨勭被闂翠緷璧栧浘
-- 鏄庣‘鎸囧嚭"鏈嶅姟闂村彧鑳介€氳繃鎺ュ彛閫氫俊"鐨勭害鏉?- 鎻愪緵璁烘枃Ground Truth浣滀负鍙傝€冪瓟妗?
+#### 3.3.3 预期改进点
+
+**与第一轮的差异**（预期）：
+
+- ✅ AbstractActionBean的正确处理
+- ✅ Mapper与实体的配对更加明确
+- ✅ 对Cross-service依赖的认知（如Cart→Item的依赖）
+- ⚠️ 可能仍然存在边界模糊的类（如Sequence/SequenceMapper）
+
+**预期结果指标**：
+
+- TurboMQ：~50-60（有所改善）
+- MoJoFM：~50-65%（显著提升）
+- 分区数：3个（可能准确）
+
+#### 3.3.4 问题诊断与改进方向
+
+**可能的残余问题**：
+
+1. **Sequence处理**：虽然技术上属order（序列号用于订单），但Sequence的通用性可能导致错分
+2. **Cart的细节**：CartItem引用Item，可能被AI判断为应属catalog（item的上游）
+3. **AbstractActionBean去向**：虽然说明了，但仍可能被AI保留为独立service或错误分配
+
+**第三轮优化方向**：
+
+- 提供具体的类间依赖图
+- 明确指出"服务间只能通过接口通信"的约束
+- 提供论文Ground Truth作为参考答案
+
 ---
 
-### 3.4 绗笁杞凯浠ｏ細涓撳浼樺寲鎷嗗垎锛圗xpected MoJoFM: 65-80%锛?
-#### 3.4.1 杩唬鏀硅繘鐐?
-| 缁村害                 | 绗簩杞?    | 绗笁杞紭鍖?                |
+### 3.4 第三轮迭代：专家优化拆分（Expected MoJoFM: 65-80%）
+
+#### 3.4.1 迭代改进点
+
+| 维度                 | 第二轮     | 第三轮优化                 |
 | -------------------- | ---------- | -------------------------- |
-| **鎻愮ず闀垮害**   | 1000瀛?    | 1500瀛?                    |
-| **涓婁笅鏂?*     | 渚濊禆鍏崇郴   | +瀹屾暣鐨勭被闂磋皟鐢ㄥ叧绯?       |
-| **绾︽潫鏉′欢**   | 闂鎸囧   | +璁烘枃鍙傝€?璇勪及鎸囨爣璇存槑     |
-| **涓撳鐭ヨ瘑**   | 寰湇鍔″師鍒?| +Ground Truth+璁烘枃宸ュ叿瀵规瘮 |
-| **鏈熸湜MoJoFM** | 50-65%     | 65-80%                     |
+| **提示长度**   | 1000字     | 1500字+                    |
+| **上下文**     | 依赖关系   | +完整的类间调用关系        |
+| **约束条件**   | 问题指导   | +论文参考+评估指标说明     |
+| **专家知识**   | 微服务原则 | +Ground Truth+论文工具对比 |
+| **期望MoJoFM** | 50-65%     | 65-80%                     |
 
-#### 3.4.2 杈撳叆鎻愮ず璇嶏紙Prompt v3.0锛?
+#### 3.4.2 输入提示词（Prompt v3.0）
+
 ```
-銆愮涓夎疆杩唬路涓撳鎷嗗垎銆戝熀浜庡井鏈嶅姟鍒嗚В璁烘枃鏍囧噯锛屽JPetStore杩涜鏈€缁堜紭鍖栨媶鍒嗐€?
-## 鑳屾櫙锛氳鏂囧弬鑰冩爣鍑?
-鏈媶鍒嗗熀浜庡鏈鏂囥€奙icroservice Decomposition Techniques: An Independent Tool Comparison銆?鐨勮瘎浼颁綋绯汇€傝鏂囬€氳繃MoJoFM鎸囨爣锛堜笌涓撳鍙傝€冨垎瑙ｇ殑鐩镐技搴︼級璇勪及鎷嗗垎璐ㄩ噺銆?JPetStore鐨勪笓瀹跺弬鑰冨垎瑙ｏ紙Ground Truth锛変负锛?- account寰湇鍔★細鐢ㄦ埛璐︽埛绠＄悊
-- catalog寰湇鍔★細鍟嗗搧鍜屽垎绫荤鐞?- order寰湇鍔★細璐墿杞︺€佽鍗曞拰璁㈠崟椤圭鐞?
-## 瀹屾暣绫荤粨鏋勪笌渚濊禆鍒嗘瀽
+【第三轮迭代·专家拆分】基于微服务分解论文标准，对JPetStore进行最终优化拆分。
 
-銆恆ccount 寰湇鍔＄殑绫荤兢銆?绫? Account (瀹炰綋) 
-  鈫?灞炴€? username, password, email, address, city, zip, phone, etc.
-  鈫?鏂规硶鏁? 18涓猤etter/setter + 涓氬姟鏂规硶
+## 背景：论文参考标准
 
-绫? AccountActionBean (Web Action)
-  鈫?渚濊禆: Account瀹炰綋, AccountService
-  鈫?鑱岃矗: 澶勭悊鐧婚檰/娉ㄥ唽/涓汉淇℃伅淇敼鐨凥TTP璇锋眰
-  鈫?缁ф壙: AbstractActionBean (鍩虹被锛屼絾涓昏鑱岃矗鏄庣‘灞瀉ccount)
+本拆分基于学术论文《Microservice Decomposition Techniques: An Independent Tool Comparison》
+的评估体系。论文通过MoJoFM指标（与专家参考分解的相似度）评估拆分质量。
+JPetStore的专家参考分解（Ground Truth）为：
+- account微服务：用户账户管理
+- catalog微服务：商品和分类管理
+- order微服务：购物车、订单和订单项管理
 
-绫? AccountService (涓氬姟閫昏緫)
-  鈫?渚濊禆: Account瀹炰綋, AccountMapper
-  鈫?鑱岃矗: 璐︽埛涓氬姟閫昏緫锛堥獙璇併€佸垱寤恒€佹洿鏂扮瓑锛?
-绫? AccountMapper (鏁版嵁璁块棶)
-  鈫?渚濊禆: Account瀹炰綋
-  鈫?鑱岃矗: 璐︽埛鏁版嵁鐨勬寔涔呭寲鎿嶄綔
+## 完整类结构与依赖分析
 
-銆恈atalog 寰湇鍔＄殑绫荤兢銆?绫? Category (瀹炰綋)
-  鈫?灞炴€? categoryId, name, description
-  鈫?鍦颁綅: 鍟嗗搧鍒嗙被缁村害
+【account 微服务的类群】
+类: Account (实体) 
+  → 属性: username, password, email, address, city, zip, phone, etc.
+  → 方法数: 18个getter/setter + 业务方法
 
-绫? CategoryMapper (鏁版嵁璁块棶)
-  鈫?瀵瑰簲瀹炰綋: Category
+类: AccountActionBean (Web Action)
+  → 依赖: Account实体, AccountService
+  → 职责: 处理登陆/注册/个人信息修改的HTTP请求
+  → 继承: AbstractActionBean (基类，但主要职责明确属account)
 
-绫? Product (瀹炰綋)
-  鈫?灞炴€? productId, categoryId, name, description
-  鈫?鑱岃矗: 鍟嗗搧鍩烘湰淇℃伅锛堝瀹犵墿鍝佺锛?  鈫?娉ㄦ剰: 鍚湁categoryId澶栭敭锛屽叧鑱擟ategory
+类: AccountService (业务逻辑)
+  → 依赖: Account实体, AccountMapper
+  → 职责: 账户业务逻辑（验证、创建、更新等）
 
-绫? ProductMapper (鏁版嵁璁块棶)
-  鈫?瀵瑰簲瀹炰綋: Product
+类: AccountMapper (数据访问)
+  → 依赖: Account实体
+  → 职责: 账户数据的持久化操作
 
-绫? Item (瀹炰綋)
-  鈫?灞炴€? itemId, productId, supplier, listPrice, unitCost, status
-  鈫?鍦颁綅: 鍏蜂綋鍟嗗搧鍨嬪彿锛圥roduct鐨勭粏绮掑害锛?  鈫?灞傛: Product > Item锛堜竴瀵瑰锛?
-绫? ItemMapper (鏁版嵁璁块棶)
-  鈫?瀵瑰簲瀹炰綋: Item
+【catalog 微服务的类群】
+类: Category (实体)
+  → 属性: categoryId, name, description
+  → 地位: 商品分类维度
 
-绫? CatalogActionBean (Web Action)
-  鈫?渚濊禆: Product, Item, Category瀹炰綋, CatalogService
-  鈫?鑱岃矗: 澶勭悊鍟嗗搧娴忚銆佹悳绱€佸垎绫绘煡璇㈢殑HTTP璇锋眰
-  鈫?缁ф壙: AbstractActionBean锛堝睘catalog锛岃亴璐ｆ竻鏅帮級
+类: CategoryMapper (数据访问)
+  → 对应实体: Category
 
-绫? CatalogService (涓氬姟閫昏緫)
-  鈫?渚濊禆: Category, Product, Item瀹炰綋鍜屽搴擬apper
-  鈫?鑱岃矗: 鍟嗗搧鐩稿叧涓氬姟閫昏緫锛堝垪琛ㄣ€佹悳绱€佸垎绫荤瓑锛?
-銆恛rder 寰湇鍔＄殑绫荤兢銆?绫? Cart (瀹炰綋)
-  鈫?灞炴€? cartId, items (CartItem鐨勯泦鍚?
-  鈫?鑱岃矗: 璐墿杞﹁仛鍚堟牴
+类: Product (实体)
+  → 属性: productId, categoryId, name, description
+  → 职责: 商品基本信息（如宠物品种）
+  → 注意: 含有categoryId外键，关联Category
 
-绫? CartItem (瀹炰綋)
-  鈫?灞炴€? itemId, quantity (reference to Item, but quantity belongs to order domain)
-  鈫?鑱岃矗: 璐墿杞︿腑鐨勫崟椤硅褰?  鈫?璺ㄦ湇鍔′緷璧? itemId鎸囧悜Item锛坈atalog锛夛紝浣咰artItem鏈韩灞瀘rder锛堣喘鐗╄涓猴級
+类: ProductMapper (数据访问)
+  → 对应实体: Product
 
-绫? CartActionBean (Web Action)
-  鈫?渚濊禆: Cart, CartItem, CatalogService(鏌ヨItem淇℃伅)
-  鈫?鑱岃矗: 澶勭悊璐墿杞︾殑娣诲姞/鍒犻櫎/鏌ョ湅璇锋眰
-  鈫?缁ф壙: AbstractActionBean锛堝睘order锛岃亴璐ｆ竻鏅帮級
+类: Item (实体)
+  → 属性: itemId, productId, supplier, listPrice, unitCost, status
+  → 地位: 具体商品型号（Product的细粒度）
+  → 层次: Product > Item（一对多）
 
-绫? Order (瀹炰綋)
-  鈫?灞炴€? orderId, orderDate, shipDate, billAddress, etc.
-  鈫?鑱岃矗: 璁㈠崟鑱氬悎鏍?
-绫? OrderActionBean (Web Action)
-  鈫?渚濊禆: Order瀹炰綋, OrderService
-  鈫?鑱岃矗: 澶勭悊璁㈠崟鏌ヨ銆佷笅鍗曠殑HTTP璇锋眰
-  鈫?缁ф壙: AbstractActionBean锛堝睘order锛岃亴璐ｆ竻鏅帮級
+类: ItemMapper (数据访问)
+  → 对应实体: Item
 
-绫? OrderService (涓氬姟閫昏緫)
-  鈫?渚濊禆: Order, LineItem, Sequence瀹炰綋鍜屽搴擬apper
-  鈫?鑱岃矗: 璁㈠崟涓氬姟閫昏緫锛堝垱寤恒€佺‘璁ゃ€佸彂璐х瓑锛?
-绫? OrderMapper (鏁版嵁璁块棶)
-  鈫?瀵瑰簲瀹炰綋: Order
+类: CatalogActionBean (Web Action)
+  → 依赖: Product, Item, Category实体, CatalogService
+  → 职责: 处理商品浏览、搜索、分类查询的HTTP请求
+  → 继承: AbstractActionBean（属catalog，职责清晰）
 
-绫? LineItem (瀹炰綋)
-  鈫?灞炴€? lineNumber, orderId, itemId, quantity
-  鈫?鑱岃矗: 璁㈠崟琛岄」
-  鈫?璺ㄦ湇鍔′緷璧? itemId鎸囧悜Item锛坈atalog锛夛紝浣哃ineItem灞瀘rder
+类: CatalogService (业务逻辑)
+  → 依赖: Category, Product, Item实体和对应Mapper
+  → 职责: 商品相关业务逻辑（列表、搜索、分类等）
 
-绫? LineItemMapper (鏁版嵁璁块棶)
-  鈫?瀵瑰簲瀹炰綋: LineItem
+【order 微服务的类群】
+类: Cart (实体)
+  → 属性: cartId, items (CartItem的集合)
+  → 职责: 购物车聚合根
 
-绫? Sequence (瀹炰綋)
-  鈫?灞炴€? name, nextId
-  鈫?鑱岃矗: 涓婚敭搴忓垪鐢熸垚锛堢敤浜嶰rder鍜屽叾浠栧疄浣擄級
-  鈫?鍏抽敭鐐? 铏界劧鏄€氱敤宸ュ叿锛屼絾鍦↗PetStore涓富瑕佺敤浜巓rder涓氬姟
+类: CartItem (实体)
+  → 属性: itemId, quantity (reference to Item, but quantity belongs to order domain)
+  → 职责: 购物车中的单项记录
+  → 跨服务依赖: itemId指向Item（catalog），但CartItem本身属order（购物行为）
 
-绫? SequenceMapper (鏁版嵁璁块棶)
-  鈫?瀵瑰簲瀹炰綋: Sequence
+类: CartActionBean (Web Action)
+  → 依赖: Cart, CartItem, CatalogService(查询Item信息)
+  → 职责: 处理购物车的添加/删除/查看请求
+  → 继承: AbstractActionBean（属order，职责清晰）
 
-## 璁烘枃鐨勫井鏈嶅姟鎷嗗垎璇勪及鏍囧噯
+类: Order (实体)
+  → 属性: orderId, orderDate, shipDate, billAddress, etc.
+  → 职责: 订单聚合根
 
-### TurboMQ鎸囨爣锛堟ā鍧楀寲璐ㄩ噺锛?鍏紡: TurboMQ = (鍐呰仛搴?- 鑰﹀悎搴? / (鍐呰仛搴?+ 鑰﹀悎搴? 脳 100
-- 鑼冨洿: 0-100
-- 鐩爣: 鈮?0锛堜紭绉€锛夛紝璁烘枃涓渶浼樺伐鍏稭OSAIC鍦↗PetStore杈惧埌100
+类: OrderActionBean (Web Action)
+  → 依赖: Order实体, OrderService
+  → 职责: 处理订单查询、下单的HTTP请求
+  → 继承: AbstractActionBean（属order，职责清晰）
 
-### MoJoFM鎸囨爣锛堜笌鍙傝€冨垎瑙ｇ殑鐩镐技搴︼級
-琛￠噺Copilot鎷嗗垎涓嶨round Truth鐨勫尮閰嶇▼搴︺€?- Log2MS鍦↗PetStore杈惧埌100%锛堝畬缇庡尮閰嶏級
-- MOSAIC杈惧埌89.47%锛堜紭绉€锛?- Data-Centric杈惧埌76.19%锛堣壇濂斤級
-- HyDec杈惧埌57.14%锛堜腑绛夛級
+类: OrderService (业务逻辑)
+  → 依赖: Order, LineItem, Sequence实体和对应Mapper
+  → 职责: 订单业务逻辑（创建、确认、发货等）
 
-鏈疆鐩爣: 杈惧埌MoJoFM 鈮?5%锛堣秴杩嘓yDec鐨?8.59%骞冲潎鍊硷級
+类: OrderMapper (数据访问)
+  → 对应实体: Order
 
-## 鍏抽敭鎷嗗垎瑙勫垯锛堝熀浜庤鏂囧涔狅級
+类: LineItem (实体)
+  → 属性: lineNumber, orderId, itemId, quantity
+  → 职责: 订单行项
+  → 跨服务依赖: itemId指向Item（catalog），但LineItem属order
 
-1. **鏈嶅姟杈圭晫鍘熷垯**
-   - 楂樺唴鑱氾細鍚屾湇鍔″唴鐨勭被搴旀湁寮轰笟鍔＄浉鍏虫€?   - 浣庤€﹀悎锛氭湇鍔￠棿鍙兘閫氳繃鏄庣‘鐨勬帴鍙ｉ€氫俊
-   - 鍗曚竴鑱岃矗锛氭瘡涓湇鍔¤仛鐒︿簬涓€涓笟鍔¤兘鍔?
-2. **璺ㄦ湇鍔′緷璧栫殑澶勭悊**
-   - CartItem.itemId 鈫?Item锛氳櫧鐒跺紩鐢ㄤ簡Item锛屼絾CartItem鐨勪富瑕佽亴璐ｆ槸璐墿琛屼负锛堝睘order锛?   - LineItem.itemId 鈫?Item锛氳櫧鐒跺紩鐢ㄤ簡Item锛屼絾LineItem鐨勪富瑕佽亴璐ｆ槸璁㈠崟缁嗚妭锛堝睘order锛?   - 杩欐槸寰湇鍔￠棿鐨勬暟鎹緷璧栵紝涓嶅奖鍝嶆湇鍔″綊灞?
-3. **鍏变韩鍩虹被鐨勫鐞?*
-   - AbstractActionBean铏界劧琚涓狝ction缁ф壙锛屼絾姣忎釜鍏蜂綋ActionBean搴旀牴鎹叾鑱岃矗鍒嗛厤
-   - 鍦ㄨ瘎浼版椂锛孉bstractActionBean閫氬父涓庡叾涓昏浣跨敤鑰呭叡鍚屽垎閰?
-4. **宸ュ叿鍑芥暟鐨勫綊灞?*
-   - Sequence铏界劧鏄€氱敤宸ュ叿锛屼絾鍦↗PetStore鐨勫疄闄呭簲鐢ㄤ腑涓昏鏀寔order涓氬姟
-   - 鍥犳搴斿皢Sequence/SequenceMapper鍒嗛厤缁檕rder
+类: LineItemMapper (数据访问)
+  → 对应实体: LineItem
 
-## 浠诲姟瑕佹眰
+类: Sequence (实体)
+  → 属性: name, nextId
+  → 职责: 主键序列生成（用于Order和其他实体）
+  → 关键点: 虽然是通用工具，但在JPetStore中主要用于order业务
 
-璇峰熀浜庝互涓婂垎鏋愬拰璁烘枃鏍囧噯锛岀敓鎴愭渶缁堢殑銆侀珮璐ㄩ噺鐨勫井鏈嶅姟鎷嗗垎鏂规銆?
-瑕佹眰锛?1. 鎵€鏈?4涓被閮借绮剧‘鍒嗛厤锛堜笉鑳介仐婕忥級
-2. 娓呮櫚瑙ｉ噴姣忎釜绫荤殑鍒嗛厤鐞嗙敱锛岀壒鍒槸杈圭晫鎯呭喌
-3. 棰勪及鏈柟妗堢殑TurboMQ鍜孧oJoFM璇勫垎
-4. 姣旇緝涓庣涓€銆佺浜岃疆鐨勬敼杩?
-杈撳嚭鏍煎紡锛?{
+类: SequenceMapper (数据访问)
+  → 对应实体: Sequence
+
+## 论文的微服务拆分评估标准
+
+### TurboMQ指标（模块化质量）
+公式: TurboMQ = (内聚度 - 耦合度) / (内聚度 + 耦合度) × 100
+- 范围: 0-100
+- 目标: ≥80（优秀），论文中最优工具MOSAIC在JPetStore达到100
+
+### MoJoFM指标（与参考分解的相似度）
+衡量Copilot拆分与Ground Truth的匹配程度。
+- Log2MS在JPetStore达到100%（完美匹配）
+- MOSAIC达到89.47%（优秀）
+- Data-Centric达到76.19%（良好）
+- HyDec达到57.14%（中等）
+
+本轮目标: 达到MoJoFM ≥65%（超过HyDec的58.59%平均值）
+
+## 关键拆分规则（基于论文学习）
+
+1. **服务边界原则**
+   - 高内聚：同服务内的类应有强业务相关性
+   - 低耦合：服务间只能通过明确的接口通信
+   - 单一职责：每个服务聚焦于一个业务能力
+
+2. **跨服务依赖的处理**
+   - CartItem.itemId → Item：虽然引用了Item，但CartItem的主要职责是购物行为（属order）
+   - LineItem.itemId → Item：虽然引用了Item，但LineItem的主要职责是订单细节（属order）
+   - 这是微服务间的数据依赖，不影响服务归属
+
+3. **共享基类的处理**
+   - AbstractActionBean虽然被多个Action继承，但每个具体ActionBean应根据其职责分配
+   - 在评估时，AbstractActionBean通常与其主要使用者共同分配
+
+4. **工具函数的归属**
+   - Sequence虽然是通用工具，但在JPetStore的实际应用中主要支持order业务
+   - 因此应将Sequence/SequenceMapper分配给order
+
+## 任务要求
+
+请基于以上分析和论文标准，生成最终的、高质量的微服务拆分方案。
+
+要求：
+1. 所有24个类都被精确分配（不能遗漏）
+2. 清晰解释每个类的分配理由，特别是边界情况
+3. 预估本方案的TurboMQ和MoJoFM评分
+4. 比较与第一、第二轮的改进
+
+输出格式：
+{
   "decomposition": [
     {
       "service_name": "account",
       "classes": [
-        {"name": "Account", "reason": "鏍稿績瀹炰綋绫?},
-        {"name": "AccountActionBean", "reason": "account鐩稿叧HTTP澶勭悊"},
-        {"name": "AccountService", "reason": "account涓氬姟閫昏緫"},
-        {"name": "AccountMapper", "reason": "account鏁版嵁鎸佷箙鍖?}
+        {"name": "Account", "reason": "核心实体类"},
+        {"name": "AccountActionBean", "reason": "account相关HTTP处理"},
+        {"name": "AccountService", "reason": "account业务逻辑"},
+        {"name": "AccountMapper", "reason": "account数据持久化"}
       ],
-      "responsibility": "鐢ㄦ埛璐︽埛绠＄悊鍜岃璇?,
-      "internal_cohesion": "4涓被閮藉洿缁曡处鎴锋暟鎹ā鍨嬶紝楂樺害鍐呰仛"
+      "responsibility": "用户账户管理和认证",
+      "internal_cohesion": "4个类都围绕账户数据模型，高度内聚"
     },
     {
       "service_name": "catalog",
       "classes": [...],
-      "responsibility": "鍟嗗搧鍜屽垎绫荤鐞?,
-      "internal_cohesion": "8涓被褰㈡垚瀹屾暣鐨勫晢鍝佹ā鍨嬶紙Category鈫扨roduct鈫扞tem锛夛紝楂樺害鍐呰仛"
+      "responsibility": "商品和分类管理",
+      "internal_cohesion": "8个类形成完整的商品模型（Category→Product→Item），高度内聚"
     },
     {
       "service_name": "order",
       "classes": [...],
-      "responsibility": "璐墿杞﹀拰璁㈠崟绠＄悊",
-      "internal_cohesion": "10涓被褰㈡垚瀹屾暣鐨勮鍗曟祦绋嬶紙Cart鈫扥rder锛孡ineItem鈫扴equence锛夛紝楂樺害鍐呰仛"
+      "responsibility": "购物车和订单管理",
+      "internal_cohesion": "10个类形成完整的订单流程（Cart→Order，LineItem→Sequence），高度内聚"
     }
   ],
   "total_services": 3,
   "quality_metrics_estimate": {
     "expected_turbomq": 80-90,
     "expected_mojofm": 70-85,
-    "reasoning": "璇︾粏鐨勮川閲忚瘎浼拌鏄?
+    "reasoning": "详细的质量评估说明"
   },
   "improvements": {
-    "from_round1": "鏀硅繘鐐瑰垪琛?,
-    "from_round2": "鏀硅繘鐐瑰垪琛?,
-    "convergence_analysis": "鏀舵暃鍒嗘瀽"
+    "from_round1": "改进点列表",
+    "from_round2": "改进点列表",
+    "convergence_analysis": "收敛分析"
   },
   "service_interface_contracts": {
-    "catalog_to_order": "order閫氳繃itemId鏌ヨItem淇℃伅",
-    "account_to_others": "鏃犵洿鎺ヤ緷璧?
+    "catalog_to_order": "order通过itemId查询Item信息",
+    "account_to_others": "无直接依赖"
   }
 }
 ```
 
-#### 3.4.3 棰勬湡缁撴灉
+#### 3.4.3 预期结果
 
-**绗笁杞洰鏍囨寚鏍?*锛?
-- TurboMQ锛?0-90锛堟帴杩慓round Truth鐨?9.73锛?- MoJoFM锛?0-85%锛堣秴杩囩洰鏍囩殑65%锛屾帴杩慚OSAIC鐨?2.71%锛?- 鍒嗗尯鏁帮細3涓紙涓嶨round Truth涓€鑷达級
+**第三轮目标指标**：
 
-**鏀舵暃瓒嬪娍**锛?
+- TurboMQ：80-90（接近Ground Truth的89.73）
+- MoJoFM：70-85%（超过目标的65%，接近MOSAIC的82.71%）
+- 分区数：3个（与Ground Truth一致）
+
+**收敛趋势**：
+
 ```
-杩唬    TurboMQ    MoJoFM     鏀硅繘骞呭害
-绗竴杞? 35-45      35-45%     鍩哄噯
-绗簩杞? 50-60      50-65%     鈫?5-20%
-绗笁杞? 80-90      70-85%     鈫?0-25%
-璁烘枃鏈€浼?92.71     100%        瀵规爣
+迭代    TurboMQ    MoJoFM     改进幅度
+第一轮  35-45      35-45%     基准
+第二轮  50-60      50-65%     ↑15-20%
+第三轮  80-90      70-85%     ↑20-25%
+论文最优 92.71     100%        对标
 ```
 
 ---
 
-## 绗笁閮ㄥ垎瀹屾垚
+## 第三部分完成
 
-**鏍稿績浜偣**锛?
-- 绗竴杞細鍩虹鎷嗗垎锛岄獙璇丄I鐨勫熀纭€鐞嗚В鑳藉姏
-- 绗簩杞細渚濊禆椹卞姩锛屽紩鍏ョ粨鏋勫寲淇℃伅锛屾敼杩涙寚瀵?- 绗笁杞細涓撳浼樺寲锛岃瀺鍚堣鏂囩煡璇嗗拰璇勪及鎸囨爣璇存槑
+**核心亮点**：
+
+- 第一轮：基础拆分，验证AI的基础理解能力
+- 第二轮：依赖驱动，引入结构化信息，改进指导
+- 第三轮：专家优化，融合论文知识和评估指标说明
 
 ---
 
-## 绗洓閮ㄥ垎锛氭彁绀鸿瘝璁捐涓庝紭鍖栫瓥鐣?
-### 4.1 鎻愮ず璇嶆紨鍖栫殑鏍稿績绛栫暐
+## 第四部分：提示词设计与优化策略
 
-#### 4.1.1 鎻愮ず璇嶄紭鍖栫殑涓夊ぇ缁村害
+### 4.1 提示词演化的核心策略
 
-| 缁村害                   | 绗竴杞?  | 绗簩杞?        | 绗笁杞?            | 浣滅敤                     |
+#### 4.1.1 提示词优化的三大维度
+
+| 维度                   | 第一轮   | 第二轮         | 第三轮             | 作用                     |
 | ---------------------- | -------- | -------------- | ------------------ | ------------------------ |
-| **闀垮害涓庤缁嗗害** | 500瀛?   | 1000瀛?        | 1500瀛?            | 鎻愪緵鏇村涓婁笅鏂囧府鍔〢I鍐崇瓥 |
-| **缁撴瀯鍖栫▼搴?*   | 鑷敱鏂囨湰 | 鍒嗙被娓呮櫚       | 楂樺害缁撴瀯鍖?        | 甯姪AI鎸夐€昏緫绯荤粺鍦版€濊€?  |
-| **绾︽潫鏉′欢**     | 閫氱敤鍘熷垯 | 闂鎸囧       | 璁烘枃鏍囧噯+渚嬪瓙      | 寮曞AI鍚戞纭柟鍚戞敹鏁?    |
-| **鍙嶉寰幆**     | 鏃?      | 鍩轰簬绗竴杞弽棣?| 鍩轰簬绗竴銆佷簩杞弽棣?| 绉疮瀛︿範锛屾敼杩涚粨鏋?      |
+| **长度与详细度** | 500字    | 1000字         | 1500字+            | 提供更多上下文帮助AI决策 |
+| **结构化程度**   | 自由文本 | 分类清晰       | 高度结构化         | 帮助AI按逻辑系统地思考   |
+| **约束条件**     | 通用原则 | 问题指导       | 论文标准+例子      | 引导AI向正确方向收敛     |
+| **反馈循环**     | 无       | 基于第一轮反馈 | 基于第一、二轮反馈 | 积累学习，改进结果       |
 
-#### 4.1.2 鎻愮ず璇嶄紭鍖栫殑閫掕繘閫昏緫
+#### 4.1.2 提示词优化的递进逻辑
 
 ```
-鎻愮ず璇嶈璁℃祦绋嬶細
+提示词设计流程：
 
-绗竴杞?鈫?瑙傚療杈撳嚭 鈫?璇婃柇闂 鈫?褰㈡垚鍋囪 鈫?绗簩杞璁?                   鈫?             闂鏍瑰洜鍒嗘瀽
-             (AI鐞嗚В缂洪櫡)
-                   鈫?           绗簩杞?鈫?瑙傚療杈撳嚭 鈫?楠岃瘉鏀硅繘 鈫?鍒跺畾绗笁杞柟鍚?                   鈫?             娓愯繘寮忎紭鍖?             (娣诲姞鍏抽敭淇℃伅)
-                   鈫?           绗笁杞?鈫?瑙傚療杈撳嚭 鈫?璇勪及鏀舵暃 鈫?鐢熸垚鏈€缁堟姤鍛?```
+第一轮 → 观察输出 → 诊断问题 → 形成假设 → 第二轮设计
+                   ↓
+             问题根因分析
+             (AI理解缺陷)
+                   ↓
+           第二轮 → 观察输出 → 验证改进 → 制定第三轮方向
+                   ↓
+             渐进式优化
+             (添加关键信息)
+                   ↓
+           第三轮 → 观察输出 → 评估收敛 → 生成最终报告
+```
 
 ---
 
-### 4.2 绗竴杞彁绀鸿瘝鐨勮璁″師鐞?
-#### 4.2.1 璁捐鎬濊矾
+### 4.2 第一轮提示词的设计原理
 
-**闂**锛欰I濡備綍鍦ㄦ棤棰濆鎸囧鐨勬儏鍐典笅鐞嗚В涓€涓檶鐢熺殑绯荤粺锛?
-**绛栫暐**锛?
-1. **鏋佺畝涓讳箟**锛氬彧鎻愪緵蹇呰鐨勭被鍒楄〃锛屼笉娣诲姞棰濆鐨勭害鏉?2. **鍔熻兘瀵煎悜**锛氱敤鑷劧璇█鎻忚堪绫荤殑鑱岃矗锛岃€岄潪鎶€鏈疄鐜?3. **褰掔撼寮忔€濊€?*锛氳AI鍩轰簬绫诲悕鍜岀畝鐭弿杩拌嚜宸辨帹瀵兼湇鍔¤竟鐣?
-**浼樼偣**锛?
-- 瑙傚療AI鐨?鍘熷"鎯虫硶锛屾棤澶栭儴鍋忓樊
-- 涓哄悗缁凯浠ｅ缓绔嬪熀鍑?
-**缂虹偣**锛?
-- 缁撴灉鍙兘涓嶅噯纭紙棰勬湡 35-45% MoJoFM锛?- 鍙兘鍑虹幇绯荤粺鎬ч敊璇紙濡侫bstractActionBean鐨勫鐞嗭級
+#### 4.2.1 设计思路
 
-#### 4.2.2 鎻愮ず璇嶈绱犲垎鏋?
-| 瑕佺礌               | 鍐呭                                   | 浣滅敤         |
+**问题**：AI如何在无额外指导的情况下理解一个陌生的系统？
+
+**策略**：
+
+1. **极简主义**：只提供必要的类列表，不添加额外的约束
+2. **功能导向**：用自然语言描述类的职责，而非技术实现
+3. **归纳式思考**：让AI基于类名和简短描述自己推导服务边界
+
+**优点**：
+
+- 观察AI的"原始"想法，无外部偏差
+- 为后续迭代建立基准
+
+**缺点**：
+
+- 结果可能不准确（预期 35-45% MoJoFM）
+- 可能出现系统性错误（如AbstractActionBean的处理）
+
+#### 4.2.2 提示词要素分析
+
+| 要素               | 内容                                   | 作用         |
 | ------------------ | -------------------------------------- | ------------ |
-| **浠诲姟瀹氫箟** | "灏嗙郴缁熸媶鍒嗕负寰湇鍔?                   | 鏄庣‘鐩爣     |
-| **绯荤粺鎻忚堪** | "鐢靛晢绯荤粺锛屽姛鑳藉寘鎷細璐︽埛銆佸晢鍝併€佽鍗? | 寤虹珛璁ょ煡妗嗘灦 |
-| **绫诲垪琛?*   | 鎸夊姛鑳介鍩熷垎缁勭殑24涓被                 | 鎻愪緵鍘熷鏁版嵁 |
-| **璁捐鍘熷垯** | 楂樺唴鑱氥€佷綆鑰﹀悎銆佸崟涓€鑱岃矗               | 鎸囧鎷嗗垎鏂瑰悜 |
-| **杈撳嚭鏍煎紡** | JSON缁撴瀯                               | 渚夸簬鍚庣画瑙ｆ瀽 |
+| **任务定义** | "将系统拆分为微服务"                   | 明确目标     |
+| **系统描述** | "电商系统，功能包括：账户、商品、订单" | 建立认知框架 |
+| **类列表**   | 按功能领域分组的24个类                 | 提供原始数据 |
+| **设计原则** | 高内聚、低耦合、单一职责               | 指导拆分方向 |
+| **输出格式** | JSON结构                               | 便于后续解析 |
 
-#### 4.2.3 棰勬湡闂涓庢牴鍥?
-**闂1锛欰bstractActionBean鐨勯敊璇垎閰?*
+#### 4.2.3 预期问题与根因
 
-- 琛ㄧ幇锛氬彲鑳借鍒嗛厤缁欏涓湇鍔℃垨鍗曠嫭鎴愭湇鍔?- 鏍瑰洜锛欰I鐪嬪埌"鍩虹被"鍜?琚涓瓙绫荤户鎵?锛屽皢鍏惰涓虹嫭绔嬬粍浠?- 鏈潵鏀硅繘锛氱浜岃疆鏄庣‘鎸囧嚭ActionBean鐨勮亴璐?
-**闂2锛歁apper涓庡疄浣撳垎绂?*
+**问题1：AbstractActionBean的错误分配**
 
-- 琛ㄧ幇锛?Mapper琚垎閰嶇粰閿欒鐨勬湇鍔★紝鎴栧崟鐙垎缁?- 鏍瑰洜锛欰I鍙兘灏哅apper瑙嗕负"閫氱敤鏁版嵁宸ュ叿"
-- 鏈潵鏀硅繘锛氱浜岃疆鏄庣‘Mapper涓庡疄浣撶殑閰嶅鍏崇郴
+- 表现：可能被分配给多个服务或单独成服务
+- 根因：AI看到"基类"和"被多个子类继承"，将其视为独立组件
+- 未来改进：第二轮明确指出ActionBean的职责
 
-**闂3锛氳法鏈嶅姟渚濊禆鐨勫洶鎯?*
+**问题2：Mapper与实体分离**
 
-- 琛ㄧ幇锛氬洜涓篊artItem渚濊禆Item锛屽彲鑳藉皢CartItem鍒嗛厤缁檆atalog
-- 鏍瑰洜锛欰I娣锋穯浜?鏁版嵁渚濊禆"鍜?鏈嶅姟褰掑睘"
-- 鏈潵鏀硅繘锛氱浜岃疆璇存槑璺ㄦ湇鍔′緷璧栫殑鍚堢悊鎬?
+- 表现：*Mapper被分配给错误的服务，或单独分组
+- 根因：AI可能将Mapper视为"通用数据工具"
+- 未来改进：第二轮明确Mapper与实体的配对关系
+
+**问题3：跨服务依赖的困惑**
+
+- 表现：因为CartItem依赖Item，可能将CartItem分配给catalog
+- 根因：AI混淆了"数据依赖"和"服务归属"
+- 未来改进：第二轮说明跨服务依赖的合理性
+
 ---
 
-### 4.3 绗簩杞彁绀鸿瘝鐨勮璁″師鐞?
-#### 4.3.1 璁捐鎬濊矾
+### 4.3 第二轮提示词的设计原理
 
-**闂**锛氬浣曞湪绗竴杞殑鍩虹涓婏紝绮剧‘瀹氫綅鍜屾敼姝ｉ敊璇紵
+#### 4.3.1 设计思路
 
-**绛栫暐**锛?
-1. **闂瀵煎悜**锛氭樉寮忓垪鍑虹涓€杞殑甯歌閿欒
-2. **鍏崇郴鏄犲皠**锛氳缁嗚鏄庣被闂寸殑渚濊禆鍏崇郴
-3. **绀轰緥绾犳**锛氫负闂绫伙紙濡侫bstractActionBean锛夋彁渚涙槑纭殑澶勭悊瑙勫垯
+**问题**：如何在第一轮的基础上，精确定位和改正错误？
 
-**鍏抽敭鍒涙柊**锛?
-- 涓嶆彁渚涚瓟妗堬紝鑰屾槸鎻愮ず"搴旇濡備綍鎬濊€?
-- 璁〢I鍦ㄦ洿瀹屾暣鐨勪俊鎭笅鑷富鏀硅繘
+**策略**：
 
-#### 4.3.2 鎻愮ず璇嶇殑缁撴瀯鏀硅繘
+1. **问题导向**：显式列出第一轮的常见错误
+2. **关系映射**：详细说明类间的依赖关系
+3. **示例纠正**：为问题类（如AbstractActionBean）提供明确的处理规则
 
-```
-绗簩杞浉姣旂涓€杞殑鏀硅繘锛?
-銆愬鍔犲唴瀹广€?+ 绯荤粺绫诲垪琛?鈫?甯︿緷璧栧叧绯荤殑缁撴瀯鍖栧垪琛?+ 寰湇鍔¤璁″師鍒?鈫?绗竴杞棶棰樹笌鏀硅繘鎸囧
-+ 杈撳嚭鏍煎紡 鈫?澧炲姞"improvements_from_round1"瀛楁
+**关键创新**：
 
-銆愪慨鏀瑰唴瀹广€?- 鑷敱鏂囨湰鎻忚堪 鈫?缁撴瀯鍖栧垎绫伙紙鎸夊井鏈嶅姟棰嗗煙锛?- 绠€鍗曠殑鑱岃矗璇存槑 鈫?璇︾粏鐨勪緷璧栧叧绯昏鏄?- 閫氱敤鍘熷垯 鈫?閽堝鎬х殑闂绾犳
-```
+- 不提供答案，而是提示"应该如何思考"
+- 让AI在更完整的信息下自主改进
 
-#### 4.3.3 鍏抽敭鏀硅繘鐐硅瑙?
-**鏀硅繘1锛欰bstractActionBean鐨勬槑纭鐞嗚鍒?*
+#### 4.3.2 提示词的结构改进
 
 ```
-銆愭棫琛ㄨ堪銆?鎵€鏈堿ction鐨勫熀绫伙紝琚玜ccount/catalog/order寰湇鍔″叡浜?
-銆愭柊琛ㄨ堪銆?铏界劧琚涓湇鍔＄殑Action浣跨敤锛屼絾搴旀牴鎹瓵ction鏈韩鐨勮亴璐ｅ垎閰?           - AccountActionBean搴斿睘account鏈嶅姟
-           - CatalogActionBean搴斿睘catalog鏈嶅姟
-           - CartActionBean/OrderActionBean搴斿睘order鏈嶅姟"
+第二轮相比第一轮的改进：
+
+【增加内容】
++ 系统类列表 → 带依赖关系的结构化列表
++ 微服务设计原则 → 第一轮问题与改进指导
++ 输出格式 → 增加"improvements_from_round1"字段
+
+【修改内容】
+- 自由文本描述 → 结构化分类（按微服务领域）
+- 简单的职责说明 → 详细的依赖关系说明
+- 通用原则 → 针对性的问题纠正
 ```
 
-**鐞嗙敱**锛氶€氳繃鍏蜂綋渚嬪瓙鑰岄潪鎶借薄姒傚康锛岄檷浣嶢I鐨勭悊瑙ｆ垚鏈?
-**鏀硅繘2锛歁apper涓庡疄浣撶殑瀵瑰簲鍏崇郴**
+#### 4.3.3 关键改进点详解
+
+**改进1：AbstractActionBean的明确处理规则**
 
 ```
-銆愭棫琛ㄨ堪銆?*Mapper锛氭暟鎹簱鏄犲皠鎺ュ彛"锛堟潵鑷獀1.0锛?銆愭柊琛ㄨ堪銆?姣忎釜*Mapper搴斾笌鍏跺搴旂殑瀹炰綋鏀惧湪鍚屼竴鏈嶅姟
-           - AccountMapper涓嶢ccount鈫抋ccount鏈嶅姟
-           - CategoryMapper/ItemMapper/ProductMapper涓嶤ategory/Item/Product鈫抍atalog鏈嶅姟
-           - OrderMapper/LineItemMapper/SequenceMapper涓嶰rder/LineItem/Sequence鈫抩rder鏈嶅姟"
+【旧表述】"所有Action的基类，被account/catalog/order微服务共享"
+【新表述】"虽然被多个服务的Action使用，但应根据Action本身的职责分配
+           - AccountActionBean应属account服务
+           - CatalogActionBean应属catalog服务
+           - CartActionBean/OrderActionBean应属order服务"
 ```
 
-**鐞嗙敱**锛氭樉寮忕殑涓€涓€瀵瑰簲鍏崇郴锛屾秷闄I鐨勪笉纭畾鎬?
-**鏀硅繘3锛氳法鏈嶅姟渚濊禆鐨勫悎鐞嗘€цВ閲?*
+**理由**：通过具体例子而非抽象概念，降低AI的理解成本
+
+**改进2：Mapper与实体的对应关系**
 
 ```
-銆愭柊澧炲唴瀹广€?淇濇寔Cart鍜孫rder鐨勯€昏緫鍏崇郴锛堥兘灞瀘rder鏈嶅姟锛?           铏界劧CartItem鍜孡ineItem閮藉紩鐢↖tem锛屼絾瀹冧滑鐨勪富瑕佽亴璐?           涓庤喘鐗╁拰璁㈠崟鐩稿叧锛屽洜姝ゅ簲灞瀘rder鑰岄潪catalog"
+【旧表述】"*Mapper：数据库映射接口"（来自v1.0）
+【新表述】"每个*Mapper应与其对应的实体放在同一服务
+           - AccountMapper与Account→account服务
+           - CategoryMapper/ItemMapper/ProductMapper与Category/Item/Product→catalog服务
+           - OrderMapper/LineItemMapper/SequenceMapper与Order/LineItem/Sequence→order服务"
 ```
 
-**鐞嗙敱**锛氬府鍔〢I鐞嗚В"涓氬姟鑱岃矗浼樹簬鏁版嵁寮曠敤"鐨勮璁″師鍒?
+**理由**：显式的一一对应关系，消除AI的不确定性
+
+**改进3：跨服务依赖的合理性解释**
+
+```
+【新增内容】"保持Cart和Order的逻辑关系（都属order服务）
+           虽然CartItem和LineItem都引用Item，但它们的主要职责
+           与购物和订单相关，因此应属order而非catalog"
+```
+
+**理由**：帮助AI理解"业务职责优于数据引用"的设计原则
+
 ---
 
-### 4.4 绗笁杞彁绀鸿瘝鐨勮璁″師鐞?
-#### 4.4.1 璁捐鎬濊矾
+### 4.4 第三轮提示词的设计原理
 
-**闂**锛氬浣曠獊鐮?0-65%鐨勭摱棰堬紝杈惧埌65-80%鐢氳嚦鏇撮珮锛?
-**绛栫暐**锛?
-1. **璁烘枃鏉冨▉鎬?*锛氬紩鍏SE 2024璁烘枃鐨勮瘎浼颁綋绯诲拰鏍囧噯
-2. **閲忓寲婵€鍔?*锛氭槑纭粰鍑虹洰鏍囨寚鏍囷紙MoJoFM 鈮?5%锛夊拰瀵规爣宸ュ叿
-3. **瀹屾暣涓婁笅鏂?*锛氭彁渚涚被闂寸殑瀹屾暣璋冪敤鍏崇郴鍜屽井鏈嶅姟闂寸殑鎺ュ彛濂戠害
-4. **澶氬眰楠岃瘉**锛氳AI鑷繁浼扮畻TurboMQ鍜孧oJoFM锛屽舰鎴愯嚜鎴戠害鏉?
-#### 4.4.2 鎻愮ず璇嶇殑鎴樼暐鍗囩骇
+#### 4.4.1 设计思路
+
+**问题**：如何突破50-65%的瓶颈，达到65-80%甚至更高？
+
+**策略**：
+
+1. **论文权威性**：引入ASE 2024论文的评估体系和标准
+2. **量化激励**：明确给出目标指标（MoJoFM ≥65%）和对标工具
+3. **完整上下文**：提供类间的完整调用关系和微服务间的接口契约
+4. **多层验证**：让AI自己估算TurboMQ和MoJoFM，形成自我约束
+
+#### 4.4.2 提示词的战略升级
 
 ```
-绗笁杞浉姣旂浜岃疆鐨勫崌绾э細
+第三轮相比第二轮的升级：
 
-銆愪俊鎭瘑搴︽彁鍗囥€?+ 璁烘枃鑳屾櫙 鈫?瀛︽湳鏍囧噯鍜岃瘎浼版寚鏍?+ 绫荤粨鏋勬弿杩?鈫?瀹屾暣鐨勫睘鎬?鏂规硶/渚濊禆鏍?+ 闂鎸囧 鈫?寰湇鍔℃媶鍒嗙殑鍥涘ぇ瑙勫垯
-+ 杈撳嚭瑕佹眰 鈫?鑷垜璇勪及+鏈嶅姟鎺ュ彛濂戠害
+【信息密度提升】
++ 论文背景 → 学术标准和评估指标
++ 类结构描述 → 完整的属性/方法/依赖树
++ 问题指导 → 微服务拆分的四大规则
++ 输出要求 → 自我评估+服务接口契约
 
-銆愯鐭ユ繁搴︽彁鍗囥€?- 绫荤殑绠€鍗曡亴璐?鈫?绫诲湪涓氬姟娴佺▼涓殑瑙掕壊
-- 涓や袱渚濊禆 鈫?瀹屾暣鐨勪緷璧栭摼鍜屾暟鎹祦
-- 閫氱敤鍘熷垯 鈫?寰湇鍔℃灦鏋勭殑鍏蜂綋搴旂敤
-- 棰勬湡杈撳嚭 鈫?璐ㄩ噺鎸囨爣鐨勯噺鍖栭鏈?```
-
-#### 4.4.3 璁烘枃鐭ヨ瘑鐨勮瀺鍚?
-**TurboMQ鎸囨爣鐨勫紩鍏?*锛?
-```
-鍏紡: TurboMQ = (鍐呰仛搴?- 鑰﹀悎搴? / (鍐呰仛搴?+ 鑰﹀悎搴? 脳 100
-
-瀵规彁绀鸿瘝鐨勫奖鍝嶏細
-- 甯姪AI鐞嗚В"鍐呰仛搴?鍜?鑰﹀悎搴?鐨勫叿浣撳惈涔?- 璁〢I鍦ㄦ媶鍒嗘椂涓诲姩鏈€灏忓寲"璺ㄦ湇鍔′緷璧?
-- 鎻愪緵閲忓寲鐩爣锛?鐩爣TurboMQ 鈮?0"
+【认知深度提升】
+- 类的简单职责 → 类在业务流程中的角色
+- 两两依赖 → 完整的依赖链和数据流
+- 通用原则 → 微服务架构的具体应用
+- 预期输出 → 质量指标的量化预期
 ```
 
-**MoJoFM鎸囨爣鐨勫紩鍏?*锛?
+#### 4.4.3 论文知识的融合
+
+**TurboMQ指标的引入**：
+
 ```
-瀹氫箟锛欳opilot鎷嗗垎涓嶨round Truth鐨勫尮閰嶇▼搴?
-瀵规彁绀鸿瘝鐨勫奖鍝嶏細
-- 鏄庣‘鍛婅瘔AI"鏈€浼樼瓟妗?鐨勮瘎鍒嗭紙Log2MS 100%锛?- 鎻愪緵涓棿灞傜殑瀵规爣锛圡OSAIC 82.71%, Data-Centric 72.49%锛?- 缁橝I鏄庣‘鐨勭洰鏍囷細MoJoFM 鈮?5%
+公式: TurboMQ = (内聚度 - 耦合度) / (内聚度 + 耦合度) × 100
+
+对提示词的影响：
+- 帮助AI理解"内聚度"和"耦合度"的具体含义
+- 让AI在拆分时主动最小化"跨服务依赖"
+- 提供量化目标："目标TurboMQ ≥80"
 ```
 
-**Ground Truth鐨勭簿纭弿杩?*锛?
+**MoJoFM指标的引入**：
+
+```
+定义：Copilot拆分与Ground Truth的匹配程度
+
+对提示词的影响：
+- 明确告诉AI"最优答案"的评分（Log2MS 100%）
+- 提供中间层的对标（MOSAIC 82.71%, Data-Centric 72.49%）
+- 给AI明确的目标：MoJoFM ≥65%
+```
+
+**Ground Truth的精确描述**：
+
 ```
 account: Account, AccountActionBean, AccountService, AccountMapper
 catalog: Category, CategoryMapper, Product, ProductMapper, 
@@ -855,454 +1110,616 @@ order: Cart, CartItem, CartActionBean, Order, OrderActionBean,
        OrderMapper, OrderService, LineItem, LineItemMapper, 
        Sequence, SequenceMapper
 
-瀵规彁绀鸿瘝鐨勫奖鍝嶏細
-- 闄嶄綆AI鐨勬涔夋€э紝鍑忓皯杈圭晫鎯呭喌鐨勪簤璁?- 鎻愪緵鏄庣‘鐨?姝ｇ‘绛旀"浣滀负瀵规爣
-- 璁〢I鑳借嚜鎴戞鏌ュ拰楠岃瘉锛堥€氳繃棰勪及MoJoFM锛?```
+对提示词的影响：
+- 降低AI的歧义性，减少边界情况的争议
+- 提供明确的"正确答案"作为对标
+- 让AI能自我检查和验证（通过预估MoJoFM）
+```
 
-#### 4.4.4 鑷垜璇勪及涓庡弽棣堟満鍒?
-**鏂扮殑杈撳嚭瑕佹眰**锛?
+#### 4.4.4 自我评估与反馈机制
+
+**新的输出要求**：
+
 ```json
 {
   "quality_metrics_estimate": {
     "expected_turbomq": 80-90,
     "expected_mojofm": 70-85,
-    "reasoning": "涓轰粈涔圓I璁や负鑷繁鑳借揪鍒拌繖涓瘎鍒?
+    "reasoning": "为什么AI认为自己能达到这个评分"
   }
 }
 ```
 
-**浣滅敤**锛?
-1. **鑷垜绾︽潫**锛欰I闇€瑕佸鍏舵媶鍒嗙殑璐ㄩ噺璐熻矗
-2. **鍙В閲婃€?*锛氱悊鐢遍儴鍒嗗弽鏄犱簡AI鐨勬€濊€冭繃绋?3. **楠岃瘉鏁版嵁**锛氬悗缁殑瀹為檯璇勪及鍙笌姝ゅ鏍囷紝妫€娴婣I鐨勮嚜鎴戣鐭ュ亸宸?
----
+**作用**：
 
-### 4.5 鎻愮ず璇嶇殑鍏抽敭鎶€宸ф€荤粨
-
-#### 4.5.1 淇℃伅灞傜骇鍖栧憟鐜?
-**灞傜骇1锛氭牳蹇冧俊鎭?*锛堝繀椤荤殑锛?
-- 绯荤粺姒傝堪锛堟槸浠€涔堬級
-- 绫诲垪琛紙鐢变粈涔堢粍鎴愶級
-- 浠诲姟瀹氫箟锛堝仛浠€涔堬級
-
-**灞傜骇2锛氭寚瀵间俊鎭?*锛堥噸瑕佺殑锛?
-- 渚濊禆鍏崇郴锛堟€庢牱杩炴帴锛?- 璁捐鍘熷垯锛堝浣曟寚瀵硷級
-- 甯歌闂锛堥伩鍏嶉敊璇級
-
-**灞傜骇3锛氶珮绾т俊鎭?*锛堜紭鍖栫殑锛?
-- 璁烘枃鏍囧噯锛堜负浠€涔堣繖鏍峰仛锛?- 璇勪及鎸囨爣锛堣川閲忓浣曡　閲忥級
-- 瀵规爣妗堜緥锛堢洰鏍囨槸浠€涔堬級
-
-**鎶€宸?*锛氱涓€杞彧鎻愪緵灞傜骇1+绠€鍖栫殑灞傜骇2锛岄€愯疆澧炲姞璇︾粏搴?
-#### 4.5.2 鍏蜂綋鍖栨娊璞℃蹇?
-**閿欒绀鸿寖**锛?
-```
-"閬靛惊寰湇鍔¤璁″師鍒欙細楂樺唴鑱氥€佷綆鑰﹀悎銆佸崟涓€鑱岃矗"
-```
-
-锛堝お鎶借薄锛孉I涓嶇煡閬撳叿浣撳浣曞簲鐢級
-
-**鏀硅繘绀鸿寖**锛?
-```
-"楂樺唴鑱氾細鍚屼竴鏈嶅姟鍐呯殑4涓被锛圓ccount, AccountActionBean, AccountService, 
-AccountMapper锛夐兘鍥寸粫璐︽埛鏁版嵁妯″瀷锛屼簰鐩镐緷璧栥€?浣庤€﹀悎锛氳处鎴锋湇鍔′笉渚濊禆鍟嗗搧鎴栬鍗曠殑绫汇€?鍗曚竴鑱岃矗锛氳处鎴锋湇鍔′笓娉ㄤ簬鐢ㄦ埛璐︽埛鐨勫鍒犳敼鏌ワ紝涓嶆秹鍙婂晢鍝佹垨璁㈠崟閫昏緫銆?
-```
-
-锛堥€氳繃鍏蜂綋渚嬪瓙锛孉I鑳界悊瑙ｅ師鍒欑殑瀹為檯搴旂敤锛?
-#### 4.5.3 鍐椾綑涓庡己璋冪殑骞宠　
-
-**绛栫暐**锛?
-- 瀵瑰叧閿俊鎭繘琛屽娆￠噸杩帮紙鐢ㄤ笉鍚岀殑鏂瑰紡锛?- 鍦ㄤ笉鍚屼綅缃嚭鐜扮浉鍚岀殑鏍稿績姒傚康
-- 浣跨敤鍔犵矖銆佸垪琛ㄧ瓑鏍煎紡寮鸿皟
-
-**渚嬪瓙**锛?
-```
-銆愮涓€娆°€?AbstractActionBean铏界劧琚涓猻ervice鐨凙ction浣跨敤..."
-銆愮浜屾銆?鍦ㄥ叧閿媶鍒嗚鍒欎腑鍐嶅己璋冧竴娆★細鍏变韩鍩虹被鐨勫鐞?.."
-銆愮涓夋銆?鍦ㄨ川閲忚瘎浼颁腑閫氳繃Ground Truth楠岃瘉..."
-```
-
-#### 4.5.4 鍓嶅悗涓€鑷存€?
-**瑕佹眰**锛?
-- 绗竴杞娇鐢ㄧ殑绫诲悕锛岀浜屻€佷笁杞繚鎸佷竴鑷?- 瀵瑰悓涓€闂鐨勮В閲婃柟鍚戜竴鑷?- Ground Truth鍦ㄦ墍鏈夎疆娆′繚鎸佺粺涓€
-
-**鎶€宸?*锛?
-- 缁存姢涓€浠?鏈璇嶈〃"锛堢‘淇濈被鍚嶃€佹湇鍔″悕銆佹妧鏈湳璇殑涓€鑷存€э級
-- 鍦ㄦ瘡杞紑濮嬫椂鍥為【涓婁竴杞殑閲嶇偣
+1. **自我约束**：AI需要对其拆分的质量负责
+2. **可解释性**：理由部分反映了AI的思考过程
+3. **验证数据**：后续的实际评估可与此对标，检测AI的自我认知偏差
 
 ---
 
-### 4.6 鎻愮ず璇嶄紭鍖栫殑璇勪及鏂规硶
+### 4.5 提示词的关键技巧总结
 
-#### 4.6.1 姣忚疆杩唬鐨勮瘎浼版寚鏍?
-| 鎸囨爣               | 琛￠噺瀵硅薄     | 鍒ゅ畾鏍囧噯                              |
+#### 4.5.1 信息层级化呈现
+
+**层级1：核心信息**（必须的）
+
+- 系统概述（是什么）
+- 类列表（由什么组成）
+- 任务定义（做什么）
+
+**层级2：指导信息**（重要的）
+
+- 依赖关系（怎样连接）
+- 设计原则（如何指导）
+- 常见问题（避免错误）
+
+**层级3：高级信息**（优化的）
+
+- 论文标准（为什么这样做）
+- 评估指标（质量如何衡量）
+- 对标案例（目标是什么）
+
+**技巧**：第一轮只提供层级1+简化的层级2，逐轮增加详细度
+
+#### 4.5.2 具体化抽象概念
+
+**错误示范**：
+
+```
+"遵循微服务设计原则：高内聚、低耦合、单一职责"
+```
+
+（太抽象，AI不知道具体如何应用）
+
+**改进示范**：
+
+```
+"高内聚：同一服务内的4个类（Account, AccountActionBean, AccountService, 
+AccountMapper）都围绕账户数据模型，互相依赖。
+低耦合：账户服务不依赖商品或订单的类。
+单一职责：账户服务专注于用户账户的增删改查，不涉及商品或订单逻辑。"
+```
+
+（通过具体例子，AI能理解原则的实际应用）
+
+#### 4.5.3 冗余与强调的平衡
+
+**策略**：
+
+- 对关键信息进行多次重述（用不同的方式）
+- 在不同位置出现相同的核心概念
+- 使用加粗、列表等格式强调
+
+**例子**：
+
+```
+【第一次】"AbstractActionBean虽然被多个service的Action使用..."
+【第二次】"在关键拆分规则中再强调一次：共享基类的处理..."
+【第三次】"在质量评估中通过Ground Truth验证..."
+```
+
+#### 4.5.4 前后一致性
+
+**要求**：
+
+- 第一轮使用的类名，第二、三轮保持一致
+- 对同一问题的解释方向一致
+- Ground Truth在所有轮次保持统一
+
+**技巧**：
+
+- 维护一份"术语词表"（确保类名、服务名、技术术语的一致性）
+- 在每轮开始时回顾上一轮的重点
+
+---
+
+### 4.6 提示词优化的评估方法
+
+#### 4.6.1 每轮迭代的评估指标
+
+| 指标               | 衡量对象     | 判定标准                              |
 | ------------------ | ------------ | ------------------------------------- |
-| **MoJoFM**   | 鎷嗗垎鍑嗙‘鎬?  | 绗竴杞墺35%, 绗簩杞墺50%, 绗笁杞墺65% |
-| **TurboMQ**  | 妯″潡鍖栬川閲?  | 绗竴杞墺30, 绗簩杞墺50, 绗笁杞墺80    |
-| **鍒嗗尯鏁?*   | 绮掑害鎺у埗     | 鎵€鏈夎疆娆″簲涓?锛埪?鍙帴鍙楋級            |
-| **鏀舵暃閫熷害** | 鎻愮ず浼樺寲鏁堢巼 | MoJoFM澧為暱鐜?鈮?5% / 杞?              |
-| **鍙В閲婃€?* | AI鎺ㄧ悊杩囩▼   | 鎺ㄧ悊搴旀槑纭紩鐢ㄧ郴缁熺壒鐐瑰拰璁烘枃鏍囧噯      |
+| **MoJoFM**   | 拆分准确性   | 第一轮≥35%, 第二轮≥50%, 第三轮≥65% |
+| **TurboMQ**  | 模块化质量   | 第一轮≥30, 第二轮≥50, 第三轮≥80    |
+| **分区数**   | 粒度控制     | 所有轮次应为3（±1可接受）            |
+| **收敛速度** | 提示优化效率 | MoJoFM增长率 ≥15% / 轮               |
+| **可解释性** | AI推理过程   | 推理应明确引用系统特点和论文标准      |
 
-#### 4.6.2 鎻愮ず璇嶈川閲忕殑鑷垜璇婃柇
+#### 4.6.2 提示词质量的自我诊断
 
-**濡傛灉绗簩杞殑MoJoFM浠?<45%锛岃鏄?*锛?
-- [ ] Ground Truth鐨勬弿杩颁笉澶熸竻鏅?鈫?閲嶆柊鎻忚堪
-- [ ] 渚濊禆鍏崇郴鐨勮鏄庝笉澶熷叿浣?鈫?娣诲姞鍏蜂綋璋冪敤閾?- [ ] 闂璇婃柇涓嶅噯纭?鈫?閲嶆柊鍒嗘瀽绗竴杞殑閿欒妯″紡
-- [ ] 鎻愮ず璇嶄粛缂轰箯婵€鍔辩害鏉?鈫?娣诲姞鐩爣鎸囨爣鍜屽鏍囨渚?
-**濡傛灉绗笁杞殑MoJoFM浠?<65%锛岃鏄?*锛?
-- [ ] 璁烘枃鏍囧噯鐨勮鏄庝笉澶熸潈濞?鈫?澧炲姞璁烘枃鑳屾櫙浠嬬粛
-- [ ] 绫婚棿鍏崇郴鐨勬弿杩版湁閬楁紡 鈫?琛ュ厖缂哄け鐨勪緷璧栧叧绯?- [ ] AI浠嶅杈圭晫鎯呭喌鍥版儜 鈫?涓鸿竟鐣岀被锛圫equence, CartItem绛夛級鎻愪緵鏇存繁鍏ョ殑璁ㄨ
-- [ ] 鍙兘闇€瑕佽皟鏁磋瘎浼扮洰鏍?鈫?涓嶭og2MS锛?00%锛夌殑宸窛鏉ヨ嚜绯荤粺澶嶆潅搴︼紝鑰岄潪鎻愮ず璇?
----
+**如果第二轮的MoJoFM仍 <45%，说明**：
 
-## 绗洓閮ㄥ垎瀹屾垚
+- [ ] Ground Truth的描述不够清晰 → 重新描述
+- [ ] 依赖关系的说明不够具体 → 添加具体调用链
+- [ ] 问题诊断不准确 → 重新分析第一轮的错误模式
+- [ ] 提示词仍缺乏激励约束 → 添加目标指标和对标案例
 
-**鏍稿績鎴愭灉**锛?
-- 鎻愮ず璇嶄紭鍖栫殑涓夌淮搴︽鏋讹紙闀垮害銆佺粨鏋勩€佺害鏉燂級
-- 姣忚疆鎻愮ず璇嶇殑璁捐鍘熺悊鍜屽叧閿敼杩涚偣
-- 鎻愮ず璇嶇殑瀹炵敤鎶€宸э紙淇℃伅灞傜骇鍖栥€佸叿浣撳寲銆佸啑浣欎笌寮鸿皟锛?- 鎻愮ず璇嶈川閲忕殑鑷垜璇婃柇鏂规硶
+**如果第三轮的MoJoFM仍 <65%，说明**：
+
+- [ ] 论文标准的说明不够权威 → 增加论文背景介绍
+- [ ] 类间关系的描述有遗漏 → 补充缺失的依赖关系
+- [ ] AI仍对边界情况困惑 → 为边界类（Sequence, CartItem等）提供更深入的讨论
+- [ ] 可能需要调整评估目标 → 与Log2MS（100%）的差距来自系统复杂度，而非提示词
 
 ---
 
-## 绗簲閮ㄥ垎锛氭墽琛屾祦绋嬩笌楠岃瘉鏍囧噯
+## 第四部分完成
 
-### 5.1 瀹屾暣鐨勬墽琛屾祦绋嬪浘
+**核心成果**：
+
+- 提示词优化的三维度框架（长度、结构、约束）
+- 每轮提示词的设计原理和关键改进点
+- 提示词的实用技巧（信息层级化、具体化、冗余与强调）
+- 提示词质量的自我诊断方法
+
+---
+
+## 第五部分：执行流程与验证标准
+
+### 5.1 完整的执行流程图
 
 ```
-寮€濮?  鈫?銆愬噯澶囬樁娈点€?  鈹溾攢 鍑嗗JPetStore婧愪唬鐮佸拰绫诲垪琛?  鈹溾攢 閰嶇疆璇勪及宸ュ叿鐜锛圥ython + 渚濊禆鍥撅級
-  鈹溾攢 鍑嗗Ground Truth鍙傝€冩暟鎹?  鈹斺攢 鍑嗗璁烘枃宸ュ叿鐨勫姣旀暟鎹?  鈫?銆愮涓€杞凯浠ｃ€?  鈹溾攢 缂栧啓鎻愮ず璇?v1.0锛堝熀纭€鐗堬級
-  鈹溾攢 杈撳叆鍒癈opilot锛岃幏鍙栨媶鍒嗙粨鏋?  鈹溾攢 鎻愬彇JSON鏍煎紡鐨勬媶鍒嗘柟妗?  鈹溾攢 璁＄畻 TurboMQ 鍜?MoJoFM
-  鈹溾攢 鐢熸垚绗竴杞瘎浼版姤鍛?  鈹斺攢 璇婃柇闂鏍规簮 鈫?杈撳嚭鏀硅繘寤鸿
-  鈫?銆愮浜岃疆杩唬銆?  鈹溾攢 鍩轰簬绗竴杞弽棣堬紝缂栧啓鎻愮ず璇?v2.0锛堜緷璧栫増锛?  鈹溾攢 杈撳叆鍒癈opilot锛岃幏鍙栨媶鍒嗙粨鏋?  鈹溾攢 鎻愬彇骞跺姣旂涓€杞粨鏋滐紙鍝簺鏀硅繘浜嗭紵锛?  鈹溾攢 璁＄畻 TurboMQ 鍜?MoJoFM
-  鈹溾攢 鐢熸垚绗簩杞瘎浼版姤鍛婁笌瀵规瘮鍒嗘瀽
-  鈹斺攢 璇勪及鏄惁闇€瑕佺浜岃疆杩唬寰皟锛?  鈫?銆愮涓夎疆杩唬銆?  鈹溾攢 鍩轰簬绗竴銆佷簩杞弽棣堬紝缂栧啓鎻愮ず璇?v3.0锛堜笓瀹剁増锛?  鈹溾攢 杈撳叆鍒癈opilot锛岃幏鍙栨媶鍒嗙粨鏋?  鈹溾攢 鎻愬彇骞跺姣斿墠涓よ疆缁撴灉
-  鈹溾攢 璁＄畻 TurboMQ 鍜?MoJoFM
-  鈹溾攢 鐢熸垚绗笁杞瘎浼版姤鍛婁笌鏀舵暃鍒嗘瀽
-  鈹斺攢 璇勪及鏄惁杈惧埌鐩爣锛?  鈫?銆愭渶缁堥獙璇併€?  鈹溾攢 涓夎疆鏁版嵁姹囨€?鈫?鐢熸垚瀵规瘮琛ㄦ牸
-  鈹溾攢 涓庤鏂?涓伐鍏风殑缁撴灉杩涜妯悜瀵规瘮
-  鈹溾攢 鐢熸垚鍙鍖栧浘琛紙瓒嬪娍銆佸垎甯冿級
-  鈹斺攢 杈撳嚭鏈€缁堢粨璁烘姤鍛?  鈫?銆愬瓨鍌ㄤ笌鍙戝竷銆?  鈹溾攢 淇濆瓨涓夎疆鐨勪唬鐮併€佹媶鍒嗘柟妗堛€佽瘎浼版姤鍛?  鈹溾攢 鐢熸垚鍙鐜版€ф。妗堬紙鍖呭惈鎵€鏈夋彁绀鸿瘝锛?  鈹斺攢 鍙戝竷璁烘枃鎷撳睍鐮旂┒鎴愭灉
-  鈫?缁撴潫
+开始
+  ↓
+【准备阶段】
+  ├─ 准备JPetStore源代码和类列表
+  ├─ 配置评估工具环境（Python + 依赖图）
+  ├─ 准备Ground Truth参考数据
+  └─ 准备论文工具的对比数据
+  ↓
+【第一轮迭代】
+  ├─ 编写提示词 v1.0（基础版）
+  ├─ 输入到Copilot，获取拆分结果
+  ├─ 提取JSON格式的拆分方案
+  ├─ 计算 TurboMQ 和 MoJoFM
+  ├─ 生成第一轮评估报告
+  └─ 诊断问题根源 → 输出改进建议
+  ↓
+【第二轮迭代】
+  ├─ 基于第一轮反馈，编写提示词 v2.0（依赖版）
+  ├─ 输入到Copilot，获取拆分结果
+  ├─ 提取并对比第一轮结果（哪些改进了？）
+  ├─ 计算 TurboMQ 和 MoJoFM
+  ├─ 生成第二轮评估报告与对比分析
+  └─ 评估是否需要第二轮迭代微调？
+  ↓
+【第三轮迭代】
+  ├─ 基于第一、二轮反馈，编写提示词 v3.0（专家版）
+  ├─ 输入到Copilot，获取拆分结果
+  ├─ 提取并对比前两轮结果
+  ├─ 计算 TurboMQ 和 MoJoFM
+  ├─ 生成第三轮评估报告与收敛分析
+  └─ 评估是否达到目标？
+  ↓
+【最终验证】
+  ├─ 三轮数据汇总 → 生成对比表格
+  ├─ 与论文8个工具的结果进行横向对比
+  ├─ 生成可视化图表（趋势、分布）
+  └─ 输出最终结论报告
+  ↓
+【存储与发布】
+  ├─ 保存三轮的代码、拆分方案、评估报告
+  ├─ 生成可复现性档案（包含所有提示词）
+  └─ 发布论文拓展研究成果
+  ↓
+结束
 ```
 
 ---
 
-### 5.2 璇︾粏鐨勬墽琛屾楠や笌鏃堕棿琛?
-#### 5.2.1 鍑嗗闃舵锛?.5灏忔椂锛?
-| 姝ラ | 鍏蜂綋浠诲姟                        | 鏃堕棿 | 妫€鏌ラ」                           |
+### 5.2 详细的执行步骤与时间表
+
+#### 5.2.1 准备阶段（0.5小时）
+
+| 步骤 | 具体任务                        | 时间 | 检查项                           |
 | ---- | ------------------------------- | ---- | -------------------------------- |
-| 1    | 鍑嗗JPetStore鐨勬墍鏈?4涓被鐨勫畾涔?| 10鍒?| 鉁?绫诲悕瀹屾暣, 鏃犻仐婕?             |
-| 2    | 缂栧埗绫?鍔熻兘鏄犲皠琛?              | 5鍒? | 鉁?姣忎釜绫荤殑鑱岃矗娓呮櫚              |
-| 3    | 鍑嗗Ground Truth鍙傝€冨垎瑙?       | 5鍒? | 鉁?account/catalog/order鍏?4涓被 |
-| 4    | 鏀堕泦璁烘枃8涓伐鍏风殑瀵规瘮鏁版嵁       | 10鍒?| 鉁?鍚勫伐鍏风殑MoJoFM/TurboMQ鍒嗘暟    |
-| 5    | 鎼缓璇勪及鑴氭湰鐜                | 15鍒?| 鉁?鍙绠桾urboMQ鍜孧oJoFM         |
+| 1    | 准备JPetStore的所有24个类的定义 | 10分 | ✓ 类名完整, 无遗漏              |
+| 2    | 编制类-功能映射表               | 5分  | ✓ 每个类的职责清晰              |
+| 3    | 准备Ground Truth参考分解        | 5分  | ✓ account/catalog/order共24个类 |
+| 4    | 收集论文8个工具的对比数据       | 10分 | ✓ 各工具的MoJoFM/TurboMQ分数    |
+| 5    | 搭建评估脚本环境                | 15分 | ✓ 可计算TurboMQ和MoJoFM         |
 
-#### 5.2.2 绗竴杞凯浠ｏ紙1.5灏忔椂锛?
-| 姝ラ | 鍏蜂綋浠诲姟          | 鏃堕棿 | 杈撳嚭鐗?                       | 妫€鏌ラ」                            |
+#### 5.2.2 第一轮迭代（1.5小时）
+
+| 步骤 | 具体任务          | 时间 | 输出物                        | 检查项                            |
 | ---- | ----------------- | ---- | ----------------------------- | --------------------------------- |
-| 1    | 缂栧啓鎻愮ず璇?v1.0   | 15鍒?| `prompt_v1.0.txt`           | 鉁?鍖呭惈绯荤粺姒傝堪銆佺被鍒楄〃銆佷换鍔¤姹?|
-| 2    | 杈撳叆Copilot骞跺璇?| 15鍒?| Copilot瀵硅瘽璁板綍               | 鉁?AI鐞嗚В浠诲姟, 鐢熸垚缁撴瀯鍖朖SON     |
-| 3    | 鎻愬彇鎷嗗垎缁撴灉      | 10鍒?| `round1_decomposition.json` | 鉁?鍖呭惈鎵€鏈?4涓被鐨勬湇鍔″垎閰?      |
-| 4    | 璁＄畻璇勪及鎸囨爣      | 20鍒?| `round1_metrics.csv`        | 鉁?TurboMQ鍜孧oJoFM鍊煎畬鏁?         |
-| 5    | 瀵规瘮Ground Truth  | 10鍒?| `round1_comparison.md`      | 鉁?鏍囨敞閿欏垎鐨勭被                   |
-| 6    | 璇婃柇闂          | 15鍒?| `round1_diagnosis.md`       | 鉁?鍒嗘瀽閿欒鍘熷洜锛屾彁鍑烘敼杩涙柟鍚?    |
+| 1    | 编写提示词 v1.0   | 15分 | `prompt_v1.0.txt`           | ✓ 包含系统概述、类列表、任务要求 |
+| 2    | 输入Copilot并对话 | 15分 | Copilot对话记录               | ✓ AI理解任务, 生成结构化JSON     |
+| 3    | 提取拆分结果      | 10分 | `round1_decomposition.json` | ✓ 包含所有24个类的服务分配       |
+| 4    | 计算评估指标      | 20分 | `round1_metrics.csv`        | ✓ TurboMQ和MoJoFM值完整          |
+| 5    | 对比Ground Truth  | 10分 | `round1_comparison.md`      | ✓ 标注错分的类                   |
+| 6    | 诊断问题          | 15分 | `round1_diagnosis.md`       | ✓ 分析错误原因，提出改进方向     |
 
-**绗竴杞緭鍑烘竻鍗?*锛?
+**第一轮输出清单**：
+
 ```
-杩唬1/
-鈹溾攢鈹€ prompt_v1.0.txt                    # 浣跨敤鐨勬彁绀鸿瘝
-鈹溾攢鈹€ copilot_interaction.md             # Copilot瀵硅瘽璁板綍鎽樿
-鈹溾攢鈹€ round1_decomposition.json          # AI鐢熸垚鐨勬媶鍒嗘柟妗?鈹溾攢鈹€ round1_metrics.csv                 # 璇勪及鎸囨爣
-鈹?  鈹溾攢鈹€ TurboMQ: [鍊糫
-鈹?  鈹溾攢鈹€ MoJoFM: [鍊糫
-鈹?  鈹斺攢鈹€ partition_count: 3
-鈹溾攢鈹€ round1_comparison.md               # vs Ground Truth
-鈹?  鈹溾攢鈹€ 姝ｇ‘鐨勭被: [鍒楄〃]
-鈹?  鈹溾攢鈹€ 閿欏垎鐨勭被: [鍒楄〃]
-鈹?  鈹斺攢鈹€ 閿欒鍒嗘瀽
-鈹斺攢鈹€ round1_diagnosis.md                # 闂璇婃柇涓庣浜岃疆鏀硅繘鏂规
-    鈹溾攢鈹€ 闂1: AbstractActionBean澶勭悊
-    鈹溾攢鈹€ 闂2: Mapper鍒嗛厤
-    鈹溾攢鈹€ 闂3: 璺ㄦ湇鍔′緷璧?    鈹斺攢鈹€ 鏀硅繘寤鸿
+迭代1/
+├── prompt_v1.0.txt                    # 使用的提示词
+├── copilot_interaction.md             # Copilot对话记录摘要
+├── round1_decomposition.json          # AI生成的拆分方案
+├── round1_metrics.csv                 # 评估指标
+│   ├── TurboMQ: [值]
+│   ├── MoJoFM: [值]
+│   └── partition_count: 3
+├── round1_comparison.md               # vs Ground Truth
+│   ├── 正确的类: [列表]
+│   ├── 错分的类: [列表]
+│   └── 错误分析
+└── round1_diagnosis.md                # 问题诊断与第二轮改进方案
+    ├── 问题1: AbstractActionBean处理
+    ├── 问题2: Mapper分配
+    ├── 问题3: 跨服务依赖
+    └── 改进建议
 ```
 
-#### 5.2.3 绗簩杞凯浠ｏ紙1.5灏忔椂锛?
-| 姝ラ | 鍏蜂綋浠诲姟                      | 鏃堕棿 | 杈撳嚭鐗?                       | 妫€鏌ラ」                                |
+#### 5.2.3 第二轮迭代（1.5小时）
+
+| 步骤 | 具体任务                      | 时间 | 输出物                        | 检查项                                |
 | ---- | ----------------------------- | ---- | ----------------------------- | ------------------------------------- |
-| 1    | 鍩轰簬绗竴杞弽棣堢紪鍐欐彁绀鸿瘝 v2.0 | 20鍒?| `prompt_v2.0.txt`           | 鉁?鍖呭惈绗竴杞殑闂鎸囧鍜屼緷璧栧叧绯?    |
-| 2    | 杈撳叆Copilot骞跺璇?            | 15鍒?| Copilot瀵硅瘽璁板綍               | 鉁?AI灞曠ず浜嗘敼杩涚殑鎬濊€冭繃绋?            |
-| 3    | 鎻愬彇鎷嗗垎缁撴灉                  | 10鍒?| `round2_decomposition.json` | 鉁?瀵规瘮绗竴杞紝鏍囨敞鏀硅繘鐨勯儴鍒?        |
-| 4    | 璁＄畻璇勪及鎸囨爣                  | 20鍒?| `round2_metrics.csv`        | 鉁?TurboMQ鍜孧oJoFM搴旀湁鎵€鎻愬崌          |
-| 5    | 瀵规瘮绗竴杞?                   | 10鍒?| `round2_vs_round1.md`       | 鉁?鏄庣‘鎸囧嚭鍝簺绫绘敼杩涗簡锛屽摢浜涗粛鏈夐棶棰?|
-| 6    | 璇婃柇娈嬩綑闂                  | 10鍒?| `round2_diagnosis.md`       | 鉁?璇嗗埆浠嶉渶鏀硅繘鐨勭被鍜岀涓夎疆绛栫暐       |
+| 1    | 基于第一轮反馈编写提示词 v2.0 | 20分 | `prompt_v2.0.txt`           | ✓ 包含第一轮的问题指导和依赖关系     |
+| 2    | 输入Copilot并对话             | 15分 | Copilot对话记录               | ✓ AI展示了改进的思考过程             |
+| 3    | 提取拆分结果                  | 10分 | `round2_decomposition.json` | ✓ 对比第一轮，标注改进的部分         |
+| 4    | 计算评估指标                  | 20分 | `round2_metrics.csv`        | ✓ TurboMQ和MoJoFM应有所提升          |
+| 5    | 对比第一轮                    | 10分 | `round2_vs_round1.md`       | ✓ 明确指出哪些类改进了，哪些仍有问题 |
+| 6    | 诊断残余问题                  | 10分 | `round2_diagnosis.md`       | ✓ 识别仍需改进的类和第三轮策略       |
 
-**绗簩杞緭鍑烘竻鍗?*锛?
+**第二轮输出清单**：
+
 ```
-杩唬2/
-鈹溾攢鈹€ prompt_v2.0.txt                    # 鏀硅繘鍚庣殑鎻愮ず璇?鈹溾攢鈹€ copilot_interaction.md             # 瀵硅瘽鎽樿
-鈹溾攢鈹€ round2_decomposition.json          # 鏂扮殑鎷嗗垎鏂规
-鈹溾攢鈹€ round2_metrics.csv                 # 璇勪及鎸囨爣
-鈹溾攢鈹€ round2_vs_round1.md                # 绗竴杞?vs 绗簩杞姣?鈹?  鈹溾攢鈹€ 鏀硅繘鐨勭被: [鍒楄〃]
-鈹?  鈹溾攢鈹€ 鏂板嚭鐜扮殑閿欒: [鍒楄〃]
-鈹?  鈹斺攢鈹€ 鏀舵暃瓒嬪娍鍒嗘瀽
-鈹斺攢鈹€ round2_diagnosis.md                # 娈嬩綑闂涓庣涓夎疆鏀硅繘鏂规
-    鈹溾攢鈹€ 宸茶В鍐崇殑闂: 鉁?AbstractActionBean
-    鈹溾攢鈹€ 浠嶅瓨鍦ㄧ殑闂: 鈿狅笍 [鏂伴棶棰樺垪琛╙
-    鈹斺攢鈹€ 绗笁杞敼杩涚瓥鐣?```
+迭代2/
+├── prompt_v2.0.txt                    # 改进后的提示词
+├── copilot_interaction.md             # 对话摘要
+├── round2_decomposition.json          # 新的拆分方案
+├── round2_metrics.csv                 # 评估指标
+├── round2_vs_round1.md                # 第一轮 vs 第二轮对比
+│   ├── 改进的类: [列表]
+│   ├── 新出现的错误: [列表]
+│   └── 收敛趋势分析
+└── round2_diagnosis.md                # 残余问题与第三轮改进方案
+    ├── 已解决的问题: ✓ AbstractActionBean
+    ├── 仍存在的问题: ⚠️ [新问题列表]
+    └── 第三轮改进策略
+```
 
-#### 5.2.4 绗笁杞凯浠ｏ紙1.5灏忔椂锛?
-| 姝ラ | 鍏蜂綋浠诲姟                      | 鏃堕棿 | 杈撳嚭鐗?                        | 妫€鏌ラ」                                |
+#### 5.2.4 第三轮迭代（1.5小时）
+
+| 步骤 | 具体任务                      | 时间 | 输出物                         | 检查项                                |
 | ---- | ----------------------------- | ---- | ------------------------------ | ------------------------------------- |
-| 1    | 鍩轰簬鍓嶄袱杞弽棣堢紪鍐欐彁绀鸿瘝 v3.0 | 20鍒?| `prompt_v3.0.txt`            | 鉁?鍖呭惈璁烘枃鐭ヨ瘑銆佽瘎浼版寚鏍囥€佸畬鏁翠笂涓嬫枃 |
-| 2    | 杈撳叆Copilot骞跺璇?            | 15鍒?| Copilot瀵硅瘽璁板綍                | 鉁?AI灞曠ず浜嗚鏂囨爣鍑嗙殑鐞嗚В             |
-| 3    | 鎻愬彇鎷嗗垎缁撴灉                  | 10鍒?| `round3_decomposition.json`  | 鉁?鏈€缁堟媶鍒嗘柟妗堬紝搴旀帴杩慓round Truth   |
-| 4    | 璁＄畻璇勪及鎸囨爣                  | 20鍒?| `round3_metrics.csv`         | 鉁?TurboMQ鍜孧oJoFM搴旇揪鍒扮洰鏍囧€?       |
-| 5    | 涓夎疆瀵规瘮鍒嗘瀽                  | 10鍒?| `three_rounds_comparison.md` | 鉁?鏀舵暃鏇茬嚎銆佹敼杩涘箙搴︺€佸鏍囧垎鏋?      |
-| 6    | 鏈€缁堣瘖鏂笌缁撹                | 10鍒?| `round3_diagnosis.md`        | 鉁?鎬荤粨瀛︿範锛屾彁鍑哄悗缁爺绌舵柟鍚?        |
+| 1    | 基于前两轮反馈编写提示词 v3.0 | 20分 | `prompt_v3.0.txt`            | ✓ 包含论文知识、评估指标、完整上下文 |
+| 2    | 输入Copilot并对话             | 15分 | Copilot对话记录                | ✓ AI展示了论文标准的理解             |
+| 3    | 提取拆分结果                  | 10分 | `round3_decomposition.json`  | ✓ 最终拆分方案，应接近Ground Truth   |
+| 4    | 计算评估指标                  | 20分 | `round3_metrics.csv`         | ✓ TurboMQ和MoJoFM应达到目标值        |
+| 5    | 三轮对比分析                  | 10分 | `three_rounds_comparison.md` | ✓ 收敛曲线、改进幅度、对标分析       |
+| 6    | 最终诊断与结论                | 10分 | `round3_diagnosis.md`        | ✓ 总结学习，提出后续研究方向         |
 
-**绗笁杞緭鍑烘竻鍗?*锛?
+**第三轮输出清单**：
+
 ```
-杩唬3/
-鈹溾攢鈹€ prompt_v3.0.txt                    # 鏈€缁堢殑鎻愮ず璇?鈹溾攢鈹€ copilot_interaction.md             # 瀵硅瘽鎽樿
-鈹溾攢鈹€ round3_decomposition.json          # 鏈€缁堟媶鍒嗘柟妗?鈹溾攢鈹€ round3_metrics.csv                 # 璇勪及鎸囨爣
-鈹溾攢鈹€ three_rounds_comparison.md         # 涓夎疆鏁版嵁瀵规瘮
-鈹?  鈹溾攢鈹€ 鎸囨爣瀵规瘮琛ㄦ牸
-鈹?  鈹?  鈹斺攢鈹€ [MoJoFM瓒嬪娍: 35-45% 鈫?50-65% 鈫?70-85%]
-鈹?  鈹溾攢鈹€ 涓庤鏂囧伐鍏风殑妯悜瀵规瘮
-鈹?  鈹?  鈹斺攢鈹€ vs Log2MS(100%), MOSAIC(82.71%), Data-Centric(72.49%)
-鈹?  鈹斺攢鈹€ 鏀舵暃鍒嗘瀽鍜屾敼杩涘箙搴?鈹斺攢鈹€ round3_final_analysis.md           # 鏈€缁堝垎鏋愪笌缁撹
-    鈹溾攢鈹€ Copilot鎷嗗垎鐨勪紭鍔?    鈹溾攢鈹€ 涓庤鏂囧伐鍏风殑瀵规瘮
-    鈹溾攢鈹€ 瀛︿範杩囩▼鍒嗘瀽
-    鈹斺攢鈹€ 鍚庣画鐮旂┒寤鸿
+迭代3/
+├── prompt_v3.0.txt                    # 最终的提示词
+├── copilot_interaction.md             # 对话摘要
+├── round3_decomposition.json          # 最终拆分方案
+├── round3_metrics.csv                 # 评估指标
+├── three_rounds_comparison.md         # 三轮数据对比
+│   ├── 指标对比表格
+│   │   └── [MoJoFM趋势: 35-45% → 50-65% → 70-85%]
+│   ├── 与论文工具的横向对比
+│   │   └── vs Log2MS(100%), MOSAIC(82.71%), Data-Centric(72.49%)
+│   └── 收敛分析和改进幅度
+└── round3_final_analysis.md           # 最终分析与结论
+    ├── Copilot拆分的优势
+    ├── 与论文工具的对比
+    ├── 学习过程分析
+    └── 后续研究建议
 ```
 
-#### 5.2.5 鏈€缁堥獙璇佷笌鎬荤粨锛?灏忔椂锛?
-| 姝ラ | 鍏蜂綋浠诲姟           | 鏃堕棿 | 杈撳嚭鐗?                            | 妫€鏌ラ」                         |
+#### 5.2.5 最终验证与总结（1小时）
+
+| 步骤 | 具体任务           | 时间 | 输出物                             | 检查项                         |
 | ---- | ------------------ | ---- | ---------------------------------- | ------------------------------ |
-| 1    | 姹囨€讳笁杞殑鏍稿績鎸囨爣 | 10鍒?| `summary_metrics.csv`            | 鉁?MoJoFM銆乀urboMQ銆佸垎鍖烘暟瀹屾暣 |
-| 2    | 鐢熸垚鍙鍖栧浘琛?    | 20鍒?| 鍥捐〃闆嗗悎                           | 鉁?瓒嬪娍鍥俱€佸鏍囧浘銆佸垎甯冨浘      |
-| 3    | 缂栧啓鏈€缁堟姤鍛?      | 20鍒?| `FINAL_REPORT.md`                | 鉁?缁撹鏄庣‘锛屾暟鎹敮鎸佸厖鍒?     |
-| 4    | 浠ｇ爜涓庢暟鎹墦鍖?    | 10鍒?| `copilot_microservice_study.zip` | 鉁?鍖呭惈鎵€鏈夋彁绀鸿瘝鍜屽師濮嬫暟鎹?   |
+| 1    | 汇总三轮的核心指标 | 10分 | `summary_metrics.csv`            | ✓ MoJoFM、TurboMQ、分区数完整 |
+| 2    | 生成可视化图表     | 20分 | 图表集合                           | ✓ 趋势图、对标图、分布图      |
+| 3    | 编写最终报告       | 20分 | `FINAL_REPORT.md`                | ✓ 结论明确，数据支持充分      |
+| 4    | 代码与数据打包     | 10分 | `copilot_microservice_study.zip` | ✓ 包含所有提示词和原始数据    |
 
-**鏈€缁堣緭鍑烘竻鍗?*锛?
+**最终输出清单**：
+
 ```
 JPetStore_Copilot_Microservice_Study/
-鈹溾攢鈹€ 鎻愮ず璇嶆。妗堝簱/
-鈹?  鈹溾攢鈹€ prompt_v1.0_鍩虹鎷嗗垎.txt
-鈹?  鈹溾攢鈹€ prompt_v2.0_渚濊禆椹卞姩.txt
-鈹?  鈹斺攢鈹€ prompt_v3.0_涓撳浼樺寲.txt
-鈹溾攢鈹€ 杩唬1~3/                   # 涓夎疆瀹屾暣鏁版嵁
-鈹溾攢鈹€ 璇勪及缁撴灉/
-鈹?  鈹溾攢鈹€ summary_metrics.csv    # 姹囨€绘寚鏍?鈹?  鈹溾攢鈹€ comparison_with_paper_tools.csv  # 涓庤鏂囧伐鍏峰姣?鈹?  鈹斺攢鈹€ charts/                # 鍙鍖栧浘琛?鈹斺攢鈹€ FINAL_REPORT.md            # 瀹屾暣鐨勭爺绌舵姤鍛?```
+├── 提示词档案库/
+│   ├── prompt_v1.0_基础拆分.txt
+│   ├── prompt_v2.0_依赖驱动.txt
+│   └── prompt_v3.0_专家优化.txt
+├── 迭代1~3/                   # 三轮完整数据
+├── 评估结果/
+│   ├── summary_metrics.csv    # 汇总指标
+│   ├── comparison_with_paper_tools.csv  # 与论文工具对比
+│   └── charts/                # 可视化图表
+└── FINAL_REPORT.md            # 完整的研究报告
+```
 
 ---
 
-### 5.3 楠屾敹鏍囧噯涓庤川閲忛棬鎺?
-#### 5.3.1 鍚勮疆杩唬鐨勯獙鏀舵爣鍑?
-**绗竴杞獙鏀舵爣鍑?*锛?
-- [ ] MoJoFM 鈮?30%锛堝彲鎺ュ彈鐨勬渶浣庡€硷級
-  - 鑻?<30%锛氳鏄庢彁绀鸿瘝鐞嗚В涓嶅綋锛岄渶閲嶆柊瀵硅瘽
-- [ ] TurboMQ 鈮?25锛堝彲鎺ュ彈鐨勬渶浣庡€硷級
-- [ ] 鍒嗗尯鏁?鈮?2锛屸墹 5锛堢矑搴﹀悎鐞嗚寖鍥达級
-- [ ] 鎵€鏈?4涓被閮借鍒嗛厤锛堟棤閬楁紡锛?- [ ] JSON鏍煎紡姝ｇ‘锛屽彲瑙ｆ瀽
+### 5.3 验收标准与质量门控
 
-**楠屾敹鍒ゅ畾**锛?
+#### 5.3.1 各轮迭代的验收标准
+
+**第一轮验收标准**：
+
+- [ ] MoJoFM ≥ 30%（可接受的最低值）
+  - 若 <30%：说明提示词理解不当，需重新对话
+- [ ] TurboMQ ≥ 25（可接受的最低值）
+- [ ] 分区数 ≥ 2，≤ 5（粒度合理范围）
+- [ ] 所有24个类都被分配（无遗漏）
+- [ ] JSON格式正确，可解析
+
+**验收判定**：
+
 ```
-濡傛灉MoJoFM 鈮?30% 涓?鍒嗗尯鏁板悎鐞?涓?鏃犻仐婕?鈫?鉁?閫氳繃锛岃繘鍏ョ浜岃疆
-鍚﹀垯 鈫?鉂?涓嶉€氳繃锛岄噸鏂板璇濇垨璋冩暣鎻愮ず璇?```
-
-**绗簩杞獙鏀舵爣鍑?*锛?
-- [ ] MoJoFM 鈮?45%锛堢浉姣旂涓€杞湁鏄捐憲鏀硅繘锛?  - 鏀硅繘骞呭害 鈮?10% 涓鸿壇濂?  - 鑻ユ敼杩?<5%锛氳鏄庢彁绀鸿瘝娌℃湁鎶撲綇鍏抽敭闂
-- [ ] TurboMQ 鈮?45锛堢浉姣旂涓€杞敼鍠勶級
-- [ ] 鍒嗗尯鏁扮ǔ瀹氬湪3卤1
-- [ ] 鑷冲皯3涓涓€杞殑閿欏垎绫昏鏀规
-- [ ] 鎻愮ず璇嶉暱搴﹀拰澶嶆潅搴﹀湪鍚堢悊鑼冨洿锛?1500瀛楋級
-
-**楠屾敹鍒ゅ畾**锛?
+如果MoJoFM ≥ 30% 且 分区数合理 且 无遗漏 → ✅ 通过，进入第二轮
+否则 → ❌ 不通过，重新对话或调整提示词
 ```
-濡傛灉MoJoFM 鈮?45% 涓?鏀硅繘骞呭害 鈮?10% 鈫?鉁?閫氳繃锛岃繘鍏ョ涓夎疆
-else if MoJoFM 鈮?40% 涓?鏀硅繘骞呭害 鈮?5% 鈫?鈿狅笍 鏉′欢閫氳繃锛屽缓璁井璋冨悗鍐嶈繘绗笁杞?else 鈫?鉂?涓嶉€氳繃锛岄噸鏂拌瘖鏂棶棰?```
 
-**绗笁杞獙鏀舵爣鍑?*锛?
-- [ ] MoJoFM 鈮?60%锛堣揪鍒颁腑绛変互涓婃按骞筹級
-  - 鑻?鈮?65%锛氳揪鎴愰」鐩洰鏍?鉁?  - 鑻?60-65%锛氭帴杩戠洰鏍?鈿狅笍
-  - 鑻?<60%锛氭湭杈剧洰鏍?鉂?- [ ] TurboMQ 鈮?75锛堟帴杩慓round Truth鐨?0锛?- [ ] 鍒嗗尯鏁扮簿纭负3
-- [ ] 鎵€鏈夌被鐨勫垎閰嶇悊鐢辨竻鏅帮紝涓嶨round Truth鐨勫樊寮傛湁瑙ｉ噴
-- [ ] 鑷垜璇勪及鐨凪oJoFM涓庡疄闄呭€肩浉宸?<10%锛圓I鑷煡绋嬪害锛?
-**楠屾敹鍒ゅ畾**锛?
+**第二轮验收标准**：
+
+- [ ] MoJoFM ≥ 45%（相比第一轮有显著改进）
+  - 改进幅度 ≥ 10% 为良好
+  - 若改进 <5%：说明提示词没有抓住关键问题
+- [ ] TurboMQ ≥ 45（相比第一轮改善）
+- [ ] 分区数稳定在3±1
+- [ ] 至少3个第一轮的错分类被改正
+- [ ] 提示词长度和复杂度在合理范围（<1500字）
+
+**验收判定**：
+
 ```
-if MoJoFM 鈮?65% and TurboMQ 鈮?75:
-  鈫?鉁?瀹屽叏閫氳繃锛堣秴鏈熸湜锛?elif MoJoFM 鈮?60% and TurboMQ 鈮?70:
-  鈫?鈿狅笍 鍩烘湰閫氳繃锛堣揪鎴愮洰鏍囷級
+如果MoJoFM ≥ 45% 且 改进幅度 ≥ 10% → ✅ 通过，进入第三轮
+else if MoJoFM ≥ 40% 且 改进幅度 ≥ 5% → ⚠️ 条件通过，建议微调后再进第三轮
+else → ❌ 不通过，重新诊断问题
+```
+
+**第三轮验收标准**：
+
+- [ ] MoJoFM ≥ 60%（达到中等以上水平）
+  - 若 ≥ 65%：达成项目目标 ✅
+  - 若 60-65%：接近目标 ⚠️
+  - 若 <60%：未达目标 ❌
+- [ ] TurboMQ ≥ 75（接近Ground Truth的90）
+- [ ] 分区数精确为3
+- [ ] 所有类的分配理由清晰，与Ground Truth的差异有解释
+- [ ] 自我评估的MoJoFM与实际值相差 <10%（AI自知程度）
+
+**验收判定**：
+
+```
+if MoJoFM ≥ 65% and TurboMQ ≥ 75:
+  → ✅ 完全通过（超期望）
+elif MoJoFM ≥ 60% and TurboMQ ≥ 70:
+  → ⚠️ 基本通过（达成目标）
 else:
-  鈫?鉂?鏈€氳繃锛堥渶鍒嗘瀽鍘熷洜锛?```
+  → ❌ 未通过（需分析原因）
+```
 
-#### 5.3.2 鏈€缁堢爺绌剁殑楠屾敹鏍囧噯
+#### 5.3.2 最终研究的验收标准
 
-**鏁翠綋鐮旂┒鐨勬垚鍔熸寚鏍?*锛?
-| 鎸囨爣                  | 鐩爣鍊?        | 璇勫垽鏍囧噯                              | 鏉冮噸 |
+**整体研究的成功指标**：
+
+| 指标                  | 目标值         | 评判标准                              | 权重 |
 | --------------------- | -------------- | ------------------------------------- | ---- |
-| **鏈€缁圡oJoFM**  | 鈮?5%          | 涓庤鏂嘓yDec(58.59%)鐩稿綋锛岃秴瓒婂钩鍧囨按骞?| 40%  |
-| **鏈€缁圱urboMQ** | 鈮?5           | 鎺ヨ繎MOSAIC(100)鍜孌ata-Centric(79.74)  | 20%  |
-| **鏀舵暃鏁堢巼**    | 涓夎疆澧為暱 鈮?0% | MoJoFM浠庣涓€杞埌绗笁杞闀?鈮?0%      | 15%  |
-| **鍙鐜版€?*    | 鎻愮ず璇嶅畬鏁?    | 鎵€鏈変笁涓増鏈殑鎻愮ず璇嶆竻鏅板彲鐢?         | 15%  |
-| **鐮旂┒鎶ュ憡**    | 娓呮櫚瀹屾暣       | 鍖呭惈鏁版嵁銆佸垎鏋愩€佺粨璁恒€佸鏍?           | 10%  |
+| **最终MoJoFM**  | ≥65%          | 与论文HyDec(58.59%)相当，超越平均水平 | 40%  |
+| **最终TurboMQ** | ≥75           | 接近MOSAIC(100)和Data-Centric(79.74)  | 20%  |
+| **收敛效率**    | 三轮增长 ≥30% | MoJoFM从第一轮到第三轮增长 ≥30%      | 15%  |
+| **可复现性**    | 提示词完整     | 所有三个版本的提示词清晰可用          | 15%  |
+| **研究报告**    | 清晰完整       | 包含数据、分析、结论、对标            | 10%  |
 
-**缁煎悎璇勫垽**锛?
+**综合评判**：
+
 ```
-鎬诲垎 = 40% 脳 MoJoFM鐩稿鍒?+ 20% 脳 TurboMQ鐩稿鍒?+ 
-       15% 脳 鏀舵暃鏁堢巼鍒?+ 15% 脳 鍙鐜版€у垎 + 10% 脳 鎶ュ憡璐ㄩ噺鍒?
-鑻ユ€诲垎 鈮?75鍒?鈫?鉁?椤圭洰鎴愬姛
-鑻ユ€诲垎 60-75鍒?鈫?鈿狅笍 椤圭洰鍩烘湰鎴愬姛锛屼絾鏈夋敼杩涚┖闂?鑻ユ€诲垎 <60鍒?鈫?鉂?椤圭洰闇€鎬荤粨鍘熷洜骞舵敼杩?```
+总分 = 40% × MoJoFM相对分 + 20% × TurboMQ相对分 + 
+       15% × 收敛效率分 + 15% × 可复现性分 + 10% × 报告质量分
+
+若总分 ≥ 75分 → ✅ 项目成功
+若总分 60-75分 → ⚠️ 项目基本成功，但有改进空间
+若总分 <60分 → ❌ 项目需总结原因并改进
+```
 
 ---
 
-### 5.4 椋庨櫓璇勪及涓庡簲瀵圭瓥鐣?
-#### 5.4.1 鍙兘鐨勯闄╁拰搴斿鏂规
+### 5.4 风险评估与应对策略
 
-| 椋庨櫓                  | 鐥囩姸                         | 姒傜巼 | 搴斿绛栫暐                                      |
+#### 5.4.1 可能的风险和应对方案
+
+| 风险                  | 症状                         | 概率 | 应对策略                                      |
 | --------------------- | ---------------------------- | ---- | --------------------------------------------- |
-| 绗竴杞甅oJoFM <30%     | AI鐞嗚В鍋忕                   | 涓?  | 閲嶆柊瀹¤鎻愮ず璇嶈〃杩帮紝绠€鍖栨垨琛ュ厖鑳屾櫙            |
-| 绗簩杞棤鏀硅繘          | MoJoFM涓嶅鎴栧噺灏?            | 浣?  | 妫€鏌ヨ瘖鏂槸鍚﹀噯纭紝鑰冭檻涓嶅悓鐨勯棶棰樻牴婧?         |
-| 绗笁杞獊鐮翠笉浜?5%     | 涓庤鏂囨渶浼樺伐鍏峰樊璺濆ぇ         | 涓綆 | 杩欐槸姝ｅ父鐨勶紙Copilot闈炰笓鐢ㄥ伐鍏凤級锛屽垎鏋愬樊璺濇潵婧?|
-| 鏌愪簺绫绘棤娉曠‘瀹氬綊灞?   | Sequence銆丆artItem绛夎竟鐣屼笉娓?| 涓?  | 鍦ㄦ彁绀鸿瘝涓槑纭璁猴紝瑙ｉ噴涓氬姟鑱岃矗浼樹簬鎶€鏈粏鑺? |
-| Copilot鎷嗗垎閫昏緫涓嶄竴鑷?| 涓嶅悓瀵硅瘽鐨勭瓟妗堜笉鍚?          | 浣?  | 浣跨敤鐩稿悓鐨勬彁绀鸿瘝纭繚涓€鑷存€э紝澶氭楠岃瘉          |
+| 第一轮MoJoFM <30%     | AI理解偏离                   | 中   | 重新审视提示词表述，简化或补充背景            |
+| 第二轮无改进          | MoJoFM不增或减少             | 低   | 检查诊断是否准确，考虑不同的问题根源          |
+| 第三轮突破不了65%     | 与论文最优工具差距大         | 中低 | 这是正常的（Copilot非专用工具），分析差距来源 |
+| 某些类无法确定归属    | Sequence、CartItem等边界不清 | 中   | 在提示词中明确讨论，解释业务职责优于技术细节  |
+| Copilot拆分逻辑不一致 | 不同对话的答案不同           | 低   | 使用相同的提示词确保一致性，多次验证          |
 
-#### 5.4.2 搴旀€ュ閫夋柟妗?
-**濡傛灉绗笁杞甅oJoFM浠?<60%**锛?
-- 鏂规A锛氳繘琛岀鍥涜疆杩唬
+#### 5.4.2 应急备选方案
 
-  - 鎻愮ず璇?v4.0锛氬熀浜庡墠涓夎疆鏁版嵁鍒嗘瀽锛屾洿绮剧‘鍦板畾浣嶅墿浣欓棶棰?  - 鏃堕棿锛氳拷鍔?灏忔椂
-- 鏂规B锛氭敼鍙樿瘎浼版柟寮?
-  - 涓嶄互MoJoFM 鈮?5% 涓哄敮涓€鐩爣
-  - 閲嶇偣鍒嗘瀽"Copilot鐩告瘮璁烘枃宸ュ叿鐨勪紭鍔?
-  - 寮鸿皟AI鏂规硶鐨勫垱鏂版€ц€岄潪缁濆鎬ц兘
-- 鏂规C锛氭墿灞曠爺绌跺璞?
-  - 鍦↗PetStore鍩虹涓婏紝娴嬭瘯Spring-PetClinic绛夊叾浠栧簲鐢?  - 瑙傚療AI鏂规硶鐨勬硾鍖栬兘鍔?
+**如果第三轮MoJoFM仍 <60%**：
+
+- 方案A：进行第四轮迭代
+
+  - 提示词 v4.0：基于前三轮数据分析，更精确地定位剩余问题
+  - 时间：追加1小时
+- 方案B：改变评估方式
+
+  - 不以MoJoFM ≥65% 为唯一目标
+  - 重点分析"Copilot相比论文工具的优劣"
+  - 强调AI方法的创新性而非绝对性能
+- 方案C：扩展研究对象
+
+  - 在JPetStore基础上，测试Spring-PetClinic等其他应用
+  - 观察AI方法的泛化能力
+
 ---
 
-### 5.5 鏁版嵁绠＄悊涓庣増鏈帶鍒?
-#### 5.5.1 鏂囦欢鍛藉悕瑙勮寖
+### 5.5 数据管理与版本控制
+
+#### 5.5.1 文件命名规范
 
 ```
-杩唬X_[鏃ユ湡]_[鐗堟湰鍙穄/
-鈹溾攢鈹€ prompt_vX.Y.txt                     # X=杞暟, Y=鐗堟湰鍙?鈹溾攢鈹€ copilot_interaction_[timestamp].md  # 瀵硅瘽璁板綍锛屼繚鐣欐椂闂存埑
-鈹溾攢鈹€ roundX_decomposition_[v].json       # X=杞暟, v=鐗堟湰锛堣嫢澶氭杩唬鍒欐湁澶氫釜锛?鈹溾攢鈹€ roundX_metrics_[v].csv
-鈹溾攢鈹€ roundX_vs_ground_truth.md
-鈹斺攢鈹€ roundX_analysis.md
+迭代X_[日期]_[版本号]/
+├── prompt_vX.Y.txt                     # X=轮数, Y=版本号
+├── copilot_interaction_[timestamp].md  # 对话记录，保留时间戳
+├── roundX_decomposition_[v].json       # X=轮数, v=版本（若多次迭代则有多个）
+├── roundX_metrics_[v].csv
+├── roundX_vs_ground_truth.md
+└── roundX_analysis.md
 ```
 
-**鐗堟湰鎺у埗绛栫暐**锛?
-- 姣忚疆杩唬鍙湁涓€涓渶缁堢増鏈紙鍏朵粬閮芥槸鑽夌锛?- 閲嶈鐨勪腑闂寸粨鏋滐紙濡傞敊璇垎閰嶇殑绫诲垪琛級淇濈暀鍦?`analysis.md`
-- 浣跨敤Git璺熻釜鎵€鏈夌増鏈彉鍖?
-#### 5.5.2 鏁版嵁楠岃瘉妫€鏌ユ竻鍗?
-| 妫€鏌ラ」             | 鏂规硶                    | 楠屾敹鏍囧噯               |
+**版本控制策略**：
+
+- 每轮迭代只有一个最终版本（其他都是草稿）
+- 重要的中间结果（如错误分配的类列表）保留在 `analysis.md`
+- 使用Git跟踪所有版本变化
+
+#### 5.5.2 数据验证检查清单
+
+| 检查项             | 方法                    | 验收标准               |
 | ------------------ | ----------------------- | ---------------------- |
-| 绫诲垪琛ㄥ畬鏁存€?      | 鏁颁竴鏁癑SON涓殑绫绘暟      | 蹇呴』=24                |
-| 绫诲悕涓€鑷存€?        | 涓嶨round Truth瀵规瘮      | 鏃犳嫾鍐欓敊璇紝澶у皬鍐欎竴鑷?|
-| 鏈嶅姟鍒嗛厤鍞竴鎬?    | 姣忎釜绫诲彧灞炰竴涓湇鍔?     | 鏃犻噸澶嶆垨閬楁紡           |
-| 鎸囨爣璁＄畻姝ｇ‘鎬?    | 鎶芥煡2-3涓狹oJoFM鎵嬪伐璁＄畻 | 涓庤嚜鍔ㄨ绠椾竴鑷?        |
-| JSON鏍煎紡鏈夋晥鎬?    | 鐢↗SON鍦ㄧ嚎宸ュ叿楠岃瘉      | 鏃犺娉曢敊璇?            |
-| Ground Truth鍑嗙‘鎬?| 涓庤鏂囧師鏂囧姣?         | 涓庤鏂囬檮褰曚竴鑷?        |
+| 类列表完整性       | 数一数JSON中的类数      | 必须=24                |
+| 类名一致性         | 与Ground Truth对比      | 无拼写错误，大小写一致 |
+| 服务分配唯一性     | 每个类只属一个服务      | 无重复或遗漏           |
+| 指标计算正确性     | 抽查2-3个MoJoFM手工计算 | 与自动计算一致         |
+| JSON格式有效性     | 用JSON在线工具验证      | 无语法错误             |
+| Ground Truth准确性 | 与论文原文对比          | 与论文附录一致         |
 
 ---
 
-### 5.6 鏂囨。杈撳嚭鐨勬渶缁堝舰寮?
-#### 5.6.1 椤圭洰鏈€缁堢粨鏋?
+### 5.6 文档输出的最终形式
+
+#### 5.6.1 项目最终结构
+
 ```
 c:\Users\aone\Downloads\artifact\
-鈹斺攢鈹€ JPetStore_Copilot_Microservice_Study/
-    鈹溾攢鈹€ 00_README.md                    # 椤圭洰鎬昏
-    鈹溾攢鈹€ 鎻愮ず璇嶈璁?
-    鈹?  鈹溾攢鈹€ prompt_v1.0_鍩虹鎷嗗垎.txt
-    鈹?  鈹溾攢鈹€ prompt_v2.0_渚濊禆椹卞姩.txt
-    鈹?  鈹斺攢鈹€ prompt_v3.0_涓撳浼樺寲.txt
-    鈹溾攢鈹€ 杩唬鏁版嵁/
-    鈹?  鈹溾攢鈹€ round1/
-    鈹?  鈹?  鈹溾攢鈹€ decomposition.json
-    鈹?  鈹?  鈹溾攢鈹€ metrics.csv
-    鈹?  鈹?  鈹斺攢鈹€ analysis.md
-    鈹?  鈹溾攢鈹€ round2/
-    鈹?  鈹?  鈹斺攢鈹€ [鍚屼笂缁撴瀯]
-    鈹?  鈹斺攢鈹€ round3/
-    鈹?      鈹斺攢鈹€ [鍚屼笂缁撴瀯]
-    鈹溾攢鈹€ 璇勪及缁撴灉/
-    鈹?  鈹溾攢鈹€ summary_metrics.csv         # 涓夎疆姹囨€?    鈹?  鈹溾攢鈹€ vs_paper_tools.csv         # 涓庤鏂囧伐鍏峰姣?    鈹?  鈹斺攢鈹€ charts/
-    鈹?      鈹溾攢鈹€ mojofm_trend.png        # MoJoFM瓒嬪娍鏇茬嚎
-    鈹?      鈹溾攢鈹€ turbomq_trend.png       # TurboMQ瓒嬪娍鏇茬嚎
-    鈹?      鈹溾攢鈹€ vs_paper_tools.png      # 涓庤鏂囧伐鍏峰鏍?    鈹?      鈹斺攢鈹€ ...
-    鈹斺攢鈹€ FINAL_REPORT.md                 # 鏈€缁堢爺绌舵姤鍛?```
+└── JPetStore_Copilot_Microservice_Study/
+    ├── 00_README.md                    # 项目总览
+    ├── 提示词设计/
+    │   ├── prompt_v1.0_基础拆分.txt
+    │   ├── prompt_v2.0_依赖驱动.txt
+    │   └── prompt_v3.0_专家优化.txt
+    ├── 迭代数据/
+    │   ├── round1/
+    │   │   ├── decomposition.json
+    │   │   ├── metrics.csv
+    │   │   └── analysis.md
+    │   ├── round2/
+    │   │   └── [同上结构]
+    │   └── round3/
+    │       └── [同上结构]
+    ├── 评估结果/
+    │   ├── summary_metrics.csv         # 三轮汇总
+    │   ├── vs_paper_tools.csv         # 与论文工具对比
+    │   └── charts/
+    │       ├── mojofm_trend.png        # MoJoFM趋势曲线
+    │       ├── turbomq_trend.png       # TurboMQ趋势曲线
+    │       ├── vs_paper_tools.png      # 与论文工具对标
+    │       └── ...
+    └── FINAL_REPORT.md                 # 最终研究报告
+```
 
-#### 5.6.2 鏈€缁堟姤鍛婄殑绔犺妭缁撴瀯
+#### 5.6.2 最终报告的章节结构
 
 ```
-# 鏈€缁堟姤鍛婄洰褰?
-1. 鎵ц鎽樿 (Executive Summary)
-   - 鐮旂┒闂銆佹柟娉曘€佷富瑕佸彂鐜?
-2. 鑳屾櫙涓庣洰鏍?   - 璁烘枃鍥為【銆佸垱鏂扮偣銆佺爺绌堕棶棰?
-3. 鏂规硶璁?   - 涓夎疆杩唬璁捐銆佽瘎浼版寚鏍囥€佸伐鍏蜂笌鐜
+# 最终报告目录
 
-4. 绗竴杞凯浠ｇ粨鏋滀笌鍒嗘瀽
-5. 绗簩杞凯浠ｇ粨鏋滀笌鍒嗘瀽
-6. 绗笁杞凯浠ｇ粨鏋滀笌鍒嗘瀽
+1. 执行摘要 (Executive Summary)
+   - 研究问题、方法、主要发现
 
-7. 妯悜瀵规瘮鍒嗘瀽
-   - vs 璁烘枃8涓伐鍏?   - vs Ground Truth
-   - 鏀舵暃鍒嗘瀽
+2. 背景与目标
+   - 论文回顾、创新点、研究问题
 
-8. 鍏抽敭鍙戠幇
-   - AI寰湇鍔℃媶鍒嗙殑浼樺娍
-   - 涓庝紶缁熷伐鍏风殑宸紓
-   - 鎻愮ず璇嶄紭鍖栫殑鏈夋晥鎬?
-9. 灞€闄愭€т笌鏈潵宸ヤ綔
-   - 鐮旂┒灞€闄?   - 娼滃湪鏀硅繘鏂瑰悜
-   - 鍏朵粬搴旂敤鐨勫彲琛屾€?
-10. 闄勫綍
-    - 涓変釜瀹屾暣鐨勬彁绀鸿瘝
-    - 璇︾粏鐨勬寚鏍囪绠楄繃绋?    - 鎵€鏈夌被鐨勫垎閰嶅喅绛栨爲
+3. 方法论
+   - 三轮迭代设计、评估指标、工具与环境
+
+4. 第一轮迭代结果与分析
+5. 第二轮迭代结果与分析
+6. 第三轮迭代结果与分析
+
+7. 横向对比分析
+   - vs 论文8个工具
+   - vs Ground Truth
+   - 收敛分析
+
+8. 关键发现
+   - AI微服务拆分的优势
+   - 与传统工具的差异
+   - 提示词优化的有效性
+
+9. 局限性与未来工作
+   - 研究局限
+   - 潜在改进方向
+   - 其他应用的可行性
+
+10. 附录
+    - 三个完整的提示词
+    - 详细的指标计算过程
+    - 所有类的分配决策树
 ```
 
 ---
 
-## 绗簲閮ㄥ垎瀹屾垚
+## 第五部分完成
 
-**鏍稿績鍐呭**锛?
-- 瀹屾暣鐨勬墽琛屾祦绋嬪浘鍜岃缁嗙殑姝ラ鏃堕棿琛?- 鍚勮疆杩唬鐨勮緭鍑烘竻鍗曞拰鏁版嵁缁撴瀯
-- 鏄庣‘鐨勯獙鏀舵爣鍑嗗拰璐ㄩ噺闂ㄦ帶锛圡oJoFM銆乀urboMQ绛夛級
-- 椋庨櫓璇勪及鍜屽簲瀵圭瓥鐣?- 鏈€缁堢殑鏁版嵁绠＄悊銆佹枃浠跺懡鍚嶈鑼冨拰杈撳嚭褰㈠紡
+**核心内容**：
 
-**鐮旂┒鎬诲懆鏈?*锛氱害 4-5灏忔椂
+- 完整的执行流程图和详细的步骤时间表
+- 各轮迭代的输出清单和数据结构
+- 明确的验收标准和质量门控（MoJoFM、TurboMQ等）
+- 风险评估和应对策略
+- 最终的数据管理、文件命名规范和输出形式
 
-- 鍑嗗锛?.5灏忔椂
-- 涓夎疆杩唬锛?.5灏忔椂锛堟瘡杞?.5灏忔椂锛?- 楠岃瘉涓庢€荤粨锛?灏忔椂
+**研究总周期**：约 4-5小时
+
+- 准备：0.5小时
+- 三轮迭代：4.5小时（每轮1.5小时）
+- 验证与总结：1小时
 
 ---
 
-## 馃幆 瀹屾暣鏂规涔︾敓鎴愬畬姣?
-**鏂规涔︽瑙?*锛?
-| 閮ㄥ垎     | 鍐呭           | 椤垫暟  | 鍏抽敭鎸囨爣                               |
+## 🎯 完整方案书生成完毕
+
+**方案书概览**：
+
+| 部分     | 内容           | 页数  | 关键指标                               |
 | -------- | -------------- | ----- | -------------------------------------- |
-| 绗竴閮ㄥ垎 | 鐮旂┒鑳屾櫙涓庣洰鏍?| ~5椤? | 璁烘枃8宸ュ叿瀵规瘮锛孋opilot鐩爣MoJoFM鈮?5%  |
-| 绗簩閮ㄥ垎 | 璇勪及浣撶郴璇﹁В   | ~8椤? | TurboMQ銆丮oJoFM鍏紡锛孞PetStore鍩哄噯鏁版嵁 |
-| 绗笁閮ㄥ垎 | 涓夎疆杩唬鏂规   | ~15椤?| 涓変釜瀹屾暣鐨勬彁绀鸿瘝鐗堟湰锛岄鏈熸敹鏁涙洸绾?    |
-| 绗洓閮ㄥ垎 | 鎻愮ず璇嶈璁＄瓥鐣?| ~10椤?| 淇℃伅灞傜骇鍖栥€佸叿浣撳寲銆佸啑浣欏師鍒?          |
-| 绗簲閮ㄥ垎 | 鎵ц娴佺▼涓庨獙鏀?| ~12椤?| 鏃堕棿琛ㄣ€侀獙鏀舵爣鍑嗐€佹渶缁堣緭鍑虹粨鏋?        |
+| 第一部分 | 研究背景与目标 | ~5页  | 论文8工具对比，Copilot目标MoJoFM≥65%  |
+| 第二部分 | 评估体系详解   | ~8页  | TurboMQ、MoJoFM公式，JPetStore基准数据 |
+| 第三部分 | 三轮迭代方案   | ~15页 | 三个完整的提示词版本，预期收敛曲线     |
+| 第四部分 | 提示词设计策略 | ~10页 | 信息层级化、具体化、冗余原则           |
+| 第五部分 | 执行流程与验收 | ~12页 | 时间表、验收标准、最终输出结构         |
 
-**鎬昏**锛氱害50椤电殑瀹屾暣鍙墽琛屾柟妗堜功
+**总计**：约50页的完整可执行方案书
 
-### 涓嬩竴姝ュ缓璁?
-**绔嬪嵆鍙墽琛岀殑浠诲姟**锛?
-1. 鉁?鎸夌収鏂规涔︾殑绗竴杞彁绀鸿瘝 (prompt_v1.0)锛屼笌Copilot杩涜棣栨瀵硅瘽
-2. 鉁?鑾峰彇绗竴杞殑鎷嗗垎缁撴灉锛岃绠桵oJoFM鍜孴urboMQ
-3. 鉁?鏍规嵁绗竴杞殑缁撴灉鍙嶉锛岀紪鍐欑浜岃疆鎻愮ず璇?(prompt_v2.0)
-4. 鉁?閲嶅绗簩銆佷笁杞紝鐩村埌杈惧埌鐩爣鎸囨爣
+### 下一步建议
 
-**濡傞渶璋冩暣鐨勬柟闈?*锛?
-- 馃摑 淇敼杩唬杞暟锛堜粠3杞敼涓?杞垨鏇村锛?- 馃幆 璋冩暣鐩爣鎸囨爣锛堝MoJoFM浠?5%鏀逛负70%锛?- 馃敡 琛ュ厖鍏朵粬搴旂敤锛堝Spring-PetClinic锛?- 馃搳 鎵╁睍璇勪及缁村害锛堝浠ｇ爜鍙鎬с€侀儴缃插鏉傚害绛夛級
+**立即可执行的任务**：
 
-**鏂囨。宸蹭繚瀛?*锛?`c:\Users\aone\Downloads\artifact\AI寰湇鍔℃媶鍒嗘柟妗堜功.md`
+1. ✅ 按照方案书的第一轮提示词 (prompt_v1.0)，与Copilot进行首次对话
+2. ✅ 获取第一轮的拆分结果，计算MoJoFM和TurboMQ
+3. ✅ 根据第一轮的结果反馈，编写第二轮提示词 (prompt_v2.0)
+4. ✅ 重复第二、三轮，直到达到目标指标
+
+**如需调整的方面**：
+
+- 📝 修改迭代轮数（从3轮改为4轮或更多）
+- 🎯 调整目标指标（如MoJoFM从65%改为70%）
+- 🔧 补充其他应用（如Spring-PetClinic）
+- 📊 扩展评估维度（如代码可读性、部署复杂度等）
+
+**文档已保存**：
+`c:\Users\aone\Downloads\artifact\AI微服务拆分方案书.md`
 
 ---
 
-**鏄惁闇€瑕?*锛?
-- [ ] 璋冩暣浠讳綍閮ㄥ垎鐨勫唴瀹癸紵
-- [ ] 瀵煎嚭涓篜DF鎴朩ord鏍煎紡锛?- [ ] 涓烘彁绀鸿瘝娣诲姞鏇村鍏蜂綋绀轰緥锛?- [ ] 鎵╁睍鍒板叾浠栧簲鐢紙Spring-PetClinic绛夛級锛?
+**是否需要**：
+
+- [ ] 调整任何部分的内容？
+- [ ] 导出为PDF或Word格式？
+- [ ] 为提示词添加更多具体示例？
+- [ ] 扩展到其他应用（Spring-PetClinic等）？
