@@ -1,0 +1,5 @@
+【第三轮迭代·专家拆分】（标准命名副本）
+
+- 按论文口径与 Ground Truth 对齐
+- 输出需包含质量自评估字段（expected_turbomq / expected_mojofm）
+- 重点确认 CartActionBean 与 AbstractActionBean 的最终归属口径

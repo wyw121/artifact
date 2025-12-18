@@ -1,0 +1,13 @@
+{
+  "note": "本文件从 decomposition_result.json 规范复制（命名标准化）",
+  "source": "decomposition_result.json",
+  "copied_at": "auto",
+  "decomposition": [
+    {"service_name":"用户服务 (User Service)","classes":["Account","AccountActionBean","AccountService","AccountMapper"],"responsibility":"账户域","reasoning":"实体-Mapper配对，Action按职责归属"},
+    {"service_name":"商品目录服务 (Catalog Service)","classes":["Category","CategoryMapper","Product","ProductMapper","Item","ItemMapper","CatalogService","CatalogActionBean"],"responsibility":"商品域","reasoning":"三层商品层级+配套Mapper"},
+    {"service_name":"订单服务 (Order Service)","classes":["Cart","CartItem","CartActionBean","Order","LineItem","OrderActionBean","OrderService","OrderMapper","LineItemMapper","Sequence","SequenceMapper"],"responsibility":"订单域","reasoning":"购物车到订单的完整业务流"}
+  ],
+  "total_services": 3,
+  "improvements_from_round1": "见原文件",
+  "confidence_level": "高"
+}
