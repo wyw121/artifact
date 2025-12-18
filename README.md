@@ -7,6 +7,63 @@
 
 ---
 
+## 项目结构全览（Tree）
+
+```text
+artifact/
+├─ README.md
+├─ docs/
+│  ├─ AI微服务拆分方案书.md
+│  ├─ EVALUATION_POLICY.md
+│  ├─ COMPLIANCE_CHECKLIST.md
+│  ├─ AI复现研究报告.md
+│  └─ REPRODUCTION_REPORT.md
+├─ 迭代数据/
+│  ├─ README.md
+│  ├─ calculate_metrics.py
+│  ├─ full_verification.py
+│  ├─ verify_ground_truth.py
+│  ├─ 指标评估报告.md, 数据复核与错误修正报告.md, 修正完成确认清单.md
+│  ├─ 迭代1_基础拆分/
+│  │  ├─ prompt_used.txt, prompt_v1.0.txt
+│  │  ├─ decomposition_result.json, round1_decomposition.json
+│  │  ├─ evaluation_metrics.csv, round1_metrics.csv
+│  │  └─ analysis.md, round1_comparison.md, round1_diagnosis.md, copilot_interaction.md
+│  ├─ 迭代2_依赖驱动/
+│  │  ├─ prompt_used.txt, prompt_v2.0.txt
+│  │  ├─ decomposition_result.json, round2_decomposition.json
+│  │  ├─ evaluation_metrics.csv, round2_metrics.csv
+│  │  └─ analysis.md, round2_vs_round1.md, round2_diagnosis.md, copilot_interaction.md
+│  └─ 迭代3_专家优化/
+│     ├─ prompt_used.txt, prompt_v3.0.txt
+│     ├─ decomposition_result.json, round3_decomposition.json
+│     ├─ evaluation_metrics.csv, round3_metrics.csv
+│     └─ analysis.md, round3_vs_round2.md, final_summary.md, copilot_interaction.md
+├─ artifact/
+│  ├─ metrics/
+│  │  └─ scripts/
+│  │     ├─ main.py, generate_metadata.py, unzip_data.py, create_dirs.py, create_vis_output_dirs.py
+│  │     └─ models/, utils/, calculator/, cleaning/, casestudies/, resources/, access/, data/ 等
+│  ├─ case_studies/
+│  │  └─ data/reference_decomposition/
+│  │     ├─ jpetstore_classes.csv, jpetstore_methods.csv
+│  │     ├─ spring-petclinic_classes.csv, spring-petclinic_methods.csv
+│  │     ├─ partsunlimited_classes.csv, partsunlimited_methods.csv
+│  │     └─ 其他
+│  ├─ guidelines/
+│  └─ results/
+│     ├─ data/tool_metrics_results/
+│     │  ├─ metrics.csv, mojofm.csv, statistics.csv, entropy.csv
+│     │  └─ tool_qualitative_results/, tool_raw_results/
+│     └─ figures/
+└─ data/
+  └─ decomposition_visualizations/
+    ├─ 1_jpetstore/
+    ├─ 2_spring-petclinic/
+    ├─ 3_partsunlimited/
+    └─ 4_demo/
+```
+
 ## 仓库结构（关键路径）
 
 - 文档与口径
